@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #3FAF82;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .center .middle:before, .frame .center .middle:after, .frame .center .middle {
+  width: 5rem;
+  height: 0.5rem;
+  background: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 2px rgba(30, 30, 30, 0.3);
+  z-index: 0;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 3rem;
+}
+.frame .center input[type=checkbox] {
+  position: absolute;
+  width: 3.6rem;
+  height: 3.6rem;
+  left: 0.7rem;
+  z-index: 1;
+  opacity: 0;
+}
+.frame .center .middle {
+  position: relative;
+  top: 50%;
+  transition: transform 0.3s 0s;
+}
+.frame .center .middle:before, .frame .center .middle:after {
+  content: "";
+  position: absolute;
+}
+.frame .center .middle:before {
+  bottom: 1.5rem;
+  transition: bottom 0.3s 0.3s, transform 0.3s 0s;
+}
+.frame .center .middle:after {
+  top: 1.5rem;
+  transition: top 0.3s 0.3s, transform 0.3s 0s;
+}
+.frame .center input[type=checkbox]:checked + .middle {
+  transform: rotate(45deg);
+  transition: transform 0.3s 0.3s;
+}
+.frame .center input[type=checkbox]:checked + .middle:before {
+  bottom: 0;
+  transform: rotate(90deg);
+  transition: bottom 0.3s 0s, transform 0.3s 0.3s;
+}
+.frame .center input[type=checkbox]:checked + .middle:after {
+  top: 0;
+  transform: rotate(90deg);
+  transition: top 0.3s 0s, transform 0.3s 0.3s;
+}
+
+/*# sourceMappingURL=index.css.map */
