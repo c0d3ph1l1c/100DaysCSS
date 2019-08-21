@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #E56262;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .outer {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: expand-outer 4.5s ease-out infinite;
+}
+.frame .center .outer .middle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: expand-middle 4.5s ease-out infinite;
+}
+.frame .center .outer .middle .inner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  animation: expand-inner 4.5s ease-out infinite;
+}
+@keyframes expand-outer {
+  0% {
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes expand-middle {
+  0% {
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  65% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes expand-inner {
+  0% {
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0);
+  }
+  85% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
