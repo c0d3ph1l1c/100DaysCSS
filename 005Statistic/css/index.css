@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42A7A1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 55%;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+* .frame .center header {
+  background: #F1BA64;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+* .frame .center header > * {
+  color: #fff;
+  margin-top: 0.7rem;
+}
+* .frame .center header .bold {
+  font: bold 0.9em "Open Sans";
+}
+* .frame .center header .thin {
+  font: 0.75rem "Open Sans";
+}
+* .frame .center header .title {
+  margin-left: -0.7rem;
+}
+* .frame .center header .revenue {
+  text-align: right;
+  margin-right: -0.7rem;
+}
+* .frame .center .graph-area {
+  width: 100%;
+  height: 70%;
+}
+* .frame .center .graph-area .legend {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font: 0.6rem "Open Sans";
+}
+* .frame .center .graph-area .legend > * {
+  margin: 0.7rem 0.5rem;
+  margin-bottom: 0;
+}
+* .frame .center .graph-area .legend > p {
+  margin-left: 0rem;
+}
+* .frame .center .graph-area .legend .line-short {
+  width: 0.6rem;
+  height: 0.15rem;
+}
+* .frame .center .graph-area .graph {
+  width: 100%;
+  height: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .graph-area .graph .grid-area {
+  width: 90%;
+  height: 70%;
+  background: #fff;
+  border-top: 0.05rem solid #ddd;
+  border-bottom: 0.05rem solid #ddd;
+  position: relative;
+}
+* .frame .center .graph-area .graph .grid-area .grid-line {
+  width: 100%;
+  height: 0.05rem;
+  background: #ddd;
+  position: relative;
+  top: 50%;
+}
+* .frame .center .graph-area .graph .grid-area .point {
+  cursor: pointer;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 25%;
+  position: absolute;
+}
+* .frame .center .graph-area .graph .grid-area .point .line {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform-origin: 0% 0%;
+}
+* .frame .center .graph-area .graph .grid-area .point .line1 {
+  width: 3.3rem;
+  transform: rotate(-38deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line2 {
+  width: 2.7rem;
+  transform: rotate(7deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line3 {
+  width: 2.6rem;
+  transform: rotate(-16deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line4 {
+  width: 3rem;
+  transform: rotate(37deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line5 {
+  width: 2.7rem;
+  transform: rotate(13deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line6 {
+  width: 3rem;
+  transform: rotate(-38deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line7 {
+  width: 2.8rem;
+  transform: rotate(-18deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line8 {
+  width: 2.8rem;
+  transform: rotate(22deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line9 {
+  width: 2.6rem;
+  transform: rotate(-18deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line10 {
+  width: 2.6rem;
+  transform: rotate(11deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line11 {
+  width: 2.6rem;
+  transform: rotate(16deg);
+}
+* .frame .center .graph-area .graph .grid-area .point .line12 {
+  width: 2.6rem;
+  transform: rotate(-10deg);
+}
+* .frame .center .graph-area .graph .grid-area .point > .value {
+  border-radius: 0.2rem;
+  color: #fff;
+  font: bold 0.55rem "Open Sans";
+  padding: 0.1rem;
+  padding-top: 0.4rem;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: -0.8rem;
+  bottom: 0.2rem;
+  text-align: center;
+  width: 2rem;
+  height: 1.6rem;
+  transition: bottom 0.3s ease-in, opacity 0.3s ease-in;
+}
+* .frame .center .graph-area .graph .grid-area .point > .value:after {
+  content: "";
+  background: inherit;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 0.8rem;
+  bottom: -0.16rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+* .frame .center .graph-area .graph .grid-area .point:hover > .value {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0.8rem;
+}
+* .frame .center .graph-area .graph .grid-area .red.mon {
+  top: 54%;
+}
+* .frame .center .graph-area .graph .grid-area .red.tue {
+  top: 18%;
+}
+* .frame .center .graph-area .graph .grid-area .red.wed {
+  top: 25%;
+}
+* .frame .center .graph-area .graph .grid-area .red.thu {
+  top: 13%;
+}
+* .frame .center .graph-area .graph .grid-area .red.fri {
+  top: 46%;
+}
+* .frame .center .graph-area .graph .grid-area .red.sat {
+  top: 57%;
+}
+* .frame .center .graph-area .graph .grid-area .red.sun {
+  top: 24%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.mon {
+  top: 74%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.tue {
+  top: 59%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.wed {
+  top: 78%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.thu {
+  top: 64%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.fri {
+  top: 73%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.sat {
+  top: 87%;
+}
+* .frame .center .graph-area .graph .grid-area .blue.sun {
+  top: 80%;
+}
+* .frame .center .graph-area .graph .days {
+  width: 90%;
+  height: 20%;
+  position: relative;
+  padding: 0.4rem;
+}
+* .frame .center .graph-area .graph .days .day {
+  color: #555;
+  position: absolute;
+  font: 0.55rem "Open Sans";
+  margin-left: -0.3rem;
+}
+* .frame .center .graph-area .red {
+  background: #FA7373;
+}
+* .frame .center .graph-area .blue {
+  background: #7BA2FF;
+}
+* .frame .center .graph-area .mon {
+  left: 3%;
+}
+* .frame .center .graph-area .tue {
+  left: 20%;
+}
+* .frame .center .graph-area .wed {
+  left: 35%;
+}
+* .frame .center .graph-area .thu {
+  left: 50%;
+}
+* .frame .center .graph-area .fri {
+  left: 65%;
+}
+* .frame .center .graph-area .sat {
+  left: 80%;
+}
+* .frame .center .graph-area .sun {
+  left: 95%;
+}
+* .frame .center .graph-area .line {
+  height: 0.13rem;
+}
+
+/*# sourceMappingURL=index.css.map */

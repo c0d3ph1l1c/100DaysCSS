@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #42A7A1;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 70%;
+      height: 55%;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+      background: #fff;
+      
+      header {
+        background: #F1BA64;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-around;
+        
+        & > * {
+          color: #fff;
+          margin-top: 0.7rem;
+        }
+        
+        .bold { font: bold 0.9em "Open Sans"; }
+        .thin { font: 0.75rem "Open Sans"; }
+        .title { margin-left: -0.7rem; }
+        
+        .revenue {
+          text-align: right;
+          margin-right: -0.7rem;
+        }
+      }
+      
+      .graph-area {
+        width: 100%;
+        height: 70%;
+        
+        .legend {
+          width: 100%;
+          height: 16%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          font: 0.6rem "Open Sans";
+          
+          & > * { margin: 0.7rem 0.5rem; margin-bottom: 0;}
+          & > p { margin-left: 0rem; }
+          
+          .line-short {
+            width: 0.6rem;
+            height: 0.15rem;
+          }
+        }
+        
+        .graph {
+          width: 100%;
+          height: 84%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+          .grid-area {
+            width: 90%;
+            height: 70%;
+            background: #fff;
+            border-top: 0.05rem solid #ddd;
+            border-bottom: 0.05rem solid #ddd;
+            position: relative;
+            
+            .grid-line {
+              width: 100%;
+              height: 0.05rem;
+              background: #ddd;
+              position: relative;
+              top: 50%;
+            }
+    
+            .point {
+              cursor: pointer;
+              width: 0.4rem;
+              height: 0.4rem;
+              border-radius: 25%;
+              position: absolute;
+              
+              .line {
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                transform-origin: 0% 0%;
+              }
+    
+              .line1 { width: 3.3rem;	transform: rotate(-38deg); }
+              .line2 { width: 2.7rem;	transform: rotate(7deg); }
+              .line3 { width: 2.6rem; transform: rotate(-16deg); }
+              .line4 { width: 3rem; transform: rotate(37deg); }
+              .line5 { width: 2.7rem; transform: rotate(13deg); }
+              .line6 { width: 3rem; transform: rotate(-38deg); }				
+              .line7 { width: 2.8rem; transform: rotate(-18deg); }
+              .line8 { width: 2.8rem; transform: rotate(22deg); }
+              .line9 { width: 2.6rem; transform: rotate(-18deg); }
+              .line10 { width: 2.6rem; transform: rotate(11deg); }
+              .line11 { width: 2.6rem; transform: rotate(16deg); }
+              .line12 { width: 2.6rem; transform: rotate(-10deg); }
+              
+              & > .value {
+                border-radius: 0.2rem;
+                color: #fff;
+                font: bold 0.55rem "Open Sans";
+                padding: 0.1rem;
+                padding-top: 0.4rem;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                left: -0.8rem;
+                bottom: 0.2rem;
+                text-align: center;
+                width: 2rem;
+                height: 1.6rem;
+                transition: bottom 0.3s ease-in, opacity 0.3s ease-in;
+                
+                &:after {
+                  content: '';
+                  background: inherit;
+                  position: absolute;
+                  transform: rotate(45deg);
+                  left: 0.8rem;
+                  bottom: -0.16rem;
+                  width: 0.5rem;
+                  height: 0.5rem;
+                }
+              }
+              
+              &:hover > .value { 
+                visibility: visible;
+                opacity: 1; 
+                bottom: 0.8rem;
+              }
+            }
+            
+            .red.mon { top: 54%; }
+            .red.tue { top: 18%; }
+            .red.wed { top: 25%; }
+            .red.thu { top: 13%; }
+            .red.fri { top: 46%; }
+            .red.sat { top: 57%; }
+            .red.sun { top: 24%; }
+            
+            .blue.mon { top: 74%; }
+            .blue.tue { top: 59%; }
+            .blue.wed { top: 78%; }
+            .blue.thu { top: 64%; }
+            .blue.fri { top: 73%; }
+            .blue.sat { top: 87%; }
+            .blue.sun { top: 80%; }
+          }
+          
+          .days {
+            width: 90%;
+            height: 20%;
+            position: relative;			
+            padding: 0.4rem;
+            
+            .day {
+              color: #555;
+              position: absolute;		
+              font: 0.55rem "Open Sans";	
+              margin-left: -0.3rem;
+            }
+          }
+        }
+
+        // Utility class
+        .red { background: #FA7373; }
+        .blue { background: #7BA2FF; }
+
+        .mon { left: 3%; }
+        .tue { left: 20%; }
+        .wed { left: 35%; }
+        .thu { left: 50%; }
+        .fri { left: 65%; }
+        .sat { left: 80%; }
+        .sun { left: 95%; }
+
+        .line { height: 0.13rem; }
+      }
+    }
+  }
+}
