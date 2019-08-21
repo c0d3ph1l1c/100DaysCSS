@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #272C34;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center .circle {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background: #272C34;
+  clip-path: circle(90px at 90px 90px);
+}
+.frame .center .circle .sky {
+  width: 100%;
+  height: 66%;
+  background: #7DDFFC;
+  z-index: 0;
+  animation: sky-turn-dark 4s cubic-bezier(0.4, 0, 0.49, 1) 0s infinite;
+}
+.frame .center .circle .sun {
+  position: absolute;
+  top: 2%;
+  left: 41%;
+  width: 18%;
+  height: 18%;
+  border-radius: 50%;
+  z-index: 1;
+  transform-origin: 50% 400%;
+  animation: sun-move 4s cubic-bezier(0.4, 0, 0.49, 1) 0s infinite;
+}
+.frame .center .circle .side-left {
+  position: absolute;
+  top: 36%;
+  left: 18%;
+  width: 45%;
+  height: 30%;
+  clip-path: polygon(80% 0, 100% 100%, 0 100%);
+  z-index: 1;
+  animation: pyramid-shading 4s cubic-bezier(0.4, 0, 0.49, 1) 0s infinite;
+}
+.frame .center .circle .side-right {
+  position: absolute;
+  top: 36%;
+  left: 54%;
+  width: 33%;
+  height: 30%;
+  background: #8D8D91;
+  clip-path: polygon(0 0, 25% 100%, 100% 100%);
+  z-index: 1;
+  animation: pyramid-shading 4s cubic-bezier(0.4, 0, 0.49, 1) 0s infinite reverse;
+}
+.frame .center .circle .shadow {
+  position: absolute;
+  top: 66%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  clip-path: polygon(18% 0, 87% 0, 100% 0%);
+  z-index: 1;
+  animation: ground-shadow 4s cubic-bezier(0.4, 0, 0.49, 1) 0s infinite;
+  transform-origin: 50% 0;
+}
+.frame .center .circle .ground {
+  position: absolute;
+  width: 100%;
+  height: 34%;
+  background: #F0DE75;
+  top: 66%;
+  z-index: 0;
+  animation: fading-sand 4s cubic-bezier(0.4, 0, 0.49, 1) 0s infinite reverse;
+}
+@keyframes sun-move {
+  0% {
+    background: #F57209;
+    transform: rotate(-70deg);
+  }
+  30% {
+    background: #FFEF00;
+    transform: rotate(-28deg);
+  }
+  70% {
+    background: #FFEF00;
+  }
+  100% {
+    background: #F57209;
+    transform: rotate(70deg);
+  }
+}
+@keyframes sky-turn-dark {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #7DDFFC;
+  }
+  70% {
+    background: #7DDFFC;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+@keyframes pyramid-shading {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #F4F4F4;
+  }
+  70% {
+    background: #DDDADA;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+@keyframes ground-shadow {
+  0% {
+    background: #272C34;
+    clip-path: polygon(18% 0, 87% 0, 100% 0%);
+  }
+  30% {
+    background: #B4A65A;
+    clip-path: polygon(18% 0, 87% 0, 100% 45%);
+    transform: scale(1);
+  }
+  50% {
+    background: #B4A65A;
+    transform: scale(1, 0.7);
+  }
+  70% {
+    background: #B4A65A;
+    transform: scale(1);
+    clip-path: polygon(18% 0, 87% 0, 0% 45%);
+  }
+  100% {
+    background: #272C34;
+    clip-path: polygon(18% 0, 87% 0, 0% 0%);
+  }
+}
+@keyframes fading-sand {
+  0% {
+    background: #272C34;
+  }
+  30% {
+    background: #F0DE75;
+  }
+  70% {
+    background: #F0DE75;
+  }
+  100% {
+    background: #272C34;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
