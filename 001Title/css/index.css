@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to top right, #433A9F, #4EC4C9);
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame .center * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.frame .center .numbers {
+  display: flex;
+}
+.frame .center .numbers .number {
+  background-color: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+}
+.frame .center .numbers .one-first {
+  width: 1.25rem;
+  height: 2.5rem;
+  transform: rotate(50deg);
+  position: relative;
+  left: 0.8rem;
+  z-index: 0;
+}
+.frame .center .numbers .one-second {
+  width: 1.5rem;
+  height: 6.5rem;
+  position: relative;
+  left: 0.5rem;
+  z-index: 2;
+}
+.frame .center .numbers .zero {
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 1.5rem solid #fff;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+}
+.frame .center .numbers .z-first {
+  position: relative;
+  z-index: 1;
+}
+.frame .center .numbers .z-second {
+  position: relative;
+  right: 1rem;
+  z-index: 0;
+}
+.frame .center p {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Courier New", "Courier";
+  line-height: 0.8;
+}
+.frame .center .big {
+  font-size: 5rem;
+}
+.frame .center .small {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */
