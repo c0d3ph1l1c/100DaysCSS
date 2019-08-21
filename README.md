@@ -1,2 +1,6 @@
+![100DaysCSS Logo](logo.PNG)
+
 # 100DaysCSS
-My Solutions to 100 Days CSS Challenge 
+My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100dayscss.com/). 
+
+# Demo
