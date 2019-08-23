@@ -10,3 +10,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [004 - Loading](https://c0d3ph1l1c.github.io/100DaysCSS/004Loading/)
 * [005 - Statistic](https://c0d3ph1l1c.github.io/100DaysCSS/005Statistic/)
 * [006 - Profile](https://c0d3ph1l1c.github.io/100DaysCSS/006Profile/)
+* [007 - Notifications, Search and Menu](https://c0d3ph1l1c.github.io/100DaysCSS/007NotificationsSearchAndMenu/)
