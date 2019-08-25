@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #000;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background: #fff;
+            border-radius: 50%;
+
+            @for $i from 1 through 8 {
+                .blob-#{$i} {
+                    width: 90%;
+                    height: 90%;
+                    background: #fff;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 5%;
+                    left: 5%;
+                    transform-origin: (60% - $i - (20/8)) (60% - $i * (20/8));
+                    animation: rotate (0.8 + $i/8) + s linear (1.8 - $i/8) + s infinite;
+                }
+
+                @keyframes rotate {
+                    to { transform: rotate(360deg) }
+                }
+            }
+        }
+
+        .droplet {
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        
+        @for $i from 1 through 10 {
+            .droplet-#{$i} {
+                $anim-setting: (4 + $i/10) + s linear (0.5 + $i*3/10) + s infinite;
+                width: ceil($i/2) * 1%;
+                height: ceil($i/2) * 1%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @if $i < 6 {
+                    @if $i % 2 == 0 {
+                        transform-origin: (80 - $i*5) + px (-80 + $i*5) + px;
+                    } @else {
+                        transform-origin: (-80 + $i*5) + px (80 - $i*5) + px;
+                    }
+                } @else {
+                    @if $i % 2 == 0 {
+                        transform-origin: (-60 + $i*2) + px (-60 + $i*2) + px;
+                    } @else {
+                        transform-origin: (60 - $i*2) + px (60 - $i*2) + px;
+                    }
+                }
+                animation: orbit $anim-setting;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    border-radius: 50%;
+                    background: #fff;
+                    width: 300%;
+                    height: 300%;
+                    top: -100%;
+                    left: -100%;
+                    transform: scale(0.33);
+                    transform-origin: 50% 50%;
+                    animation: boundary-move-#{$i} $anim-setting;
+                }
+            }
+
+            @keyframes orbit {
+                55% { transform: rotate(360deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            @keyframes boundary-move-#{$i} {
+                @if $i <= 5 {
+                    0% { transform: scale(1); }
+                    6% { transform: scale(1); }
+                    10% { transform: scale(0.33); }
+                    48% { transform: scale(0.33); }
+                    52% { transform: scale(1); }
+                    100% { transform: scale(1); }
+                } @else {
+                    0% { transform: scale(1); }
+                    4% { transform: scale(1); }
+                    8% { transform: scale(0.33); }
+                    49% { transform: scale(0.33); }
+                    54% { transform: scale(1); }
+                    100% { transform: scale(1); }
+                }
+            }
+        }
+    }
+}
