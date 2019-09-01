@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #394568;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+* .frame .center .graphic {
+  width: 100%;
+  height: 80%;
+  background: #1A2238;
+}
+* .frame .center .weather-info {
+  width: 100%;
+  height: 20%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .weather-info .temperature {
+  font-size: 2.5rem;
+}
+* .frame .center .weather-info .weather-data, * .frame .center .weather-info .forecast {
+  display: flex;
+}
+* .frame .center .weather-info .weather-data {
+  flex-direction: column;
+  font-size: 0.92rem;
+  margin: 0 5rem 0 1rem;
+}
+* .frame .center .weather-info .forecast {
+  text-align: right;
+  font-size: 0.94rem;
+}
+* .frame .center .weather-info .forecast .days, * .frame .center .weather-info .forecast .max-min {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.6rem;
+}
+* .frame .center .weather-info .forecast .max-min {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=index.css.map */
