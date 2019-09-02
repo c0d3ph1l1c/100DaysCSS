@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   color: #394568;
+  $moon-color: #F6EDBD;
+  $moon-shadow-color: rgba(246, 237, 189, 0.2);
+  $sky-color: #1A2238;
+  $rain-color: #33b6ff;
 
   .frame {
     position: absolute;
@@ -35,7 +39,176 @@
       .graphic {
         width: 100%;
         height: 80%;
-        background: #1A2238;
+        background: $sky-color;
+        position: relative;
+        overflow: hidden;
+
+        .moon {
+          background: $moon-color;
+          border-radius: 50%;
+          width: 4.5rem;
+          height: 4.5rem;
+          position: absolute;
+          top: 3rem;
+          left: 3.5rem;
+          overflow: hidden;
+          box-shadow: 2px 2px 3px 4px $moon-shadow-color,
+                      2px -2px 3px 4px $moon-shadow-color,
+                      -2px 2px 3px 4px $moon-shadow-color,
+                      -2px -2px 3px 4px $moon-shadow-color;
+
+          @for $i from 1 through 15 {
+            .crater-#{$i} {
+              background: darken($moon-color, 8%);
+              border-radius: 50%;
+              $size: max(5%, floor(random() * 20%));
+              $top: floor(random() * 100%);
+              position: absolute;
+              width: $size;
+              height: $size;
+              top: $top;
+              @if($top <= 40) {
+                left: 40% - $top + floor(random(2 * $top + 20));
+              } @else if($top >= 60) {
+                left: $top - 60 + floor(random(220 - 2 * $top));
+              }
+            } 
+          }
+        }
+
+        .back-hill {
+          background: lighten($sky-color, 5%);
+          border-radius: 50%;
+          width: 20rem;
+          height: 20rem;
+          position: absolute;
+        }
+
+        .back-hill-1 {
+          bottom: -65%;
+          left: -15%;
+        }
+
+        .back-hill-2 {
+          bottom: -63%;
+          right: -25%;
+        }
+
+        .front-hill {
+          background: lighten($sky-color, 10%);
+          border-radius: 50%;
+          width: 21rem;
+          height: 21rem;
+          position: absolute;
+        }
+
+        .front-hill-1 {
+          bottom: -84%;
+          left: -30%;
+        }
+
+        .front-hill-2 {
+          bottom: -76%;
+          left: 15%;
+        }
+
+        .front-hill-3 {
+          bottom: -85%;
+          right: -50%;
+        }
+
+        @for $i from 1 through 10 {
+          .big-raindrop-#{$i} {
+            $anim-setting: 0.9s linear (0.4s * $i) infinite;
+            @if($i > 5) {
+              $anim-setting: 0.9s linear (0.3s + 0.4 * $i) infinite;
+            } 
+            background: $rain-color;
+            border-radius: 50%;
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            bottom: 110%;
+            animation: raindrop-#{$i} $anim-setting;
+            
+            &:after {
+              content: '';
+              width: 0%;
+              height: 0%;
+              position: absolute;
+              animation: raindrop-tail $anim-setting;
+            }
+          }
+
+          @keyframes raindrop-#{$i} {
+            $starting-left: 20% + ($i - 1) * 15; 
+            @if($i > 5) {
+              $starting-left: 25% + ($i%5) * 20;
+            }
+
+            0% {
+              bottom: 110%;
+              left: $starting-left;
+            }
+
+            80% {
+              width: 0.5rem;
+              height: 0.5rem;
+            }
+
+            90% {
+              width: 1.5rem;
+              height: 0.3rem;
+              bottom: 0rem;
+              left: $starting-left - 15;
+            }
+
+            100% {
+              width: 1.5rem;
+              height: 0rem;
+              bottom: 0rem;
+              left: $starting-left - 15;
+            }
+          }
+
+          @keyframes raindrop-tail {
+            0% {
+              border-bottom: 1rem solid $rain-color;
+              border-left: 0.28rem solid transparent;
+              border-right: 0.3rem solid transparent;
+              top: -0.65rem;
+              left: 0.18rem;
+              transform: rotate(20deg);
+            }
+
+            80% {
+              border-bottom: 1rem solid $rain-color;
+              border-left: 0.28rem solid transparent;
+              border-right: 0.3rem solid transparent;
+              top: -0.65rem;
+              left: 0.18rem;
+              transform: rotate(20deg);
+            }
+
+            90% {
+              border-bottom: 0.4rem solid $rain-color;
+              border-left: 0.4rem solid transparent;
+              border-right: 0.4rem solid transparent;
+              top: -0.3rem;
+              left: 0.4rem;
+              transform: rotate(0deg);
+            }
+
+            100% {
+              border-bottom: 0.4rem solid $rain-color;
+              border-left: 0.4rem solid transparent;
+              border-right: 0.4rem solid transparent;
+              top: -0.3rem;
+              left: 0.4rem;
+              transform: rotate(0deg);
+            }
+          }
+        }
       }
       
       .weather-info {

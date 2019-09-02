@@ -35,6 +35,905 @@
   width: 100%;
   height: 80%;
   background: #1A2238;
+  position: relative;
+  overflow: hidden;
+}
+* .frame .center .graphic .moon {
+  background: #F6EDBD;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  top: 3rem;
+  left: 3.5rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px 4px rgba(246, 237, 189, 0.2), 2px -2px 3px 4px rgba(246, 237, 189, 0.2), -2px 2px 3px 4px rgba(246, 237, 189, 0.2), -2px -2px 3px 4px rgba(246, 237, 189, 0.2);
+}
+* .frame .center .graphic .moon .crater-1 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 14%;
+  height: 14%;
+  top: 73%;
+  left: 84%;
+}
+* .frame .center .graphic .moon .crater-2 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 19%;
+  height: 19%;
+  top: 48%;
+}
+* .frame .center .graphic .moon .crater-3 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 18%;
+  height: 18%;
+  top: 51%;
+}
+* .frame .center .graphic .moon .crater-4 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  top: 71%;
+  left: 56%;
+}
+* .frame .center .graphic .moon .crater-5 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 13%;
+  height: 13%;
+  top: 26%;
+  left: 34%;
+}
+* .frame .center .graphic .moon .crater-6 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 17%;
+  height: 17%;
+  top: 3%;
+  left: 49%;
+}
+* .frame .center .graphic .moon .crater-7 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  top: 14%;
+  left: 70%;
+}
+* .frame .center .graphic .moon .crater-8 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 9%;
+  height: 9%;
+  top: 94%;
+  left: 63%;
+}
+* .frame .center .graphic .moon .crater-9 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 9%;
+  height: 9%;
+  top: 84%;
+  left: 52%;
+}
+* .frame .center .graphic .moon .crater-10 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 17%;
+  height: 17%;
+  top: 40%;
+  left: 99%;
+}
+* .frame .center .graphic .moon .crater-11 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 19%;
+  height: 19%;
+  top: 35%;
+  left: 40%;
+}
+* .frame .center .graphic .moon .crater-12 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 18%;
+  height: 18%;
+  top: 9%;
+  left: 53%;
+}
+* .frame .center .graphic .moon .crater-13 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  top: 14%;
+  left: 63%;
+}
+* .frame .center .graphic .moon .crater-14 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  top: 55%;
+}
+* .frame .center .graphic .moon .crater-15 {
+  background: #f1e399;
+  border-radius: 50%;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 68%;
+  left: 35%;
+}
+* .frame .center .graphic .back-hill {
+  background: #222d49;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+}
+* .frame .center .graphic .back-hill-1 {
+  bottom: -65%;
+  left: -15%;
+}
+* .frame .center .graphic .back-hill-2 {
+  bottom: -63%;
+  right: -25%;
+}
+* .frame .center .graphic .front-hill {
+  background: #2a375b;
+  border-radius: 50%;
+  width: 21rem;
+  height: 21rem;
+  position: absolute;
+}
+* .frame .center .graphic .front-hill-1 {
+  bottom: -84%;
+  left: -30%;
+}
+* .frame .center .graphic .front-hill-2 {
+  bottom: -76%;
+  left: 15%;
+}
+* .frame .center .graphic .front-hill-3 {
+  bottom: -85%;
+  right: -50%;
+}
+* .frame .center .graphic .big-raindrop-1 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-1 0.9s linear 0.4s infinite;
+}
+* .frame .center .graphic .big-raindrop-1:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 0.4s infinite;
+}
+@keyframes raindrop-1 {
+  0% {
+    bottom: 110%;
+    left: 20%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 5%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 5%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-2 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-2 0.9s linear 0.8s infinite;
+}
+* .frame .center .graphic .big-raindrop-2:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 0.8s infinite;
+}
+@keyframes raindrop-2 {
+  0% {
+    bottom: 110%;
+    left: 35%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 20%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 20%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-3 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-3 0.9s linear 1.2s infinite;
+}
+* .frame .center .graphic .big-raindrop-3:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 1.2s infinite;
+}
+@keyframes raindrop-3 {
+  0% {
+    bottom: 110%;
+    left: 50%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 35%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 35%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-4 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-4 0.9s linear 1.6s infinite;
+}
+* .frame .center .graphic .big-raindrop-4:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 1.6s infinite;
+}
+@keyframes raindrop-4 {
+  0% {
+    bottom: 110%;
+    left: 65%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 50%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 50%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-5 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-5 0.9s linear 2s infinite;
+}
+* .frame .center .graphic .big-raindrop-5:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 2s infinite;
+}
+@keyframes raindrop-5 {
+  0% {
+    bottom: 110%;
+    left: 80%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 65%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 65%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-6 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-6 0.9s linear 2.7s infinite;
+}
+* .frame .center .graphic .big-raindrop-6:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 2.7s infinite;
+}
+@keyframes raindrop-6 {
+  0% {
+    bottom: 110%;
+    left: 45%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 30%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 30%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-7 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-7 0.9s linear 3.1s infinite;
+}
+* .frame .center .graphic .big-raindrop-7:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 3.1s infinite;
+}
+@keyframes raindrop-7 {
+  0% {
+    bottom: 110%;
+    left: 65%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 50%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 50%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-8 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-8 0.9s linear 3.5s infinite;
+}
+* .frame .center .graphic .big-raindrop-8:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 3.5s infinite;
+}
+@keyframes raindrop-8 {
+  0% {
+    bottom: 110%;
+    left: 85%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 70%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 70%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-9 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-9 0.9s linear 3.9s infinite;
+}
+* .frame .center .graphic .big-raindrop-9:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 3.9s infinite;
+}
+@keyframes raindrop-9 {
+  0% {
+    bottom: 110%;
+    left: 105%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 90%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 90%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .graphic .big-raindrop-10 {
+  background: #33b6ff;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 110%;
+  animation: raindrop-10 0.9s linear 4.3s infinite;
+}
+* .frame .center .graphic .big-raindrop-10:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  animation: raindrop-tail 0.9s linear 4.3s infinite;
+}
+@keyframes raindrop-10 {
+  0% {
+    bottom: 110%;
+    left: 25%;
+  }
+  80% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  90% {
+    width: 1.5rem;
+    height: 0.3rem;
+    bottom: 0rem;
+    left: 10%;
+  }
+  100% {
+    width: 1.5rem;
+    height: 0rem;
+    bottom: 0rem;
+    left: 10%;
+  }
+}
+@keyframes raindrop-tail {
+  0% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  80% {
+    border-bottom: 1rem solid #33b6ff;
+    border-left: 0.28rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    top: -0.65rem;
+    left: 0.18rem;
+    transform: rotate(20deg);
+  }
+  90% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
+  100% {
+    border-bottom: 0.4rem solid #33b6ff;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    top: -0.3rem;
+    left: 0.4rem;
+    transform: rotate(0deg);
+  }
 }
 * .frame .center .weather-info {
   width: 100%;
