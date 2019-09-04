@@ -9,7 +9,7 @@
   $moon-color: #F6EDBD;
   $moon-shadow-color: rgba(246, 237, 189, 0.2);
   $sky-color: #1A2238;
-  $rain-color: #33b6ff;
+  $rain-color: #6699ff;
 
   .frame {
     position: absolute;
@@ -49,13 +49,14 @@
           width: 4.5rem;
           height: 4.5rem;
           position: absolute;
-          top: 3rem;
-          left: 3.5rem;
+          top: 100%;
+          left: 3rem;
           overflow: hidden;
           box-shadow: 2px 2px 3px 4px $moon-shadow-color,
                       2px -2px 3px 4px $moon-shadow-color,
                       -2px 2px 3px 4px $moon-shadow-color,
                       -2px -2px 3px 4px $moon-shadow-color;
+          animation: moon-rise 1s linear forwards;
 
           @for $i from 1 through 15 {
             .crater-#{$i} {
@@ -73,6 +74,13 @@
                 left: $top - 60 + floor(random(220 - 2 * $top));
               }
             } 
+          }
+
+          @keyframes moon-rise {
+            to {
+              top: 3rem;
+              left: 3.5rem;
+            }
           }
         }
 
@@ -118,7 +126,7 @@
         }
 
         @for $i from 1 through 10 {
-          .big-raindrop-#{$i} {
+          .bg-raindrop-#{$i} {
             $anim-setting: 0.9s linear (0.4s * $i) infinite;
             @if($i > 5) {
               $anim-setting: 0.9s linear (0.3s + 0.4 * $i) infinite;
@@ -129,18 +137,18 @@
             height: 0.5rem;
             position: absolute;
             bottom: 110%;
-            animation: raindrop-#{$i} $anim-setting;
+            animation: bg-raindrop-#{$i} $anim-setting;
             
             &:after {
               content: '';
-              width: 0%;
+              width: 2%;
               height: 0%;
               position: absolute;
-              animation: raindrop-tail $anim-setting;
+              animation: bg-raindrop-tail $anim-setting;
             }
           }
 
-          @keyframes raindrop-#{$i} {
+          @keyframes bg-raindrop-#{$i} {
             $starting-left: 20% + ($i - 1) * 15; 
             @if($i > 5) {
               $starting-left: 25% + ($i%5) * 20;
@@ -154,59 +162,65 @@
             80% {
               width: 0.5rem;
               height: 0.5rem;
+              opacity: 1;
             }
 
             90% {
-              width: 1.5rem;
+              width: 1.1rem;
               height: 0.3rem;
               bottom: 0rem;
               left: $starting-left - 15;
             }
 
             100% {
-              width: 1.5rem;
-              height: 0rem;
+              width: 1.1rem;
+              height: 0.3rem;
               bottom: 0rem;
               left: $starting-left - 15;
-            }
+              opacity: 0.3;
+            } 
           }
 
-          @keyframes raindrop-tail {
+          @keyframes bg-raindrop-tail {
             0% {
               border-bottom: 1rem solid $rain-color;
               border-left: 0.28rem solid transparent;
-              border-right: 0.3rem solid transparent;
+              border-right: 0.25rem solid transparent;
               top: -0.65rem;
-              left: 0.18rem;
+              left: 0.1rem;
               transform: rotate(20deg);
             }
 
             80% {
               border-bottom: 1rem solid $rain-color;
               border-left: 0.28rem solid transparent;
-              border-right: 0.3rem solid transparent;
+              border-right: 0.25rem solid transparent;
               top: -0.65rem;
-              left: 0.18rem;
+              left: 0.1rem;
               transform: rotate(20deg);
             }
 
             90% {
-              border-bottom: 0.4rem solid $rain-color;
-              border-left: 0.4rem solid transparent;
-              border-right: 0.4rem solid transparent;
+              border-bottom: 0.5rem solid $rain-color;
+              border-left: 0.6rem solid transparent;
+              border-right: 0.5rem solid transparent;
               top: -0.3rem;
-              left: 0.4rem;
+              left: 0.05rem;
               transform: rotate(0deg);
             }
 
             100% {
-              border-bottom: 0.4rem solid $rain-color;
-              border-left: 0.4rem solid transparent;
-              border-right: 0.4rem solid transparent;
+              border-bottom: 0.5rem solid $rain-color;
+              border-left: 0.6rem solid transparent;
+              border-right: 0.5rem solid transparent;
               top: -0.3rem;
-              left: 0.4rem;
+              left: 0.05rem;
               transform: rotate(0deg);
             }
+          }
+
+          .md-raindrop-#{$i} {
+            
           }
         }
       }
