@@ -1,0 +1,419 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #394568;
+  $moon-color: #F6EDBD;
+  $moon-shadow-color: rgba(246, 237, 189, 0.2);
+  $sky-color: #1A2238;
+  $rain-color: #81BEF7;
+  $rain-color-2: #6699ff;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      
+      .graphic {
+        width: 100%;
+        height: 80%;
+        background: $sky-color;
+        position: relative;
+        overflow: hidden;
+
+        .moon {
+          background: $moon-color;
+          border-radius: 50%;
+          width: 4.5rem;
+          height: 4.5rem;
+          position: absolute;
+          top: 100%;
+          left: 3rem;
+          overflow: hidden;
+          box-shadow: 2px 2px 3px 4px $moon-shadow-color,
+                      2px -2px 3px 4px $moon-shadow-color,
+                      -2px 2px 3px 4px $moon-shadow-color,
+                      -2px -2px 3px 4px $moon-shadow-color;
+          animation: moon-rise 1s linear forwards;
+
+          @for $i from 1 through 15 {
+            .crater-#{$i} {
+              background: darken($moon-color, 8%);
+              border-radius: 50%;
+              $size: max(5%, floor(random() * 20%));
+              $top: floor(random() * 100%);
+              position: absolute;
+              width: $size;
+              height: $size;
+              top: $top;
+              @if($top <= 40) {
+                left: 40% - $top + floor(random(2 * $top + 20));
+              } @else if($top >= 60) {
+                left: $top - 60 + floor(random(220 - 2 * $top));
+              }
+            } 
+          }
+
+          @keyframes moon-rise {
+            to {
+              top: 3rem;
+              left: 3.5rem;
+            }
+          }
+        }
+
+        .back-hill {
+          background: lighten($sky-color, 5%);
+          border-radius: 50%;
+          width: 20rem;
+          height: 20rem;
+          position: absolute;
+        }
+
+        .back-hill-1 {
+          bottom: -65%;
+          left: -15%;
+        }
+
+        .back-hill-2 {
+          bottom: -63%;
+          right: -25%;
+        }
+
+        .front-hill {
+          background: lighten($sky-color, 10%);
+          border-radius: 50%;
+          width: 21rem;
+          height: 21rem;
+          position: absolute;
+        }
+
+        .front-hill-1 {
+          bottom: -84%;
+          left: -30%;
+        }
+
+        .front-hill-2 {
+          bottom: -76%;
+          left: 15%;
+        }
+
+        .front-hill-3 {
+          bottom: -85%;
+          right: -50%;
+        }
+
+        @mixin bg-raindrop-tail-from {
+          border-bottom: 1rem solid $rain-color;
+          border-left: 0.28rem solid transparent;
+          border-right: 0.25rem solid transparent;
+          top: -0.65rem;
+          left: 0.1rem;
+          transform: rotate(20deg);
+        }
+
+        @mixin bg-raindrop-tail-to {
+          border-bottom: 0.5rem solid $rain-color;
+          border-left: 0.6rem solid transparent;
+          border-right: 0.5rem solid transparent;
+          top: -0.3rem;
+          left: 0.05rem;
+          transform: rotate(0deg);
+        }
+
+        @mixin md-raindrop-tail-from {
+          border-bottom: 0.75rem solid $rain-color-2;
+          border-left: 0.21rem solid transparent;
+          border-right: 0.19rem solid transparent;
+          top: -0.49rem;
+          left: 0.075rem;
+          transform: rotate(20deg);
+        }
+
+        @mixin md-raindrop-tail-to {
+          border-bottom: 0.375rem solid $rain-color-2;
+          border-left: 0.45rem solid transparent;
+          border-right: 0.375rem solid transparent;
+          top: -0.225rem;
+          left: 0.0375rem;
+          transform: rotate(0deg);
+        }
+
+        @mixin sm-raindrop-tail-from {
+          border-bottom: 0.5rem solid $rain-color;
+          border-left: 0.14rem solid transparent;
+          border-right: 0.125rem solid transparent;
+          top: -0.325rem;
+          left: 0.05rem;
+          transform: rotate(20deg);
+        }
+
+        @mixin sm-raindrop-tail-to {
+          border-bottom: 0.25rem solid $rain-color;
+              border-left: 0.3rem solid transparent;
+              border-right: 0.25rem solid transparent;
+              top: -0.15rem;
+              left: 0.025rem;
+              transform: rotate(0deg);
+        }
+
+        @for $i from 1 through 10 {
+          .bg-raindrop-#{$i} {
+            $anim-setting: 0.9s linear (0.4s * $i) infinite;
+            @if($i > 5) {
+              $anim-setting: 0.9s linear (0.3s + 0.4 * $i) infinite;
+            } 
+            background: $rain-color;
+            border-radius: 50%;
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            bottom: 110%;
+            animation: bg-raindrop-#{$i} $anim-setting;
+            
+            &:after {
+              content: '';
+              width: 2%;
+              height: 0%;
+              position: absolute;
+              animation: bg-raindrop-tail $anim-setting;
+            }
+          }
+
+          @keyframes bg-raindrop-#{$i} {
+            $starting-left: 15% + ($i - 1) * 15; 
+            @if($i > 5) {
+              $starting-left: 20% + ($i%5) * 20;
+            }
+
+            0% {
+              bottom: 110%;
+              left: $starting-left;
+            }
+
+            80% {
+              width: 0.5rem;
+              height: 0.5rem;
+              opacity: 1;
+            }
+
+            90% {
+              width: 1.1rem;
+              height: 0.3rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+            }
+
+            100% {
+              width: 1.1rem;
+              height: 0.3rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+              opacity: 0.3;
+            } 
+          }
+
+          @keyframes bg-raindrop-tail {
+            0% { @include bg-raindrop-tail-from }
+            80% { @include bg-raindrop-tail-from }
+            90% { @include bg-raindrop-tail-to }
+            100% { @include bg-raindrop-tail-to }
+          }
+
+          .md-raindrop-#{$i} {
+            $anim-setting: 1.4s linear (0.5s * $i) infinite;
+            @if($i % 2 == 1) {
+              $anim-setting: 1.4s linear (0.1s + 0.5 * ($i - 1)) infinite;
+            } 
+            background: $rain-color-2;
+            border-radius: 50%;
+            width: 0.375rem;
+            height: 0.375rem;
+            position: absolute;
+            bottom: 110%;
+            opacity: 0.7;
+            animation: md-raindrop-#{$i} $anim-setting;
+            
+            &:after {
+              content: '';
+              width: 2%;
+              height: 0%;
+              position: absolute;
+              animation: md-raindrop-tail $anim-setting;
+            }
+          }
+
+          @keyframes md-raindrop-#{$i} {
+            $starting-left: 18% + ($i - 1) * 20; 
+            @if($i > 5) {
+              $starting-left: 23% + ($i%5) * 20;
+            }
+
+            0% {
+              bottom: 110%;
+              left: $starting-left;
+              opacity: 0.7;
+            }
+
+            80% {
+              width: 0.375rem;
+              height: 0.375rem;
+              opacity: 0.7;
+            }
+
+            90% {
+              width: 0.825rem;
+              height: 0.225rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+            }
+
+            100% {
+              width: 0.825rem;
+              height: 0.225rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+              opacity: 0.3;
+            } 
+          }
+
+          @keyframes md-raindrop-tail {
+            0% { @include md-raindrop-tail-from }
+            80% { @include md-raindrop-tail-from }
+            90% { @include md-raindrop-tail-to }
+            100% { @include md-raindrop-tail-to }
+          }
+
+          .sm-raindrop-#{$i} {
+            $anim-setting: 2s linear (0.3s * $i) infinite;
+            @if($i > 5) {
+              $anim-setting: 2s linear (0.2s + 0.3 * ($i - 1)) infinite;
+            } 
+            background: $rain-color-2;
+            border-radius: 50%;
+            width: 0.25rem;
+            height: 0.25rem;
+            position: absolute;
+            bottom: 110%;
+            opacity: 0.5;
+            animation: sm-raindrop-#{$i} $anim-setting;
+            
+            &:after {
+              content: '';
+              width: 2%;
+              height: 0%;
+              position: absolute;
+              animation: sm-raindrop-tail $anim-setting;
+            }
+          }
+
+          @keyframes sm-raindrop-#{$i} {
+            $starting-left: 15% + ($i - 1) * 20; 
+            @if($i > 5) {
+              $starting-left: 25% + ($i%5) * 20;
+            }
+
+            0% {
+              bottom: 110%;
+              left: $starting-left;
+              opacity: 0.5;
+            }
+
+            80% {
+              width: 0.25rem;
+              height: 0.25rem;
+              opacity: 0.5;
+            }
+
+            90% {
+              width: 0.55rem;
+              height: 0.15rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+            }
+
+            100% {
+              width: 0.55rem;
+              height: 0.15rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+              opacity: 0.3;
+            } 
+          }
+
+          @keyframes sm-raindrop-tail {
+            0% { @include sm-raindrop-tail-from }
+            80% { @include sm-raindrop-tail-from }
+            90% { @include sm-raindrop-tail-to }
+            100% { @include sm-raindrop-tail-to }
+          }
+        }
+
+        
+      }
+      
+      .weather-info {
+        width: 100%;
+        height: 20%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .temperature {
+          font-size: 2.5rem;
+        }
+
+        .weather-data, .forecast {
+          display: flex;
+        }
+
+        .weather-data {
+          flex-direction: column;
+          font-size: 0.92rem;
+          margin: 0 5rem 0 1rem;
+        }
+        
+        .forecast {
+          text-align: right;
+          font-size: 0.94rem;
+
+          .days, .max-min {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0.6rem;
+          }
+
+          .max-min {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+
