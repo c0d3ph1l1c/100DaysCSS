@@ -9,7 +9,8 @@
   $moon-color: #F6EDBD;
   $moon-shadow-color: rgba(246, 237, 189, 0.2);
   $sky-color: #1A2238;
-  $rain-color: #6699ff;
+  $rain-color: #81BEF7;
+  $rain-color-2: #6699ff;
 
   .frame {
     position: absolute;
@@ -125,6 +126,60 @@
           right: -50%;
         }
 
+        @mixin bg-raindrop-tail-from {
+          border-bottom: 1rem solid $rain-color;
+          border-left: 0.28rem solid transparent;
+          border-right: 0.25rem solid transparent;
+          top: -0.65rem;
+          left: 0.1rem;
+          transform: rotate(20deg);
+        }
+
+        @mixin bg-raindrop-tail-to {
+          border-bottom: 0.5rem solid $rain-color;
+          border-left: 0.6rem solid transparent;
+          border-right: 0.5rem solid transparent;
+          top: -0.3rem;
+          left: 0.05rem;
+          transform: rotate(0deg);
+        }
+
+        @mixin md-raindrop-tail-from {
+          border-bottom: 0.75rem solid $rain-color-2;
+          border-left: 0.21rem solid transparent;
+          border-right: 0.19rem solid transparent;
+          top: -0.49rem;
+          left: 0.075rem;
+          transform: rotate(20deg);
+        }
+
+        @mixin md-raindrop-tail-to {
+          border-bottom: 0.375rem solid $rain-color-2;
+          border-left: 0.45rem solid transparent;
+          border-right: 0.375rem solid transparent;
+          top: -0.225rem;
+          left: 0.0375rem;
+          transform: rotate(0deg);
+        }
+
+        @mixin sm-raindrop-tail-from {
+          border-bottom: 0.5rem solid $rain-color;
+          border-left: 0.14rem solid transparent;
+          border-right: 0.125rem solid transparent;
+          top: -0.325rem;
+          left: 0.05rem;
+          transform: rotate(20deg);
+        }
+
+        @mixin sm-raindrop-tail-to {
+          border-bottom: 0.25rem solid $rain-color;
+              border-left: 0.3rem solid transparent;
+              border-right: 0.25rem solid transparent;
+              top: -0.15rem;
+              left: 0.025rem;
+              transform: rotate(0deg);
+        }
+
         @for $i from 1 through 10 {
           .bg-raindrop-#{$i} {
             $anim-setting: 0.9s linear (0.4s * $i) infinite;
@@ -149,9 +204,9 @@
           }
 
           @keyframes bg-raindrop-#{$i} {
-            $starting-left: 20% + ($i - 1) * 15; 
+            $starting-left: 15% + ($i - 1) * 15; 
             @if($i > 5) {
-              $starting-left: 25% + ($i%5) * 20;
+              $starting-left: 20% + ($i%5) * 20;
             }
 
             0% {
@@ -169,60 +224,155 @@
               width: 1.1rem;
               height: 0.3rem;
               bottom: 0rem;
-              left: $starting-left - 15;
+              left: $starting-left - 10;
             }
 
             100% {
               width: 1.1rem;
               height: 0.3rem;
               bottom: 0rem;
-              left: $starting-left - 15;
+              left: $starting-left - 10;
               opacity: 0.3;
             } 
           }
 
           @keyframes bg-raindrop-tail {
-            0% {
-              border-bottom: 1rem solid $rain-color;
-              border-left: 0.28rem solid transparent;
-              border-right: 0.25rem solid transparent;
-              top: -0.65rem;
-              left: 0.1rem;
-              transform: rotate(20deg);
-            }
-
-            80% {
-              border-bottom: 1rem solid $rain-color;
-              border-left: 0.28rem solid transparent;
-              border-right: 0.25rem solid transparent;
-              top: -0.65rem;
-              left: 0.1rem;
-              transform: rotate(20deg);
-            }
-
-            90% {
-              border-bottom: 0.5rem solid $rain-color;
-              border-left: 0.6rem solid transparent;
-              border-right: 0.5rem solid transparent;
-              top: -0.3rem;
-              left: 0.05rem;
-              transform: rotate(0deg);
-            }
-
-            100% {
-              border-bottom: 0.5rem solid $rain-color;
-              border-left: 0.6rem solid transparent;
-              border-right: 0.5rem solid transparent;
-              top: -0.3rem;
-              left: 0.05rem;
-              transform: rotate(0deg);
-            }
+            0% { @include bg-raindrop-tail-from }
+            80% { @include bg-raindrop-tail-from }
+            90% { @include bg-raindrop-tail-to }
+            100% { @include bg-raindrop-tail-to }
           }
 
           .md-raindrop-#{$i} {
+            $anim-setting: 1.4s linear (0.5s * $i) infinite;
+            @if($i % 2 == 1) {
+              $anim-setting: 1.4s linear (0.1s + 0.5 * ($i - 1)) infinite;
+            } 
+            background: $rain-color-2;
+            border-radius: 50%;
+            width: 0.375rem;
+            height: 0.375rem;
+            position: absolute;
+            bottom: 110%;
+            opacity: 0.7;
+            animation: md-raindrop-#{$i} $anim-setting;
             
+            &:after {
+              content: '';
+              width: 2%;
+              height: 0%;
+              position: absolute;
+              animation: md-raindrop-tail $anim-setting;
+            }
+          }
+
+          @keyframes md-raindrop-#{$i} {
+            $starting-left: 18% + ($i - 1) * 20; 
+            @if($i > 5) {
+              $starting-left: 23% + ($i%5) * 20;
+            }
+
+            0% {
+              bottom: 110%;
+              left: $starting-left;
+              opacity: 0.7;
+            }
+
+            80% {
+              width: 0.375rem;
+              height: 0.375rem;
+              opacity: 0.7;
+            }
+
+            90% {
+              width: 0.825rem;
+              height: 0.225rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+            }
+
+            100% {
+              width: 0.825rem;
+              height: 0.225rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+              opacity: 0.3;
+            } 
+          }
+
+          @keyframes md-raindrop-tail {
+            0% { @include md-raindrop-tail-from }
+            80% { @include md-raindrop-tail-from }
+            90% { @include md-raindrop-tail-to }
+            100% { @include md-raindrop-tail-to }
+          }
+
+          .sm-raindrop-#{$i} {
+            $anim-setting: 2s linear (0.3s * $i) infinite;
+            @if($i > 5) {
+              $anim-setting: 2s linear (0.2s + 0.3 * ($i - 1)) infinite;
+            } 
+            background: $rain-color-2;
+            border-radius: 50%;
+            width: 0.25rem;
+            height: 0.25rem;
+            position: absolute;
+            bottom: 110%;
+            opacity: 0.5;
+            animation: sm-raindrop-#{$i} $anim-setting;
+            
+            &:after {
+              content: '';
+              width: 2%;
+              height: 0%;
+              position: absolute;
+              animation: sm-raindrop-tail $anim-setting;
+            }
+          }
+
+          @keyframes sm-raindrop-#{$i} {
+            $starting-left: 15% + ($i - 1) * 20; 
+            @if($i > 5) {
+              $starting-left: 25% + ($i%5) * 20;
+            }
+
+            0% {
+              bottom: 110%;
+              left: $starting-left;
+              opacity: 0.5;
+            }
+
+            80% {
+              width: 0.25rem;
+              height: 0.25rem;
+              opacity: 0.5;
+            }
+
+            90% {
+              width: 0.55rem;
+              height: 0.15rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+            }
+
+            100% {
+              width: 0.55rem;
+              height: 0.15rem;
+              bottom: 0rem;
+              left: $starting-left - 10;
+              opacity: 0.3;
+            } 
+          }
+
+          @keyframes sm-raindrop-tail {
+            0% { @include sm-raindrop-tail-from }
+            80% { @include sm-raindrop-tail-from }
+            90% { @include sm-raindrop-tail-to }
+            100% { @include sm-raindrop-tail-to }
           }
         }
+
+        
       }
       
       .weather-info {
