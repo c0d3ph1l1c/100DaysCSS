@@ -1,0 +1,756 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: none;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4C4C4C;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .watch {
+  background: #000;
+  border: 0.5rem solid #242424;
+  border-radius: 50%;
+  width: 14.75rem;
+  height: 14.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .watch .arc {
+  width: 13rem;
+  height: 13rem;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  border-top: 0.25rem solid #F85B5B;
+  animation: arc-1 120s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .watch .arc .before {
+  width: 13rem;
+  height: 13rem;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  width: 13.2rem;
+  height: 13.2rem;
+  border: 0.45rem solid #000;
+  border-top: 0.45rem solid transparent;
+  top: -0.35rem;
+  left: -0.35rem;
+  animation: arc-2 120s linear infinite;
+  z-index: 1;
+}
+* .frame .center .watch .arc .after {
+  width: 13rem;
+  height: 13rem;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  animation: arc-3 120s linear infinite;
+  z-index: 2;
+}
+* .frame .center .watch .arc .dot-1 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(21deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-2 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(27deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-3 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(33deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-4 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(39deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-5 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(45deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-6 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(51deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-7 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(57deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-8 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(63deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-9 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(69deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-10 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(75deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-11 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(81deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-12 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(87deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-13 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(93deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-14 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(99deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-15 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(105deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-16 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(111deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-17 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(117deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-18 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(123deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-19 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(129deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-20 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(135deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-21 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(141deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-22 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(147deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-23 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(153deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-24 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(159deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-25 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(165deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-26 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(171deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-27 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(177deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-28 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(183deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-29 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(189deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-30 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(195deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-31 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(201deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-32 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(207deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-33 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(213deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-34 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(219deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-35 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(225deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-36 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(231deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-37 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(237deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-38 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(243deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-39 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(249deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-40 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(255deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-41 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(261deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-42 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(267deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-43 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(273deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-44 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(279deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-45 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(285deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-46 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(291deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-47 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(297deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-48 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(303deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-49 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(309deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-50 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(315deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-51 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(321deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-52 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(327deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-53 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(333deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-54 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(339deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-55 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(345deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-56 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(351deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-57 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(357deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-58 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(363deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-59 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: rotate(369deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .dot-60 {
+  position: absolute;
+  background: #fff;
+  width: 3px;
+  height: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: rotate(375deg) translateY(-5.9rem);
+}
+* .frame .center .watch .arc .display {
+  color: #fff;
+  transform: rotate(-45deg);
+}
+* .frame .center .watch .arc .display .date {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+* .frame .center .watch .arc .display .time {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+* .frame .center .watch .arc .display .stats {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: bold;
+  justify-content: space-around;
+}
+* .frame .center .watch .arc .display .stats .heartbeat {
+  position: relative;
+}
+* .frame .center .watch .arc .display .stats .heartbeat .heart {
+  color: #F85B5B;
+  animation: heartbeat 0.5s ease infinite alternate-reverse;
+  position: absolute;
+  top: -0.02rem;
+  left: -0.5rem;
+}
+@keyframes heartbeat {
+  0% {
+    font-size: 0.8rem;
+  }
+  100% {
+    font-size: 0.9rem;
+  }
+}
+@keyframes arc-1 {
+  0%, 12.4% {
+    transform: rotate(45deg);
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+  12.5%, 24.9% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+  25%, 37.4% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid transparent;
+  }
+  37.5%, 49.9% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  50%, 62.4% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  62.5%, 74.9% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  75%, 87.4% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  87.5%, 99.9% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  100% {
+    transform: rotate(45deg);
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+}
+@keyframes arc-2 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  49.9% {
+    border: 0.45rem solid #000;
+    border-top: 0.45rem solid transparent;
+  }
+  50% {
+    border: 0.45rem solid transparent;
+    border-top: 0.45rem solid #000;
+  }
+  100% {
+    transform: rotate(630deg);
+    border: 0.45rem solid transparent;
+    border-top: 0.45rem solid #000;
+  }
+}
+@keyframes arc-3 {
+  0%, 12.4% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+  12.5%, 24.9% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+  25%, 37.4% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+  37.5%, 49.9% {
+    border-top: 0.25rem solid #F85B5B;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid transparent;
+  }
+  50%, 62.4% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid #F85B5B;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  62.5%, 74.9% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid #F85B5B;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  75%, 87.4% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid #F85B5B;
+  }
+  87.5%, 100% {
+    border-top: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
