@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: none;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #4C4C4C;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .watch {
+        $animation-prop: 120s linear infinite;
+        background: #000;
+        border: 0.5rem solid #242424;
+        border-radius: 50%;
+        width: 14.75rem;
+        height: 14.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @mixin common-arc-prop {
+          width: 13rem;
+          height: 13rem;
+          border: 0.25rem solid transparent;
+          border-radius: 50%;
+          position: absolute;
+        }
+
+        .arc {
+          @include common-arc-prop;
+          border-top: 0.25rem solid #F85B5B;
+          animation: arc-1 $animation-prop;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .before {
+            @include common-arc-prop;
+            width: 13.2rem;
+            height: 13.2rem;
+            border: 0.45rem solid #000;
+            border-top: 0.45rem solid transparent;
+            top: -0.35rem;
+            left: -0.35rem;
+            animation: arc-2 $animation-prop;
+            z-index: 1;
+          }
+
+          .after {
+            @include common-arc-prop;
+            top: -0.25rem;
+            left: -0.25rem;
+            animation: arc-3 $animation-prop;
+            z-index: 2;
+          }
+
+          @for $i from 1 through 60 {
+            .dot-#{$i} {
+              position: absolute;
+              background: #fff;
+              width: 3px;
+              height: 3px;
+              @if($i % 5 == 0) {
+                width: 5px;
+                height: 5px;
+              }
+              border-radius: 50%; 
+              transform: rotate(21deg + 6deg*($i - 1)) translateY(-5.9rem) ;
+            }
+          }
+
+          .display {
+            color: #fff;
+            transform: rotate(-45deg);
+
+            .date {
+              text-align: center;
+              font-size: 0.8rem;
+              font-weight: bold;
+            }
+
+            .time {
+              text-align: center;
+              font-size: 2.6rem;
+              font-weight: bold;
+              line-height: 1.2;
+            }
+
+            .stats {
+              display: flex;
+              font-size: 0.8rem;
+              font-weight: bold;
+              justify-content: space-around;
+
+              .heartbeat {
+                position: relative;
+              
+                .heart {
+                  color: #F85B5B;
+                  animation: heartbeat 0.5s ease infinite alternate-reverse;
+                  position: absolute;
+                  top: -0.02rem;
+                  left: -0.5rem;
+                }
+              }
+
+              @keyframes heartbeat {
+                0% { font-size: 0.8rem; }
+                100% { font-size: 0.9rem;; }
+              }
+            }
+          }
+        }
+
+        @keyframes arc-1 {
+          0%, 12.4% {
+            transform: rotate(45deg);
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+
+          12.5%, 24.9% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+
+          25%, 37.4% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid transparent;
+          }
+
+          37.5%, 49.9% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          50%, 62.4% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          62.5%, 74.9% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          75%, 87.4% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          87.5%, 99.9% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          100% {
+            transform: rotate(45deg);
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+        }
+
+        @keyframes arc-2 {
+          0% {
+            transform: rotate(-90deg);
+          }
+
+          49.9% {
+            border: 0.45rem solid #000;
+            border-top: 0.45rem solid transparent;
+          }
+
+          50% {
+            border: 0.45rem solid transparent;
+            border-top: 0.45rem solid #000;
+          }
+
+          100% {
+            transform: rotate(630deg);
+            border: 0.45rem solid transparent;
+            border-top: 0.45rem solid #000;
+          }
+        }
+
+        @keyframes arc-3 {
+          0%, 12.4% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+
+          12.5%, 24.9% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+
+          25%, 37.4% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+
+          37.5%, 49.9% {
+            border-top: 0.25rem solid #F85B5B;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid transparent;
+          }
+
+          50%, 62.4% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid #F85B5B;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          62.5%, 74.9% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid #F85B5B;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          75%, 87.4% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid #F85B5B;
+          }
+
+          87.5%, 100% {
+            border-top: 0.25rem solid transparent;
+            border-right: 0.25rem solid transparent;
+            border-bottom: 0.25rem solid transparent;
+            border-left: 0.25rem solid transparent;
+          }
+        }
+      }
+    }
+  }
+}
