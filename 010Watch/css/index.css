@@ -620,10 +620,10 @@
 }
 @keyframes heartbeat {
   0% {
-    font-size: 0.8rem;
+    transform: scale(1);
   }
   100% {
-    font-size: 0.9rem;
+    transform: scale(1.2);
   }
 }
 @keyframes arc-1 {

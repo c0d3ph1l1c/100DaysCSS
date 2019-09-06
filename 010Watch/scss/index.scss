@@ -134,8 +134,8 @@
               }
 
               @keyframes heartbeat {
-                0% { font-size: 0.8rem; }
-                100% { font-size: 0.9rem;; }
+                0% { transform: scale(1); }
+                100% { transform: scale(1.2); }
               }
             }
           }
