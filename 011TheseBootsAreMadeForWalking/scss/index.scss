@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+
+        .space {
+            width: 100%;
+            height: 65%;
+            background: radial-gradient(circle at 50% 100%, lighten(#E9D4BA, 10%) 0, #E9D4BA 100%);
+            position: relative;
+            overflow: hidden;
+
+            @mixin common-shoe-prop {
+                width: 152px;
+                height: 128px;
+                background: url('https://100dayscss.com/codepen/doc-martens.svg');
+                position: absolute;
+                bottom: 5%;
+                right: 25%;
+                transform-origin: 50% -100%;
+                opacity: 0;
+            }
+
+            .left-shoe {
+                @include common-shoe-prop;
+                z-index: 0;
+                animation: walk 2s linear infinite,
+                fade-in 0.5s linear 2s forwards;
+            }
+
+            .right-shoe {
+                @include common-shoe-prop;
+                z-index: 1;
+                animation: walk 2s linear -1s infinite,
+                fade-in 0.5s linear 2s forwards;
+            }
+
+            @keyframes walk {
+                0%, 5% { transform: translateY(0%) rotate(-20deg); }
+                15% { transform: translateY(9%) rotate(-12deg); }
+                30% { transform: translateY(10%) rotate(9deg); }
+                50% { transform: translateY(18%) rotate(30deg); }
+                60% { transform: translateY(20%) rotate(32deg); }
+                75% { transform: translateY(5%) rotate(35deg); }
+                100% { transform: translateY(0%) rotate(-20deg); }
+            }
+
+            @keyframes fade-in {
+                0% { opacity: 0; } 
+                100% { opacity: 1; }
+            }
+        }
+
+        .ground {
+            width: 100%;
+            height: 35%;
+            background: #000;
+        }
+    }
+}
