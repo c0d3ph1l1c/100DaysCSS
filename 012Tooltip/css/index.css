@@ -70,7 +70,13 @@
   left: -5.3rem;
   opacity: 0;
   visibility: hidden;
+  animation: hide 0.5s;
   transition: all 0.5s ease-out;
+}
+@keyframes hide {
+  to {
+    opacity: 0;
+  }
 }
 * .frame .center .text .highlight .tooltip-wrapper .tooltip {
   font-size: 1rem;
@@ -114,6 +120,7 @@
   top: -7.8rem;
   opacity: 1;
   visibility: visible;
+  transition: all 0.5s ease-out;
 }
 * .frame .center .author {
   color: #fff;
