@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4CB6DE;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.2rem;
+  overflow: hidden;
+}
+* .frame .center .text {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+}
+* .frame .center .text:before {
+  content: "„";
+  color: rgba(162, 217, 238, 0.5);
+  font-size: 15rem;
+  font-family: Arial;
+  position: absolute;
+  line-height: 0.5;
+  top: -8.5rem;
+  left: -1.5rem;
+  z-index: -1;
+}
+* .frame .center .text .highlight {
+  display: inline-block;
+  background: #175f7a;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.1rem 0.2rem 0.2rem 0.2rem;
+  position: relative;
+}
+* .frame .center .text .highlight .tooltip-wrapper {
+  cursor: auto;
+  width: 18rem;
+  height: 7.7rem;
+  position: absolute;
+  top: -8.5rem;
+  left: -5.3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+* .frame .center .text .highlight .tooltip-wrapper .tooltip {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 64.9%;
+  position: absolute;
+}
+* .frame .center .text .highlight .tooltip-wrapper .tooltip .pronunciation {
+  display: block;
+  background: #fff;
+  color: #175f7a;
+  padding: 0.25rem 1rem;
+}
+* .frame .center .text .highlight .tooltip-wrapper .tooltip .pronunciation .fa-volume-up {
+  cursor: pointer;
+  font-size: 0.8rem;
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+* .frame .center .text .highlight .tooltip-wrapper .tooltip .pronunciation .fa-volume-up:hover {
+  transform: scale(1.2);
+}
+* .frame .center .text .highlight .tooltip-wrapper .tooltip .definition {
+  display: block;
+  background: #175f7a;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+* .frame .center .text .highlight .tooltip-wrapper .tooltip:after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #175f7a;
+  position: absolute;
+  bottom: -45%;
+  left: 50%;
+  transform: rotate(45deg);
+}
+* .frame .center .text .highlight:hover .tooltip-wrapper {
+  top: -7.8rem;
+  opacity: 1;
+  visibility: visible;
+}
+* .frame .center .author {
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: italic;
+  align-self: flex-start;
+  margin-top: 1.2rem;
+}
+
+/*# sourceMappingURL=index.css.map */
