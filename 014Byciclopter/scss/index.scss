@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #4B4841;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .scene  {
+            width: 75%;
+            height: 45%;
+            perspective-origin: center;
+            perspective: 1000px;
+
+            .card {
+                $rotation-duration: 1.5s;
+                width: 100%;
+                height: 100%;
+                box-shadow: 3px 3px 10px 0px #000;
+                position: relative;
+                transition: all $rotation-duration ease;
+                transform-style: preserve-3d;
+
+                &:hover {
+                    transform: rotateX(180deg);
+                    box-shadow: 3px -3px 10px 0px #000;
+                }
+
+                .front, .back {
+                    background: #FFCE4E;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    backface-visibility: hidden;
+                    position: absolute;
+                }
+
+                .front {
+                    .bycicle {
+                        transform-origin: 50% 100%;
+                        animation: bycicle-moving 0.3s ease infinite alternate;
+                    }
+                    
+                    @keyframes bycicle-moving {
+                        0% {
+                            transform: scaleY(1);
+                        }
+                        
+                        100% {
+                            transform: scaleY(0.96);
+                        }
+                    }
+                }
+                
+                .back {
+                    transform: rotateX(180deg);
+                    
+                    .helicopter {
+                        animation: helicopter-moving 0.8s linear infinite alternate;
+                    }
+                    
+                    @keyframes helicopter-moving {
+                        0% {
+                            transform: translateY(-0.4rem);
+                        }
+                        
+                        100% {
+                            transform: translateY(0.4rem);
+                        }
+                    }
+                }            
+            }
+
+            .card-front {
+                position: absolute;
+                z-index: 1;
+            }
+
+            .card-back {
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+}

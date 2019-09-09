@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4B4841;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame .center .scene {
+  width: 75%;
+  height: 45%;
+  perspective-origin: center;
+  perspective: 1000px;
+}
+.frame .center .scene .card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 10px 0px #000;
+  position: relative;
+  transition: all 1.5s ease;
+  transform-style: preserve-3d;
+}
+.frame .center .scene .card:hover {
+  transform: rotateX(180deg);
+  box-shadow: 3px -3px 10px 0px #000;
+}
+.frame .center .scene .card .front, .frame .center .scene .card .back {
+  background: #FFCE4E;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.frame .center .scene .card .front .bycicle {
+  transform-origin: 50% 100%;
+  animation: bycicle-moving 0.3s ease infinite alternate;
+}
+@keyframes bycicle-moving {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.96);
+  }
+}
+.frame .center .scene .card .back {
+  transform: rotateX(180deg);
+}
+.frame .center .scene .card .back .helicopter {
+  animation: helicopter-moving 0.8s linear infinite alternate;
+}
+@keyframes helicopter-moving {
+  0% {
+    transform: translateY(-0.4rem);
+  }
+  100% {
+    transform: translateY(0.4rem);
+  }
+}
+.frame .center .scene .card-front {
+  position: absolute;
+  z-index: 1;
+}
+.frame .center .scene .card-back {
+  position: absolute;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=index.css.map */
