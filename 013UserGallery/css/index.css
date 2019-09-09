@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1), -4px -8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.25rem;
+  padding: 0.25rem 0.25rem;
+}
+* .frame .center .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+* .frame .center .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+  animation: unhide-overlay 0.5s forwards;
+}
+@keyframes unhide-overlay {
+  0% {
+    visibility: hidden;
+  }
+  99.9% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+* .frame .center .img .overlay .expand {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  background: #EC6565;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
+  transition: transform 0.5s;
+}
+* .frame .center .img:hover .overlay {
+  opacity: 1;
+}
+* .frame .center .img:hover .overlay .expand {
+  transform: scale(1);
+}
+* .frame .center .img-1 {
+  background: url("https://100dayscss.com/codepen/13-1.jpg") no-repeat center center/cover;
+}
+* .frame .center .img-2 {
+  background: url("https://100dayscss.com/codepen/13-2.jpg") no-repeat center center/cover;
+}
+* .frame .center .img-3 {
+  background: url("https://100dayscss.com/codepen/13-3.jpg") no-repeat center center/cover;
+}
+* .frame .center .img-4 {
+  background: url("https://100dayscss.com/codepen/13-4.jpg") no-repeat center center/cover;
+}
+* .frame .center .top,
+* .frame .center .bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+* .frame .center .top {
+  background: url("https://100dayscss.com/codepen/13-1-header.jpg") no-repeat center center/cover;
+  top: -50%;
+  transition: top 1.5s ease;
+}
+* .frame .center .top .image {
+  background: url("https://100dayscss.com/codepen/13-1.jpg") no-repeat center center/cover;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 38%;
+  bottom: 100%;
+  z-index: 1;
+  transition: bottom 1.5s ease;
+}
+* .frame .center .top .close {
+  background: #EC6565;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.5rem;
+  top: -2.5rem;
+  z-index: 1;
+  transition: background 0.3s ease, top 1.5s ease;
+}
+* .frame .center .top .close:before, * .frame .center .top .close:after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 48%;
+  left: 37%;
+  transition: background 0.3s ease;
+}
+* .frame .center .top .close:before {
+  transform: rotate(45deg);
+}
+* .frame .center .top .close:after {
+  transform: rotate(-45deg);
+}
+* .frame .center .top .close:hover {
+  background: #fff;
+}
+* .frame .center .top .close:hover:before, * .frame .center .top .close:hover:after {
+  background: #EC6565;
+}
+* .frame .center .bottom {
+  background: #EC6565;
+  bottom: -50%;
+  transition: bottom 1.5s ease;
+}
+* .frame .center .bottom .name {
+  color: #fff;
+  text-align: center;
+  margin-top: 4rem;
+}
+* .frame .center .bottom .social-media {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+* .frame .center .bottom .social-media .social-media-icon {
+  color: #fff;
+  font-size: 1.3rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+* .frame .center .bottom .social-media .social-media-icon:hover {
+  background: #fff;
+  color: #EC6565;
+}
+* .frame .center .top.slide-in {
+  top: 0%;
+  transition: top 1.5s ease;
+}
+* .frame .center .top.slide-in .image {
+  bottom: -23%;
+  transition: bottom 1.5s ease 0.45s;
+}
+* .frame .center .top.slide-in .close {
+  top: 0.5rem;
+  transition: top 1.5s ease 0.45s;
+}
+* .frame .center .bottom.slide-in {
+  bottom: 0%;
+  transition: bottom 1.5s ease;
+}
+
+/*# sourceMappingURL=index.css.map */
