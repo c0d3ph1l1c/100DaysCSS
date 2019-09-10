@@ -67,12 +67,27 @@
                     }
                     
                     @keyframes bycicle-moving {
-                        0% {
-                            transform: scaleY(1);
-                        }
-                        
-                        100% {
-                            transform: scaleY(0.96);
+                        0% { transform: scaleY(1); }
+                        100% { transform: scaleY(0.96); }
+                    }
+
+                    svg {
+                        width: 11rem;
+                        height: 10px;
+                        position: absolute;
+                        top: 7.9rem;
+                        left: 4rem;
+
+                        line {
+                            stroke: #4B4841;
+                            stroke-width: 5px;
+                            stroke-dasharray: 10 50 10 5 10 60 15 40 30 10 5 25 20 10;
+                            stroke-dashoffset: 0;
+                            animation: ground-motion 0.8s linear infinite;
+
+                            @keyframes ground-motion {
+                                to { stroke-dashoffset: 300; }
+                            }
                         }
                     }
                 }
@@ -81,29 +96,43 @@
                     transform: rotateX(180deg);
                     
                     .helicopter {
+                        position: relative;
+                        z-index: 1;
                         animation: helicopter-moving 0.8s linear infinite alternate;
                     }
                     
                     @keyframes helicopter-moving {
-                        0% {
-                            transform: translateY(-0.4rem);
+                        0% { transform: translateY(-0.4rem); }
+                        100% { transform: translateY(0.4rem); }
+                    }
+
+                    svg {
+                        width: 160px;
+                        height: 120px;
+                        position: absolute;
+                        top: 2rem;
+                        z-index: 0;
+
+                        .air {
+                            stroke: #4B4841;
+                            stroke-width: 3px;
                         }
-                        
-                        100% {
-                            transform: translateY(0.4rem);
+
+                        @for $i from 1 through 6 {
+                            .air-#{$i} {
+                                $length: 10 + floor(random(15));
+                                stroke-dasharray: $length 180-$length;
+                                $offset: floor(random(180));
+                                animation: air-motion-#{$i} 0.6s linear infinite;
+                                
+                                @keyframes air-motion-#{$i} {
+                                    from { stroke-dashoffset: $offset; }
+                                    to { stroke-dashoffset: $offset + 180; }
+                                }
+                            }
                         }
                     }
                 }            
-            }
-
-            .card-front {
-                position: absolute;
-                z-index: 1;
-            }
-
-            .card-back {
-                position: absolute;
-                z-index: -1;
             }
         }
     }

@@ -68,10 +68,31 @@
     transform: scaleY(0.96);
   }
 }
+.frame .center .scene .card .front svg {
+  width: 11rem;
+  height: 10px;
+  position: absolute;
+  top: 7.9rem;
+  left: 4rem;
+}
+.frame .center .scene .card .front svg line {
+  stroke: #4B4841;
+  stroke-width: 5px;
+  stroke-dasharray: 10 50 10 5 10 60 15 40 30 10 5 25 20 10;
+  stroke-dashoffset: 0;
+  animation: ground-motion 0.8s linear infinite;
+}
+@keyframes ground-motion {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
 .frame .center .scene .card .back {
   transform: rotateX(180deg);
 }
 .frame .center .scene .card .back .helicopter {
+  position: relative;
+  z-index: 1;
   animation: helicopter-moving 0.8s linear infinite alternate;
 }
 @keyframes helicopter-moving {
@@ -82,13 +103,88 @@
     transform: translateY(0.4rem);
   }
 }
-.frame .center .scene .card-front {
+.frame .center .scene .card .back svg {
+  width: 160px;
+  height: 120px;
   position: absolute;
-  z-index: 1;
+  top: 2rem;
+  z-index: 0;
 }
-.frame .center .scene .card-back {
-  position: absolute;
-  z-index: -1;
+.frame .center .scene .card .back svg .air {
+  stroke: #4B4841;
+  stroke-width: 3px;
+}
+.frame .center .scene .card .back svg .air-1 {
+  stroke-dasharray: 24 156;
+  animation: air-motion-1 0.6s linear infinite;
+}
+@keyframes air-motion-1 {
+  from {
+    stroke-dashoffset: 145;
+  }
+  to {
+    stroke-dashoffset: 325;
+  }
+}
+.frame .center .scene .card .back svg .air-2 {
+  stroke-dasharray: 12 168;
+  animation: air-motion-2 0.6s linear infinite;
+}
+@keyframes air-motion-2 {
+  from {
+    stroke-dashoffset: 87;
+  }
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+.frame .center .scene .card .back svg .air-3 {
+  stroke-dasharray: 18 162;
+  animation: air-motion-3 0.6s linear infinite;
+}
+@keyframes air-motion-3 {
+  from {
+    stroke-dashoffset: 16;
+  }
+  to {
+    stroke-dashoffset: 196;
+  }
+}
+.frame .center .scene .card .back svg .air-4 {
+  stroke-dasharray: 11 169;
+  animation: air-motion-4 0.6s linear infinite;
+}
+@keyframes air-motion-4 {
+  from {
+    stroke-dashoffset: 59;
+  }
+  to {
+    stroke-dashoffset: 239;
+  }
+}
+.frame .center .scene .card .back svg .air-5 {
+  stroke-dasharray: 18 162;
+  animation: air-motion-5 0.6s linear infinite;
+}
+@keyframes air-motion-5 {
+  from {
+    stroke-dashoffset: 166;
+  }
+  to {
+    stroke-dashoffset: 346;
+  }
+}
+.frame .center .scene .card .back svg .air-6 {
+  stroke-dasharray: 20 160;
+  animation: air-motion-6 0.6s linear infinite;
+}
+@keyframes air-motion-6 {
+  from {
+    stroke-dashoffset: 122;
+  }
+  to {
+    stroke-dashoffset: 302;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
