@@ -54,14 +54,18 @@
   position: absolute;
 }
 * .frame .center nav .nav-btn .circle {
+  position: absolute;
+  top: -10%;
+  right: 20%;
+}
+* .frame .center nav .nav-btn .circle:after {
+  content: "";
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
   background: #b2daff;
   transition: background 0.3s ease;
   position: absolute;
-  top: -10%;
-  right: 0;
 }
 * .frame .center nav .nav-btn:after {
   content: "";
@@ -74,12 +78,11 @@
   bottom: 0;
   left: 0;
 }
-* .frame .center nav .nav-btn:hover {
-  cursor: pointer;
-}
 * .frame .center nav .nav-btn:hover *,
 * .frame .center nav .nav-btn:hover:before,
-* .frame .center nav .nav-btn:hover:after {
+* .frame .center nav .nav-btn:hover:after,
+* .frame .center nav .nav-btn:hover .circle:after {
+  cursor: pointer;
   background: #fff;
   transition: background 0.3s ease;
 }
@@ -88,11 +91,21 @@
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 * .frame .center nav .search-btn {
+  color: #b2daff;
   width: 0.8rem;
-  height: 1rem;
-  border: 1px solid #7fc1ff;
-  transition: border-color 0.3s ease;
+  height: 1.2rem;
+  transition: color 0.3s ease;
   position: relative;
+  bottom: 0.1rem;
+  visibility: hidden;
+  opacity: 0;
+  animation: appear 0.3s linear 1.4s forwards;
+}
+@keyframes appear {
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 * .frame .center nav .search-input {
   width: 14rem;
@@ -123,8 +136,8 @@
   transition: right 0.3s ease, opacity 0.3s ease;
 }
 * .frame .center nav .search-btn:hover {
-  border-color: #fff;
-  transition: border-color 0.3s ease;
+  color: #fff;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 * .frame .center .nav-items {
@@ -153,24 +166,15 @@
   font-size: 0.9rem;
   transition: background 0.3s ease, color 0.3s ease;
 }
-* .frame .center .nav-items ul li:before {
-  content: "";
-  width: 0.5rem;
-  height: 0.5rem;
-  border: 1px solid #94aec5;
+* .frame .center .nav-items ul li i {
   position: absolute;
-  top: 40%;
-  left: 10%;
-  transition: border-color 0.3s ease;
+  top: 37%;
+  left: 1.1rem;
 }
 * .frame .center .nav-items ul li:hover {
   background: #31485c;
   color: #fff;
   transition: background 0.3s ease, color 0.3s ease;
-}
-* .frame .center .nav-items ul li:hover:before {
-  border-color: #fff;
-  transition: border-color 0.3s ease;
 }
 * .frame .center .timeline {
   width: 100%;
