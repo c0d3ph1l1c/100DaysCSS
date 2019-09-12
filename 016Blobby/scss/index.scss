@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #46A6DA;
+      overflow: hidden;
+
+      .shapes {
+        $animation-setting: 4.8s linear forwards infinite;
+        width: 25%;
+        height: 25%;
+        margin: auto;
+        position: relative;
+        transform-origin: 50% 100%; 
+        animation: shape-move $animation-setting;
+
+        @keyframes shape-move {
+          0% { transform: translateY(-7rem) scaleY(1); }
+          6% { transform: translateY(9rem) scaleX(1) scaleY(1); }
+          8% { transform: translateY(9rem) scaleX(1.3) scaleY(0.5); }
+          10% { transform: translateY(4rem) scaleX(1) scaleY(1.2); }
+          12%, 87% { transform: translateY(9rem) scaleX(1) scaleY(1); }
+          90%, 92% {transform: translateY(4rem) scaleX(1.05) scaleY(0.85); }
+          100% { transform: translateY(30rem) scaleX(1) scaleY(1); }
+        }
+        
+        @mixin shape-common-prop {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .circle {
+          @include shape-common-prop;
+          background: #fff;
+          border-radius: 50%;
+          animation: circle-resize $animation-setting;
+
+          @keyframes circle-resize {
+            0%, 16% { transform: scale(1); }
+            19%, 20% { transform: scale(1.3); }
+            24%, 71% { transform: scale(0); }
+            72%, 74% { transform: scale(1.2); }
+            78%, 100% { transform: scale(1); }
+          }
+
+          &:after {
+            @include shape-common-prop;
+            content: '';
+            border: 4px solid #fff;
+            border-radius: 50%;
+            top: -4px;
+            left: -4px;
+            animation: circle-spark $animation-setting;
+
+            @keyframes circle-spark {
+              0%, 71% { transform: scale(0); opacity: 0; }
+              72% { transform: scale(1.1); opacity: 1; }
+              78%, 100% { transform: scale(1.6); opacity: 0; }
+            }
+          }
+        }
+
+        .octagon {
+          @include shape-common-prop;
+          fill: #fff;
+          animation: octagon-resize $animation-setting;
+
+          @keyframes octagon-resize {
+            0%, 24% { transform: scale(0); }
+            26%, 28% { transform: scale(1.5); }
+            32%, 39% { transform: scale(1.2); }
+            42%, 44% { transform: scale(1.5); }
+            47%, 100% { transform: scale(0); }
+          }
+
+          @for $i from 1 through 8 {
+            .octagon-spark-#{$i} {
+              width: 25%;;
+              height: 4%;
+              background: linear-gradient(to right, #fff, rgba(255,255,255,0.6));
+              border-radius: 20%;
+              position: absolute;
+              top: 48%;
+              left: 37.5%;
+              animation: octagon-spark-#{$i} $animation-setting;
+
+              @keyframes octagon-spark-#{$i} {
+                0%, 24% { 
+                  transform: rotate((45deg * ($i - 1))) translateX(0); 
+                  opacity: 0;
+                }
+
+                26% { 
+                  transform: rotate((45deg * ($i - 1))) translateX(4rem); 
+                  opacity: 1;
+                }
+
+                32%, 100% { 
+                  transform: rotate((45deg * ($i - 1))) translateX(6rem); 
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .triangle {
+          @include shape-common-prop;
+          fill: #fff;
+          animation: triangle-resize $animation-setting;
+
+          @keyframes triangle-resize {
+            0%, 47% { transform: scale(0); }
+            49%, 52% { transform: scale(1.3); }
+            56%, 62% { transform: scale(1); }
+            66%, 67% { transform: scale(1.3); }
+            71%, 100% { transform: scale(0); }
+          }
+
+          @for $i from 1 through 3 {
+            .triangle-spark-#{$i} {
+              width: 25%;;
+              height: 4%;
+              background: linear-gradient(to right, #fff, rgba(255,255,255,0.6));
+              border-radius: 20%;
+              position: absolute;
+              top: 66.7%;
+              left: 37.5%;
+              animation: triangle-spark-#{$i} $animation-setting;
+
+              @keyframes triangle-spark-#{$i} {
+                0%, 47% { 
+                  transform: rotate((-90deg + ($i - 1) * 120deg)) translateX(0); 
+                  opacity: 0;
+                }
+
+                49% { 
+                  transform: rotate((-90deg + ($i - 1) * 120deg)) translateX(5rem); 
+                  opacity: 1;
+                }
+
+                56%, 100% { 
+                  transform: rotate((-90deg + ($i - 1) * 120deg)) translateX(7.5rem); 
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
