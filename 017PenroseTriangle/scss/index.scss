@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: repeating-linear-gradient(to top right, #fff, #fff 14px, #000 15px, #000 17px, #fff 18px, #fff 19px);
+    animation: appear 0.5s linear;
+
+    @keyframes appear {
+      0% { opacity: 0; }
+      99% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 60%;
+      height: 60%;
+      background: #353535;
+      box-shadow: 10px 10px 15px 3px rgba(0,0,0,0.3);
+
+
+      @for $i from 1 through 6 {
+        .penrose-triangle {
+          .shape-#{$i} {
+            height: 1.25rem;
+            position: absolute;
+            @if($i % 2 == 1) {
+              width: 8rem;
+              transform: skewX(-30deg);
+              @if($i == 1) { transform: rotate(-60deg) skewX(-30deg); }
+              @if($i == 3) { transform: rotate(60deg) skewX(-30deg); }
+            } @else {
+              width: 5.67rem;
+              transform: skewX(-30deg);
+              @if($i == 2) { transform: rotate(60deg) skewX(-30deg); }
+              @if($i == 6) {
+                width: 5.1rem;
+                transform: rotate(-60deg) skewX(-30deg);
+              }
+            }
+            @if($i < 3) { background: #EEEEEE; } 
+            @else if($i < 5) { background: #CCCCCC; }
+            @else { background: #AAAAAA; } 
+            transition: background 0.5s ease 0.1s;
+          }
+
+          &:hover .shape-#{$i} {
+            @if($i < 3) { background: #AAAAAA; } 
+            @else if($i < 5) { background: #EEEEEE; }
+            @else { background: #CCCCCC; }
+            transition: background 0.5s ease 0.1s;
+          }
+        }
+      }
+
+      .shape-1 { top: 6.49rem; left: 1.3rem; z-index: 1; }
+      .shape-2 { top: 6.15rem; left: 5.5rem; z-index: 2; }
+      .shape-3 { top: 5.9rem; left: 5.6rem; z-index: 3;}
+      .shape-4 { top: 8.71rem; left: 5.5rem; z-index: 4; }
+      .shape-5 { top: 9.95rem; left: 3.95rem; z-index: 5;}
+      .shape-6 { top: 7.7rem; left: 3.44rem; z-index: 6;}
+    }
+  }
+}
+
