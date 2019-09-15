@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+        .center {
+            $transition-period: 0.8s;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @for $i from 1 through 3 {
+                #page-#{$i} {
+                    width: 3rem;
+                    height: 3rem;
+                    opacity: 0;
+                    z-index: 2;
+                    position: absolute;
+                }
+
+                .circle-#{$i} {
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    border: 3px solid #fff;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+
+            #page-1 { left: 7.5rem; }
+            #page-3 { right: 7.5rem; }
+            .circle-1 { left: 7.5rem; }
+            .circle-3 { right: 7.5rem; }
+
+            .bullet {
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+                background: #fff;
+                position: absolute;
+                z-index: 1;
+                left: 45.72%;
+                transition: left $transition-period ease;
+            }
+
+            .pages {
+                width: 300%;
+                height: 100%;
+                position: absolute;
+                transition: left $transition-period ease;
+                display: flex;
+            
+                @for $i from 1 through 3 {
+                    .page-#{$i} {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            
+                .page-1 { background: #9B59B6; }
+                .page-2 { background: #3498DB; }
+                .page-3 { background: #1ABC9C; }  
+            }
+
+            #page-1:checked~.pages { left: 0; }
+            #page-2:checked~.pages { left: - 100%; }
+            #page-3:checked~.pages { left: - 200%; }
+            #page-1:checked~.bullet {
+                left: 31.72%;
+                transition: left $transition-period ease;
+            }
+            #page-3:checked~.bullet {
+                left: 59.74%;
+                transition: left $transition-period ease;
+            }
+        }
+    }
+}
