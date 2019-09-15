@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+* .frame .center .top, * .frame .center .bottom {
+  width: 100%;
+  height: 50%;
+}
+* .frame .center .top {
+  background: #444;
+}
+* .frame .center .bottom {
+  background: #37D493;
+}
+* .frame .center .ellipse {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  transform: rotateX(180deg);
+  transform-style: preserve-3d;
+  animation: elastic 5s linear infinite;
+}
+@keyframes elastic {
+  0%, 8% {
+    transform: rotateX(90deg);
+  }
+  15% {
+    transform: rotateX(180deg);
+  }
+  18.5% {
+    transform: rotateX(17.1deg);
+  }
+  22% {
+    transform: rotateX(147.6deg);
+  }
+  25.5% {
+    transform: rotateX(45.9deg);
+  }
+  29% {
+    transform: rotateX(122.4deg);
+  }
+  32.5% {
+    transform: rotateX(67.5deg);
+  }
+  36% {
+    transform: rotateX(104.4deg);
+  }
+  39.5% {
+    transform: rotateX(81.9deg);
+  }
+  43% {
+    transform: rotateX(93.6deg);
+  }
+  46.5% {
+    transform: rotateX(89.1deg);
+  }
+  50%, 58% {
+    transform: rotateX(90deg);
+  }
+  65% {
+    transform: rotateX(0deg);
+  }
+  68.5% {
+    transform: rotateX(162.9deg);
+  }
+  72% {
+    transform: rotateX(32.4deg);
+  }
+  75.5% {
+    transform: rotateX(134.1deg);
+  }
+  79% {
+    transform: rotateX(57.6deg);
+  }
+  82.5% {
+    transform: rotateX(112.5deg);
+  }
+  86% {
+    transform: rotateX(75.6deg);
+  }
+  89.5% {
+    transform: rotateX(98.19deg);
+  }
+  93% {
+    transform: rotateX(86.4deg);
+  }
+  96.5% {
+    transform: rotateX(90.9deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+* .frame .center .ellipse .dark, * .frame .center .ellipse .green {
+  width: 110%;
+  height: 100%;
+  border-radius: 50%;
+  left: -5%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+* .frame .center .ellipse .dark {
+  background: #444;
+}
+* .frame .center .ellipse .green {
+  background: #37D493;
+  transform: rotateX(180deg);
+}
+
+/*# sourceMappingURL=index.css.map */
