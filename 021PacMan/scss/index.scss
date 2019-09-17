@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #2C2E2E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pacman {
+        width: 28%;
+        height: 28%;
+        background: #F4D146;
+        border-radius: 50%;
+        position: relative;
+        $pacman-anim-prop: 0.35s linear infinite alternate;
+
+        .eye {
+          width: 12%;
+          height: 12%;
+          background: #2C2E2E;
+          border-radius: 50%;
+          position: absolute;
+          top: 22%;
+          right: 30%;
+          z-index: 3;
+          animation: eye-move $pacman-anim-prop;
+
+          @keyframes eye-move {
+            0% {
+              top: 22%;
+              right: 30%;
+            }
+
+            100% {
+              top: 17%;
+              right: 35%;
+            }
+          }
+        }
+
+        .mouth {
+          width: 50%;
+          height: 50%;
+          border-radius: 0 0 100% 0;
+          top: 50%;
+          right: -1%;
+          transform-origin: 0% 0%;
+          position: absolute;
+        }
+
+        .mouth-space {
+          background: #2C2E2E;
+          transform: rotateZ(-45deg);
+          z-index: 1;
+        }
+
+        .mouth-top {
+          background: #F4D146;
+          z-index: 2;
+          animation: open-mouth-top $pacman-anim-prop;
+
+          @keyframes open-mouth-top {
+            0% { transform: rotateZ(-90deg); }
+            100% { transform: rotateZ(-130deg); }
+          }
+        }
+
+        .mouth-bottom {
+          background: #F4D146;
+          z-index: 2;
+          animation: open-mouth-bottom $pacman-anim-prop;
+          @keyframes open-mouth-bottom {
+            0% { transform: rotateZ(0deg); }
+            100% { transform: rotateZ(40deg); }
+          }
+        }
+      }
+
+      svg {
+        width: 50%;
+        height: 30%;
+        position: absolute;
+        top: 38%;
+        right: 0;
+        z-index: 2;
+
+        line {
+          stroke: #F4D146;
+          stroke-width: 7px;
+          stroke-dasharray: 0, 31;
+          stroke-linecap: round;
+          animation: move-pellets 4.2s linear infinite;
+
+          @keyframes move-pellets {
+            0% { stroke-dashoffset: -4; }
+            100% { stroke-dashoffset: 182; }
+          }
+        }
+      }
+    }
+  }
+}
