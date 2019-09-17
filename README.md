@@ -24,3 +24,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [018 - Elastic](https://c0d3ph1l1c.github.io/100DaysCSS/018Elastic/)
 * [019 - Slider With Radio Buttons](https://c0d3ph1l1c.github.io/100DaysCSS/019SliderWithRadioButtons/)
 * [020 - Mail Send Icon](https://c0d3ph1l1c.github.io/100DaysCSS/020MailSendIcon/)
+* [021 - Pac Man](https://c0d3ph1l1c.github.io/100DaysCSS/021PacMan/)
