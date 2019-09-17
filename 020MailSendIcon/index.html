@@ -10,8 +10,9 @@
 <body>
     <div class="frame">
         <div class="center">
-            <button class="btn btn-send">SEND MAIL</button>
-            <button class="btn btn-reset">RESET</button>
+            <input type="checkbox" name="sending" id="sending">
+            <label for="sending" class="btn btn-send">SEND MAIL</label>
+            <label for="sending" class="btn btn-reset">RESET</label>
             <div class="mail-window"></div>
             <svg viewBox="0 0 100 100" class="envelope">
                 <polyline points="100,20 0,20 50,55 100,20" />
@@ -21,7 +22,6 @@
                 <polyline points="200,40 0,130 130,170 200,40" />
                 <polyline points="200,40 55,145 55,190 82,154" />
             </svg>
-            
         </div>
     </div>
 </body>
