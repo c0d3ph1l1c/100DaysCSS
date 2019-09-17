@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: #2C3E50;
+            display: flex;
+            $anim-prop: 4s linear forwards;
+
+            .mail-window {
+                width: 45%;
+                height: 45%;
+                background: #354A5F;
+                border-radius: 50%;
+                margin: 4rem auto;
+                position: relative;
+                box-sizing: border-box;
+                z-index: 1;
+            }
+
+            svg {
+                fill: none;
+                stroke: #fff;
+                stroke-width: 2px;
+                position: absolute;
+
+                &.envelope {
+                    width: 27%;
+                    height: 27%;
+                    top: 25%;
+                    left: 36.5%;
+                    stroke-dasharray: 445;
+                    z-index: 2;
+                }
+
+                &.plane {
+                    width: 33%;
+                    height: 33%;
+                    top: 23.5%;
+                    left: 30.5%;
+                    stroke-dasharray: 499;
+                    z-index: 0;
+                }
+            }
+
+            #sending {
+                display: none;
+            }
+
+            .btn {
+                font-size: 0.95rem;
+                font-weight: bold;
+                color: #2C3E50;
+                outline: none;
+                border: none;
+                background: #fff;
+                width: 10.5rem;
+                height: 2.5rem;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 68%;
+                left: 29%;
+
+                &:before,
+                &:after {
+                    content: '';
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    background: #fff;
+                    position: absolute;
+                    top: 0;
+                }
+
+                &:before { left: -1.25rem; }
+                &:after { right: -1.25rem; }
+
+                &:hover,
+                &:hover:before,
+                &:hover:after {
+                    background: #0CA;
+                    color: #fff;
+                }
+            }
+
+            .btn-send { z-index: 2; }
+            .btn-reset { z-index: 1; }
+
+            #sending:checked~.mail-window {
+                animation: shrink-1 $anim-prop;
+                
+                @keyframes shrink-1 {
+                    0% { transform: scale(1); }
+                    5%, 14.9% {
+                        transform: scale(1.2);
+                    } 
+                    15% { 
+                        transform: scale(1.2); 
+                        background: #2C3E50;
+                        border: 0.3rem solid #354A5F;
+                    }
+                    25% { transform: scale(0); }
+                    100% { transform: scale(0); }
+                }
+            }
+            #sending:checked~.mail-window:after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: #354A5F;
+                position: absolute;
+                animation: shrink-2 $anim-prop;
+                @keyframes shrink-2 {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    5% {
+                        transform: scale(0.9);
+                    }
+
+                    100% {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+            #sending:checked~.envelope {
+                animation: hide-envelope $anim-prop;
+                @keyframes hide-envelope {
+                    0%, 12% { stroke-dashoffset: 0; }
+                    30% { stroke-dashoffset: -445; }
+                    31%, 100% { visibility: hidden; }
+                }
+            }
+            #sending:checked~.plane {
+                animation: hide-plane $anim-prop;
+                @keyframes hide-plane {
+                    0%, 22% { stroke-dashoffset: 500; }
+                    40% { 
+                        stroke-dashoffset: 0; 
+                        top: 23.5%;
+                        left: 30.5%;
+                        opacity: 1;
+                    }
+                    45% {
+                        top: 27.5%;
+                        left: 26.5%;
+                        transform: scale(1);
+                    }
+                    50% { opacity: 1; }
+                    60%, 100% {
+                        top: 0%;
+                        left: 80%;
+                        opacity: 0;
+                        transform: scale(0.5);
+                    }
+                }
+            }
+            #sending:checked~.btn-send {
+                animation: hide-btn-1 1.6s linear 2.4s forwards;
+
+                @keyframes hide-btn-1 {
+                    0% {
+                        color: #2C3E50;
+                        outline: none;
+                        border: none;
+                        background: #fff;
+                    }
+                    
+                    10% {
+                        background: #0CA;
+                        color: transparent;
+                        font-size: 0;
+                        width: 10.5rem;
+                        left: 29%;
+                    }
+
+                    30%, 40% {
+                        width: 0rem;
+                        left: 50%;
+                        transform: scale(1);
+                    }
+
+                    55% {
+                        transform: scale(1.2);
+                    }
+
+                    70%, 100% {
+                        background: #0CA;
+                        color: transparent;
+                        width: 0rem;
+                        left: 50%;
+                        transform: scale(0);
+                    }
+                }
+
+                &:before, &:after {
+                    animation: hide-btn-2 1.6s linear 2.4s forwards;
+
+                    @keyframes hide-btn-2 {
+                        0% { background: #fff; }
+                        10%, 100% { background: #0CA; }
+                    }
+                }
+            }
+            #sending:checked~.btn-reset {
+                animation: show-btn 3s linear 2.4s forwards;
+
+                @keyframes show-btn {
+                    0%, 60% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+            }
+        }
+    }
+}
