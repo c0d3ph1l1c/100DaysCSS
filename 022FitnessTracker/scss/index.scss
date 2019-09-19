@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #253B48;
+      color: #fff;
+      text-align: center;
+      $barload-anim-prop: 1.5s ease-out forwards;
+
+      .title {
+        p { margin-top: 3rem; }
+        h2 { line-height: 1; }
+      }
+
+      .tracker {
+        color: lighten(#577383, 10%);;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .val {
+          color: #fff;
+          font-weight: bold;
+          line-height: 1;
+          display: block;
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          .black { stroke: #000; }
+
+          .val-bar {
+            stroke-linecap: round;
+            transform-origin: 50% 50%;
+            transform: rotateZ(-85deg);
+          }
+        }
+      }
+
+      .calorie {
+        width: 8rem;
+        height: 8rem;
+        font-size: 0.8rem;
+        margin: 1.2rem auto 0 auto;
+        
+        .cal-val { font-size: 1.6rem; }
+        
+        svg {
+          stroke-width: 0.42rem;
+
+          .green {
+            stroke: #27E1AE;
+            stroke-dasharray: 248;
+            animation: barload1 $barload-anim-prop;
+
+            @keyframes barload1 {
+              0% { stroke-dashoffset: 248; }
+              100% { stroke-dashoffset: 50; }
+            }
+          }
+        }
+      }
+
+      .walk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        .steps {
+          width: 6rem;
+          height: 6rem;
+          font-size: 0.8rem;
+          margin: 0 1rem;
+
+          .steps-val { font-size: 1.2rem; }
+          
+          svg {
+            stroke-width: 0.4rem;
+  
+            .blue {
+              stroke: #5CE1EC;
+              stroke-dasharray: 248;
+              animation: barload2 $barload-anim-prop;
+
+              @keyframes barload2 {
+                0% { stroke-dashoffset: 248; }
+                100% { stroke-dashoffset: 90; }
+              }
+            }
+          }
+        }
+
+        .km {
+          width: 6rem;
+          height: 6rem;
+          font-size: 0.8rem;
+          margin: 0 1rem;
+
+          .km-val { font-size: 1.2rem; }
+          
+          svg {
+            stroke-width: 0.4rem;
+  
+            .blue {
+              stroke: #5CE1EC;
+              stroke-dasharray: 248;
+              animation: barload3 $barload-anim-prop;
+
+              @keyframes barload3 {
+                0% { stroke-dashoffset: 248; }
+                100% { stroke-dashoffset: 150; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
