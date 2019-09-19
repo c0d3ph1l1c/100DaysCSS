@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #253B48;
+  color: #fff;
+  text-align: center;
+}
+* .frame .center .title p {
+  margin-top: 3rem;
+}
+* .frame .center .title h2 {
+  line-height: 1;
+}
+* .frame .center .tracker {
+  color: #6e8d9f;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .tracker .val {
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+}
+* .frame .center .tracker svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+* .frame .center .tracker svg .black {
+  stroke: #000;
+}
+* .frame .center .tracker svg .val-bar {
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotateZ(-85deg);
+}
+* .frame .center .calorie {
+  width: 8rem;
+  height: 8rem;
+  font-size: 0.8rem;
+  margin: 1.2rem auto 0 auto;
+}
+* .frame .center .calorie .cal-val {
+  font-size: 1.6rem;
+}
+* .frame .center .calorie svg {
+  stroke-width: 0.42rem;
+}
+* .frame .center .calorie svg .green {
+  stroke: #27E1AE;
+  stroke-dasharray: 248;
+  animation: barload1 1.5s ease-out forwards;
+}
+@keyframes barload1 {
+  0% {
+    stroke-dashoffset: 248;
+  }
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+* .frame .center .walk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+* .frame .center .walk .steps {
+  width: 6rem;
+  height: 6rem;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+}
+* .frame .center .walk .steps .steps-val {
+  font-size: 1.2rem;
+}
+* .frame .center .walk .steps svg {
+  stroke-width: 0.4rem;
+}
+* .frame .center .walk .steps svg .blue {
+  stroke: #5CE1EC;
+  stroke-dasharray: 248;
+  animation: barload2 1.5s ease-out forwards;
+}
+@keyframes barload2 {
+  0% {
+    stroke-dashoffset: 248;
+  }
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+* .frame .center .walk .km {
+  width: 6rem;
+  height: 6rem;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+}
+* .frame .center .walk .km .km-val {
+  font-size: 1.2rem;
+}
+* .frame .center .walk .km svg {
+  stroke-width: 0.4rem;
+}
+* .frame .center .walk .km svg .blue {
+  stroke: #5CE1EC;
+  stroke-dasharray: 248;
+  animation: barload3 1.5s ease-out forwards;
+}
+@keyframes barload3 {
+  0% {
+    stroke-dashoffset: 248;
+  }
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
