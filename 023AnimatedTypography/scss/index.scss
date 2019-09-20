@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #E16D6C;
+
+      .typography {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .circle {
+          $radius: 15%;
+          width: $radius;
+          height: $radius;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          top: 50% - $radius/2;
+          left: 50% - $radius/2;
+          transform-origin: 50% 50%;
+          animation: circle-anim 0.6s linear forwards;
+
+          @keyframes circle-anim {
+            0%, 20% { transform: scale(1); }
+            40% { transform: scale(1.2); }
+            100% { transform: scale(0); }
+          }
+        }
+
+        .bar {
+          width: 0%;
+          height: 1%;
+          background: #fff;
+          position: absolute;
+          top: 49.5%;
+          animation: bar-anim 0.9s ease-out 0.6s forwards;
+
+          @keyframes bar-anim {
+            0% { width: 0%; left: 50% }
+            40%, 55% { width: 75%; left: 15%; }
+            100% { width: 0%; left: 50% }
+          }
+        }
+
+        .words {
+          color: #fff;
+          border: 4px solid #fff;
+          font-weight: bold;
+          font-size: 3.2rem;
+          width: 75%;
+          height: 18%;
+          position: absolute;
+          top: 41%;
+          left: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+          &:before, &:after {
+            content: '';
+            width: 105%;
+            height: 60%;
+            position: absolute;
+            background: #E16D6C;
+            animation: curtain-anim 0.4s linear 1.4s forwards;
+
+            @keyframes curtain-anim {
+              0% { width: 105%; height: 60%; }
+              70% { width: 105%; height: 8%; }
+              100% { width: 85%; height: 8%; }
+            }
+          }
+
+          &:before { top: -4px; }
+          &:after { bottom: -4px; }
+
+          .top, .bottom {
+            font-weight: normal;
+            font-size: 2rem;
+            opacity: 0;
+            position: absolute;
+            animation: topbtm-appear 0.4s ease-in 1.8s forwards;
+
+            @keyframes topbtm-appear {
+              to {
+                opacity: 1;
+                transform: translateX(0rem);
+              }
+            }
+          }
+
+          .top { 
+            top: -2.5rem; 
+            transform: translateX(-1.5rem);
+          }
+
+          .bottom { 
+            bottom: -2.5rem; 
+            transform: translateX(1.5rem);
+          }
+        }
+      }
+    }
+  }
+}
