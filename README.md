@@ -26,3 +26,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [020 - Mail Send Icon](https://c0d3ph1l1c.github.io/100DaysCSS/020MailSendIcon/)
 * [021 - Pac Man](https://c0d3ph1l1c.github.io/100DaysCSS/021PacMan/)
 * [022 - FitnessTracker](https://c0d3ph1l1c.github.io/100DaysCSS/022FitnessTracker/)
+* [023 - Animated Typography](https://c0d3ph1l1c.github.io/100DaysCSS/023AnimatedTypography/)
