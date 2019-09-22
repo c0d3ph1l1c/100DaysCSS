@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: #57D895;
+
+            #finish { display: none; }
+
+            @mixin rounded-corner-prop {
+                content: '';
+                box-sizing: border-box;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                height: 3.76rem;
+                width: 3.76rem;
+                position: absolute;
+                top: -2px;
+                z-index: -1;
+            }
+
+            .btn-finish {
+                background: #57D895;
+                border: 2px solid #fff;
+                border-left: none;
+                border-right: none;
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: bold;
+                width: 13rem;
+                height: 3.76rem;
+                position: absolute;
+                top: 42.5%;
+                left: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                transition: background 0.4s ease;
+
+                &:hover, &:hover:before, &:hover .after {
+                    background: darken(#57D895, 15%);
+                    transition: background 0.4s ease;
+                }
+
+                &:before, .after {
+                    @include rounded-corner-prop;
+                    background: #57D895;
+                    border-left: 2px solid transparent;
+                    border-bottom: 2px solid transparent;
+                    transition: background 0.4s ease;
+                }
+
+                &:before { 
+                    left: -1.87rem; 
+                    transform: rotateZ(-135deg);
+                }
+                .after { 
+                    right: -1.87rem; 
+                    transform: rotateZ(45deg);
+                }
+            }
+
+            #finish:checked + .btn-finish { 
+                animation: btn-collapse-1 0.3s linear forwards;
+
+                @keyframes btn-collapse-1 {
+                    0% { 
+                        color: #fff;
+                        border-color: #fff;
+                        width: 50%; 
+                        left: 25%;
+                    }
+                    10% {
+                        color: transparent;
+                        background: transparent;
+                    }
+                    40% { border-color: #fff; }
+                    100% { 
+                        color: transparent;
+                        background: transparent;
+                        border-color: #aaa;
+                        width: 0%;
+                        left: 50%; 
+                    }
+                }
+
+                &:before, .after {
+                    animation: btn-collapse-2 3s linear forwards;
+
+                    @keyframes btn-collapse-2 {
+                        0% {
+                            background: transparent;
+                            color: #fff;
+                            border-color: #fff #fff transparent transparent;
+                        }
+                        1% { color: transparent; }
+                        4% {
+                            border-color: #fff #fff transparent transparent;
+                        }
+                        10% {
+                            border-color: #aaa #aaa transparent transparent;
+                        }
+                        50%{
+                            background: transparent;
+                            border-color: #aaa #aaa transparent transparent;
+                        }
+                        60%, 100% {
+                            background: #fff;
+                            color: transparent;
+                            border-color: #fff #fff transparent transparent;
+                        }
+                    }
+                }
+
+                &:after {
+                    @include rounded-corner-prop;
+                    background: transparent;
+                    opacity: 0;
+                    transform-origin: 50% 50%;
+                    transform: scale(1);
+                    animation: poof 0.3s linear 1.5s;
+                    
+                    @keyframes poof {
+                        0% { opacity: 0; transform: scale(1); }
+                        50% { opacity: 1; }
+                        100%{ opacity: 0; transform: scale(2); }
+                    }
+                }
+            }
+
+            .after {
+                svg {
+                    height: 4rem;
+                    width: 4rem;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -0.25rem;
+                    left: -0.25rem;
+                    opacity: 0;
+                    fill: none;
+                    stroke: #fff;
+                    stroke-width: 18;
+                    stroke-dasharray: 1185;
+                    stroke-dashoffset: 1185;
+                    transform: rotateZ(-135deg);
+                }
+
+                img {
+                    position: absolute;
+                    top: 30%;
+                    left: 30%;
+                    z-index: 1;
+                    transform: rotate(-45deg);
+                    opacity: 0;
+                }
+            }
+
+            #finish:checked + .btn-finish .after svg {
+                animation: progress-loading 1s linear 0.5s forwards;
+                
+                @keyframes progress-loading {
+                    0% { opacity: 0; background: transparent; }
+                    1% { opacity: 1; }
+                    80% { stroke-dashoffset: 0; }
+                    100% { opacity: 1; stroke-dashoffset: 0; }
+                }
+            }
+
+             #finish:checked+.btn-finish .after img {
+                 animation: checkmark 0.3s linear 1.3s forwards;
+
+                 @keyframes checkmark {
+                     0% { opacity: 0; }
+                     100% { opacity: 1; }
+                 }
+             }
+        }
+    }
+}
