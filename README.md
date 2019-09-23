@@ -28,3 +28,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [022 - FitnessTracker](https://c0d3ph1l1c.github.io/100DaysCSS/022FitnessTracker/)
 * [023 - Animated Typography](https://c0d3ph1l1c.github.io/100DaysCSS/023AnimatedTypography/)
 * [024 - Button](https://c0d3ph1l1c.github.io/100DaysCSS/024Button/)
+* [025 - Map Marker](https://c0d3ph1l1c.github.io/100DaysCSS/025MapMarker/)
