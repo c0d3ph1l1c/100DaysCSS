@@ -103,6 +103,15 @@
   opacity: 0;
   transform-style: preserve-3d;
   transition: transform 0.25s linear, opacity 0.25s linear;
+  animation: unhide 0.25s linear forwards;
+}
+@keyframes unhide {
+  0%, 99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 * .frame .center .landmark-details img {
   width: 100%;

@@ -100,6 +100,12 @@
         transform-style: preserve-3d;
         transition: transform $flip-anim-prop,
                     opacity $flip-anim-prop;
+        animation: unhide $flip-anim-prop forwards;
+
+        @keyframes unhide {
+          0%, 99% { visibility: hidden; }
+          100% { visibility: visible; }
+        }
 
         img { width: 100%; }
 
