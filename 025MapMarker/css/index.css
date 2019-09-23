@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #1F8DE4;
+  perspective: 1000px;
+  perspective-origin: left;
+}
+* .frame .center #flipped {
+  display: none;
+}
+* .frame .center .land {
+  fill: #2196F3;
+}
+* .frame .center .landmark-symbol {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: rotateY(0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+  transition: transform 0.25s linear 0.4s, opacity 0.25s linear 0.4s;
+}
+* .frame .center .landmark-symbol .landmark {
+  width: 3rem;
+  height: 6rem;
+  position: relative;
+  top: 0;
+  animation: landmark-move 1s linear infinite alternate;
+}
+@keyframes landmark-move {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -0.4rem;
+  }
+}
+* .frame .center .landmark-symbol .landmark path {
+  fill: #FFCC30;
+}
+* .frame .center .landmark-symbol .landmark circle {
+  fill: #2196F3;
+}
+* .frame .center .landmark-symbol .shadow {
+  width: 1.2rem;
+  height: 0.3rem;
+  background: #197fd0;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3%;
+  left: 28%;
+  transform-origin: 50% 50%;
+  animation: shadow-sizing 1s linear infinite alternate;
+}
+@keyframes shadow-sizing {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+* .frame .center .landmark-details {
+  background: #fff;
+  width: 62%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  transform: rotateY(-90deg);
+  opacity: 0;
+  transform-style: preserve-3d;
+  transition: transform 0.25s linear, opacity 0.25s linear;
+}
+* .frame .center .landmark-details img {
+  width: 100%;
+}
+* .frame .center .landmark-details .address {
+  cursor: auto;
+}
+* .frame .center .landmark-details .address p {
+  font-size: 0.8rem;
+}
+* .frame .center .landmark-details .btn-group {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+* .frame .center .landmark-details .btn-group a {
+  background: #fff;
+  color: #2196F3;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+  width: 50%;
+  height: 1.3rem;
+  cursor: pointer;
+}
+* .frame .center .landmark-details .btn-group a:first-child {
+  border-right: 1px solid #6ab8f7;
+}
+* .frame .center #flipped:checked ~ .landmark-symbol {
+  transform: rotateY(90deg);
+  opacity: 0;
+  transition: transform 0.25s linear, opacity 0.25s linear;
+}
+* .frame .center #flipped:checked ~ .landmark-details {
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: transform 0.25s linear 0.4s, opacity 0.25s linear 0.4s;
+}
+
+/*# sourceMappingURL=index.css.map */
