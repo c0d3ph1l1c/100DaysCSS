@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>025 - Map Marker</title>
+</head>
+<body>
+  <div class="frame">
+    <div class="center">
+      <input type="checkbox" name="flipped" id="flipped">
+      <svg class="land" viewBox="0 0 100 100">
+        <path d="M0,100 L0,70 Q35,40 25,30 Q21,21 35,17 C45,35 55,0 65,15 Q70,20 80,10 Q90,5 100,14 L100,45 L90,55 Q88,80 70,80 L67,75 Q68,55 50,75 Q45,85 47,80 Q49,95 35,100 Z" />
+      </svg>
+      <label class="landmark-symbol" for="flipped">
+        <svg class="landmark" viewBox="0 0 120 200">
+          <path d="M58,200 L5,105 A 60 60 0 1 1 115 105 L62,200 Z" />
+          <circle cx="60" cy="80" r="23" /> 
+        </svg>
+        <div class="shadow"></div>
+      </label>
+      <label class="landmark-details" for="flipped">
+        <img src="https://100dayscss.com/codepen/surfshop.jpg" alt="landmark-photo">
+        <div class="address">
+          <h5>Phil's Surfshop</h5>
+          <p>High Street 19</p>
+          <p>8579 Arkney</p>
+        </div>
+        <div class="btn-group">
+          <a>Save</a>
+          <a>Route</a>
+        </div>
+      </label>
+    </div>
+  </div>
+</body>
+</html>
