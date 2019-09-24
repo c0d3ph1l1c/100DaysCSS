@@ -65,7 +65,7 @@
 
           @keyframes bar-anim {
             0% { width: 0%; left: 50% }
-            40%, 55% { width: 75%; left: 15%; }
+            40%, 55% { width: 75%; left: 12.5%; }
             100% { width: 0%; left: 50% }
           }
         }
@@ -79,7 +79,7 @@
           height: 18%;
           position: absolute;
           top: 41%;
-          left: 15%;
+          left: 12.5%;
           display: flex;
           justify-content: center;
           align-items: center;
