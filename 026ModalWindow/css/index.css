@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #C7D6E1;
+}
+* .frame .center .card {
+  width: 60%;
+  height: 38%;
+  background: #fff;
+  color: #6A7684;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 31%;
+  text-align: center;
+  left: 20%;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+}
+* .frame .center .card:before {
+  content: "";
+  width: 0rem;
+  height: 0rem;
+  border: 1.65rem solid transparent;
+  border-bottom: 1.65rem solid #6A7684;
+  position: absolute;
+  top: -1.65rem;
+  right: -1.65rem;
+  transform: rotateZ(45deg);
+}
+* .frame .center .card h4 {
+  margin: 1.2rem auto -1rem auto;
+}
+* .frame .center .card p {
+  font-size: 0.8rem;
+}
+* .frame .center .card button {
+  width: 100%;
+  height: 25%;
+  background: #3CA7FB;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+* .frame .center .card-1:after {
+  content: "1";
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+}
+* .frame .center .card-2:after {
+  content: "2";
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+}
+* .frame .center .card-3:after {
+  content: "3";
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+}
+* .frame .center .card.appear {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.4s linear, opacity 0.4s linear;
+}
+* .frame .center .card.disappear {
+  opacity: 0;
+  transform: scale(1.15);
+  transition: transform 0.4s linear, opacity 0.4s linear;
+}
+
+/*# sourceMappingURL=index.css.map */
