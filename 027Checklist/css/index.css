@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, #F9B772, #FDC431);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .checklist {
+  min-width: 55%;
+  min-height: 62%;
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #888;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+* .frame .center .checklist .day, * .frame .center .checklist .date {
+  text-align: center;
+}
+* .frame .center .checklist .date {
+  font-size: 0.7rem;
+}
+* .frame .center .checklist hr {
+  background: #ccc;
+  box-shadow: none;
+  border: none;
+  height: 1px;
+  margin: 1rem auto;
+}
+* .frame .center .checklist .items ul {
+  list-style: none;
+  font-size: 0.75rem;
+}
+* .frame .center .checklist .items ul .item {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+* .frame .center .checklist .items ul .item input[type=checkbox] {
+  display: none;
+}
+* .frame .center .checklist .items ul .item label {
+  transition: color 0.4s linear;
+}
+* .frame .center .checklist .items ul .item label:after {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.1rem;
+  right: -0.1rem;
+  transform-origin: 50% 50%;
+  transition: transform 0.4s linear, opacity 0.4s linear;
+  transition: transform 0.4s linear 0.4s, opacity 0.4s linear 0.4s;
+}
+* .frame .center .checklist .items ul .item label svg {
+  width: 0.6rem;
+  height: 0.6rem;
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1rem;
+  position: absolute;
+  right: 0;
+  margin: 0.2rem auto;
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
+  transition: stroke-dashoffset 0.4s linear;
+}
+* .frame .center .checklist .items ul .item input[type=checkbox]:checked + label {
+  color: #ccc;
+  transition: color 0.4s linear;
+}
+* .frame .center .checklist .items ul .item input[type=checkbox]:checked + label:after {
+  transform: scale(1.5);
+  opacity: 0;
+  transition: transform 0.4s linear, opacity 0.4s linear;
+}
+* .frame .center .checklist .items ul .item input[type=checkbox]:checked + label svg {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.4s linear 0.4s;
+}
+
+/*# sourceMappingURL=index.css.map */
