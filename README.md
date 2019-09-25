@@ -30,3 +30,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [024 - Button](https://c0d3ph1l1c.github.io/100DaysCSS/024Button/)
 * [025 - Map Marker](https://c0d3ph1l1c.github.io/100DaysCSS/025MapMarker/)
 * [026 - Modal Window](https://c0d3ph1l1c.github.io/100DaysCSS/026ModalWindow/)
+* [027 - Checklist](https://c0d3ph1l1c.github.io/100DaysCSS/027Checklist/)
