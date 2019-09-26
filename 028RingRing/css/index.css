@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #DD3C54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .bell {
+  width: 3rem;
+  height: 3.6rem;
+  transform-origin: 50% 5%;
+  animation: shake 3s linear infinite;
+}
+@keyframes shake {
+  0%, 10%, 47%, 100% {
+    transform: rotateZ(0deg);
+  }
+  11%, 15%, 19%, 23%, 27%, 31%, 35% {
+    transform: rotateZ(9deg);
+  }
+  13%, 17%, 21%, 25%, 29%, 33%, 37% {
+    transform: rotateZ(-9deg);
+  }
+  39% {
+    transform: rotateZ(7.2deg);
+  }
+  41% {
+    transform: rotateZ(-7.2deg);
+  }
+  43% {
+    transform: rotateZ(4.5deg);
+  }
+  45% {
+    transform: rotateZ(-4.5deg);
+  }
+}
+* .frame .center .bell .bell-body {
+  stroke: #fff;
+  fill: #fff;
+}
+* .frame .center .bell .shadow {
+  stroke: #DD3C54;
+  stroke-width: 0.15rem;
+  fill: none;
+}
+* .frame .center .sound {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+}
+* .frame .center .sound .wave {
+  stroke: #fff;
+  stroke-width: 0.15rem;
+  fill: none;
+}
+* .frame .center .left-1 {
+  top: 40%;
+  left: 30%;
+  transform-origin: 200% 50%;
+  opacity: 0;
+}
+* .frame .center .right-1 {
+  top: 40%;
+  left: 60%;
+  transform-origin: -100% 50%;
+  opacity: 0;
+}
+@keyframes propagate {
+  0%, 10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    transform: scale(3.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.8);
+  }
+}
+* .frame .center .left-1, * .frame .center .right-1 {
+  animation: propagate 3s linear infinite;
+}
+* .frame .center .left-2, * .frame .center .right-2 {
+  animation: propagate 3s linear 0.4s infinite;
+}
+* .frame .center .left-3, * .frame .center .right-3 {
+  animation: propagate 3s linear 0.8s infinite;
+}
+* .frame .center .left-2 {
+  top: 40%;
+  left: 30%;
+  transform-origin: 200% 50%;
+  opacity: 0;
+}
+* .frame .center .right-2 {
+  top: 40%;
+  left: 60%;
+  transform-origin: -100% 50%;
+  opacity: 0;
+}
+@keyframes propagate {
+  0%, 10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    transform: scale(3.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.8);
+  }
+}
+* .frame .center .left-1, * .frame .center .right-1 {
+  animation: propagate 3s linear infinite;
+}
+* .frame .center .left-2, * .frame .center .right-2 {
+  animation: propagate 3s linear 0.4s infinite;
+}
+* .frame .center .left-3, * .frame .center .right-3 {
+  animation: propagate 3s linear 0.8s infinite;
+}
+* .frame .center .left-3 {
+  top: 40%;
+  left: 30%;
+  transform-origin: 200% 50%;
+  opacity: 0;
+}
+* .frame .center .right-3 {
+  top: 40%;
+  left: 60%;
+  transform-origin: -100% 50%;
+  opacity: 0;
+}
+@keyframes propagate {
+  0%, 10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    transform: scale(3.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.8);
+  }
+}
+* .frame .center .left-1, * .frame .center .right-1 {
+  animation: propagate 3s linear infinite;
+}
+* .frame .center .left-2, * .frame .center .right-2 {
+  animation: propagate 3s linear 0.4s infinite;
+}
+* .frame .center .left-3, * .frame .center .right-3 {
+  animation: propagate 3s linear 0.8s infinite;
+}
+
+/*# sourceMappingURL=index.css.map */
