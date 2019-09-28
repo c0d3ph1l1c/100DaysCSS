@@ -33,3 +33,5 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [027 - Checklist](https://c0d3ph1l1c.github.io/100DaysCSS/027Checklist/)
 * [028 - Ring Ring](https://c0d3ph1l1c.github.io/100DaysCSS/028RingRing/)
 * [029 - Search Field](https://c0d3ph1l1c.github.io/100DaysCSS/029SearchField/)
+* [030 - Line On Path Animation](https://c0d3ph1l1c.github.io/100DaysCSS/030LineOnPathAnimation/)
+
