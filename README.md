@@ -35,3 +35,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [029 - Search Field](https://c0d3ph1l1c.github.io/100DaysCSS/029SearchField/)
 * [030 - Line On Path Animation](https://c0d3ph1l1c.github.io/100DaysCSS/030LineOnPathAnimation/)
 * [031 - Pendulum Wave](https://c0d3ph1l1c.github.io/100DaysCSS/031PendulumWave/)
+* [032 - Counter](https://c0d3ph1l1c.github.io/100DaysCSS/032Counter/)
