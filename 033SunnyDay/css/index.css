@@ -38,6 +38,15 @@
   position: absolute;
   top: 10%;
   left: 20%;
+  animation: sun-move 60s linear infinite alternate;
+}
+@keyframes sun-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 * .frame .center .cloud {
   stroke: none;
@@ -53,10 +62,10 @@
 }
 @keyframes cloud-1-move {
   0% {
-    left: 55%;
+    transform: translateX(0);
   }
   100% {
-    left: 0%;
+    transform: translateX(-320%);
   }
 }
 * .frame .center .cloud-2 {
@@ -68,10 +77,10 @@
 }
 @keyframes cloud-3-move {
   0% {
-    left: 18%;
+    transform: translateX(0);
   }
   100% {
-    left: -80%;
+    transform: translateX(-320%);
   }
 }
 * .frame .center .cloud-3 {
@@ -83,10 +92,10 @@
 }
 @keyframes cloud-2-move {
   0% {
-    right: -10%;
+    transform: translateX(0);
   }
   100% {
-    right: 105%;
+    transform: translateX(-360%);
   }
 }
 
