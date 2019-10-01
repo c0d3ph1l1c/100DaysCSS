@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #75C1E8;
+}
+* .frame .center .sun {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  background: #FED93D;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+* .frame .center .cloud {
+  stroke: none;
+  fill: #fff;
+  position: absolute;
+}
+* .frame .center .cloud-1 {
+  width: 4.4rem;
+  height: 2.2rem;
+  top: 17%;
+  left: 55%;
+  animation: cloud-1-move 60s linear infinite alternate;
+}
+@keyframes cloud-1-move {
+  0% {
+    left: 55%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+* .frame .center .cloud-2 {
+  width: 6.8rem;
+  height: 3rem;
+  top: 20%;
+  left: 18%;
+  animation: cloud-3-move 60s linear infinite alternate;
+}
+@keyframes cloud-3-move {
+  0% {
+    left: 18%;
+  }
+  100% {
+    left: -80%;
+  }
+}
+* .frame .center .cloud-3 {
+  width: 8.4rem;
+  height: 4rem;
+  top: 30%;
+  right: -10%;
+  animation: cloud-2-move 60s linear infinite alternate;
+}
+@keyframes cloud-2-move {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 105%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
