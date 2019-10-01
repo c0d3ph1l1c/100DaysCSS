@@ -39,6 +39,12 @@
         position: absolute;
         top: 10%;
         left: 20%;
+        animation: sun-move 60s linear infinite alternate;
+
+        @keyframes sun-move {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(100%); }
+        }
       }
 
       .cloud {
@@ -55,8 +61,8 @@
         animation: cloud-1-move 60s linear infinite alternate;
 
         @keyframes cloud-1-move {
-          0% { left: 55%; }
-          100% { left: 0%; }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-320%); }
         }
       }
 
@@ -68,8 +74,8 @@
         animation: cloud-3-move 60s linear infinite alternate;
 
         @keyframes cloud-3-move {
-          0% { left: 18%; }
-          100% { left: -80%; }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-320%); }
         }
       }
 
@@ -81,8 +87,8 @@
         animation: cloud-2-move 60s linear infinite alternate;
 
         @keyframes cloud-2-move {
-          0% { right: -10%; }
-          100% { right: 105%; }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-360%); }
         }
       }
     }
