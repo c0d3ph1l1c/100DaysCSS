@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #1BBE9E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 23%;
+        height: 23%;
+        stroke-width: 3.5;
+        fill: none;
+        animation: rotate 3s linear infinite;
+
+        @keyframes rotate {
+          0% { transform: rotateZ(-90deg); }
+          100% { transform: rotateZ(270deg); }
+        }
+      
+        .white {
+          stroke: #fff;
+          stroke-dasharray: 283;
+          stroke-dashoffset: 0;
+          animation: load 5s linear infinite;
+          transform-origin: 50% 50%;
+
+          @keyframes load {
+            0% { 
+              stroke-dashoffset: 0; 
+              transform: rotateX(180deg);
+            }
+            49.9% { transform: rotateX(180deg); }
+            50% { 
+              stroke-dashoffset: 283; 
+              transform: rotateX(0deg);
+            }
+            100% {
+              stroke-dashoffset: 0; 
+              transform: rotateX(0deg);
+            }
+          }
+        }
+
+        .dark-green {
+          stroke: darken(#1BBE9E, 18%);
+        }
+      }
+    }
+  }
+}
