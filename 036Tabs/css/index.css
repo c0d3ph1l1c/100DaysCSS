@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #2B3642;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appear 0.5s linear forwards;
+}
+@keyframes appear {
+  0%, 90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center .window {
+  width: 80%;
+  height: 60%;
+  background: #fff;
+  position: relative;
+}
+* .frame .center .window nav {
+  width: 100%;
+  height: 16%;
+  background: #3D4D5E;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+* .frame .center .window nav .tab {
+  width: 13%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+* .frame .center .window nav .search {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+* .frame .center .window nav .search:hover {
+  color: #fff;
+}
+* .frame .center .window input[type=radio] {
+  display: none;
+}
+* .frame .center .window label {
+  color: #8398AD;
+}
+* .frame .center .window label:hover {
+  color: #fff;
+}
+* .frame .center .window #dashboard:checked ~ nav .dashboard,
+* .frame .center .window #comments:checked ~ nav .comments,
+* .frame .center .window #notifications:checked ~ nav .notifications,
+* .frame .center .window #settings:checked ~ nav .settings {
+  background: #5DA2ED;
+  color: #fff;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+* .frame .center .window .content {
+  width: 100%;
+  height: 84%;
+  color: #51667d;
+  padding: 1.2rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+* .frame .center .window .content h4 {
+  margin-bottom: 0.8rem;
+}
+* .frame .center .window .content p {
+  display: block;
+  width: 100%;
+  margin-bottom: 6%;
+}
+* .frame .center .window .content p .line-1 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-2 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-3 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-4 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-5 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-6 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-7 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-8 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-9 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-10 {
+  display: block;
+  background: #E9E9E9;
+  height: 4px;
+  margin: 2.5% 0;
+}
+* .frame .center .window .content p .line-1 {
+  width: 90%;
+}
+* .frame .center .window .content p .line-2 {
+  width: 100%;
+}
+* .frame .center .window .content p .line-3 {
+  width: 85%;
+}
+* .frame .center .window .content p .line-4 {
+  width: 95%;
+}
+* .frame .center .window .content p .line-5 {
+  width: 20%;
+}
+* .frame .center .window .content p .line-6 {
+  width: 100%;
+}
+* .frame .center .window .content p .line-7 {
+  width: 90%;
+}
+* .frame .center .window .content p .line-8 {
+  width: 95%;
+}
+* .frame .center .window .content p .line-9 {
+  width: 100%;
+}
+* .frame .center .window .content p .line-10 {
+  width: 60%;
+}
+* .frame .center .window #dashboard:checked ~ .content.dashboard,
+* .frame .center .window #comments:checked ~ .content.comments,
+* .frame .center .window #notifications:checked ~ .content.notifications,
+* .frame .center .window #settings:checked ~ .content.settings {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s;
+}
+
+/*# sourceMappingURL=index.css.map */
