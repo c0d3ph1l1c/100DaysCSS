@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #2B3642;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: appear 0.5s linear forwards;
+
+      @keyframes appear {
+        0%, 90% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      .window {
+        width: 80%;
+        height: 60%;
+        background: #fff;
+        position: relative;
+
+        nav {
+          width: 100%;
+          height: 16%;
+          background: #3D4D5E;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .tab {
+            width: 13%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.5s ease, color 0.5s ease;
+          }
+
+          .search {
+            width: 12%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+        input[type="radio"] { display: none; }
+        
+        label { 
+          color: #8398AD; 
+          
+          &:hover { color: #fff; }
+        }
+
+        #dashboard:checked ~ nav .dashboard,
+        #comments:checked ~ nav .comments,
+        #notifications:checked ~ nav .notifications,
+        #settings:checked ~ nav .settings {
+          background: #5DA2ED;
+          color: #fff;
+          transition: background 0.5s ease, color 0.5s ease;
+        }
+
+        .content {
+          width: 100%;
+          height: 84%;
+          color: lighten(#3D4D5E, 10%);
+          padding: 1.2rem 1.5rem;
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+          transform: translateY(5px);
+          transition: opacity 0.5s ease, transform 0.5s ease;
+
+          h4 { margin-bottom: 0.8rem; }
+
+          p {
+            display: block;
+            width: 100%; 
+            margin-bottom: 6%;
+
+            @for $i from 1 through 10 {
+              .line-#{$i} {
+                display: block;
+                background: #E9E9E9;
+                height: 4px;
+                margin: 2.5% 0;
+              }
+            }
+            
+            .line-1 { width: 90%; }
+            .line-2 { width: 100%; }
+            .line-3 { width: 85%; }
+            .line-4 { width: 95%; }
+            .line-5 { width: 20%; }
+            .line-6 { width: 100%; }
+            .line-7 { width: 90%; }
+            .line-8 { width: 95%; }
+            .line-9 { width: 100%; }
+            .line-10 { width: 60%; }
+          }
+        }
+
+        #dashboard:checked ~ .content.dashboard, 
+        #comments:checked ~ .content.comments, 
+        #notifications:checked ~ .content.notifications, 
+        #settings:checked ~ .content.settings {
+          opacity: 1;
+          transform: translateY(0);
+          transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s;
+        } 
+      }
+    }
+  }
+}
