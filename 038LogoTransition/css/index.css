@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #9B59B6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appear 0.5s linear forwards;
+}
+@keyframes appear {
+  0%, 99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center .logo {
+  width: 20%;
+  height: 20%;
+  stroke: none;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+* .frame .center .logo-outer {
+  fill: #fff;
+  transform: scale(1);
+  transition: transform 0.4s linear 0.4s;
+}
+* .frame .center .logo-outer.expand {
+  transform: scale(8);
+  transition: transform 0.4s linear;
+}
+* .frame .center .logo-inner {
+  fill: #9B59B6;
+  transform: scale(0);
+  transition: transform 0.4s linear;
+}
+* .frame .center .logo-inner.expand {
+  transform: scale(1);
+  transition: transform 0.4s linear 0.4s;
+}
+
+/*# sourceMappingURL=index.css.map */
