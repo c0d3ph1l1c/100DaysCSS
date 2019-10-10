@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: appear 0.8s linear forwards;
+}
+@keyframes appear {
+  0%, 99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #4A627A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center nav {
+  color: #fff;
+  font-weight: bold;
+  width: 75%;
+  position: relative;
+}
+* .frame .center nav #expand-menu {
+  display: none;
+}
+* .frame .center nav .menu-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  transform-origin: 50% 50%;
+  position: relative;
+  animation: fade-out-shrink 0.8s linear forwards;
+}
+@keyframes fade-out-shrink {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  62.5% {
+    opacity: 0;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0.15);
+  }
+}
+* .frame .center nav .menu-container a {
+  text-decoration: none;
+  color: #fff;
+}
+* .frame .center nav .menu-container a label {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s linear;
+}
+* .frame .center nav .menu-container a label:hover {
+  color: #aaa;
+  transition: color 0.3s linear;
+}
+* .frame .center nav .bar {
+  content: "";
+  width: 100%;
+  height: 10%;
+  background: #fff;
+  position: absolute;
+}
+* .frame .center nav .bar-top {
+  animation: shrink-lower 0.8s linear forwards;
+}
+@keyframes shrink-lower {
+  0% {
+    transform: translateY(-2.6rem) scale(1, 1);
+  }
+  62.5% {
+    transform: translateY(-2.6rem) scale(0.15, 1);
+  }
+  100% {
+    transform: translateY(-1.4rem) scale(0.15, 2);
+  }
+}
+* .frame .center nav .bar-bottom {
+  animation: shrink-raise 0.8s linear forwards;
+}
+@keyframes shrink-raise {
+  0% {
+    transform: translateY(1.2rem) scale(1, 1);
+  }
+  62.5% {
+    transform: translateY(1.2rem) scale(0.15, 1);
+  }
+  100% {
+    transform: translateY(0rem) scale(0.15, 2);
+  }
+}
+* .frame .center nav #expand-menu:checked ~ .menu-container {
+  cursor: auto;
+  animation: expand-fade-in 0.8s linear forwards;
+}
+@keyframes expand-fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.15);
+  }
+  37.5% {
+    opacity: 0;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+* .frame .center nav #expand-menu:checked ~ .bar-top {
+  animation: raise-expand 0.8s linear forwards;
+}
+@keyframes raise-expand {
+  0% {
+    transform: translateY(-1.4rem) scale(0.15, 2);
+  }
+  10% {
+    transform: translateY(-1.2rem) scale(0.15, 2);
+  }
+  37.5% {
+    transform: translateY(-2.6rem) scale(0.15, 1);
+  }
+  100% {
+    transform: translateY(-2.6rem) scale(1, 1);
+  }
+}
+* .frame .center nav #expand-menu:checked ~ .bar-bottom {
+  animation: lower-expand 0.8s linear forwards;
+}
+@keyframes lower-expand {
+  0% {
+    transform: translateY(0rem) scale(0.15, 2);
+  }
+  10% {
+    transform: translateY(-0.2rem) scale(0.15, 2);
+  }
+  37.5% {
+    transform: translateY(1.2rem) scale(0.15, 1);
+  }
+  100% {
+    transform: translateY(1.2rem) scale(1, 1);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
