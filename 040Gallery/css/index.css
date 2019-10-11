@@ -1,0 +1,707 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+* .frame .center input[type=checkbox] {
+  display: none;
+}
+* .frame .center .img-1 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-1.jpg") no-repeat center center/cover;
+  transform-origin: 0% 0%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-1:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-1 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-1:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-1:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-2 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-2.jpg") no-repeat center center/cover;
+  transform-origin: 50% 0%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-2:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-2 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-2:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-2:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-3 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-3.jpg") no-repeat center center/cover;
+  transform-origin: 100% 0%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-3:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-3 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-3:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-3:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-4 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-4.jpg") no-repeat center center/cover;
+  transform-origin: 0% 50%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-4:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-4 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-4:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-4:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-5 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-5.jpg") no-repeat center center/cover;
+  transform-origin: 50% 50%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-5:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-5 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-5:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-5:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-6 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-6.jpg") no-repeat center center/cover;
+  transform-origin: 100% 50%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-6:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-6 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-6:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-6:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-7 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-7.jpg") no-repeat center center/cover;
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-7:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-7 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-7:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-7:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-8 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-8.jpg") no-repeat center center/cover;
+  transform-origin: 50% 100%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-8:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-8 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-8:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-8:checked ~ .img-9:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center .img-9 {
+  padding: 0;
+  background: url("https://100dayscss.com/codepen/40-9.jpg") no-repeat center center/cover;
+  transform-origin: 100% 100%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+  animation: shrink 0.5s ease-out;
+}
+@keyframes shrink {
+  0% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+  99% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+* .frame .center .img-9:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-9 {
+  animation: expand 0.5s ease-out forwards;
+}
+@keyframes expand {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  1% {
+    transform: translate3d(0, 0, 1px) scale(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 1px) scale(3.0487804878);
+  }
+}
+* .frame .center #img-9:checked ~ .img-1:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-2:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-3:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-4:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-5:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-6:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-7:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+* .frame .center #img-9:checked ~ .img-8:after {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+/*# sourceMappingURL=index.css.map */

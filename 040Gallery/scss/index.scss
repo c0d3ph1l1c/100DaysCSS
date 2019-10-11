@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.8%;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+
+      input[type="checkbox"] { display: none; }
+
+      $scale-val: 100 / 32.8;
+
+      @for $i from 1 through 9 {
+        .img-#{$i}{
+          padding: 0;
+          background: url('https://100dayscss.com/codepen/40-#{$i}.jpg') no-repeat center center/cover;
+          $to-x: 0;
+          $to-y: 0;
+          @if(($i - 1) % 3 == 0) {
+            $to-x: 0%;
+          } @else if(($i - 1) % 3 == 1) {
+            $to-x: 50%;
+          } @else {
+            $to-x: 100%;
+          }
+          @if(($i - 1) / 3 < 1) {
+            $to-y: 0%;
+          } @else if(($i - 1) / 3 < 2) {
+            $to-y: 50%;
+          } @else {
+            $to-y: 100%;
+          }
+          transform-origin: $to-x $to-y;
+          transition: transform 0.5s ease-out;
+          position: relative;
+          animation: shrink 0.5s ease-out;
+
+          @keyframes shrink {
+            0% { transform: translate3d(0,0,1px) scale($scale-val); }
+            99% { transform: translate3d(0,0,1px) scale(1); }
+            100% { transform: translate3d(0,0,0) scale(1); }
+          }
+
+          &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 0.5s ease-out;
+          }
+        }
+
+        #img-#{$i}:checked ~ .img-#{$i} {
+          animation: expand 0.5s ease-out forwards;
+
+          @keyframes expand {
+            0% { transform: translate3d(0,0,0) scale(1); }
+            1% { transform: translate3d(0,0,1px) scale(1); }
+            100% { transform: translate3d(0,0,1px) scale($scale-val); }
+          }
+        }
+
+        @for $j from 1 through 9 {
+          @if($j != $i) {
+            #img-#{$i}:checked ~ .img-#{$j}:after {
+              opacity: 1;
+              transition: opacity 0.5s ease-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
