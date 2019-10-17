@@ -44,3 +44,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [038 - Logo Transition](https://c0d3ph1l1c.github.io/100DaysCSS/038LogoTransition/)
 * [039 - Menu Toggle](https://c0d3ph1l1c.github.io/100DaysCSS/039MenuToggle/)
 * [040 - Gallery](https://c0d3ph1l1c.github.io/100DaysCSS/040Gallery/)
+* [041 - Error Modal](https://c0d3ph1l1c.github.io/100DaysCSS/041ErrorModal/)
