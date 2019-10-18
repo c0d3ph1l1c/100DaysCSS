@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #1F4556, #5798A7);
+    
+      @function sqrt($n) {
+        $x: 1;
+
+        @for $i from 1 through 10 {
+          $x: ($x + ($n/$x)) / 2;
+        }
+
+        @return $x;
+      }
+
+      .star {
+        width: 1px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+      }
+
+      @for $i from 1 through 200 {
+        .star-#{$i} {
+          $top: random(100);
+          $y: sqrt(50*50 - ($top - 50) * ($top - 50));
+          $sign: 1;
+          @if(random(2) == 1) {
+            $sign: -1
+          }
+          $delay: $sign * random(10) * 1s;
+
+          top: $top * 1%;
+          left: ((50 - $y) + random(round(2 * $y) + 1)) * 1%;
+          animation: blink 3s linear $delay alternate infinite;
+
+          @keyframes blink {
+            0% { opacity: 1; }
+            100% { opacity: 0.1; }
+          }
+        }
+      }
+
+      .comet {
+        width: 15%;
+        height: 0.7%;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: -15%;
+        transform: rotate(15deg);     
+
+        &:after {
+          content: '';
+          width: 300%;
+          height: 100%;
+          background: linear-gradient(to left, #fff, rgba(255,255,255,0.1));
+          border-radius: 50%;
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .comet-1 {
+        top: 14%;
+        animation: flyby 9s linear 4s infinite; 
+      }
+
+      .comet-2 {
+        top: 20%;
+        animation: flyby 10s linear 10s infinite; 
+      }
+
+      .comet-3 {
+        top: 10%;
+        animation: flyby 8s linear 5s infinite; 
+      }
+
+      .comet-4 {
+        top: 30%;
+        animation: flyby 11s linear 12s infinite; 
+      }
+      
+      @keyframes flyby {
+        0% { transform: rotate(15deg) translateX(0); }
+        8% { transform: rotate(15deg) translateX(1000%); }
+        100% { transform: rotate(15deg) translateX(1000%); }
+      }
+    }
+  }
+}

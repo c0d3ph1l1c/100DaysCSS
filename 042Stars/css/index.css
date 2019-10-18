@@ -1,0 +1,2686 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #1F4556, #5798A7);
+}
+* .frame .center .star {
+  width: 1px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+}
+* .frame .center .star-1 {
+  top: 30%;
+  left: 36.1742430504%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-2 {
+  top: 70%;
+  left: 64.1742430504%;
+  animation: blink 3s linear 8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-3 {
+  top: 75%;
+  left: 31.6987298108%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-4 {
+  top: 39%;
+  left: 24.225006407%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-5 {
+  top: 100%;
+  left: 50.9990234375%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-6 {
+  top: 21%;
+  left: 33.2691762912%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-7 {
+  top: 17%;
+  left: 59.436720058%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-8 {
+  top: 72%;
+  left: 49.1001113587%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-9 {
+  top: 1%;
+  left: 54.0501256289%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-10 {
+  top: 86%;
+  left: 69.3012968542%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-11 {
+  top: 64%;
+  left: 97%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-12 {
+  top: 6%;
+  left: 61.2513158259%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-13 {
+  top: 75%;
+  left: 56.6987298108%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-14 {
+  top: 33%;
+  left: 87.978728218%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-15 {
+  top: 56%;
+  left: 33.361305416%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-16 {
+  top: 35%;
+  left: 59.3030399292%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-17 {
+  top: 21%;
+  left: 53.2691762912%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-18 {
+  top: 85%;
+  left: 60.2928578573%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-19 {
+  top: 90%;
+  left: 75%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-20 {
+  top: 40%;
+  left: 63.0102051443%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-21 {
+  top: 94%;
+  left: 50.2513158259%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-22 {
+  top: 69%;
+  left: 83.7506756806%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-23 {
+  top: 26%;
+  left: 74.1365756011%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-24 {
+  top: 95%;
+  left: 72.2055052823%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-25 {
+  top: 66%;
+  left: 82.6291228707%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-26 {
+  top: 11%;
+  left: 23.7110243057%;
+  animation: blink 3s linear -2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-27 {
+  top: 39%;
+  left: 72.225006407%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-28 {
+  top: 82%;
+  left: 24.5812545754%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-29 {
+  top: 61%;
+  left: 84.225006407%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-30 {
+  top: 9%;
+  left: 75.3818239575%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-31 {
+  top: 27%;
+  left: 77.6040542392%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-32 {
+  top: 24%;
+  left: 18.2916869919%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-33 {
+  top: 12%;
+  left: 18.5038463815%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-34 {
+  top: 97%;
+  left: 34.9412778908%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-35 {
+  top: 30%;
+  left: 74.1742430504%;
+  animation: blink 3s linear -6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-36 {
+  top: 36%;
+  left: 4%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-37 {
+  top: 29%;
+  left: 16.6237947818%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-38 {
+  top: 34%;
+  left: 5.6291228707%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-39 {
+  top: 92%;
+  left: 56.8706800675%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-40 {
+  top: 94%;
+  left: 40.2513158259%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-41 {
+  top: 27%;
+  left: 51.6040542392%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-42 {
+  top: 69%;
+  left: 65.7506756806%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-43 {
+  top: 19%;
+  left: 79.7699095081%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-44 {
+  top: 64%;
+  left: 59%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-45 {
+  top: 73%;
+  left: 42.6040542392%;
+  animation: blink 3s linear 8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-46 {
+  top: 70%;
+  left: 44.1742430504%;
+  animation: blink 3s linear -6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-47 {
+  top: 6%;
+  left: 64.2513158259%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-48 {
+  top: 67%;
+  left: 34.978728218%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-49 {
+  top: 33%;
+  left: 16.978728218%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-50 {
+  top: 12%;
+  left: 67.5038463815%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-51 {
+  top: 47%;
+  left: 56.0900811461%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-52 {
+  top: 55%;
+  left: 21.2506281447%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-53 {
+  top: 39%;
+  left: 13.225006407%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-54 {
+  top: 69%;
+  left: 45.7506756806%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-55 {
+  top: 43%;
+  left: 10.4924248221%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-56 {
+  top: 91%;
+  left: 54.3818239575%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-57 {
+  top: 34%;
+  left: 9.6291228707%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-58 {
+  top: 82%;
+  left: 68.5812545754%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-59 {
+  top: 75%;
+  left: 33.6987298108%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-60 {
+  top: 63%;
+  left: 80.7195691817%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-61 {
+  top: 49%;
+  left: 101.0100010002%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-62 {
+  top: 83%;
+  left: 86.436720058%;
+  animation: blink 3s linear -2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-63 {
+  top: 10%;
+  left: 42%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-64 {
+  top: 80%;
+  left: 73%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-65 {
+  top: 24%;
+  left: 29.2916869919%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-66 {
+  top: 42%;
+  left: 3.644149283%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-67 {
+  top: 54%;
+  left: 68.1602568225%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-68 {
+  top: 44%;
+  left: 63.361305416%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-69 {
+  top: 75%;
+  left: 74.6987298108%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-70 {
+  top: 94%;
+  left: 51.2513158259%;
+  animation: blink 3s linear -6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-71 {
+  top: 33%;
+  left: 16.978728218%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-72 {
+  top: 71%;
+  left: 17.6237947818%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-73 {
+  top: 22%;
+  left: 80.5753696456%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-74 {
+  top: 59%;
+  left: 39.8166694906%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-75 {
+  top: 46%;
+  left: 62.1602568225%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-76 {
+  top: 71%;
+  left: 61.6237947818%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-77 {
+  top: 53%;
+  left: 25.0900811461%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-78 {
+  top: 43%;
+  left: 48.4924248221%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-79 {
+  top: 85%;
+  left: 29.2928578573%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-80 {
+  top: 18%;
+  left: 37.5812545754%;
+  animation: blink 3s linear -2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-81 {
+  top: 86%;
+  left: 77.3012968542%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-82 {
+  top: 97%;
+  left: 49.9412778908%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-83 {
+  top: 52%;
+  left: 95.0400160128%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-84 {
+  top: 78%;
+  left: 74.5753696456%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-85 {
+  top: 32%;
+  left: 40.3523848412%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-86 {
+  top: 73%;
+  left: 93.6040542392%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-87 {
+  top: 10%;
+  left: 64%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-88 {
+  top: 73%;
+  left: 16.6040542392%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-89 {
+  top: 56%;
+  left: 67.361305416%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-90 {
+  top: 81%;
+  left: 53.7699095081%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-91 {
+  top: 77%;
+  left: 66.916749175%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-92 {
+  top: 37%;
+  left: 4.7195691817%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-93 {
+  top: 59%;
+  left: 56.8166694906%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-94 {
+  top: 31%;
+  left: 26.7506756806%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-95 {
+  top: 14%;
+  left: 33.3012968542%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-96 {
+  top: 80%;
+  left: 29%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-97 {
+  top: 56%;
+  left: 33.361305416%;
+  animation: blink 3s linear 8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-98 {
+  top: 89%;
+  left: 61.7110243057%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-99 {
+  top: 53%;
+  left: 64.0900811461%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-100 {
+  top: 82%;
+  left: 35.5812545754%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-101 {
+  top: 93%;
+  left: 34.4852983557%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-102 {
+  top: 89%;
+  left: 47.7110243057%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-103 {
+  top: 1%;
+  left: 51.0501256289%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-104 {
+  top: 6%;
+  left: 28.2513158259%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-105 {
+  top: 56%;
+  left: 7.361305416%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-106 {
+  top: 27%;
+  left: 31.6040542392%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-107 {
+  top: 18%;
+  left: 38.5812545754%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-108 {
+  top: 15%;
+  left: 57.2928578573%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-109 {
+  top: 99%;
+  left: 61.0501256289%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-110 {
+  top: 17%;
+  left: 86.436720058%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-111 {
+  top: 56%;
+  left: 89.361305416%;
+  animation: blink 3s linear -10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-112 {
+  top: 60%;
+  left: 88.0102051443%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-113 {
+  top: 36%;
+  left: 86%;
+  animation: blink 3s linear -2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-114 {
+  top: 72%;
+  left: 57.1001113587%;
+  animation: blink 3s linear -10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-115 {
+  top: 40%;
+  left: 66.0102051443%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-116 {
+  top: 57%;
+  left: 55.4924248221%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-117 {
+  top: 94%;
+  left: 29.2513158259%;
+  animation: blink 3s linear -10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-118 {
+  top: 89%;
+  left: 51.7110243057%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-119 {
+  top: 78%;
+  left: 76.5753696456%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-120 {
+  top: 9%;
+  left: 60.3818239575%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-121 {
+  top: 13%;
+  left: 59.3696565584%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-122 {
+  top: 97%;
+  left: 58.9412778908%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-123 {
+  top: 43%;
+  left: 48.4924248221%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-124 {
+  top: 33%;
+  left: 12.978728218%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-125 {
+  top: 11%;
+  left: 53.7110243057%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-126 {
+  top: 39%;
+  left: 51.225006407%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-127 {
+  top: 91%;
+  left: 49.3818239575%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-128 {
+  top: 66%;
+  left: 37.6291228707%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-129 {
+  top: 72%;
+  left: 58.1001113587%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-130 {
+  top: 44%;
+  left: 26.361305416%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-131 {
+  top: 38%;
+  left: 20.461355602%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-132 {
+  top: 90%;
+  left: 53%;
+  animation: blink 3s linear -10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-133 {
+  top: 84%;
+  left: 69.3393944404%;
+  animation: blink 3s linear -10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-134 {
+  top: 94%;
+  left: 29.2513158259%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-135 {
+  top: 9%;
+  left: 48.3818239575%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-136 {
+  top: 28%;
+  left: 76.1001113587%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-137 {
+  top: 29%;
+  left: 82.6237947818%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-138 {
+  top: 24%;
+  left: 50.2916869919%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-139 {
+  top: 38%;
+  left: 41.461355602%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-140 {
+  top: 69%;
+  left: 60.7506756806%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-141 {
+  top: 94%;
+  left: 73.2513158259%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-142 {
+  top: 12%;
+  left: 29.5038463815%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-143 {
+  top: 68%;
+  left: 62.3523848412%;
+  animation: blink 3s linear -6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-144 {
+  top: 64%;
+  left: 54%;
+  animation: blink 3s linear 6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-145 {
+  top: 27%;
+  left: 64.6040542392%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-146 {
+  top: 10%;
+  left: 24%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-147 {
+  top: 64%;
+  left: 32%;
+  animation: blink 3s linear 8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-148 {
+  top: 55%;
+  left: 100.2506281447%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-149 {
+  top: 19%;
+  left: 84.7699095081%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-150 {
+  top: 63%;
+  left: 7.7195691817%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-151 {
+  top: 8%;
+  left: 76.8706800675%;
+  animation: blink 3s linear 4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-152 {
+  top: 58%;
+  left: 3.644149283%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-153 {
+  top: 40%;
+  left: 3.0102051443%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-154 {
+  top: 17%;
+  left: 43.436720058%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-155 {
+  top: 17%;
+  left: 63.436720058%;
+  animation: blink 3s linear -4s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-156 {
+  top: 33%;
+  left: 53.978728218%;
+  animation: blink 3s linear 2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-157 {
+  top: 65%;
+  left: 63.3030399292%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-158 {
+  top: 41%;
+  left: 24.8166694906%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-159 {
+  top: 62%;
+  left: 77.461355602%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-160 {
+  top: 42%;
+  left: 96.644149283%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-161 {
+  top: 66%;
+  left: 13.6291228707%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-162 {
+  top: 32%;
+  left: 20.3523848412%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-163 {
+  top: 27%;
+  left: 29.6040542392%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-164 {
+  top: 94%;
+  left: 70.2513158259%;
+  animation: blink 3s linear -10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-165 {
+  top: 66%;
+  left: 75.6291228707%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-166 {
+  top: 74%;
+  left: 79.1365756011%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-167 {
+  top: 56%;
+  left: 72.361305416%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-168 {
+  top: 47%;
+  left: 83.0900811461%;
+  animation: blink 3s linear -2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-169 {
+  top: 32%;
+  left: 56.3523848412%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-170 {
+  top: 42%;
+  left: 81.644149283%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-171 {
+  top: 56%;
+  left: 73.361305416%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-172 {
+  top: 61%;
+  left: 42.225006407%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-173 {
+  top: 19%;
+  left: 31.7699095081%;
+  animation: blink 3s linear 1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-174 {
+  top: 51%;
+  left: 13.0100010002%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-175 {
+  top: 43%;
+  left: 78.4924248221%;
+  animation: blink 3s linear -2s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-176 {
+  top: 53%;
+  left: 10.0900811461%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-177 {
+  top: 18%;
+  left: 22.5812545754%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-178 {
+  top: 99%;
+  left: 51.0501256289%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-179 {
+  top: 55%;
+  left: 91.2506281447%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-180 {
+  top: 14%;
+  left: 69.3012968542%;
+  animation: blink 3s linear 3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-181 {
+  top: 75%;
+  left: 20.6987298108%;
+  animation: blink 3s linear -7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-182 {
+  top: 48%;
+  left: 52.0400160128%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-183 {
+  top: 20%;
+  left: 78%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-184 {
+  top: 24%;
+  left: 11.2916869919%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-185 {
+  top: 40%;
+  left: 45.0102051443%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-186 {
+  top: 75%;
+  left: 79.6987298108%;
+  animation: blink 3s linear -1s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-187 {
+  top: 22%;
+  left: 49.5753696456%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-188 {
+  top: 6%;
+  left: 28.2513158259%;
+  animation: blink 3s linear -6s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-189 {
+  top: 57%;
+  left: 85.4924248221%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-190 {
+  top: 37%;
+  left: 24.7195691817%;
+  animation: blink 3s linear -8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-191 {
+  top: 40%;
+  left: 4.0102051443%;
+  animation: blink 3s linear -5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-192 {
+  top: 18%;
+  left: 66.5812545754%;
+  animation: blink 3s linear -9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-193 {
+  top: 89%;
+  left: 73.7110243057%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-194 {
+  top: 63%;
+  left: 12.7195691817%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-195 {
+  top: 83%;
+  left: 29.436720058%;
+  animation: blink 3s linear -3s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-196 {
+  top: 11%;
+  left: 53.7110243057%;
+  animation: blink 3s linear 9s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-197 {
+  top: 77%;
+  left: 63.916749175%;
+  animation: blink 3s linear 8s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-198 {
+  top: 23%;
+  left: 20.916749175%;
+  animation: blink 3s linear 10s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-199 {
+  top: 34%;
+  left: 55.6291228707%;
+  animation: blink 3s linear 7s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .star-200 {
+  top: 4%;
+  left: 65.4040820577%;
+  animation: blink 3s linear 5s alternate infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+* .frame .center .comet {
+  width: 15%;
+  height: 0.7%;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -15%;
+  transform: rotate(15deg);
+}
+* .frame .center .comet:after {
+  content: "";
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0.1));
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+* .frame .center .comet-1 {
+  top: 14%;
+  animation: flyby 9s linear 4s infinite;
+}
+* .frame .center .comet-2 {
+  top: 20%;
+  animation: flyby 10s linear 10s infinite;
+}
+* .frame .center .comet-3 {
+  top: 10%;
+  animation: flyby 8s linear 5s infinite;
+}
+* .frame .center .comet-4 {
+  top: 30%;
+  animation: flyby 11s linear 12s infinite;
+}
+@keyframes flyby {
+  0% {
+    transform: rotate(15deg) translateX(0);
+  }
+  8% {
+    transform: rotate(15deg) translateX(1000%);
+  }
+  100% {
+    transform: rotate(15deg) translateX(1000%);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
