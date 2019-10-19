@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: #4C4F56;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .container {
+                width: 40%;
+                height: 48%;
+                position: relative;
+
+                .bulb-head {
+                    cursor: pointer;
+                    width: 50%;
+                    height: 50%;
+                    position: absolute;
+                    fill: rgb(255, 243, 92);
+                    top: 14%;
+                    left: 25%;
+                    z-index: 2;
+                    
+                    .head {
+                        fill: rgb(255, 243, 92);
+                        transition: fill 0.2s linear;
+                    }
+
+                    &:hover .head {
+                        fill: lighten(#4C4F56, 35%);
+                        transition: fill 0.2s linear;
+                    }
+                }
+
+                .bulb-neck {
+                    width: 20%;
+                    height: 21%;
+                    fill: #FEFEFE;
+                    position: absolute;
+                    top: 64%;
+                    left: 40%;
+                }
+                
+                .glow {
+                    width: 60%; 
+                    height: 45%;
+                    background: rgba(255, 243, 92, 0.5);
+                    border-radius: 50%;
+                    filter: blur(10px);
+                    box-shadow: 5px 5px 15px 15px rgba(255, 243, 92, 0.2),
+                                5px -5px 15px 15px rgba(255, 243, 92, 0.2),
+                                -5px 5px 15px 15px rgba(255, 243, 92, 0.2),
+                                -5px -5px 15px 15px rgba(255, 243, 92, 0.2);
+                    position: absolute;
+                    top: 10%;
+                    left: 20%;
+                    z-index: 1;
+                    opacity: 1;
+                    transition: opacity 0.2s linear;
+                }
+
+                .bulb-head:hover ~ .glow {
+                    opacity: 0;
+                    transition: opacity 0.2s linear;
+                }
+            }
+        }
+    }
+}
