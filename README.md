@@ -46,3 +46,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [040 - Gallery](https://c0d3ph1l1c.github.io/100DaysCSS/040Gallery/)
 * [041 - Error Modal](https://c0d3ph1l1c.github.io/100DaysCSS/041ErrorModal/)
 * [042 - Stars](https://c0d3ph1l1c.github.io/100DaysCSS/042Stars/)
+* [043 - Lightbulb](https://c0d3ph1l1c.github.io/100DaysCSS/043Lightbulb/)
