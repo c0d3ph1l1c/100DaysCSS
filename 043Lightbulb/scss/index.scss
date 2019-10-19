@@ -21,6 +21,13 @@
         font-family: 'Open Sans', Helvetica, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        opacity: 0;
+        animation: appear 0.2s linear forwards;
+
+        @keyframes appear {
+            0%, 99% { opacity: 0; }
+            100% { opacity: 1; }
+        }
         
         .center {
             position: absolute;
