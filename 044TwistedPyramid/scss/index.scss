@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            background: #222222;
+
+            @for $i from 1 through 20 {
+                .layer-#{$i} {
+                    border: 1px solid #ccc;
+                    background: #222222;
+                    $side: 63% - ($i * 3%);
+                    width: $side;
+                    height: $side;
+                    position: absolute;
+                    top: (100% - $side) / 2;
+                    left: (100% - $side) / 2;
+                    z-index: $i;
+                    animation: rotate-#{$i} 5s ease-in-out (0.035 * $i)+s infinite;
+
+                    @keyframes rotate-#{$i} {
+                        0% { transform: rotate(0deg); }
+                        49%, 50% { transform: rotate(360deg); }
+                        99%, 100% { transform: rotate(0deg); }
+                    }
+                }
+            }
+        }
+    }
+}

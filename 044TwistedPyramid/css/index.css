@@ -1,0 +1,474 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #222222;
+}
+* .frame .center .layer-1 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+  animation: rotate-1 5s ease-in-out 0.035s infinite;
+}
+@keyframes rotate-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-2 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 57%;
+  height: 57%;
+  position: absolute;
+  top: 21.5%;
+  left: 21.5%;
+  z-index: 2;
+  animation: rotate-2 5s ease-in-out 0.07s infinite;
+}
+@keyframes rotate-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-3 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 54%;
+  height: 54%;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  z-index: 3;
+  animation: rotate-3 5s ease-in-out 0.105s infinite;
+}
+@keyframes rotate-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-4 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 51%;
+  height: 51%;
+  position: absolute;
+  top: 24.5%;
+  left: 24.5%;
+  z-index: 4;
+  animation: rotate-4 5s ease-in-out 0.14s infinite;
+}
+@keyframes rotate-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-5 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 48%;
+  height: 48%;
+  position: absolute;
+  top: 26%;
+  left: 26%;
+  z-index: 5;
+  animation: rotate-5 5s ease-in-out 0.175s infinite;
+}
+@keyframes rotate-5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-6 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  top: 27.5%;
+  left: 27.5%;
+  z-index: 6;
+  animation: rotate-6 5s ease-in-out 0.21s infinite;
+}
+@keyframes rotate-6 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-7 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 42%;
+  height: 42%;
+  position: absolute;
+  top: 29%;
+  left: 29%;
+  z-index: 7;
+  animation: rotate-7 5s ease-in-out 0.245s infinite;
+}
+@keyframes rotate-7 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-8 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 39%;
+  height: 39%;
+  position: absolute;
+  top: 30.5%;
+  left: 30.5%;
+  z-index: 8;
+  animation: rotate-8 5s ease-in-out 0.28s infinite;
+}
+@keyframes rotate-8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-9 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 36%;
+  height: 36%;
+  position: absolute;
+  top: 32%;
+  left: 32%;
+  z-index: 9;
+  animation: rotate-9 5s ease-in-out 0.315s infinite;
+}
+@keyframes rotate-9 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-10 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 33%;
+  height: 33%;
+  position: absolute;
+  top: 33.5%;
+  left: 33.5%;
+  z-index: 10;
+  animation: rotate-10 5s ease-in-out 0.35s infinite;
+}
+@keyframes rotate-10 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-11 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 11;
+  animation: rotate-11 5s ease-in-out 0.385s infinite;
+}
+@keyframes rotate-11 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-12 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 27%;
+  height: 27%;
+  position: absolute;
+  top: 36.5%;
+  left: 36.5%;
+  z-index: 12;
+  animation: rotate-12 5s ease-in-out 0.42s infinite;
+}
+@keyframes rotate-12 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-13 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 24%;
+  height: 24%;
+  position: absolute;
+  top: 38%;
+  left: 38%;
+  z-index: 13;
+  animation: rotate-13 5s ease-in-out 0.455s infinite;
+}
+@keyframes rotate-13 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-14 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 21%;
+  height: 21%;
+  position: absolute;
+  top: 39.5%;
+  left: 39.5%;
+  z-index: 14;
+  animation: rotate-14 5s ease-in-out 0.49s infinite;
+}
+@keyframes rotate-14 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-15 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 18%;
+  height: 18%;
+  position: absolute;
+  top: 41%;
+  left: 41%;
+  z-index: 15;
+  animation: rotate-15 5s ease-in-out 0.525s infinite;
+}
+@keyframes rotate-15 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-16 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 42.5%;
+  left: 42.5%;
+  z-index: 16;
+  animation: rotate-16 5s ease-in-out 0.56s infinite;
+}
+@keyframes rotate-16 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-17 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 12%;
+  height: 12%;
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 17;
+  animation: rotate-17 5s ease-in-out 0.595s infinite;
+}
+@keyframes rotate-17 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-18 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 9%;
+  height: 9%;
+  position: absolute;
+  top: 45.5%;
+  left: 45.5%;
+  z-index: 18;
+  animation: rotate-18 5s ease-in-out 0.63s infinite;
+}
+@keyframes rotate-18 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-19 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 6%;
+  height: 6%;
+  position: absolute;
+  top: 47%;
+  left: 47%;
+  z-index: 19;
+  animation: rotate-19 5s ease-in-out 0.665s infinite;
+}
+@keyframes rotate-19 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+* .frame .center .layer-20 {
+  border: 1px solid #ccc;
+  background: #222222;
+  width: 3%;
+  height: 3%;
+  position: absolute;
+  top: 48.5%;
+  left: 48.5%;
+  z-index: 20;
+  animation: rotate-20 5s ease-in-out 0.7s infinite;
+}
+@keyframes rotate-20 {
+  0% {
+    transform: rotate(0deg);
+  }
+  49%, 50% {
+    transform: rotate(360deg);
+  }
+  99%, 100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
