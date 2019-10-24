@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #27AE60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      $anim-prop: 6s ease-in-out alternate infinite;
+
+      .iris {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: rotate $anim-prop;
+
+        @keyframes rotate {
+          0% { transform: rotateZ(0deg); }
+          100% { transform: rotateZ(360deg); }
+        }
+
+        .petal {
+          width: 35%;
+          height: 4.375%;
+          position: absolute;
+          transform-origin: 50% 50%;
+
+          .dot {
+            border-radius: 50%;
+            position: absolute;
+            transform-origin: 50% 50%;
+          }
+
+          .dot-1 {
+            top: 0;
+            left: 0;
+          }
+
+          .dot-2 {
+            top: -0.02rem;
+            left: 20%;
+          }
+
+          .dot-3 {
+            top: 0.11rem;
+            left: 40%;
+          }
+
+          .dot-4 {
+            top: 0.43rem;
+            left: 58%;
+          }
+
+          .dot-5 {
+            top: 0.85rem;
+            left: 73%;
+          }
+
+          .dot-6 {
+            top: 1.35rem;
+            left: 87%;
+          }
+
+          @for $i from 1 through 6 {
+            .dot-#{$i} {
+              background: rgba(255,255,255,(1 - ($i - 1) * 0.12));
+              width: (1 - $i * 0.05) * 12.5%;
+              height: 100% - $i * 5%;
+              animation: shrink-#{$i} $anim-prop;
+
+              @keyframes shrink-#{$i} {
+                0% { transform: scale((1 - 0.08 * $i)); }
+                100% { transform: scale(1); }
+              }
+            }
+          }
+        }
+
+        @for $i from 1 through 12 {
+          .petal-#{$i} {
+            animation: unwind-#{$i} $anim-prop;
+
+            @keyframes unwind-#{$i} {
+              0% {
+                transform: rotateZ($i * 30deg) translateY(-4rem) rotateZ(50deg);
+              }
+
+              100% {
+                transform: rotateZ($i * 30deg) translateY(-4.5rem) rotateZ(0deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
