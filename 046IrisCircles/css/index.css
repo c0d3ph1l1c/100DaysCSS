@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #27AE60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .iris {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 6s ease-in-out alternate infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+* .frame .center .iris .petal {
+  width: 35%;
+  height: 4.375%;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+* .frame .center .iris .petal .dot {
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+* .frame .center .iris .petal .dot-1 {
+  top: 0;
+  left: 0;
+}
+* .frame .center .iris .petal .dot-2 {
+  top: -0.02rem;
+  left: 20%;
+}
+* .frame .center .iris .petal .dot-3 {
+  top: 0.11rem;
+  left: 40%;
+}
+* .frame .center .iris .petal .dot-4 {
+  top: 0.43rem;
+  left: 58%;
+}
+* .frame .center .iris .petal .dot-5 {
+  top: 0.85rem;
+  left: 73%;
+}
+* .frame .center .iris .petal .dot-6 {
+  top: 1.35rem;
+  left: 87%;
+}
+* .frame .center .iris .petal .dot-1 {
+  background: white;
+  width: 11.875%;
+  height: 95%;
+  animation: shrink-1 6s ease-in-out alternate infinite;
+}
+@keyframes shrink-1 {
+  0% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* .frame .center .iris .petal .dot-2 {
+  background: rgba(255, 255, 255, 0.88);
+  width: 11.25%;
+  height: 90%;
+  animation: shrink-2 6s ease-in-out alternate infinite;
+}
+@keyframes shrink-2 {
+  0% {
+    transform: scale(0.84);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* .frame .center .iris .petal .dot-3 {
+  background: rgba(255, 255, 255, 0.76);
+  width: 10.625%;
+  height: 85%;
+  animation: shrink-3 6s ease-in-out alternate infinite;
+}
+@keyframes shrink-3 {
+  0% {
+    transform: scale(0.76);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* .frame .center .iris .petal .dot-4 {
+  background: rgba(255, 255, 255, 0.64);
+  width: 10%;
+  height: 80%;
+  animation: shrink-4 6s ease-in-out alternate infinite;
+}
+@keyframes shrink-4 {
+  0% {
+    transform: scale(0.68);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* .frame .center .iris .petal .dot-5 {
+  background: rgba(255, 255, 255, 0.52);
+  width: 9.375%;
+  height: 75%;
+  animation: shrink-5 6s ease-in-out alternate infinite;
+}
+@keyframes shrink-5 {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* .frame .center .iris .petal .dot-6 {
+  background: rgba(255, 255, 255, 0.4);
+  width: 8.75%;
+  height: 70%;
+  animation: shrink-6 6s ease-in-out alternate infinite;
+}
+@keyframes shrink-6 {
+  0% {
+    transform: scale(0.52);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* .frame .center .iris .petal-1 {
+  animation: unwind-1 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-1 {
+  0% {
+    transform: rotateZ(30deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(30deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-2 {
+  animation: unwind-2 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-2 {
+  0% {
+    transform: rotateZ(60deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(60deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-3 {
+  animation: unwind-3 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-3 {
+  0% {
+    transform: rotateZ(90deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(90deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-4 {
+  animation: unwind-4 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-4 {
+  0% {
+    transform: rotateZ(120deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(120deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-5 {
+  animation: unwind-5 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-5 {
+  0% {
+    transform: rotateZ(150deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(150deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-6 {
+  animation: unwind-6 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-6 {
+  0% {
+    transform: rotateZ(180deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(180deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-7 {
+  animation: unwind-7 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-7 {
+  0% {
+    transform: rotateZ(210deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(210deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-8 {
+  animation: unwind-8 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-8 {
+  0% {
+    transform: rotateZ(240deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(240deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-9 {
+  animation: unwind-9 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-9 {
+  0% {
+    transform: rotateZ(270deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(270deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-10 {
+  animation: unwind-10 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-10 {
+  0% {
+    transform: rotateZ(300deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(300deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-11 {
+  animation: unwind-11 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-11 {
+  0% {
+    transform: rotateZ(330deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(330deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+* .frame .center .iris .petal-12 {
+  animation: unwind-12 6s ease-in-out alternate infinite;
+}
+@keyframes unwind-12 {
+  0% {
+    transform: rotateZ(360deg) translateY(-4rem) rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(360deg) translateY(-4.5rem) rotateZ(0deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
