@@ -1,0 +1,2844 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+}
+* .frame .center input[type=checkbox] {
+  display: none;
+}
+* .frame .center label {
+  width: 100%;
+  height: 100%;
+  background: #E24E3F;
+  border: 1px solid #e55e51;
+}
+* .frame .center .px-1-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-1:checked ~ .px-1-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-2:checked ~ .px-1-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-3:checked ~ .px-1-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-4:checked ~ .px-1-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-5:checked ~ .px-1-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-6:checked ~ .px-1-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-7:checked ~ .px-1-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-8:checked ~ .px-1-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-9:checked ~ .px-1-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-10:checked ~ .px-1-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-11:checked ~ .px-1-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-12:checked ~ .px-1-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-13:checked ~ .px-1-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-14:checked ~ .px-1-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-15:checked ~ .px-1-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-16:checked ~ .px-1-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-17:checked ~ .px-1-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-18:checked ~ .px-1-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-19:checked ~ .px-1-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-1-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-1-20:checked ~ .px-1-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-1:checked ~ .px-2-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-2:checked ~ .px-2-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-3:checked ~ .px-2-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-4:checked ~ .px-2-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-5:checked ~ .px-2-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-6:checked ~ .px-2-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-7:checked ~ .px-2-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-8:checked ~ .px-2-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-9:checked ~ .px-2-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-10:checked ~ .px-2-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-11:checked ~ .px-2-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-12:checked ~ .px-2-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-13:checked ~ .px-2-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-14:checked ~ .px-2-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-15:checked ~ .px-2-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-16:checked ~ .px-2-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-17:checked ~ .px-2-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-18:checked ~ .px-2-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-19:checked ~ .px-2-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-2-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-2-20:checked ~ .px-2-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-1:checked ~ .px-3-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-2:checked ~ .px-3-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-3:checked ~ .px-3-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-4:checked ~ .px-3-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-5:checked ~ .px-3-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-6:checked ~ .px-3-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-7:checked ~ .px-3-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-8:checked ~ .px-3-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-9:checked ~ .px-3-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-10:checked ~ .px-3-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-11:checked ~ .px-3-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-12:checked ~ .px-3-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-13:checked ~ .px-3-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-14:checked ~ .px-3-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-15:checked ~ .px-3-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-16:checked ~ .px-3-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-17:checked ~ .px-3-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-18:checked ~ .px-3-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-19:checked ~ .px-3-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-3-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-3-20:checked ~ .px-3-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-1:checked ~ .px-4-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-2:checked ~ .px-4-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-3:checked ~ .px-4-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-4:checked ~ .px-4-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-5:checked ~ .px-4-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-6:checked ~ .px-4-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-7:checked ~ .px-4-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-8:checked ~ .px-4-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-9:checked ~ .px-4-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-10:checked ~ .px-4-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-11:checked ~ .px-4-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-12:checked ~ .px-4-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-13:checked ~ .px-4-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-14:checked ~ .px-4-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-15:checked ~ .px-4-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-16:checked ~ .px-4-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-17:checked ~ .px-4-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-18:checked ~ .px-4-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-19:checked ~ .px-4-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-4-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-4-20:checked ~ .px-4-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-1:checked ~ .px-5-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-2:checked ~ .px-5-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-3:checked ~ .px-5-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-4:checked ~ .px-5-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-5:checked ~ .px-5-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-6:checked ~ .px-5-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-7:checked ~ .px-5-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-8:checked ~ .px-5-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-9:checked ~ .px-5-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-10:checked ~ .px-5-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-11:checked ~ .px-5-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-12:checked ~ .px-5-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-13:checked ~ .px-5-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-14:checked ~ .px-5-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-15:checked ~ .px-5-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-16:checked ~ .px-5-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-17:checked ~ .px-5-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-18:checked ~ .px-5-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-19:checked ~ .px-5-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-5-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-5-20:checked ~ .px-5-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-1:checked ~ .px-6-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-2:checked ~ .px-6-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-3:checked ~ .px-6-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-4:checked ~ .px-6-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-5:checked ~ .px-6-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-6:checked ~ .px-6-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-7:checked ~ .px-6-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-8:checked ~ .px-6-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-9:checked ~ .px-6-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-10:checked ~ .px-6-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-11:checked ~ .px-6-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-12:checked ~ .px-6-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-13:checked ~ .px-6-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-14:checked ~ .px-6-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-15:checked ~ .px-6-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-16:checked ~ .px-6-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-17:checked ~ .px-6-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-18:checked ~ .px-6-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-19:checked ~ .px-6-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-6-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-6-20:checked ~ .px-6-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-1:checked ~ .px-7-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-2:checked ~ .px-7-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-3:checked ~ .px-7-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-4:checked ~ .px-7-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-5:checked ~ .px-7-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-6:checked ~ .px-7-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-7:checked ~ .px-7-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-8:checked ~ .px-7-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-9:checked ~ .px-7-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-10:checked ~ .px-7-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-11:checked ~ .px-7-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-12:checked ~ .px-7-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-13:checked ~ .px-7-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-14:checked ~ .px-7-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-15:checked ~ .px-7-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-16:checked ~ .px-7-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-17:checked ~ .px-7-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-18:checked ~ .px-7-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-19:checked ~ .px-7-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-7-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-7-20:checked ~ .px-7-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-1:checked ~ .px-8-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-2:checked ~ .px-8-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-3:checked ~ .px-8-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-4:checked ~ .px-8-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-5:checked ~ .px-8-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-6:checked ~ .px-8-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-7:checked ~ .px-8-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-8:checked ~ .px-8-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-9:checked ~ .px-8-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-10:checked ~ .px-8-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-11:checked ~ .px-8-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-12:checked ~ .px-8-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-13:checked ~ .px-8-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-14:checked ~ .px-8-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-15:checked ~ .px-8-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-16:checked ~ .px-8-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-17:checked ~ .px-8-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-18:checked ~ .px-8-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-19:checked ~ .px-8-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-8-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-8-20:checked ~ .px-8-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-1:checked ~ .px-9-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-2:checked ~ .px-9-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-3:checked ~ .px-9-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-4:checked ~ .px-9-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-5:checked ~ .px-9-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-6:checked ~ .px-9-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-7:checked ~ .px-9-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-8:checked ~ .px-9-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-9:checked ~ .px-9-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-10:checked ~ .px-9-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-11:checked ~ .px-9-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-12:checked ~ .px-9-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-13:checked ~ .px-9-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-14:checked ~ .px-9-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-15:checked ~ .px-9-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-16:checked ~ .px-9-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-17:checked ~ .px-9-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-18:checked ~ .px-9-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-19:checked ~ .px-9-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-9-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-9-20:checked ~ .px-9-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-1:checked ~ .px-10-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-2:checked ~ .px-10-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-3:checked ~ .px-10-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-4:checked ~ .px-10-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-5:checked ~ .px-10-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-6:checked ~ .px-10-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-7:checked ~ .px-10-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-8:checked ~ .px-10-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-9:checked ~ .px-10-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-10:checked ~ .px-10-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-11:checked ~ .px-10-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-12:checked ~ .px-10-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-13:checked ~ .px-10-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-14:checked ~ .px-10-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-15:checked ~ .px-10-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-16:checked ~ .px-10-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-17:checked ~ .px-10-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-18:checked ~ .px-10-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-19:checked ~ .px-10-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-10-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-10-20:checked ~ .px-10-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-1:checked ~ .px-11-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-2:checked ~ .px-11-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-3:checked ~ .px-11-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-4:checked ~ .px-11-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-5:checked ~ .px-11-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-6:checked ~ .px-11-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-7:checked ~ .px-11-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-8:checked ~ .px-11-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-9:checked ~ .px-11-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-10:checked ~ .px-11-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-11:checked ~ .px-11-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-12:checked ~ .px-11-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-13:checked ~ .px-11-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-14:checked ~ .px-11-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-15:checked ~ .px-11-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-16:checked ~ .px-11-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-17:checked ~ .px-11-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-18:checked ~ .px-11-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-19:checked ~ .px-11-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-11-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-11-20:checked ~ .px-11-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-1:checked ~ .px-12-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-2:checked ~ .px-12-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-3:checked ~ .px-12-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-4:checked ~ .px-12-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-5:checked ~ .px-12-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-6:checked ~ .px-12-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-7:checked ~ .px-12-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-8:checked ~ .px-12-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-9:checked ~ .px-12-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-10:checked ~ .px-12-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-11:checked ~ .px-12-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-12:checked ~ .px-12-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-13:checked ~ .px-12-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-14:checked ~ .px-12-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-15:checked ~ .px-12-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-16:checked ~ .px-12-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-17:checked ~ .px-12-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-18:checked ~ .px-12-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-19:checked ~ .px-12-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-12-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-12-20:checked ~ .px-12-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-1:checked ~ .px-13-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-2:checked ~ .px-13-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-3:checked ~ .px-13-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-4:checked ~ .px-13-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-5:checked ~ .px-13-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-6:checked ~ .px-13-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-7:checked ~ .px-13-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-8:checked ~ .px-13-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-9:checked ~ .px-13-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-10:checked ~ .px-13-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-11:checked ~ .px-13-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-12:checked ~ .px-13-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-13:checked ~ .px-13-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-14:checked ~ .px-13-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-15:checked ~ .px-13-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-16:checked ~ .px-13-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-17:checked ~ .px-13-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-18:checked ~ .px-13-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-19:checked ~ .px-13-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-13-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-13-20:checked ~ .px-13-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-1:checked ~ .px-14-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-2:checked ~ .px-14-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-3:checked ~ .px-14-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-4:checked ~ .px-14-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-5:checked ~ .px-14-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-6:checked ~ .px-14-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-7:checked ~ .px-14-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-8:checked ~ .px-14-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-9:checked ~ .px-14-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-10:checked ~ .px-14-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-11:checked ~ .px-14-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-12:checked ~ .px-14-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-13:checked ~ .px-14-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-14:checked ~ .px-14-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-15:checked ~ .px-14-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-16:checked ~ .px-14-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-17:checked ~ .px-14-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-18:checked ~ .px-14-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-19:checked ~ .px-14-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-14-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-14-20:checked ~ .px-14-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-1:checked ~ .px-15-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-2:checked ~ .px-15-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-3:checked ~ .px-15-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-4:checked ~ .px-15-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-5:checked ~ .px-15-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-6:checked ~ .px-15-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-7:checked ~ .px-15-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-8:checked ~ .px-15-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-9:checked ~ .px-15-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-10:checked ~ .px-15-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-11:checked ~ .px-15-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-12:checked ~ .px-15-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-13:checked ~ .px-15-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-14:checked ~ .px-15-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-15:checked ~ .px-15-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-16:checked ~ .px-15-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-17:checked ~ .px-15-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-18:checked ~ .px-15-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-19:checked ~ .px-15-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-15-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-15-20:checked ~ .px-15-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-1:checked ~ .px-16-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-2:checked ~ .px-16-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-3:checked ~ .px-16-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-4:checked ~ .px-16-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-5:checked ~ .px-16-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-6:checked ~ .px-16-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-7:checked ~ .px-16-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-8:checked ~ .px-16-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-9:checked ~ .px-16-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-10:checked ~ .px-16-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-11:checked ~ .px-16-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-12:checked ~ .px-16-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-13:checked ~ .px-16-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-14:checked ~ .px-16-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-15:checked ~ .px-16-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-16:checked ~ .px-16-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-17:checked ~ .px-16-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-18:checked ~ .px-16-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-19:checked ~ .px-16-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-16-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-16-20:checked ~ .px-16-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-1:checked ~ .px-17-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-2:checked ~ .px-17-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-3:checked ~ .px-17-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-4:checked ~ .px-17-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-5:checked ~ .px-17-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-6:checked ~ .px-17-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-7:checked ~ .px-17-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-8:checked ~ .px-17-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-9:checked ~ .px-17-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-10:checked ~ .px-17-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-11:checked ~ .px-17-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-12:checked ~ .px-17-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-13:checked ~ .px-17-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-14:checked ~ .px-17-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-15:checked ~ .px-17-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-16:checked ~ .px-17-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-17:checked ~ .px-17-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-18:checked ~ .px-17-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-19:checked ~ .px-17-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-17-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-17-20:checked ~ .px-17-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-1:checked ~ .px-18-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-2:checked ~ .px-18-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-3:checked ~ .px-18-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-4:checked ~ .px-18-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-5:checked ~ .px-18-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-6:checked ~ .px-18-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-7:checked ~ .px-18-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-8:checked ~ .px-18-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-9:checked ~ .px-18-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-10:checked ~ .px-18-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-11:checked ~ .px-18-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-12:checked ~ .px-18-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-13:checked ~ .px-18-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-14:checked ~ .px-18-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-15:checked ~ .px-18-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-16:checked ~ .px-18-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-17:checked ~ .px-18-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-18:checked ~ .px-18-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-19:checked ~ .px-18-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-18-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-18-20:checked ~ .px-18-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-1:checked ~ .px-19-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-2:checked ~ .px-19-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-3:checked ~ .px-19-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-4:checked ~ .px-19-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-5:checked ~ .px-19-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-6:checked ~ .px-19-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-7:checked ~ .px-19-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-8:checked ~ .px-19-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-9:checked ~ .px-19-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-10:checked ~ .px-19-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-11:checked ~ .px-19-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-12:checked ~ .px-19-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-13:checked ~ .px-19-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-14:checked ~ .px-19-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-15:checked ~ .px-19-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-16:checked ~ .px-19-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-17:checked ~ .px-19-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-18:checked ~ .px-19-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-19:checked ~ .px-19-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-19-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-19-20:checked ~ .px-19-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-1:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-1:checked ~ .px-20-1 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-2:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-2:checked ~ .px-20-2 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-3:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-3:checked ~ .px-20-3 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-4:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-4:checked ~ .px-20-4 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-5:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-5:checked ~ .px-20-5 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-6:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-6:checked ~ .px-20-6 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-7:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-7:checked ~ .px-20-7 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-8:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-8:checked ~ .px-20-8 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-9:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-9:checked ~ .px-20-9 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-10:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-10:checked ~ .px-20-10 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-11:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-11:checked ~ .px-20-11 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-12:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-12:checked ~ .px-20-12 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-13:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-13:checked ~ .px-20-13 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-14:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-14:checked ~ .px-20-14 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-15:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-15:checked ~ .px-20-15 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-16:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-16:checked ~ .px-20-16 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-17:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-17:checked ~ .px-20-17 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-18:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-18:checked ~ .px-20-18 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-19:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-19:checked ~ .px-20-19 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+* .frame .center .px-20-20:hover {
+  background: #e55e51;
+}
+* .frame .center #px-20-20:checked ~ .px-20-20 {
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+/*# sourceMappingURL=index.css.map */
