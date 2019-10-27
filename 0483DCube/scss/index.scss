@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+ 
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: #E47512;
+            perspective: 1000px;
+            perspective-origin: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            $side: 11rem;
+
+            .cube {
+                width: $side;
+                height: $side;
+                transform-style: preserve-3d;
+                transform: rotateX(-22deg) rotateY(45deg);
+                transition: transform 1s ease-in-out;
+
+                &:hover {
+                    transform:  rotateX(-212deg) rotateY(-135deg);
+                    transition: transform 1s ease-in-out;
+                }
+
+                .side {
+                    width: 100%;
+                    height: 100%;
+                    transform-origin: 50% 50%;
+                    position: absolute;
+                }
+
+                .front {
+                    background: #DDDDDD;
+                    transform: translate3d(0, 0, $side / 2);
+                }
+
+                .back {
+                    background: #DDDDDD;
+                    transform: translate3d(0, 0, -$side / 2);
+                }
+
+                .left {
+                    background: #EEEEEE;
+                    transform: translate3d(-$side / 2, 0, 0) rotateY(90deg);
+                }
+
+                .right {
+                    background: #EEEEEE;
+                    transform: translate3d($side / 2, 0, 0) rotateY(90deg);
+                }
+
+                .top {
+                    background: #fff;
+                    transform: translate3d(0, -$side / 2, 0) rotateX(90deg);
+                }
+
+                .bottom {
+                    background: darken(#DDDDDD, 10%); 
+                    transform: translate3d(0, $side / 2, 0) rotateX(90deg);
+                }
+            }
+        }
+    }   
+}
