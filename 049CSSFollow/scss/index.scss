@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #fff;
+        color: #333;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+        $grid-count: 20;
+        $dot-size: 5%;
+        $moveX: 0;
+        $moveY: 0;
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: #2C3E50;
+            display: grid;
+            grid-template-columns: repeat($grid-count, 1fr);
+            cursor: pointer;
+
+            .dot {
+                width: $dot-size;
+                height: $dot-size;
+                background: #2ECC71;
+                border-radius: 50%;
+                position: absolute;
+                top: 50% - $dot-size / 2;
+                left: 50% - $dot-size / 2;
+                transition: transform 0.2s linear;
+                pointer-events: none;
+
+                .halo {
+                    $radius: 100%;
+                    width: $radius;
+                    height: $radius;
+                    border: 1.5px solid #2ECC71;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50% - $radius / 2;
+                    left: 50% - $radius / 2;
+                    transform-origin: 50% 50%;
+                    animation: expand 1.7s linear infinite;
+
+                    @keyframes expand {
+                        0% { 
+                            transform: scale(1);
+                            opacity: 0.6;
+                        }
+
+                        80%, 100% {
+                            transform: scale(3.5);
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            @for $i from 1 through $grid-count {
+                @for $j from 1 through $grid-count {
+                    .grid-#{$i}-#{$j}:hover ~ .dot {
+                        $moveX: (($j - $grid-count / 2 - 0.5) * 400 / $grid-count)+px;
+                        $moveY: (($i - $grid-count / 2 - 0.5) * 400 / $grid-count)+px;
+                        transform: translate($moveX, $moveY);
+                        transition: transform 0.2s linear;
+                    }
+                }
+            }
+        }
+    }
+}

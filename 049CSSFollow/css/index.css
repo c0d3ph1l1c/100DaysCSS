@@ -1,0 +1,1669 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #2C3E50;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  cursor: pointer;
+}
+* .frame .center .dot {
+  width: 5%;
+  height: 5%;
+  background: #2ECC71;
+  border-radius: 50%;
+  position: absolute;
+  top: 47.5%;
+  left: 47.5%;
+  transition: transform 0.2s linear;
+  pointer-events: none;
+}
+* .frame .center .dot .halo {
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid #2ECC71;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform-origin: 50% 50%;
+  animation: expand 1.7s linear infinite;
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  80%, 100% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}
+* .frame .center .grid-1-1:hover ~ .dot {
+  transform: translate(-190px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-2:hover ~ .dot {
+  transform: translate(-170px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-3:hover ~ .dot {
+  transform: translate(-150px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-4:hover ~ .dot {
+  transform: translate(-130px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-5:hover ~ .dot {
+  transform: translate(-110px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-6:hover ~ .dot {
+  transform: translate(-90px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-7:hover ~ .dot {
+  transform: translate(-70px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-8:hover ~ .dot {
+  transform: translate(-50px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-9:hover ~ .dot {
+  transform: translate(-30px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-10:hover ~ .dot {
+  transform: translate(-10px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-11:hover ~ .dot {
+  transform: translate(10px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-12:hover ~ .dot {
+  transform: translate(30px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-13:hover ~ .dot {
+  transform: translate(50px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-14:hover ~ .dot {
+  transform: translate(70px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-15:hover ~ .dot {
+  transform: translate(90px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-16:hover ~ .dot {
+  transform: translate(110px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-17:hover ~ .dot {
+  transform: translate(130px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-18:hover ~ .dot {
+  transform: translate(150px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-19:hover ~ .dot {
+  transform: translate(170px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-1-20:hover ~ .dot {
+  transform: translate(190px, -190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-1:hover ~ .dot {
+  transform: translate(-190px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-2:hover ~ .dot {
+  transform: translate(-170px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-3:hover ~ .dot {
+  transform: translate(-150px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-4:hover ~ .dot {
+  transform: translate(-130px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-5:hover ~ .dot {
+  transform: translate(-110px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-6:hover ~ .dot {
+  transform: translate(-90px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-7:hover ~ .dot {
+  transform: translate(-70px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-8:hover ~ .dot {
+  transform: translate(-50px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-9:hover ~ .dot {
+  transform: translate(-30px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-10:hover ~ .dot {
+  transform: translate(-10px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-11:hover ~ .dot {
+  transform: translate(10px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-12:hover ~ .dot {
+  transform: translate(30px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-13:hover ~ .dot {
+  transform: translate(50px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-14:hover ~ .dot {
+  transform: translate(70px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-15:hover ~ .dot {
+  transform: translate(90px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-16:hover ~ .dot {
+  transform: translate(110px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-17:hover ~ .dot {
+  transform: translate(130px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-18:hover ~ .dot {
+  transform: translate(150px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-19:hover ~ .dot {
+  transform: translate(170px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-2-20:hover ~ .dot {
+  transform: translate(190px, -170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-1:hover ~ .dot {
+  transform: translate(-190px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-2:hover ~ .dot {
+  transform: translate(-170px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-3:hover ~ .dot {
+  transform: translate(-150px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-4:hover ~ .dot {
+  transform: translate(-130px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-5:hover ~ .dot {
+  transform: translate(-110px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-6:hover ~ .dot {
+  transform: translate(-90px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-7:hover ~ .dot {
+  transform: translate(-70px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-8:hover ~ .dot {
+  transform: translate(-50px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-9:hover ~ .dot {
+  transform: translate(-30px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-10:hover ~ .dot {
+  transform: translate(-10px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-11:hover ~ .dot {
+  transform: translate(10px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-12:hover ~ .dot {
+  transform: translate(30px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-13:hover ~ .dot {
+  transform: translate(50px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-14:hover ~ .dot {
+  transform: translate(70px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-15:hover ~ .dot {
+  transform: translate(90px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-16:hover ~ .dot {
+  transform: translate(110px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-17:hover ~ .dot {
+  transform: translate(130px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-18:hover ~ .dot {
+  transform: translate(150px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-19:hover ~ .dot {
+  transform: translate(170px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-3-20:hover ~ .dot {
+  transform: translate(190px, -150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-1:hover ~ .dot {
+  transform: translate(-190px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-2:hover ~ .dot {
+  transform: translate(-170px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-3:hover ~ .dot {
+  transform: translate(-150px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-4:hover ~ .dot {
+  transform: translate(-130px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-5:hover ~ .dot {
+  transform: translate(-110px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-6:hover ~ .dot {
+  transform: translate(-90px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-7:hover ~ .dot {
+  transform: translate(-70px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-8:hover ~ .dot {
+  transform: translate(-50px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-9:hover ~ .dot {
+  transform: translate(-30px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-10:hover ~ .dot {
+  transform: translate(-10px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-11:hover ~ .dot {
+  transform: translate(10px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-12:hover ~ .dot {
+  transform: translate(30px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-13:hover ~ .dot {
+  transform: translate(50px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-14:hover ~ .dot {
+  transform: translate(70px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-15:hover ~ .dot {
+  transform: translate(90px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-16:hover ~ .dot {
+  transform: translate(110px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-17:hover ~ .dot {
+  transform: translate(130px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-18:hover ~ .dot {
+  transform: translate(150px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-19:hover ~ .dot {
+  transform: translate(170px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-4-20:hover ~ .dot {
+  transform: translate(190px, -130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-1:hover ~ .dot {
+  transform: translate(-190px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-2:hover ~ .dot {
+  transform: translate(-170px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-3:hover ~ .dot {
+  transform: translate(-150px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-4:hover ~ .dot {
+  transform: translate(-130px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-5:hover ~ .dot {
+  transform: translate(-110px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-6:hover ~ .dot {
+  transform: translate(-90px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-7:hover ~ .dot {
+  transform: translate(-70px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-8:hover ~ .dot {
+  transform: translate(-50px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-9:hover ~ .dot {
+  transform: translate(-30px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-10:hover ~ .dot {
+  transform: translate(-10px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-11:hover ~ .dot {
+  transform: translate(10px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-12:hover ~ .dot {
+  transform: translate(30px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-13:hover ~ .dot {
+  transform: translate(50px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-14:hover ~ .dot {
+  transform: translate(70px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-15:hover ~ .dot {
+  transform: translate(90px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-16:hover ~ .dot {
+  transform: translate(110px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-17:hover ~ .dot {
+  transform: translate(130px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-18:hover ~ .dot {
+  transform: translate(150px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-19:hover ~ .dot {
+  transform: translate(170px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-5-20:hover ~ .dot {
+  transform: translate(190px, -110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-1:hover ~ .dot {
+  transform: translate(-190px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-2:hover ~ .dot {
+  transform: translate(-170px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-3:hover ~ .dot {
+  transform: translate(-150px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-4:hover ~ .dot {
+  transform: translate(-130px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-5:hover ~ .dot {
+  transform: translate(-110px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-6:hover ~ .dot {
+  transform: translate(-90px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-7:hover ~ .dot {
+  transform: translate(-70px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-8:hover ~ .dot {
+  transform: translate(-50px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-9:hover ~ .dot {
+  transform: translate(-30px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-10:hover ~ .dot {
+  transform: translate(-10px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-11:hover ~ .dot {
+  transform: translate(10px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-12:hover ~ .dot {
+  transform: translate(30px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-13:hover ~ .dot {
+  transform: translate(50px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-14:hover ~ .dot {
+  transform: translate(70px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-15:hover ~ .dot {
+  transform: translate(90px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-16:hover ~ .dot {
+  transform: translate(110px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-17:hover ~ .dot {
+  transform: translate(130px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-18:hover ~ .dot {
+  transform: translate(150px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-19:hover ~ .dot {
+  transform: translate(170px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-6-20:hover ~ .dot {
+  transform: translate(190px, -90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-1:hover ~ .dot {
+  transform: translate(-190px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-2:hover ~ .dot {
+  transform: translate(-170px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-3:hover ~ .dot {
+  transform: translate(-150px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-4:hover ~ .dot {
+  transform: translate(-130px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-5:hover ~ .dot {
+  transform: translate(-110px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-6:hover ~ .dot {
+  transform: translate(-90px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-7:hover ~ .dot {
+  transform: translate(-70px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-8:hover ~ .dot {
+  transform: translate(-50px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-9:hover ~ .dot {
+  transform: translate(-30px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-10:hover ~ .dot {
+  transform: translate(-10px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-11:hover ~ .dot {
+  transform: translate(10px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-12:hover ~ .dot {
+  transform: translate(30px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-13:hover ~ .dot {
+  transform: translate(50px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-14:hover ~ .dot {
+  transform: translate(70px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-15:hover ~ .dot {
+  transform: translate(90px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-16:hover ~ .dot {
+  transform: translate(110px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-17:hover ~ .dot {
+  transform: translate(130px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-18:hover ~ .dot {
+  transform: translate(150px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-19:hover ~ .dot {
+  transform: translate(170px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-7-20:hover ~ .dot {
+  transform: translate(190px, -70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-1:hover ~ .dot {
+  transform: translate(-190px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-2:hover ~ .dot {
+  transform: translate(-170px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-3:hover ~ .dot {
+  transform: translate(-150px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-4:hover ~ .dot {
+  transform: translate(-130px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-5:hover ~ .dot {
+  transform: translate(-110px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-6:hover ~ .dot {
+  transform: translate(-90px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-7:hover ~ .dot {
+  transform: translate(-70px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-8:hover ~ .dot {
+  transform: translate(-50px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-9:hover ~ .dot {
+  transform: translate(-30px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-10:hover ~ .dot {
+  transform: translate(-10px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-11:hover ~ .dot {
+  transform: translate(10px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-12:hover ~ .dot {
+  transform: translate(30px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-13:hover ~ .dot {
+  transform: translate(50px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-14:hover ~ .dot {
+  transform: translate(70px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-15:hover ~ .dot {
+  transform: translate(90px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-16:hover ~ .dot {
+  transform: translate(110px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-17:hover ~ .dot {
+  transform: translate(130px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-18:hover ~ .dot {
+  transform: translate(150px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-19:hover ~ .dot {
+  transform: translate(170px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-8-20:hover ~ .dot {
+  transform: translate(190px, -50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-1:hover ~ .dot {
+  transform: translate(-190px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-2:hover ~ .dot {
+  transform: translate(-170px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-3:hover ~ .dot {
+  transform: translate(-150px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-4:hover ~ .dot {
+  transform: translate(-130px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-5:hover ~ .dot {
+  transform: translate(-110px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-6:hover ~ .dot {
+  transform: translate(-90px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-7:hover ~ .dot {
+  transform: translate(-70px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-8:hover ~ .dot {
+  transform: translate(-50px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-9:hover ~ .dot {
+  transform: translate(-30px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-10:hover ~ .dot {
+  transform: translate(-10px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-11:hover ~ .dot {
+  transform: translate(10px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-12:hover ~ .dot {
+  transform: translate(30px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-13:hover ~ .dot {
+  transform: translate(50px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-14:hover ~ .dot {
+  transform: translate(70px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-15:hover ~ .dot {
+  transform: translate(90px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-16:hover ~ .dot {
+  transform: translate(110px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-17:hover ~ .dot {
+  transform: translate(130px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-18:hover ~ .dot {
+  transform: translate(150px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-19:hover ~ .dot {
+  transform: translate(170px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-9-20:hover ~ .dot {
+  transform: translate(190px, -30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-1:hover ~ .dot {
+  transform: translate(-190px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-2:hover ~ .dot {
+  transform: translate(-170px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-3:hover ~ .dot {
+  transform: translate(-150px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-4:hover ~ .dot {
+  transform: translate(-130px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-5:hover ~ .dot {
+  transform: translate(-110px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-6:hover ~ .dot {
+  transform: translate(-90px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-7:hover ~ .dot {
+  transform: translate(-70px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-8:hover ~ .dot {
+  transform: translate(-50px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-9:hover ~ .dot {
+  transform: translate(-30px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-10:hover ~ .dot {
+  transform: translate(-10px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-11:hover ~ .dot {
+  transform: translate(10px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-12:hover ~ .dot {
+  transform: translate(30px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-13:hover ~ .dot {
+  transform: translate(50px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-14:hover ~ .dot {
+  transform: translate(70px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-15:hover ~ .dot {
+  transform: translate(90px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-16:hover ~ .dot {
+  transform: translate(110px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-17:hover ~ .dot {
+  transform: translate(130px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-18:hover ~ .dot {
+  transform: translate(150px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-19:hover ~ .dot {
+  transform: translate(170px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-10-20:hover ~ .dot {
+  transform: translate(190px, -10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-1:hover ~ .dot {
+  transform: translate(-190px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-2:hover ~ .dot {
+  transform: translate(-170px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-3:hover ~ .dot {
+  transform: translate(-150px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-4:hover ~ .dot {
+  transform: translate(-130px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-5:hover ~ .dot {
+  transform: translate(-110px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-6:hover ~ .dot {
+  transform: translate(-90px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-7:hover ~ .dot {
+  transform: translate(-70px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-8:hover ~ .dot {
+  transform: translate(-50px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-9:hover ~ .dot {
+  transform: translate(-30px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-10:hover ~ .dot {
+  transform: translate(-10px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-11:hover ~ .dot {
+  transform: translate(10px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-12:hover ~ .dot {
+  transform: translate(30px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-13:hover ~ .dot {
+  transform: translate(50px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-14:hover ~ .dot {
+  transform: translate(70px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-15:hover ~ .dot {
+  transform: translate(90px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-16:hover ~ .dot {
+  transform: translate(110px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-17:hover ~ .dot {
+  transform: translate(130px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-18:hover ~ .dot {
+  transform: translate(150px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-19:hover ~ .dot {
+  transform: translate(170px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-11-20:hover ~ .dot {
+  transform: translate(190px, 10px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-1:hover ~ .dot {
+  transform: translate(-190px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-2:hover ~ .dot {
+  transform: translate(-170px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-3:hover ~ .dot {
+  transform: translate(-150px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-4:hover ~ .dot {
+  transform: translate(-130px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-5:hover ~ .dot {
+  transform: translate(-110px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-6:hover ~ .dot {
+  transform: translate(-90px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-7:hover ~ .dot {
+  transform: translate(-70px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-8:hover ~ .dot {
+  transform: translate(-50px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-9:hover ~ .dot {
+  transform: translate(-30px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-10:hover ~ .dot {
+  transform: translate(-10px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-11:hover ~ .dot {
+  transform: translate(10px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-12:hover ~ .dot {
+  transform: translate(30px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-13:hover ~ .dot {
+  transform: translate(50px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-14:hover ~ .dot {
+  transform: translate(70px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-15:hover ~ .dot {
+  transform: translate(90px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-16:hover ~ .dot {
+  transform: translate(110px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-17:hover ~ .dot {
+  transform: translate(130px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-18:hover ~ .dot {
+  transform: translate(150px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-19:hover ~ .dot {
+  transform: translate(170px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-12-20:hover ~ .dot {
+  transform: translate(190px, 30px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-1:hover ~ .dot {
+  transform: translate(-190px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-2:hover ~ .dot {
+  transform: translate(-170px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-3:hover ~ .dot {
+  transform: translate(-150px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-4:hover ~ .dot {
+  transform: translate(-130px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-5:hover ~ .dot {
+  transform: translate(-110px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-6:hover ~ .dot {
+  transform: translate(-90px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-7:hover ~ .dot {
+  transform: translate(-70px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-8:hover ~ .dot {
+  transform: translate(-50px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-9:hover ~ .dot {
+  transform: translate(-30px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-10:hover ~ .dot {
+  transform: translate(-10px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-11:hover ~ .dot {
+  transform: translate(10px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-12:hover ~ .dot {
+  transform: translate(30px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-13:hover ~ .dot {
+  transform: translate(50px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-14:hover ~ .dot {
+  transform: translate(70px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-15:hover ~ .dot {
+  transform: translate(90px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-16:hover ~ .dot {
+  transform: translate(110px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-17:hover ~ .dot {
+  transform: translate(130px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-18:hover ~ .dot {
+  transform: translate(150px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-19:hover ~ .dot {
+  transform: translate(170px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-13-20:hover ~ .dot {
+  transform: translate(190px, 50px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-1:hover ~ .dot {
+  transform: translate(-190px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-2:hover ~ .dot {
+  transform: translate(-170px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-3:hover ~ .dot {
+  transform: translate(-150px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-4:hover ~ .dot {
+  transform: translate(-130px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-5:hover ~ .dot {
+  transform: translate(-110px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-6:hover ~ .dot {
+  transform: translate(-90px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-7:hover ~ .dot {
+  transform: translate(-70px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-8:hover ~ .dot {
+  transform: translate(-50px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-9:hover ~ .dot {
+  transform: translate(-30px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-10:hover ~ .dot {
+  transform: translate(-10px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-11:hover ~ .dot {
+  transform: translate(10px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-12:hover ~ .dot {
+  transform: translate(30px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-13:hover ~ .dot {
+  transform: translate(50px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-14:hover ~ .dot {
+  transform: translate(70px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-15:hover ~ .dot {
+  transform: translate(90px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-16:hover ~ .dot {
+  transform: translate(110px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-17:hover ~ .dot {
+  transform: translate(130px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-18:hover ~ .dot {
+  transform: translate(150px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-19:hover ~ .dot {
+  transform: translate(170px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-14-20:hover ~ .dot {
+  transform: translate(190px, 70px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-1:hover ~ .dot {
+  transform: translate(-190px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-2:hover ~ .dot {
+  transform: translate(-170px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-3:hover ~ .dot {
+  transform: translate(-150px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-4:hover ~ .dot {
+  transform: translate(-130px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-5:hover ~ .dot {
+  transform: translate(-110px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-6:hover ~ .dot {
+  transform: translate(-90px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-7:hover ~ .dot {
+  transform: translate(-70px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-8:hover ~ .dot {
+  transform: translate(-50px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-9:hover ~ .dot {
+  transform: translate(-30px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-10:hover ~ .dot {
+  transform: translate(-10px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-11:hover ~ .dot {
+  transform: translate(10px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-12:hover ~ .dot {
+  transform: translate(30px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-13:hover ~ .dot {
+  transform: translate(50px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-14:hover ~ .dot {
+  transform: translate(70px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-15:hover ~ .dot {
+  transform: translate(90px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-16:hover ~ .dot {
+  transform: translate(110px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-17:hover ~ .dot {
+  transform: translate(130px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-18:hover ~ .dot {
+  transform: translate(150px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-19:hover ~ .dot {
+  transform: translate(170px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-15-20:hover ~ .dot {
+  transform: translate(190px, 90px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-1:hover ~ .dot {
+  transform: translate(-190px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-2:hover ~ .dot {
+  transform: translate(-170px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-3:hover ~ .dot {
+  transform: translate(-150px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-4:hover ~ .dot {
+  transform: translate(-130px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-5:hover ~ .dot {
+  transform: translate(-110px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-6:hover ~ .dot {
+  transform: translate(-90px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-7:hover ~ .dot {
+  transform: translate(-70px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-8:hover ~ .dot {
+  transform: translate(-50px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-9:hover ~ .dot {
+  transform: translate(-30px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-10:hover ~ .dot {
+  transform: translate(-10px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-11:hover ~ .dot {
+  transform: translate(10px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-12:hover ~ .dot {
+  transform: translate(30px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-13:hover ~ .dot {
+  transform: translate(50px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-14:hover ~ .dot {
+  transform: translate(70px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-15:hover ~ .dot {
+  transform: translate(90px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-16:hover ~ .dot {
+  transform: translate(110px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-17:hover ~ .dot {
+  transform: translate(130px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-18:hover ~ .dot {
+  transform: translate(150px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-19:hover ~ .dot {
+  transform: translate(170px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-16-20:hover ~ .dot {
+  transform: translate(190px, 110px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-1:hover ~ .dot {
+  transform: translate(-190px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-2:hover ~ .dot {
+  transform: translate(-170px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-3:hover ~ .dot {
+  transform: translate(-150px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-4:hover ~ .dot {
+  transform: translate(-130px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-5:hover ~ .dot {
+  transform: translate(-110px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-6:hover ~ .dot {
+  transform: translate(-90px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-7:hover ~ .dot {
+  transform: translate(-70px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-8:hover ~ .dot {
+  transform: translate(-50px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-9:hover ~ .dot {
+  transform: translate(-30px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-10:hover ~ .dot {
+  transform: translate(-10px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-11:hover ~ .dot {
+  transform: translate(10px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-12:hover ~ .dot {
+  transform: translate(30px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-13:hover ~ .dot {
+  transform: translate(50px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-14:hover ~ .dot {
+  transform: translate(70px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-15:hover ~ .dot {
+  transform: translate(90px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-16:hover ~ .dot {
+  transform: translate(110px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-17:hover ~ .dot {
+  transform: translate(130px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-18:hover ~ .dot {
+  transform: translate(150px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-19:hover ~ .dot {
+  transform: translate(170px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-17-20:hover ~ .dot {
+  transform: translate(190px, 130px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-1:hover ~ .dot {
+  transform: translate(-190px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-2:hover ~ .dot {
+  transform: translate(-170px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-3:hover ~ .dot {
+  transform: translate(-150px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-4:hover ~ .dot {
+  transform: translate(-130px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-5:hover ~ .dot {
+  transform: translate(-110px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-6:hover ~ .dot {
+  transform: translate(-90px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-7:hover ~ .dot {
+  transform: translate(-70px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-8:hover ~ .dot {
+  transform: translate(-50px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-9:hover ~ .dot {
+  transform: translate(-30px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-10:hover ~ .dot {
+  transform: translate(-10px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-11:hover ~ .dot {
+  transform: translate(10px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-12:hover ~ .dot {
+  transform: translate(30px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-13:hover ~ .dot {
+  transform: translate(50px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-14:hover ~ .dot {
+  transform: translate(70px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-15:hover ~ .dot {
+  transform: translate(90px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-16:hover ~ .dot {
+  transform: translate(110px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-17:hover ~ .dot {
+  transform: translate(130px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-18:hover ~ .dot {
+  transform: translate(150px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-19:hover ~ .dot {
+  transform: translate(170px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-18-20:hover ~ .dot {
+  transform: translate(190px, 150px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-1:hover ~ .dot {
+  transform: translate(-190px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-2:hover ~ .dot {
+  transform: translate(-170px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-3:hover ~ .dot {
+  transform: translate(-150px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-4:hover ~ .dot {
+  transform: translate(-130px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-5:hover ~ .dot {
+  transform: translate(-110px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-6:hover ~ .dot {
+  transform: translate(-90px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-7:hover ~ .dot {
+  transform: translate(-70px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-8:hover ~ .dot {
+  transform: translate(-50px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-9:hover ~ .dot {
+  transform: translate(-30px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-10:hover ~ .dot {
+  transform: translate(-10px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-11:hover ~ .dot {
+  transform: translate(10px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-12:hover ~ .dot {
+  transform: translate(30px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-13:hover ~ .dot {
+  transform: translate(50px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-14:hover ~ .dot {
+  transform: translate(70px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-15:hover ~ .dot {
+  transform: translate(90px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-16:hover ~ .dot {
+  transform: translate(110px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-17:hover ~ .dot {
+  transform: translate(130px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-18:hover ~ .dot {
+  transform: translate(150px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-19:hover ~ .dot {
+  transform: translate(170px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-19-20:hover ~ .dot {
+  transform: translate(190px, 170px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-1:hover ~ .dot {
+  transform: translate(-190px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-2:hover ~ .dot {
+  transform: translate(-170px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-3:hover ~ .dot {
+  transform: translate(-150px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-4:hover ~ .dot {
+  transform: translate(-130px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-5:hover ~ .dot {
+  transform: translate(-110px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-6:hover ~ .dot {
+  transform: translate(-90px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-7:hover ~ .dot {
+  transform: translate(-70px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-8:hover ~ .dot {
+  transform: translate(-50px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-9:hover ~ .dot {
+  transform: translate(-30px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-10:hover ~ .dot {
+  transform: translate(-10px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-11:hover ~ .dot {
+  transform: translate(10px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-12:hover ~ .dot {
+  transform: translate(30px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-13:hover ~ .dot {
+  transform: translate(50px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-14:hover ~ .dot {
+  transform: translate(70px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-15:hover ~ .dot {
+  transform: translate(90px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-16:hover ~ .dot {
+  transform: translate(110px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-17:hover ~ .dot {
+  transform: translate(130px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-18:hover ~ .dot {
+  transform: translate(150px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-19:hover ~ .dot {
+  transform: translate(170px, 190px);
+  transition: transform 0.2s linear;
+}
+* .frame .center .grid-20-20:hover ~ .dot {
+  transform: translate(190px, 190px);
+  transition: transform 0.2s linear;
+}
+
+/*# sourceMappingURL=index.css.map */
