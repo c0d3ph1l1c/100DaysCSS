@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #8E44AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center svg {
+  width: 25%;
+  height: 35%;
+  fill: #fff;
+  transform-origin: 50% 80%;
+  animation: easter 3s linear infinite;
+}
+@keyframes easter {
+  0% {
+    transform: translateY(-18rem) scale(1, 1);
+  }
+  17% {
+    transform: translateY(1.5rem) scale(1, 1);
+  }
+  20% {
+    transform: translateY(1.5rem) scale(1.15, 0.8);
+  }
+  23% {
+    transform: translateY(-1rem) scale(1, 1);
+  }
+  26%, 40% {
+    transform: translateY(0);
+  }
+  41% {
+    transform: rotateZ(8deg);
+  }
+  45% {
+    transform: rotateZ(-8deg);
+  }
+  49% {
+    transform: rotateZ(8deg);
+  }
+  53%, 67% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  70% {
+    transform: translateY(0.5rem);
+  }
+  74%, 76% {
+    transform: translateY(-1.5rem);
+  }
+  90%, 100% {
+    transform: translateY(18rem);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
