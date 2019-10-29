@@ -53,3 +53,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [047 - Pixel Art](https://c0d3ph1l1c.github.io/100DaysCSS/047PixelArt/)
 * [048 - 3D Cube](https://c0d3ph1l1c.github.io/100DaysCSS/0483DCube/)
 * [049 - CSS Follow](https://c0d3ph1l1c.github.io/100DaysCSS/049CSSFollow/)
+* [050 - Easter Egg](https://c0d3ph1l1c.github.io/100DaysCSS/050EasterEgg/)
