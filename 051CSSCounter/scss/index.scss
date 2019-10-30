@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #313C46;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      #pause { display: none; }
+
+      .counter-frame {
+        width: 25%;
+        height: 10%;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;  
+        position: absolute;
+        top: 40%;
+
+        .thousands, .hundreds, .tens, .ones {
+          width: 23%;
+          height: 90%;
+          border-radius: 3px;
+          position: relative;
+
+          .number {
+            width: 100%;
+            height: 100%;
+            font-size: 1.8rem;
+            text-shadow: 1px 0px #5795BE;
+            color: #5795BE;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            position: absolute;
+            top: 0;
+            left: 0; 
+            opacity: 0;
+          }
+        } 
+
+        $big-cycle: 10000;
+        
+        @keyframes count {
+          0%, 10% { opacity: 1; }
+          10.0001%, 100% { opacity: 0; }
+        }
+
+        .thousands {
+          $cycle: $big-cycle;
+          @for $i from 0 through 9 {
+            .number-#{$i} { 
+              animation: count $cycle+s linear ($i * $cycle/10)+s infinite; 
+            }
+          }
+        }
+
+        .hundreds {
+          $cycle: $big-cycle/10;
+          @for $i from 0 through 9 {
+            .number-#{$i} { 
+              animation: count $cycle+s linear ($i * $cycle/10)+s infinite; 
+            }
+          }
+        }
+
+        .tens {
+          $cycle: $big-cycle/100;
+          @for $i from 0 through 9 {
+            .number-#{$i} { 
+              animation: count $cycle+s linear ($i * $cycle/10)+s infinite; 
+            }
+          }
+        }
+
+        .ones {
+          $cycle: $big-cycle/1000;
+          @for $i from 0 through 9 {
+            .number-#{$i} { 
+              animation: count $cycle+s linear ($i * $cycle/10)+s infinite; 
+            }
+          }
+        }
+      }
+
+      .pause-btn, .play-btn {
+        position: absolute;
+        top: 54%;
+        
+        svg {
+          width: 0.96rem;
+          height: 1.2rem;
+          fill: #fff;
+          transform-origin: 50% 50%;
+          transition: transform 0.15s linear;
+        }
+      }
+
+      .pause-btn svg { 
+        opacity: 1;
+        transform: scale(1); 
+        transition: transform 0.15s linear, opacity 0.15s linear;
+      }
+      .play-btn svg { 
+        opacity: 0;
+        transform: scale(0); 
+        transition: transform 0.15s linear, opacity 0.15s linear;
+      }
+
+      #pause:checked ~ .pause-btn svg { 
+        opacity: 0;
+        transform: scale(0); 
+        transition: transform 0.15s linear, opacity 0.15s linear;
+      }
+      #pause:checked ~ .play-btn svg { 
+        opacity: 1;
+        transform: scale(1); 
+        transition: transform 0.15s linear, opacity 0.15s linear;
+      }
+      #pause:checked ~  .counter-frame {
+        .thousands, .hundreds, .tens, .ones {
+          @for $i from 0 through 9 {
+            .number-#{$i} { 
+              animation-play-state: paused; 
+            }
+          }
+        }
+      }
+    }
+  }
+}

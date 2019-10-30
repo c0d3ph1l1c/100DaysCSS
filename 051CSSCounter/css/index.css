@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #313C46;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+* .frame .center #pause {
+  display: none;
+}
+* .frame .center .counter-frame {
+  width: 25%;
+  height: 10%;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 40%;
+}
+* .frame .center .counter-frame .thousands, * .frame .center .counter-frame .hundreds, * .frame .center .counter-frame .tens, * .frame .center .counter-frame .ones {
+  width: 23%;
+  height: 90%;
+  border-radius: 3px;
+  position: relative;
+}
+* .frame .center .counter-frame .thousands .number, * .frame .center .counter-frame .hundreds .number, * .frame .center .counter-frame .tens .number, * .frame .center .counter-frame .ones .number {
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  text-shadow: 1px 0px #5795BE;
+  color: #5795BE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+@keyframes count {
+  0%, 10% {
+    opacity: 1;
+  }
+  10.0001%, 100% {
+    opacity: 0;
+  }
+}
+* .frame .center .counter-frame .thousands .number-0 {
+  animation: count 10000s linear 0s infinite;
+}
+* .frame .center .counter-frame .thousands .number-1 {
+  animation: count 10000s linear 1000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-2 {
+  animation: count 10000s linear 2000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-3 {
+  animation: count 10000s linear 3000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-4 {
+  animation: count 10000s linear 4000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-5 {
+  animation: count 10000s linear 5000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-6 {
+  animation: count 10000s linear 6000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-7 {
+  animation: count 10000s linear 7000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-8 {
+  animation: count 10000s linear 8000s infinite;
+}
+* .frame .center .counter-frame .thousands .number-9 {
+  animation: count 10000s linear 9000s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-0 {
+  animation: count 1000s linear 0s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-1 {
+  animation: count 1000s linear 100s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-2 {
+  animation: count 1000s linear 200s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-3 {
+  animation: count 1000s linear 300s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-4 {
+  animation: count 1000s linear 400s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-5 {
+  animation: count 1000s linear 500s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-6 {
+  animation: count 1000s linear 600s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-7 {
+  animation: count 1000s linear 700s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-8 {
+  animation: count 1000s linear 800s infinite;
+}
+* .frame .center .counter-frame .hundreds .number-9 {
+  animation: count 1000s linear 900s infinite;
+}
+* .frame .center .counter-frame .tens .number-0 {
+  animation: count 100s linear 0s infinite;
+}
+* .frame .center .counter-frame .tens .number-1 {
+  animation: count 100s linear 10s infinite;
+}
+* .frame .center .counter-frame .tens .number-2 {
+  animation: count 100s linear 20s infinite;
+}
+* .frame .center .counter-frame .tens .number-3 {
+  animation: count 100s linear 30s infinite;
+}
+* .frame .center .counter-frame .tens .number-4 {
+  animation: count 100s linear 40s infinite;
+}
+* .frame .center .counter-frame .tens .number-5 {
+  animation: count 100s linear 50s infinite;
+}
+* .frame .center .counter-frame .tens .number-6 {
+  animation: count 100s linear 60s infinite;
+}
+* .frame .center .counter-frame .tens .number-7 {
+  animation: count 100s linear 70s infinite;
+}
+* .frame .center .counter-frame .tens .number-8 {
+  animation: count 100s linear 80s infinite;
+}
+* .frame .center .counter-frame .tens .number-9 {
+  animation: count 100s linear 90s infinite;
+}
+* .frame .center .counter-frame .ones .number-0 {
+  animation: count 10s linear 0s infinite;
+}
+* .frame .center .counter-frame .ones .number-1 {
+  animation: count 10s linear 1s infinite;
+}
+* .frame .center .counter-frame .ones .number-2 {
+  animation: count 10s linear 2s infinite;
+}
+* .frame .center .counter-frame .ones .number-3 {
+  animation: count 10s linear 3s infinite;
+}
+* .frame .center .counter-frame .ones .number-4 {
+  animation: count 10s linear 4s infinite;
+}
+* .frame .center .counter-frame .ones .number-5 {
+  animation: count 10s linear 5s infinite;
+}
+* .frame .center .counter-frame .ones .number-6 {
+  animation: count 10s linear 6s infinite;
+}
+* .frame .center .counter-frame .ones .number-7 {
+  animation: count 10s linear 7s infinite;
+}
+* .frame .center .counter-frame .ones .number-8 {
+  animation: count 10s linear 8s infinite;
+}
+* .frame .center .counter-frame .ones .number-9 {
+  animation: count 10s linear 9s infinite;
+}
+* .frame .center .pause-btn, * .frame .center .play-btn {
+  position: absolute;
+  top: 54%;
+}
+* .frame .center .pause-btn svg, * .frame .center .play-btn svg {
+  width: 0.96rem;
+  height: 1.2rem;
+  fill: #fff;
+  transform-origin: 50% 50%;
+  transition: transform 0.15s linear;
+}
+* .frame .center .pause-btn svg {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.15s linear, opacity 0.15s linear;
+}
+* .frame .center .play-btn svg {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.15s linear, opacity 0.15s linear;
+}
+* .frame .center #pause:checked ~ .pause-btn svg {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.15s linear, opacity 0.15s linear;
+}
+* .frame .center #pause:checked ~ .play-btn svg {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.15s linear, opacity 0.15s linear;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-0, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-0, * .frame .center #pause:checked ~ .counter-frame .tens .number-0, * .frame .center #pause:checked ~ .counter-frame .ones .number-0 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-1, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-1, * .frame .center #pause:checked ~ .counter-frame .tens .number-1, * .frame .center #pause:checked ~ .counter-frame .ones .number-1 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-2, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-2, * .frame .center #pause:checked ~ .counter-frame .tens .number-2, * .frame .center #pause:checked ~ .counter-frame .ones .number-2 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-3, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-3, * .frame .center #pause:checked ~ .counter-frame .tens .number-3, * .frame .center #pause:checked ~ .counter-frame .ones .number-3 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-4, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-4, * .frame .center #pause:checked ~ .counter-frame .tens .number-4, * .frame .center #pause:checked ~ .counter-frame .ones .number-4 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-5, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-5, * .frame .center #pause:checked ~ .counter-frame .tens .number-5, * .frame .center #pause:checked ~ .counter-frame .ones .number-5 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-6, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-6, * .frame .center #pause:checked ~ .counter-frame .tens .number-6, * .frame .center #pause:checked ~ .counter-frame .ones .number-6 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-7, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-7, * .frame .center #pause:checked ~ .counter-frame .tens .number-7, * .frame .center #pause:checked ~ .counter-frame .ones .number-7 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-8, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-8, * .frame .center #pause:checked ~ .counter-frame .tens .number-8, * .frame .center #pause:checked ~ .counter-frame .ones .number-8 {
+  animation-play-state: paused;
+}
+* .frame .center #pause:checked ~ .counter-frame .thousands .number-9, * .frame .center #pause:checked ~ .counter-frame .hundreds .number-9, * .frame .center #pause:checked ~ .counter-frame .tens .number-9, * .frame .center #pause:checked ~ .counter-frame .ones .number-9 {
+  animation-play-state: paused;
+}
+
+/*# sourceMappingURL=index.css.map */
