@@ -55,4 +55,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [049 - CSS Follow](https://c0d3ph1l1c.github.io/100DaysCSS/049CSSFollow/)
 * [050 - Easter Egg](https://c0d3ph1l1c.github.io/100DaysCSS/050EasterEgg/)
 * [051 - CSS Counter](https://c0d3ph1l1c.github.io/100DaysCSS/051CSSCounter/)
-
+* [052 - Dot Wave](https://c0d3ph1l1c.github.io/100DaysCSS/052DotWave/)
