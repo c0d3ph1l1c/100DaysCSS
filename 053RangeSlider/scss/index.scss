@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #506172;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18rem;
+        height: 2.8rem;
+        border-radius: 3px;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+        outline: none;
+        background: #fff;
+        padding: 0 1rem;
+
+        @mixin track-prop {
+          border-radius: 3px;
+          border: none;
+          border-top: 1.5px solid rgba(100,100,100,0.3);
+          outline: none;
+          background: #7AD175;
+          cursor: pointer;
+        }
+
+        &::-webkit-slider-runnable-track {
+          width: 5rem;
+          height: 0.3rem;
+          @include track-prop();
+        }
+
+        &::-moz-range-track {
+          width: 15rem;
+          height: 0.2rem;
+          @include track-prop();
+        }
+
+        &::-ms-track {
+          color: transparent;
+          height: 0.2rem;
+          @include track-prop();
+        }
+
+        &::-ms-fill-lower, &::-ms-fill-upper {
+          background: #7AD175;
+          border-radius: 3px;
+        }
+
+        $thumb-size: 1.4rem;
+
+        @mixin thumb-prop {
+          width: $thumb-size;
+          height: $thumb-size;
+          background: #fff url('http://100dayscss.com/codepen/slider-thumb.png') no-repeat center center/cover;
+          background-size: 55% 55%;
+          border: 2.5px solid #7AD175;
+          border-radius: 50%;
+          box-shadow: 1px 1px 1px 1px rgba(122, 209, 117, 0.3);
+          cursor: pointer;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          margin-top: -$thumb-size / 2;
+          @include thumb-prop();
+        }
+
+        &::-moz-range-thumb {
+          @include thumb-prop();
+        }
+
+        &::-ms-thumb {
+          @include thumb-prop();
+        }
+      }
+    }
+  }
+}
