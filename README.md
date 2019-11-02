@@ -57,3 +57,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [051 - CSS Counter](https://c0d3ph1l1c.github.io/100DaysCSS/051CSSCounter/)
 * [052 - Dot Wave](https://c0d3ph1l1c.github.io/100DaysCSS/052DotWave/)
 * [053 - Range Slider](https://c0d3ph1l1c.github.io/100DaysCSS/053RangeSlider/)
+* [054 - Waves](https://c0d3ph1l1c.github.io/100DaysCSS/054Waves/)
