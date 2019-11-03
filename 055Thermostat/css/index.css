@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #2B4147;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appear 0.5s linear forwards;
+}
+@keyframes appear {
+  0%, 99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center .thermostat {
+  width: 50%;
+  height: 50%;
+  background: #E4E5E6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+* .frame .center .thermostat .scale {
+  width: 92%;
+  height: 92%;
+  fill: none;
+  stroke-width: 15;
+  stroke-dasharray: 188;
+  transform: rotateX(180deg) rotateZ(-45deg);
+}
+* .frame .center .thermostat .depth-overlay {
+  width: 88%;
+  height: 88%;
+  border-radius: 50%;
+  box-shadow: inset 0px 4px 1px rgba(0, 0, 0, 0.17);
+  position: absolute;
+  transform-origin: 50% 50%;
+  transform: rotateZ(-25deg);
+}
+* .frame .center .thermostat .display {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .thermostat .display .indicator {
+  background: #662B94;
+  width: 10%;
+  height: 1%;
+  position: absolute;
+  top: 49.5%;
+  left: 0%;
+  transform-origin: 500% 50%;
+  transform: rotate(30deg);
+  transition: transform 0.5s ease;
+}
+* .frame .center .thermostat .display .current-temp {
+  color: #999;
+  font-size: 0.7rem;
+}
+* .frame .center .thermostat .display .set-temp {
+  color: #662B94;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: flex;
+}
+* .frame .center .thermostat .display .set-temp .temp-1 {
+  transform-origin: 0% 50%;
+  transform: translateX(2.1rem) scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+* .frame .center .thermostat .display .set-temp .temp-2 {
+  transform-origin: 100% 50%;
+  transform: translateX(0) scale(0.5);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+* .frame .center .thermostat .display .set-temp .deg {
+  font-size: 1rem;
+  position: relative;
+  top: -1.6rem;
+}
+* .frame .center .thermostat .display .location {
+  color: #999;
+  font-size: 0.7rem;
+}
+* .frame .center .thermostat:hover .indicator {
+  transform: rotate(65deg);
+  transition: transform 0.5s ease;
+}
+* .frame .center .thermostat:hover .set-temp .temp-1 {
+  transform: translateX(0) scale(0.5);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+* .frame .center .thermostat:hover .set-temp .temp-2 {
+  transform: translateX(-1.8rem) scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/*# sourceMappingURL=index.css.map */
