@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>055 - Thermostat</title>
+</head>
+<body>
+  <div class="frame">
+    <div class="center">
+      <div class="thermostat">
+        <svg class="scale" viewBox="0 0 100 100">
+          <defs>
+            <linearGradient id="gradient" x1="20%" y1="-30%" x2="125%" y2="30%">
+              <stop offset="0%" stop-color="#662B94" />
+              <stop offset="100%" stop-color="#CD2F60" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="40" stroke="url('#gradient')" />
+        </svg>
+        <div class="depth-overlay"></div>
+        <div class="display">
+          <div class="indicator"></div>
+          <div class="current-temp">23°</div>
+          <div class="set-temp">
+            <div class="temp-1">19<span class="deg">°</span></div>
+            <div class="temp-2">20<span class="deg">°</span></div>
+          </div>
+          <div class="location">Bedroom</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
