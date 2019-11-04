@@ -35,15 +35,29 @@
       align-items: center;
 
       .flower {
-        width: 60%;
-        height: 60%;
+        width: 15%;
+        height: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         transform-origin: 50% 50%;
-        transform: rotate(-70deg);
+        transform: rotate(-70deg) scale(0.8);
         animation: rotate 7s ease-in-out infinite;
+
+        &:after {
+          content: '';
+          width: 85%;
+          height: 85%;
+          background: #fff;
+          border-radius: 50%;
+          box-shadow: 
+          5px 5px 5px 0px rgba(255,255,255,0.5), 
+          -5px 5px 5px 0px rgba(255,255,255,0.5),
+          5px -5px 5px 0px rgba(255,255,255,0.5),
+          -5px -5px 5px 0px rgba(255,255,255,0.5);
+          opacity: 0.3%;
+        }
 
         @keyframes rotate {
           0%, 5% { transform: rotate(-70deg); }
@@ -52,14 +66,14 @@
         }
         
         .petal {
-          width: 40%;
-          height: 40%;
+          width: 160%;
+          height: 160%;
           background: #fff;
           border-radius: 85px 0 85px 0;
           box-shadow: 12px 0px 10px rgba(0,0,0,0.05), 0px -12px 10px rgba(0,0,0,0.05);
           position: absolute;
           left: 50%;
-          top: 10%;
+          top: -110%;
           transform-origin: 0% 100%;
         }
 
@@ -92,16 +106,17 @@
         }
 
         .flower-center {
-          width: 62%;
-          height: 62%;
+          width: 250%;
+          height: 250%;
           background: #fff;
           border-radius: 50%;
-          position: relative;
+          position: absolute;
           z-index: 17;
           display: flex;
           justify-content: center;
           align-items: center;
           animation: flower-center 7s ease-in-out infinite;
+          transform-origin: 50% 50%;
 
           @keyframes flower-center {
             0%, 18% { transform: scale(0.42); }
@@ -111,13 +126,15 @@
 
           &:after {
             content: '';
-            width: 35%;
-            height: 35%;
+            width: 40%;
+            height: 40%;
             background: #F1C40F;
             border-radius: 50%;
             position: absolute;
             transform: scale(0);
+            transform-origin: 50% 50%;
             animation: inner 7s ease-in-out infinite;
+            z-index: 18;
 
             @keyframes inner {
               0%, 25% { transform: scale(0); }
@@ -127,6 +144,11 @@
               70%, 100% { transform: scale(0); }
             }
           }
+        }
+
+        &:hover {
+          .petal, .flower-center:after { opacity: 0.5; }
+          .flower-center { background: transparent; }
         }
       }
     }
