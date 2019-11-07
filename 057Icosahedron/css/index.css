@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #2C3E50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 2000px;
+  perspective-origin: center;
+}
+* .frame .center .container {
+  transform-origin: 50% 50%;
+  transform: rotateY(-26deg) rotateX(15deg) rotateZ(10deg);
+  transform-style: preserve-3d;
+}
+* .frame .center .container .icosahedron {
+  width: 8rem;
+  height: 6.96rem;
+  position: relative;
+  transform-style: preserve-3d;
+}
+* .frame .center .container .icosahedron:hover {
+  transform: rotateY(-180deg);
+  transition: transform 3s linear;
+}
+* .frame .center .container .icosahedron .face-1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-1 {
+  transform: translateY(-4.204rem) rotateY(0deg) rotateX(52.2deg);
+  fill: #e1e1e1;
+}
+* .frame .center .container .icosahedron .face-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-2 {
+  transform: translateY(-4.204rem) rotateY(72deg) rotateX(52.2deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-3 {
+  transform: translateY(-4.204rem) rotateY(144deg) rotateX(52.2deg);
+  fill: #dbd7e5;
+}
+* .frame .center .container .icosahedron .face-4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-4 {
+  transform: translateY(-4.204rem) rotateY(216deg) rotateX(52.2deg);
+  fill: #e1e1e1;
+}
+* .frame .center .container .icosahedron .face-5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-5 {
+  transform: translateY(-4.204rem) rotateY(288deg) rotateX(52.2deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-6 {
+  transform: rotateY(0deg) translateZ(5.48rem) rotateX(10.81deg);
+  fill: #dbd7e5;
+}
+* .frame .center .container .icosahedron .face-7 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-7 {
+  transform: rotateY(36deg) translateZ(6.78rem) rotateX(-10.81deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-8 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-8 {
+  transform: rotateY(72deg) translateZ(5.48rem) rotateX(10.81deg);
+  fill: #e1e1e1;
+}
+* .frame .center .container .icosahedron .face-9 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-9 {
+  transform: rotateY(108deg) translateZ(6.78rem) rotateX(-10.81deg);
+  fill: #dbd7e5;
+}
+* .frame .center .container .icosahedron .face-10 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-10 {
+  transform: rotateY(144deg) translateZ(5.48rem) rotateX(10.81deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-11 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-11 {
+  transform: rotateY(180deg) translateZ(6.78rem) rotateX(-10.81deg);
+  fill: #e1e1e1;
+}
+* .frame .center .container .icosahedron .face-12 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-12 {
+  transform: rotateY(216deg) translateZ(5.48rem) rotateX(10.81deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-13 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-13 {
+  transform: rotateY(252deg) translateZ(6.78rem) rotateX(-10.81deg);
+  fill: #dbd7e5;
+}
+* .frame .center .container .icosahedron .face-14 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-14 {
+  transform: rotateY(288deg) translateZ(5.48rem) rotateX(10.81deg);
+  fill: #e1e1e1;
+}
+* .frame .center .container .icosahedron .face-15 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-15 {
+  transform: rotateY(324deg) translateZ(6.78rem) rotateX(-10.81deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-16 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-16 {
+  transform: translateY(6.8rem) rotateY(1116deg) translateZ(5.48rem) rotateX(-52.2deg);
+  fill: #dbd7e5;
+}
+* .frame .center .container .icosahedron .face-17 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-17 {
+  transform: translateY(6.8rem) rotateY(1188deg) translateZ(5.48rem) rotateX(-52.2deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-18 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-18 {
+  transform: translateY(6.8rem) rotateY(1260deg) translateZ(5.48rem) rotateX(-52.2deg);
+  fill: #dbd7e5;
+}
+* .frame .center .container .icosahedron .face-19 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-19 {
+  transform: translateY(6.8rem) rotateY(1332deg) translateZ(5.48rem) rotateX(-52.2deg);
+  fill: #fff;
+}
+* .frame .center .container .icosahedron .face-20 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 0%;
+}
+* .frame .center .container .icosahedron .face-20 {
+  transform: translateY(6.8rem) rotateY(1404deg) translateZ(5.48rem) rotateX(-52.2deg);
+  fill: #e1e1e1;
+}
+
+/*# sourceMappingURL=index.css.map */
