@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #2C3E50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 2000px;
+      perspective-origin: center;
+
+      .container {
+        transform-origin: 50% 50%;
+        transform: rotateX(25deg) rotateY(-20deg) rotateZ(35deg);
+        transform-style: preserve-3d;
+        
+        .icosahedron {
+          width: 8rem;
+          height: 6.96rem;
+          position: relative;
+          transform-style: preserve-3d;
+          transition: transform 3s ease-in-out;
+
+          &:hover {
+            transform:  rotateX(-360deg) rotateZ(360deg);
+            transition: transform 3s ease-in-out;
+  
+            @for $i from 1 through 20 {
+              .face-#{$i} {
+                opacity: 0.5;
+                transition: opacity 3s ease-in-out;
+              }
+            }
+          }
+  
+          @for $i from 1 through 20 {
+            .face-#{$i} {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              transform-origin: 50% 0%;
+              transition: opacity 3s ease-in-out;
+            }
+
+            $light-color: #fff;
+            $medium-color: #eee;
+            $dark-color: #e1e1e1;
+
+            @if $i <= 5 {
+              .face-#{$i} { 
+                transform: translateY(-4.204rem) rotateY(($i - 1) * 72deg) rotateX(52.2deg); 
+                @if $i % 3 == 1 { fill: $medium-color; } 
+                @else if $i % 3 == 2 { fill: $light-color; } 
+                @else { fill: $dark-color; }
+              }
+            } @else if $i <= 15 {
+              @if($i % 2 == 0) {
+                .face-#{$i} { 
+                  transform: rotateY(($i - 6) * 36deg) translateZ(5.48rem) rotateX(10.81deg); 
+                  @if (($i - 6) / 2) % 3 == 1 { fill: $medium-color; } 
+                  @else if (($i - 6) / 2) % 3 == 2 or $i == 12 { fill: $light-color; } 
+                  @else { fill: $dark-color; }
+                }
+              } @else {
+                .face-#{$i} { 
+                  transform: rotateY(($i - 6) * 36deg) translateZ(6.78rem) rotateX(-10.81deg); 
+                  @if $i != 13 and ((($i - 7) / 2) % 3 == 0 or $i == 15) { fill: $light-color; }
+                  @else if (($i - 7) / 2) % 3 == 1 or $i == 13 { fill: $dark-color; } 
+                  @else { fill: $medium-color; } 
+                }
+              }
+            } @else {
+              .face-#{$i} { 
+                transform: translateY(6.8rem) rotateY(($i - 1) * 72deg + 36deg) translateZ(5.48rem) rotateX(-52.2deg); 
+                @if $i == 20 { fill: $medium-color; } 
+                @else if ($i - 16) % 2 == 0 { fill: $dark-color; }
+                @else { fill: $light-color; } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
