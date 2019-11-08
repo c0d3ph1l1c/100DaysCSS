@@ -60,4 +60,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [054 - Waves](https://c0d3ph1l1c.github.io/100DaysCSS/054Waves/)
 * [055 - Thermostat](https://c0d3ph1l1c.github.io/100DaysCSS/055Thermostat/)
 * [056 - Flower](https://c0d3ph1l1c.github.io/100DaysCSS/056Flower/)
-
+* [057 - Icosahedron](https://c0d3ph1l1c.github.io/100DaysCSS/057Icosahedron/)
