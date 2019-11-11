@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #D33526;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .plate {
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        border: 2px solid #D33526;
+        border-bottom: 0.5px solid #D33526;
+        transform-origin: 50% 50%;
+        opacity: 0;
+      }
+
+      $width: (1: 20.3%, 2: 27.5%, 3: 33.5%, 4: 38.7%, 5: 42.5%, 6: 44.43%, 7: 45%, 8: 44.2%, 9: 42.5%, 10: 40%, 11: 36%, 12: 32%, 13: 26%, 14: 19%, 15: 10%);
+      $height: (1: 10%, 2: 12%, 3: 14%, 4: 16%, 5: 18%, 6: 20%, 7: 18%, 8: 16%, 9: 14%, 10: 12%, 11: 10%, 12: 8%, 13: 6%, 14: 4%, 15: 2.5%);
+      $dy: (1: 3.95, 2: 3.58, 3: 3, 4: 2.23, 5: 1.3, 6: 0.27, 7: -0.4, 8: -1.2, 9: -2, 10: -2.75, 11: -3.45, 12: -4.07, 13: -4.65, 14: -5.12, 15: -5.56);   
+
+      @for $i from 1 through 15 {
+        .plate-#{$i} {
+          width: map-get($width, $i);
+          height: map-get($height, $i);
+          animation: plate-#{$i} 6s linear infinite;
+          @if($i == 7) { 
+            opacity: 1;
+            @keyframes plate-7 {
+              0% { transform: scale(0); }
+              5%, 6.5% { transform: scale(1.3); }
+              11% { transform: scale(0.9); }
+              16%, 20% { transform: scale(1); }
+              25%, 26% { transform: scale(1) translateY((map-get($dy, 7) * 1.8)+rem); }
+              30% { transform: scale(1) translateY((map-get($dy, 7) * 0.8)+rem); }
+              35% { transform: scale(1) translateY((map-get($dy, 7) * 1.3)+rem); }
+              40% { transform: scale(1) translateY((map-get($dy, 7) * 0.9)+rem); }
+              45%, 70% { transform: scale(1) translateY((map-get($dy, 7) * 1)+rem); }
+              75% { transform: scale(1) translateY((map-get($dy, 7) * 1.8)+rem); }
+              80% { transform: scale(1) translateY(0rem); }
+              85% { transform: scale(1.4) translateY(0rem); }
+              90%, 100% { transform: scale(0) translateY(0rem); }
+            }
+          } @else {
+            @keyframes plate-#{$i} {
+              0%, 20% { transform: translateY(0rem); opacity: 0; }
+              20.1% { opacity: 1; }
+              25%, 26% { transform: translateY((map-get($dy, $i) * 1.8)+rem); }
+              30% { transform: translateY((map-get($dy, $i) * 0.8)+rem); }
+              35% { transform: translateY((map-get($dy, $i) * 1.3)+rem); }
+              40% { transform: translateY((map-get($dy, $i) * 0.9)+rem); }
+              45%, 70% { transform: translateY((map-get($dy, $i) * 1)+rem); }
+              75%, 76% { transform: translateY((map-get($dy, $i) * 1.8)+rem); }
+              79.9% { opacity: 1; }
+              80%, 100% { transform: translateY(0rem); opacity: 0; }
+            }
+          }
+        }
+      }
+    }
+  }
+}
