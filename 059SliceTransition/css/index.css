@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+* .frame .center .page-bottom {
+  background: linear-gradient(to bottom, #aaa, #000);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .page-bottom .div-1 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 0% center/cover;
+  transform: translateY(-2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-2 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 12.5% center/cover;
+  transform: translateY(2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-3 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 25% center/cover;
+  transform: translateY(-2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-4 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 37.5% center/cover;
+  transform: translateY(2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-5 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 50% center/cover;
+  transform: translateY(-2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-6 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 62.5% center/cover;
+  transform: translateY(2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-7 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 75% center/cover;
+  transform: translateY(-2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-bottom .div-8 {
+  width: 12.5%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-2.jpg") no-repeat 87.5% center/cover;
+  transform: translateY(2rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-top {
+  width: 100%;
+  height: 100%;
+  background: url("https://100dayscss.com/codepen/slice-image-1.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  transition: opacity 0.8s ease-in-out;
+}
+* .frame .center .page-top h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center .page-top h2 {
+  font-size: 2.5rem;
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-1 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-2 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-3 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-4 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-5 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-6 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-7 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-bottom .div-8 {
+  transform: translateY(0rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-top {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+* .frame .center:hover .page-top h1 {
+  transform: translateX(-2.3rem);
+  transition: transform 0.8s ease-in-out;
+}
+* .frame .center:hover .page-top h2 {
+  transform: translateX(2.3rem);
+  transition: transform 0.8s ease-in-out;
+}
+
+/*# sourceMappingURL=index.css.map */
