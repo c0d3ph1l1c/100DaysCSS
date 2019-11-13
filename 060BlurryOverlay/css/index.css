@@ -1,0 +1,872 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #34495E;
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+* .frame .center .rows {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+* .frame .center .rows .row {
+  width: 100%;
+  height: 1%;
+  z-index: 2;
+}
+* .frame .center .rows .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(230, 126, 34, 0.9);
+  transition: transform 0.4s ease;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: translateY(-200px);
+  transition: transform 0.45s linear;
+}
+* .frame .center .rows .overlay h1 {
+  filter: blur(4px);
+  color: rbga(120, 120, 120, 0.5);
+  transform: translateY(200px);
+  transition: transform 0.45s linear;
+}
+* .frame .center .rows .row-1:hover ~ .overlay {
+  transform: translateY(-396px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-1:hover ~ .overlay h1 {
+  transform: translateY(396px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-2:hover ~ .overlay {
+  transform: translateY(-392px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-2:hover ~ .overlay h1 {
+  transform: translateY(392px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-3:hover ~ .overlay {
+  transform: translateY(-388px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-3:hover ~ .overlay h1 {
+  transform: translateY(388px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-4:hover ~ .overlay {
+  transform: translateY(-384px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-4:hover ~ .overlay h1 {
+  transform: translateY(384px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-5:hover ~ .overlay {
+  transform: translateY(-380px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-5:hover ~ .overlay h1 {
+  transform: translateY(380px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-6:hover ~ .overlay {
+  transform: translateY(-376px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-6:hover ~ .overlay h1 {
+  transform: translateY(376px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-7:hover ~ .overlay {
+  transform: translateY(-372px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-7:hover ~ .overlay h1 {
+  transform: translateY(372px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-8:hover ~ .overlay {
+  transform: translateY(-368px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-8:hover ~ .overlay h1 {
+  transform: translateY(368px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-9:hover ~ .overlay {
+  transform: translateY(-364px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-9:hover ~ .overlay h1 {
+  transform: translateY(364px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-10:hover ~ .overlay {
+  transform: translateY(-360px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-10:hover ~ .overlay h1 {
+  transform: translateY(360px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-11:hover ~ .overlay {
+  transform: translateY(-356px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-11:hover ~ .overlay h1 {
+  transform: translateY(356px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-12:hover ~ .overlay {
+  transform: translateY(-352px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-12:hover ~ .overlay h1 {
+  transform: translateY(352px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-13:hover ~ .overlay {
+  transform: translateY(-348px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-13:hover ~ .overlay h1 {
+  transform: translateY(348px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-14:hover ~ .overlay {
+  transform: translateY(-344px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-14:hover ~ .overlay h1 {
+  transform: translateY(344px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-15:hover ~ .overlay {
+  transform: translateY(-340px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-15:hover ~ .overlay h1 {
+  transform: translateY(340px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-16:hover ~ .overlay {
+  transform: translateY(-336px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-16:hover ~ .overlay h1 {
+  transform: translateY(336px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-17:hover ~ .overlay {
+  transform: translateY(-332px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-17:hover ~ .overlay h1 {
+  transform: translateY(332px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-18:hover ~ .overlay {
+  transform: translateY(-328px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-18:hover ~ .overlay h1 {
+  transform: translateY(328px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-19:hover ~ .overlay {
+  transform: translateY(-324px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-19:hover ~ .overlay h1 {
+  transform: translateY(324px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-20:hover ~ .overlay {
+  transform: translateY(-320px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-20:hover ~ .overlay h1 {
+  transform: translateY(320px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-21:hover ~ .overlay {
+  transform: translateY(-316px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-21:hover ~ .overlay h1 {
+  transform: translateY(316px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-22:hover ~ .overlay {
+  transform: translateY(-312px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-22:hover ~ .overlay h1 {
+  transform: translateY(312px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-23:hover ~ .overlay {
+  transform: translateY(-308px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-23:hover ~ .overlay h1 {
+  transform: translateY(308px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-24:hover ~ .overlay {
+  transform: translateY(-304px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-24:hover ~ .overlay h1 {
+  transform: translateY(304px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-25:hover ~ .overlay {
+  transform: translateY(-300px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-25:hover ~ .overlay h1 {
+  transform: translateY(300px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-26:hover ~ .overlay {
+  transform: translateY(-296px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-26:hover ~ .overlay h1 {
+  transform: translateY(296px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-27:hover ~ .overlay {
+  transform: translateY(-292px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-27:hover ~ .overlay h1 {
+  transform: translateY(292px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-28:hover ~ .overlay {
+  transform: translateY(-288px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-28:hover ~ .overlay h1 {
+  transform: translateY(288px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-29:hover ~ .overlay {
+  transform: translateY(-284px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-29:hover ~ .overlay h1 {
+  transform: translateY(284px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-30:hover ~ .overlay {
+  transform: translateY(-280px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-30:hover ~ .overlay h1 {
+  transform: translateY(280px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-31:hover ~ .overlay {
+  transform: translateY(-276px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-31:hover ~ .overlay h1 {
+  transform: translateY(276px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-32:hover ~ .overlay {
+  transform: translateY(-272px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-32:hover ~ .overlay h1 {
+  transform: translateY(272px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-33:hover ~ .overlay {
+  transform: translateY(-268px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-33:hover ~ .overlay h1 {
+  transform: translateY(268px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-34:hover ~ .overlay {
+  transform: translateY(-264px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-34:hover ~ .overlay h1 {
+  transform: translateY(264px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-35:hover ~ .overlay {
+  transform: translateY(-260px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-35:hover ~ .overlay h1 {
+  transform: translateY(260px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-36:hover ~ .overlay {
+  transform: translateY(-256px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-36:hover ~ .overlay h1 {
+  transform: translateY(256px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-37:hover ~ .overlay {
+  transform: translateY(-252px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-37:hover ~ .overlay h1 {
+  transform: translateY(252px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-38:hover ~ .overlay {
+  transform: translateY(-248px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-38:hover ~ .overlay h1 {
+  transform: translateY(248px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-39:hover ~ .overlay {
+  transform: translateY(-244px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-39:hover ~ .overlay h1 {
+  transform: translateY(244px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-40:hover ~ .overlay {
+  transform: translateY(-240px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-40:hover ~ .overlay h1 {
+  transform: translateY(240px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-41:hover ~ .overlay {
+  transform: translateY(-236px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-41:hover ~ .overlay h1 {
+  transform: translateY(236px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-42:hover ~ .overlay {
+  transform: translateY(-232px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-42:hover ~ .overlay h1 {
+  transform: translateY(232px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-43:hover ~ .overlay {
+  transform: translateY(-228px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-43:hover ~ .overlay h1 {
+  transform: translateY(228px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-44:hover ~ .overlay {
+  transform: translateY(-224px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-44:hover ~ .overlay h1 {
+  transform: translateY(224px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-45:hover ~ .overlay {
+  transform: translateY(-220px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-45:hover ~ .overlay h1 {
+  transform: translateY(220px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-46:hover ~ .overlay {
+  transform: translateY(-216px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-46:hover ~ .overlay h1 {
+  transform: translateY(216px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-47:hover ~ .overlay {
+  transform: translateY(-212px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-47:hover ~ .overlay h1 {
+  transform: translateY(212px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-48:hover ~ .overlay {
+  transform: translateY(-208px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-48:hover ~ .overlay h1 {
+  transform: translateY(208px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-49:hover ~ .overlay {
+  transform: translateY(-204px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-49:hover ~ .overlay h1 {
+  transform: translateY(204px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-50:hover ~ .overlay {
+  transform: translateY(-200px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-50:hover ~ .overlay h1 {
+  transform: translateY(200px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-51:hover ~ .overlay {
+  transform: translateY(-196px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-51:hover ~ .overlay h1 {
+  transform: translateY(196px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-52:hover ~ .overlay {
+  transform: translateY(-192px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-52:hover ~ .overlay h1 {
+  transform: translateY(192px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-53:hover ~ .overlay {
+  transform: translateY(-188px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-53:hover ~ .overlay h1 {
+  transform: translateY(188px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-54:hover ~ .overlay {
+  transform: translateY(-184px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-54:hover ~ .overlay h1 {
+  transform: translateY(184px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-55:hover ~ .overlay {
+  transform: translateY(-180px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-55:hover ~ .overlay h1 {
+  transform: translateY(180px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-56:hover ~ .overlay {
+  transform: translateY(-176px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-56:hover ~ .overlay h1 {
+  transform: translateY(176px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-57:hover ~ .overlay {
+  transform: translateY(-172px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-57:hover ~ .overlay h1 {
+  transform: translateY(172px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-58:hover ~ .overlay {
+  transform: translateY(-168px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-58:hover ~ .overlay h1 {
+  transform: translateY(168px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-59:hover ~ .overlay {
+  transform: translateY(-164px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-59:hover ~ .overlay h1 {
+  transform: translateY(164px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-60:hover ~ .overlay {
+  transform: translateY(-160px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-60:hover ~ .overlay h1 {
+  transform: translateY(160px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-61:hover ~ .overlay {
+  transform: translateY(-156px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-61:hover ~ .overlay h1 {
+  transform: translateY(156px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-62:hover ~ .overlay {
+  transform: translateY(-152px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-62:hover ~ .overlay h1 {
+  transform: translateY(152px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-63:hover ~ .overlay {
+  transform: translateY(-148px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-63:hover ~ .overlay h1 {
+  transform: translateY(148px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-64:hover ~ .overlay {
+  transform: translateY(-144px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-64:hover ~ .overlay h1 {
+  transform: translateY(144px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-65:hover ~ .overlay {
+  transform: translateY(-140px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-65:hover ~ .overlay h1 {
+  transform: translateY(140px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-66:hover ~ .overlay {
+  transform: translateY(-136px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-66:hover ~ .overlay h1 {
+  transform: translateY(136px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-67:hover ~ .overlay {
+  transform: translateY(-132px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-67:hover ~ .overlay h1 {
+  transform: translateY(132px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-68:hover ~ .overlay {
+  transform: translateY(-128px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-68:hover ~ .overlay h1 {
+  transform: translateY(128px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-69:hover ~ .overlay {
+  transform: translateY(-124px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-69:hover ~ .overlay h1 {
+  transform: translateY(124px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-70:hover ~ .overlay {
+  transform: translateY(-120px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-70:hover ~ .overlay h1 {
+  transform: translateY(120px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-71:hover ~ .overlay {
+  transform: translateY(-116px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-71:hover ~ .overlay h1 {
+  transform: translateY(116px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-72:hover ~ .overlay {
+  transform: translateY(-112px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-72:hover ~ .overlay h1 {
+  transform: translateY(112px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-73:hover ~ .overlay {
+  transform: translateY(-108px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-73:hover ~ .overlay h1 {
+  transform: translateY(108px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-74:hover ~ .overlay {
+  transform: translateY(-104px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-74:hover ~ .overlay h1 {
+  transform: translateY(104px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-75:hover ~ .overlay {
+  transform: translateY(-100px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-75:hover ~ .overlay h1 {
+  transform: translateY(100px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-76:hover ~ .overlay {
+  transform: translateY(-96px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-76:hover ~ .overlay h1 {
+  transform: translateY(96px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-77:hover ~ .overlay {
+  transform: translateY(-92px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-77:hover ~ .overlay h1 {
+  transform: translateY(92px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-78:hover ~ .overlay {
+  transform: translateY(-88px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-78:hover ~ .overlay h1 {
+  transform: translateY(88px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-79:hover ~ .overlay {
+  transform: translateY(-84px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-79:hover ~ .overlay h1 {
+  transform: translateY(84px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-80:hover ~ .overlay {
+  transform: translateY(-80px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-80:hover ~ .overlay h1 {
+  transform: translateY(80px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-81:hover ~ .overlay {
+  transform: translateY(-76px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-81:hover ~ .overlay h1 {
+  transform: translateY(76px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-82:hover ~ .overlay {
+  transform: translateY(-72px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-82:hover ~ .overlay h1 {
+  transform: translateY(72px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-83:hover ~ .overlay {
+  transform: translateY(-68px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-83:hover ~ .overlay h1 {
+  transform: translateY(68px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-84:hover ~ .overlay {
+  transform: translateY(-64px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-84:hover ~ .overlay h1 {
+  transform: translateY(64px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-85:hover ~ .overlay {
+  transform: translateY(-60px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-85:hover ~ .overlay h1 {
+  transform: translateY(60px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-86:hover ~ .overlay {
+  transform: translateY(-56px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-86:hover ~ .overlay h1 {
+  transform: translateY(56px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-87:hover ~ .overlay {
+  transform: translateY(-52px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-87:hover ~ .overlay h1 {
+  transform: translateY(52px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-88:hover ~ .overlay {
+  transform: translateY(-48px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-88:hover ~ .overlay h1 {
+  transform: translateY(48px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-89:hover ~ .overlay {
+  transform: translateY(-44px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-89:hover ~ .overlay h1 {
+  transform: translateY(44px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-90:hover ~ .overlay {
+  transform: translateY(-40px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-90:hover ~ .overlay h1 {
+  transform: translateY(40px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-91:hover ~ .overlay {
+  transform: translateY(-36px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-91:hover ~ .overlay h1 {
+  transform: translateY(36px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-92:hover ~ .overlay {
+  transform: translateY(-32px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-92:hover ~ .overlay h1 {
+  transform: translateY(32px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-93:hover ~ .overlay {
+  transform: translateY(-28px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-93:hover ~ .overlay h1 {
+  transform: translateY(28px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-94:hover ~ .overlay {
+  transform: translateY(-24px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-94:hover ~ .overlay h1 {
+  transform: translateY(24px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-95:hover ~ .overlay {
+  transform: translateY(-20px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-95:hover ~ .overlay h1 {
+  transform: translateY(20px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-96:hover ~ .overlay {
+  transform: translateY(-16px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-96:hover ~ .overlay h1 {
+  transform: translateY(16px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-97:hover ~ .overlay {
+  transform: translateY(-12px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-97:hover ~ .overlay h1 {
+  transform: translateY(12px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-98:hover ~ .overlay {
+  transform: translateY(-8px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-98:hover ~ .overlay h1 {
+  transform: translateY(8px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-99:hover ~ .overlay {
+  transform: translateY(-4px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-99:hover ~ .overlay h1 {
+  transform: translateY(4px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-100:hover ~ .overlay {
+  transform: translateY(0px);
+  transition: transform 0.1s linear;
+}
+* .frame .center .rows .row-100:hover ~ .overlay h1 {
+  transform: translateY(0px);
+  transition: transform 0.1s linear;
+}
+
+/*# sourceMappingURL=index.css.map */
