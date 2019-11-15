@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #E9EDEF;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  animation: appear 0.3s linear forwards;
+}
+@keyframes appear {
+  0%, 60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center .card {
+  width: 6.7rem;
+  height: 9.8rem;
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 1.8rem;
+  text-align: center;
+  transition: transform 0.3s linear;
+}
+* .frame .center .card .heading {
+  width: 100%;
+  height: 22%;
+  background: #7DD0ED;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 2.2rem;
+  transition: background 0.3s linear;
+}
+* .frame .center .card .price-container {
+  width: 100%;
+  height: 38%;
+  padding-top: 0.6rem;
+}
+* .frame .center .card .price-container .price {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #555;
+  line-height: 1;
+  margin: 0 auto;
+  transition: color 0.3s linear;
+}
+* .frame .center .card .price-container .month {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1;
+  margin: 0 auto;
+}
+* .frame .center .card .description {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .card .description .row {
+  width: 4.2rem;
+  height: 0.18rem;
+  border-radius: 0.2rem;
+  background: #dde;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+* .frame .center .card .description .row:nth-child(even) {
+  width: 3.5rem;
+}
+* .frame .center .card:hover {
+  transform-origin: 50% 50%;
+  transform: scale(1.08);
+  transition: transform 0.2s linear;
+}
+* .frame .center .card:hover .heading {
+  background: #1eaadb;
+  transition: background 0.3s linear;
+}
+* .frame .center .card:hover .price {
+  color: #1eaadb;
+  transition: color 0.3s linear;
+}
+* .frame .center .basic {
+  grid-column: 1/span 1;
+  margin-right: 0;
+}
+* .frame .center .pro {
+  grid-column: 2/span 1;
+}
+* .frame .center .premium {
+  grid-column: 3/span 1;
+  margin-left: 0;
+}
+* .frame .center .benefits {
+  width: 95%;
+  height: 80%;
+  background: #fff;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  grid-column: 1/span 3;
+}
+* .frame .center .benefits .bar-container {
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .benefits .bar-container .min-max {
+  width: 93%;
+  height: 30%;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+* .frame .center .benefits .bar-container .min-max .min {
+  float: left;
+}
+* .frame .center .benefits .bar-container .min-max .max {
+  float: right;
+}
+* .frame .center .benefits .bar-container .bar {
+  width: 93%;
+  height: 18%;
+  border-radius: 10px;
+  background: #dde;
+  position: relative;
+  overflow: hidden;
+}
+* .frame .center .benefits .bar-container .bar:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #50c0e7;
+  position: absolute;
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s linear;
+}
+* .frame .center .basic:hover ~ .benefits .user .bar:after, * .frame .center .basic:hover ~ .benefits .space .bar:after, * .frame .center .basic:hover ~ .benefits .projects .bar:after {
+  transform: scaleX(0.05);
+  transition: transform 0.3s linear;
+}
+* .frame .center .pro:hover ~ .benefits .user .bar:after {
+  transform: scaleX(0.28);
+  transition: transform 0.3s linear;
+}
+* .frame .center .pro:hover ~ .benefits .space .bar:after {
+  transform: scaleX(0.69);
+  transition: transform 0.3s linear;
+}
+* .frame .center .pro:hover ~ .benefits .projects .bar:after {
+  transform: scaleX(0.5);
+  transition: transform 0.3s linear;
+}
+* .frame .center .premium:hover ~ .benefits .user .bar:after, * .frame .center .premium:hover ~ .benefits .space .bar:after, * .frame .center .premium:hover ~ .benefits .projects .bar:after {
+  transform: scaleX(1);
+  transition: transform 0.3s linear;
+}
+
+/*# sourceMappingURL=index.css.map */
