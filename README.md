@@ -65,3 +65,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [059 - Slice Transition](https://c0d3ph1l1c.github.io/100DaysCSS/059SliceTransition/)
 * [060 - Blurry Overlay](https://c0d3ph1l1c.github.io/100DaysCSS/060BlurryOverlay/)
 * [061 - CSS Gradient Transition](https://c0d3ph1l1c.github.io/100DaysCSS/061CSSGradientTransition/)
+* [062 - Price Table](https://c0d3ph1l1c.github.io/100DaysCSS/062PriceTable/)
