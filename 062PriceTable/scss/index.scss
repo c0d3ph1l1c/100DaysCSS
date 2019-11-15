@@ -30,9 +30,6 @@
       width: 100%;
       height: 100%;
       background: #E9EDEF;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
       animation: appear 0.3s linear forwards;
 
       @keyframes appear {
@@ -43,15 +40,21 @@
       $transition-prop: 0.3s linear;
 
       .card {
-        width: 6.7rem;
-        height: 9.8rem;
+        width: 27%;
+        height: 40%;
         background: #fff;
         border-radius: 0.3rem;
-        box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1);
         margin: auto;
-        margin-top: 1.8rem;
         text-align: center;
+        overflow: hidden;
         transition: transform $transition-prop;
+        position: absolute;
+        top: 1.5rem;
+
+        &.basic { left: 6%;}
+        &.pro { left: 37%;}
+        &.premium { left: 67%;}
 
         .heading {
           width: 100%;
@@ -123,29 +126,18 @@
         }
       }
 
-      .basic { 
-        grid-column: 1 / span 1; 
-        margin-right: 0;
-      }
-
-      .pro { 
-        grid-column: 2 / span 1; 
-      }
-
-      .premium { 
-        grid-column: 3 / span 1; 
-        margin-left: 0;
-      }
 
       .benefits {
         width: 95%;
-        height: 80%;
+        height: 42%;
         background: #fff;
-        box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.1);
+        box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.1);
         margin: 0 auto;
         margin-top: 1rem;
-        padding: 0.3rem;
-        grid-column: 1 / span 3;
+        padding: 0.5rem;
+        position: absolute;
+        top: 50%;
+        left: 2.5%;
         
         .bar-container {
           width: 100%;
