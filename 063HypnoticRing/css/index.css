@@ -1,0 +1,694 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #27AE60;
+}
+* .frame .center .circle {
+  width: 200px;
+  height: 200px;
+  border: 2px dotted #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transform-origin: 50% 50%;
+}
+* .frame .center .circle-1 {
+  animation: expand 10s ease-in-out -0.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-2 {
+  animation: expand 10s ease-in-out -0.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-3 {
+  animation: expand 10s ease-in-out -0.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-4 {
+  animation: expand 10s ease-in-out -0.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-5 {
+  animation: expand 10s ease-in-out -1s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-6 {
+  animation: expand 10s ease-in-out -1.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-7 {
+  animation: expand 10s ease-in-out -1.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-8 {
+  animation: expand 10s ease-in-out -1.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-9 {
+  animation: expand 10s ease-in-out -1.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-10 {
+  animation: expand 10s ease-in-out -2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-11 {
+  animation: expand 10s ease-in-out -2.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-12 {
+  animation: expand 10s ease-in-out -2.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-13 {
+  animation: expand 10s ease-in-out -2.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-14 {
+  animation: expand 10s ease-in-out -2.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-15 {
+  animation: expand 10s ease-in-out -3s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-16 {
+  animation: expand 10s ease-in-out -3.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-17 {
+  animation: expand 10s ease-in-out -3.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-18 {
+  animation: expand 10s ease-in-out -3.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-19 {
+  animation: expand 10s ease-in-out -3.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-20 {
+  animation: expand 10s ease-in-out -4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-21 {
+  animation: expand 10s ease-in-out -4.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-22 {
+  animation: expand 10s ease-in-out -4.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-23 {
+  animation: expand 10s ease-in-out -4.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-24 {
+  animation: expand 10s ease-in-out -4.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-25 {
+  animation: expand 10s ease-in-out -5s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-26 {
+  animation: expand 10s ease-in-out -5.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-27 {
+  animation: expand 10s ease-in-out -5.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-28 {
+  animation: expand 10s ease-in-out -5.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-29 {
+  animation: expand 10s ease-in-out -5.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-30 {
+  animation: expand 10s ease-in-out -6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-31 {
+  animation: expand 10s ease-in-out -6.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-32 {
+  animation: expand 10s ease-in-out -6.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-33 {
+  animation: expand 10s ease-in-out -6.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-34 {
+  animation: expand 10s ease-in-out -6.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-35 {
+  animation: expand 10s ease-in-out -7s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-36 {
+  animation: expand 10s ease-in-out -7.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-37 {
+  animation: expand 10s ease-in-out -7.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-38 {
+  animation: expand 10s ease-in-out -7.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-39 {
+  animation: expand 10s ease-in-out -7.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-40 {
+  animation: expand 10s ease-in-out -8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-41 {
+  animation: expand 10s ease-in-out -8.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-42 {
+  animation: expand 10s ease-in-out -8.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-43 {
+  animation: expand 10s ease-in-out -8.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-44 {
+  animation: expand 10s ease-in-out -8.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-45 {
+  animation: expand 10s ease-in-out -9s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-46 {
+  animation: expand 10s ease-in-out -9.2s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-47 {
+  animation: expand 10s ease-in-out -9.4s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-48 {
+  animation: expand 10s ease-in-out -9.6s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-49 {
+  animation: expand 10s ease-in-out -9.8s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+* .frame .center .circle-50 {
+  animation: expand 10s ease-in-out -10s infinite both;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3.5) translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
