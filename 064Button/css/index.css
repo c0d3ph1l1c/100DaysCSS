@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #2C3E50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .button {
+  cursor: pointer;
+  width: 12rem;
+  height: 4rem;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+* .frame .center .button .button-front {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.3s linear, background 0.3s linear, color 0.3s linear;
+}
+* .frame .center .button .button-shade {
+  width: 100%;
+  height: 100%;
+  background: #8C43AB;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
+  z-index: 0;
+  transition: transform 0.3s linear, background 0.3s linear, color 0.3s linear;
+}
+* .frame .center .button:hover .button-front {
+  transform: translate(0.8rem, 0.8rem);
+  background: #8C43AB;
+  color: #fff;
+  transition: transform 0.3s linear, background 0.3s linear, color 0.3s linear;
+}
+* .frame .center .button:hover .button-shade {
+  transform: translate(-0.8rem, -0.8rem);
+  background: #fff;
+  transition: transform 0.3s linear, background 0.3s linear, color 0.3s linear;
+}
+
+/*# sourceMappingURL=index.css.map */
