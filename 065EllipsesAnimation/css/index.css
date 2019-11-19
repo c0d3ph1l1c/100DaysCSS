@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #1F91DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .ellipse {
+  width: 20%;
+  height: 72%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+* .frame .center .ellipse-1 {
+  animation: squaring-1 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-2 {
+  animation: squaring-2 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-2 {
+  0% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-3 {
+  animation: squaring-3 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-3 {
+  0% {
+    transform: rotateZ(20deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-4 {
+  animation: squaring-4 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-4 {
+  0% {
+    transform: rotateZ(30deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-5 {
+  animation: squaring-5 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-5 {
+  0% {
+    transform: rotateZ(40deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-6 {
+  animation: squaring-6 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-6 {
+  0% {
+    transform: rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-7 {
+  animation: squaring-7 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-7 {
+  0% {
+    transform: rotateZ(60deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-8 {
+  animation: squaring-8 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-8 {
+  0% {
+    transform: rotateZ(70deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-9 {
+  animation: squaring-9 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-9 {
+  0% {
+    transform: rotateZ(80deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-10 {
+  animation: squaring-10 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-10 {
+  0% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-11 {
+  animation: squaring-11 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-11 {
+  0% {
+    transform: rotateZ(100deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-12 {
+  animation: squaring-12 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-12 {
+  0% {
+    transform: rotateZ(110deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-13 {
+  animation: squaring-13 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-13 {
+  0% {
+    transform: rotateZ(120deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-14 {
+  animation: squaring-14 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-14 {
+  0% {
+    transform: rotateZ(130deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-15 {
+  animation: squaring-15 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-15 {
+  0% {
+    transform: rotateZ(140deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-16 {
+  animation: squaring-16 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-16 {
+  0% {
+    transform: rotateZ(150deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-17 {
+  animation: squaring-17 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-17 {
+  0% {
+    transform: rotateZ(160deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+* .frame .center .ellipse-18 {
+  animation: squaring-18 3s ease-in-out alternate infinite;
+}
+@keyframes squaring-18 {
+  0% {
+    transform: rotateZ(170deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    width: 72%;
+    border-radius: 0;
+    border-width: 2px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
