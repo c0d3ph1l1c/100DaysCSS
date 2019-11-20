@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #5A717B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #sparked { display: none; }
+
+      .button-container {
+        width: 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .button {
+          width: 100%;
+          height: 100%;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.2), 
+                      inset 2px 2px 4px 1px rgba(0,0,0,0.2);
+          cursor: pointer;
+          transition: border 0.2s linear, 
+                      background 0.2s linear;;
+        }
+
+        .spark {
+          width: 30%;
+          height: 6%;
+          background: #fff;
+          border-radius: 2px;
+          position: absolute;
+          opacity: 0;
+        }
+
+        @for $i from 1 through 12 {
+          .spark-#{$i} {
+            transform: rotate((30 * ($i - 1))+deg) translateX(-1.7rem);
+          }
+        }
+      }
+
+      #sparked:checked ~ .button-container {
+        .button {
+          border: 14px solid #fff;
+          background: #5FD17A;
+          box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.2);
+          transition: border 0.2s linear, 
+                      background 0.2s linear;
+        }
+
+        @for $i from 1 through 12 {
+          .spark-#{$i} {
+            animation: sparking-#{$i} 0.3s linear;
+
+            @keyframes sparking-#{$i} {
+              0% {
+                transform: rotate((30 * ($i - 1))+deg) translateX(-1.7rem);
+                opacity: 0;
+              }
+              
+              15% { opacity: 0; }
+
+              70% { opacity: 1; }
+              
+              100% {
+                transform: rotate((30 * ($i - 1))+deg) translateX(-3rem);
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
