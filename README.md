@@ -70,3 +70,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [064 - Button](https://c0d3ph1l1c.github.io/100DaysCSS/064Button/)
 * [065 - Ellipses Animation](https://c0d3ph1l1c.github.io/100DaysCSS/065EllipsesAnimation/)
 * [066 - Sparkle Checkbox](https://c0d3ph1l1c.github.io/100DaysCSS/066SparkleCheckbox/)
+* [067 - 3D Parosal](https://c0d3ph1l1c.github.io/100DaysCSS/0673DParosal/index.html)
