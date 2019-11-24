@@ -72,3 +72,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [066 - Sparkle Checkbox](https://c0d3ph1l1c.github.io/100DaysCSS/066SparkleCheckbox/)
 * [067 - 3D Parosal](https://c0d3ph1l1c.github.io/100DaysCSS/0673DParosal/)
 * [068 - Recording](https://c0d3ph1l1c.github.io/100DaysCSS/068Recording/)
+* [069 - Eye](https://c0d3ph1l1c.github.io/100DaysCSS/069Eye/)
