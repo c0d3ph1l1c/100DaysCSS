@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #333333;
+}
+* .frame .center input {
+  display: none;
+}
+* .frame .center .light {
+  width: 8%;
+  height: 8%;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 2px 2px 3px 3px rgba(255, 255, 255, 0.2), -2px 2px 3px 3px rgba(255, 255, 255, 0.2), 2px -2px 3px 3px rgba(255, 255, 255, 0.2), -2px -2px 3px 3px rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 26%;
+  left: 46%;
+  opacity: 0;
+}
+* .frame .center .keyboard {
+  width: 100%;
+  height: 40%;
+  background: #666;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid gray;
+  padding: 0.2rem 0;
+}
+* .frame .center .keyboard .alphabets, * .frame .center .keyboard .numbers {
+  width: 100%;
+  background: #666;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-items: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+* .frame .center .keyboard .alphabets {
+  height: 75%;
+}
+* .frame .center .keyboard .numbers {
+  height: 25%;
+}
+* .frame .center .keyboard .alphabets .char,
+* .frame .center .keyboard .numbers .char {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background: #666;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-weight: 0.9rem;
+}
+* .frame .center .keyboard .alphabets .char:hover,
+* .frame .center .keyboard .numbers .char:hover {
+  background: #999999;
+}
+* .frame .center #char-a:checked ~ .light-a {
+  animation: short 1s 0s, long 2s 1s;
+}
+* .frame .center #char-b:checked ~ .light-b {
+  animation: long 2s 0s, short 1s 2s, short 1s 3s, short 1s 4s;
+}
+* .frame .center #char-c:checked ~ .light-c {
+  animation: long 2s 0s, short 1s 2s, long 2s 3s, short 1s 5s;
+}
+* .frame .center #char-d:checked ~ .light-d {
+  animation: long 2s 0s, short 1s 2s, short 1s 3s;
+}
+* .frame .center #char-e:checked ~ .light-e {
+  animation: short 1s 0s;
+}
+* .frame .center #char-f:checked ~ .light-f {
+  animation: short 1s 0s, short 1s 1s, long 2s 2s, short 1s 4s;
+}
+* .frame .center #char-g:checked ~ .light-g {
+  animation: long 2s 0s, long 2s 2s, short 1s 4s;
+}
+* .frame .center #char-h:checked ~ .light-h {
+  animation: short 1s 0s, short 1s 1s, short 1s 2s, short 1s 3s;
+}
+* .frame .center #char-i:checked ~ .light-i {
+  animation: short 1s 0s, short 1s 1s;
+}
+* .frame .center #char-j:checked ~ .light-j {
+  animation: short 1s 0s, long 2s 1s, long 2s 3s, long 2s 5s;
+}
+* .frame .center #char-k:checked ~ .light-k {
+  animation: long 2s 0s, short 1s 2s, long 2s 3s;
+}
+* .frame .center #char-l:checked ~ .light-l {
+  animation: short 1s 0s, long 2s 1s, short 1s 3s, short 1s 4s;
+}
+* .frame .center #char-m:checked ~ .light-m {
+  animation: long 2s 0s, long 2s 2s;
+}
+* .frame .center #char-n:checked ~ .light-n {
+  animation: long 2s 0s, short 1s 2s;
+}
+* .frame .center #char-o:checked ~ .light-o {
+  animation: long 2s 0s, long 2s 2s, long 2s 4s;
+}
+* .frame .center #char-p:checked ~ .light-p {
+  animation: short 1s 0s, long 2s 1s, long 2s 3s, short 1s 5s;
+}
+* .frame .center #char-q:checked ~ .light-q {
+  animation: long 2s 0s, long 2s 2s, short 1s 4s, long 2s 5s;
+}
+* .frame .center #char-r:checked ~ .light-r {
+  animation: short 1s 0s, long 2s 1s, short 1s 3s;
+}
+* .frame .center #char-s:checked ~ .light-s {
+  animation: short 1s 0s, short 1s 1s, short 1s 2s;
+}
+* .frame .center #char-t:checked ~ .light-t {
+  animation: long 2s 0s;
+}
+* .frame .center #char-u:checked ~ .light-u {
+  animation: short 1s 0s, short 1s 1s, long 2s 2s;
+}
+* .frame .center #char-v:checked ~ .light-v {
+  animation: short 1s 0s, short 1s 1s, short 1s 2s, long 2s 3s;
+}
+* .frame .center #char-w:checked ~ .light-w {
+  animation: short 1s 0s, long 2s 1s, long 2s 3s;
+}
+* .frame .center #char-x:checked ~ .light-x {
+  animation: long 2s 0s, short 1s 2s, short 1s 3s, long 2s 4s;
+}
+* .frame .center #char-y:checked ~ .light-y {
+  animation: long 2s 0s, short 1s 2s, long 2s 3s, long 2s 5s;
+}
+* .frame .center #char-z:checked ~ .light-z {
+  animation: long 2s 0s, long 2s 2s, short 1s 4s, short 1s 5s;
+}
+* .frame .center #char-1:checked ~ .light-1 {
+  animation: short 1s 0s, long 2s 1s, long 2s 3s, long 2s 5s, long 2s 7s;
+}
+* .frame .center #char-2:checked ~ .light-2 {
+  animation: short 1s 0s, short 1s 1s, long 2s 2s, long 2s 4s, long 2s 6s;
+}
+* .frame .center #char-3:checked ~ .light-3 {
+  animation: short 1s 0s, short 1s 1s, short 1s 2s, long 2s 3s, long 2s 5s;
+}
+* .frame .center #char-4:checked ~ .light-4 {
+  animation: short 1s 0s, short 1s 1s, short 1s 2s, short 1s 3s, long 2s 4s;
+}
+* .frame .center #char-5:checked ~ .light-5 {
+  animation: short 1s 0s, short 1s 1s, short 1s 2s, short 1s 3s, short 1s 4s;
+}
+* .frame .center #char-6:checked ~ .light-6 {
+  animation: long 2s 0s, short 1s 2s, short 1s 3s, short 1s 4s, short 1s 5s;
+}
+* .frame .center #char-7:checked ~ .light-7 {
+  animation: long 2s 0s, long 2s 2s, short 1s 4s, short 1s 5s, short 1s 6s;
+}
+* .frame .center #char-8:checked ~ .light-8 {
+  animation: long 2s 0s, long 2s 2s, long 2s 4s, short 1s 6s, short 1s 7s;
+}
+* .frame .center #char-9:checked ~ .light-9 {
+  animation: long 2s 0s, long 2s 2s, long 2s 4s, long 2s 6s, short 1s 8s;
+}
+* .frame .center #char-0:checked ~ .light-0 {
+  animation: long 2s 0s, long 2s 2s, long 2s 4s, long 2s 6s, long 2s 8s;
+}
+@keyframes short {
+  0%, 50% {
+    opacity: 0;
+  }
+  50.1%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes long {
+  0%, 25% {
+    opacity: 0;
+  }
+  25.1%, 100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

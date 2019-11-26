@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #333333;
+
+      input { display: none; }
+
+      .light {
+        width: 8%;
+        height: 8%;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 2px 2px 3px 3px rgba(255,255,255,0.2),
+                    -2px 2px 3px 3px rgba(255,255,255,0.2),
+                    2px -2px 3px 3px rgba(255,255,255,0.2),
+                    -2px -2px 3px 3px rgba(255,255,255,0.2);
+        position: absolute;
+        top: 26%;
+        left: 46%;
+        opacity: 0;
+      }
+
+      .keyboard {
+        width: 100%;
+        height: 40%;
+        background: #666;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid lighten(#666, 10%);
+        padding: 0.2rem 0;
+        
+        .alphabets, .numbers {
+          width: 100%;
+          background: #666;
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          justify-items: center;
+          align-items: center;
+          user-select: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+        }
+
+        .alphabets { height: 75%; }
+        .numbers { height: 25%; }
+
+        .alphabets .char,
+        .numbers .char {
+          width: 85%;
+          height: 85%;
+          border-radius: 50%;
+          background: #666;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          font-weight: 0.9rem;
+          
+          &:hover { background: lighten(#666, 20%); }
+        }
+      }
+
+      $short: 1;
+      $long: 2;
+
+      $characters: (
+        a: '.-',
+        b: '-...',
+        c: '-.-.',
+        d: '-..',
+        e: '.',
+        f: '..-.',
+        g: '--.',
+        h: '....',
+        i: '..',
+        j: '.---',
+        k: '-.-',
+        l: '.-..',
+        m: '--',
+        n: '-.',
+        o: '---',
+        p: '.--.',
+        q: '--.-',
+        r: '.-.',
+        s: '...',
+        t: '-',
+        u: '..-',
+        v: '...-',
+        w: '.--',
+        x: '-..-',
+        y: '-.--',
+        z: '--..',
+        1: '.----',
+        2: '..---',
+        3: '...--',
+        4: '....-',
+        5: '.....',
+        6: '-....',
+        7: '--...',
+        8: '---..',
+        9: '----.',
+        0: '-----'
+      );
+
+      @function morse-anim($string) {
+        $animation: ();
+        $accum-time: 0;
+        @for $i from 1 through str-length($string) {
+          $character: str-slice($string, $i, $i);
+          @if($character == '.') {
+            $anim: short ($short)+s ($accum-time)+s;
+            $accum-time: $accum-time + $short;
+            $animation: append($animation, $anim, comma);
+          } @else {
+            $anim: long ($long)+s ($accum-time)+s;
+            $accum-time: $accum-time + $long;
+            $animation: append($animation, $anim, comma);
+          }
+        }
+        @return $animation;
+      }
+
+      @each $char, $code in $characters {
+        #char-#{$char}:checked ~ .light-#{$char} {
+          animation: morse-anim($code);
+        }
+      }
+
+      @keyframes short {
+        0%, 50% { opacity: 0; }
+        50.1%, 100% { opacity: 1; }
+      }
+
+      @keyframes long {
+        0%, 25% { opacity: 0; }
+        25.1%, 100% { opacity: 1; }
+      }
+    }
+  }  
+}
