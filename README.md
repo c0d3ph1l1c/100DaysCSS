@@ -75,3 +75,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [069 - Eye](https://c0d3ph1l1c.github.io/100DaysCSS/069Eye/)
 * [070 - Calendar Days](https://c0d3ph1l1c.github.io/100DaysCSS/070CalendarDays/)
 * [071 - Morse Code Keyboard](https://c0d3ph1l1c.github.io/100DaysCSS/071MorseCodeKeyboard/)
+* [072 - The Rings](https://c0d3ph1l1c.github.io/100DaysCSS/072TheRings/)
