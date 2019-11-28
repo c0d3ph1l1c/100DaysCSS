@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #F39C12;
+  color: #fff;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .text {
+  width: 50%;
+  height: 10%;
+  position: relative;
+  overflow: hidden;
+}
+* .frame .center .text .animal {
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 37%;
+}
+* .frame .center .text .panther {
+  animation: slide-in 8s linear -2s backwards infinite;
+}
+* .frame .center .text .leopard {
+  animation: slide-in 8s linear 0s backwards infinite;
+}
+* .frame .center .text .tiger {
+  animation: slide-in 8s linear 2s backwards infinite;
+}
+* .frame .center .text .jaguar {
+  animation: slide-in 8s linear 4s backwards infinite;
+}
+@keyframes slide-in {
+  0%, 20% {
+    transform: translateY(2.5rem);
+  }
+  25%, 45% {
+    transform: translateY(0);
+  }
+  50%, 100% {
+    transform: translateY(-2.5rem);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
