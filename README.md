@@ -77,3 +77,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [071 - Morse Code Keyboard](https://c0d3ph1l1c.github.io/100DaysCSS/071MorseCodeKeyboard/)
 * [072 - The Rings](https://c0d3ph1l1c.github.io/100DaysCSS/072TheRings/)
 * [073 - Word Carousel](https://c0d3ph1l1c.github.io/100DaysCSS/073WordCarousel/)
+* [074 - Pagination](https://c0d3ph1l1c.github.io/100DaysCSS/074Pagination/)
