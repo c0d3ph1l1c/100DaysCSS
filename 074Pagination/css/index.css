@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #1ABC9C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .container {
+  width: 45%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+* .frame .center .container input[type=radio] {
+  display: none;
+}
+* .frame .center .container .page {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
+* .frame .center .container .page:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+* .frame .center .container .page .number {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+}
+* .frame .center .container #page-1:checked ~ .page-1:after {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+* .frame .center .container #page-1:checked ~ .page-1 .number {
+  color: #1ABC9C;
+  transition: color 0.3s ease-in-out;
+}
+* .frame .center .container #page-2:checked ~ .page-2:after {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+* .frame .center .container #page-2:checked ~ .page-2 .number {
+  color: #1ABC9C;
+  transition: color 0.3s ease-in-out;
+}
+* .frame .center .container #page-3:checked ~ .page-3:after {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+* .frame .center .container #page-3:checked ~ .page-3 .number {
+  color: #1ABC9C;
+  transition: color 0.3s ease-in-out;
+}
+* .frame .center .container #page-4:checked ~ .page-4:after {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+* .frame .center .container #page-4:checked ~ .page-4 .number {
+  color: #1ABC9C;
+  transition: color 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=index.css.map */
