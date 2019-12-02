@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #34495E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+* .frame .center .container {
+  width: 52%;
+  height: 25%;
+  position: absolute;
+  top: 31.25%;
+}
+* .frame .center .container .input-card {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  z-index: 1;
+  top: 50%;
+}
+* .frame .center .container .input-card input[type=text] {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  position: absolute;
+}
+* .frame .center .container .input-card .description {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: absolute;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
+* .frame .center .container .secret {
+  width: 100%;
+  height: 50%;
+  background: #64C760;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+* .frame .center .revealed {
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0s linear 0.4s;
+}
+* .frame .center .revealed .input-card {
+  transform: rotateX(180deg);
+  transition: transform 0.4s linear;
+}
+* .frame .center .revealed .secret {
+  box-shadow: none;
+  transition: box-shadow 0s linear 0.4s;
+}
+
+/*# sourceMappingURL=index.css.map */
