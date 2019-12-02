@@ -79,3 +79,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [073 - Word Carousel](https://c0d3ph1l1c.github.io/100DaysCSS/073WordCarousel/)
 * [074 - Pagination](https://c0d3ph1l1c.github.io/100DaysCSS/074Pagination/)
 * [075 - Spinning Discs](https://c0d3ph1l1c.github.io/100DaysCSS/075SpinningDiscs/)
+* [076 - Reveal Key](https://c0d3ph1l1c.github.io/100DaysCSS/076RevealKey/)
