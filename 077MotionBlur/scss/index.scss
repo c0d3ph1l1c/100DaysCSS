@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #9B59B6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ball {
+        width: 13%;
+        height: 13%;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        animation: move 1s ease-in-out alternate infinite;  
+        transform: translateX(-8.75rem);
+      }
+
+      .shadow-1, .shadow-2, .shadow-3, .shadow-4 {
+        width: 13%;
+        height: 13%;
+        border-radius: 50%;
+        filter: blur(2px);
+        position: absolute;
+        transform: translateX(-8.75rem);
+      }
+
+      @for $i from 1 through 4 {
+        .shadow-#{$i} {
+          background: rgba(255,255,255,(0.8 - 0.15 * $i)); 
+          animation: move 1s ease-in-out (0.02 * $i)+s alternate infinite;
+        }
+      }
+
+      @keyframes move {
+        0% { transform: translateX(-8.75rem); }
+        100% { transform: translateX(8.75rem); }
+      }
+    }
+  }
+}
