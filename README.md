@@ -81,3 +81,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [075 - Spinning Discs](https://c0d3ph1l1c.github.io/100DaysCSS/075SpinningDiscs/)
 * [076 - Reveal Key](https://c0d3ph1l1c.github.io/100DaysCSS/076RevealKey/)
 * [077 - Motion Blur](https://c0d3ph1l1c.github.io/100DaysCSS/077MotionBlur/)
+* [078 - Hover Shadow](https://c0d3ph1l1c.github.io/100DaysCSS/078HoverShadow/)
