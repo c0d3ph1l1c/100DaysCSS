@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #3498DB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn-container {
+        width: 50%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        
+        .btn {
+          width: 100%;
+          height: 23%;
+          background: #FFFFFF;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          font-weight: 400;
+          transform-origin: 50% 50%;
+          transition: transform 0.2s linear, box-shadow 0.2s linear;
+        }
+
+        @for $i from 1 through 3 {
+          .btn-#{$i}:hover {
+            transform: scale(1.01 + $i * 0.02);
+            box-shadow: (2 + $i)+px (3 + $i)+px (6 + $i * 2)+px ($i)+px rgba(0,0,0,0.3);
+            transition: transform 0.2s linear, box-shadow 0.2s linear;
+          }
+        }
+      }
+    }
+  }
+}
