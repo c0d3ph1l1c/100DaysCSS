@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: appear 0.5s linear;
+}
+@keyframes appear {
+  0%, 80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center .container {
+  width: 12.5%;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  flex: 1 1 auto;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+}
+* .frame .center .container h4 {
+  transform: scale(0.3);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+* .frame .center .container:hover {
+  width: 62.5%;
+  transition: width 0.5s ease-in-out;
+}
+* .frame .center .container:hover h4 {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+* .frame .center .container-1 {
+  background: #34495E;
+}
+* .frame .center .container-2 {
+  background: #E67E22;
+}
+* .frame .center .container-3 {
+  background: #34495E;
+}
+* .frame .center .container-4 {
+  background: #E67E22;
+}
+
+/*# sourceMappingURL=index.css.map */
