@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .void {
+        width: 100%;
+        height: 70%;
+        background: #9B59B6;
+      }
+
+      .ground {
+        width: 100%;
+        height: 30%;
+        background: #49627C;
+      }
+
+      $speed: 3s;
+      $ease-out: cubic-bezier(0, 0, .40, 1);
+      $ease-in: cubic-bezier(.40, 0, 1, 1);
+
+      .ball-move {
+        width: 10%;
+        height: 10%;
+        position: absolute;
+        top: 10%;
+        right: -15%;
+        animation: horizontal $speed $ease-out infinite;
+
+        @keyframes horizontal {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-29rem); }
+        }
+         
+        .ball-down {
+          width: 100%;
+          height: 100%;
+          animation: down $speed $ease-in infinite;
+
+          @keyframes down {
+            0% { transform: translateY(0); }
+            20%, 35% { transform: translateY(12.5rem); }
+            50%, 65% { transform: translateY(19.5rem); }
+            80%, 95% { transform: translateY(24.5rem); }
+            100% { transform: translateY(27.2rem); }
+          }
+
+          .ball-up {
+            width: 100%;
+            height: 100%;
+            animation: up $speed $ease-out infinite;
+
+            @keyframes up {
+              0%, 20% { transform: translateY(0); }
+              35%, 50% { transform: translateY(-7rem); }
+              65%, 80% { transform: translateY(-12rem); }
+              95%, 100% { transform: translateY(-14.7rem); }
+            }
+
+            .ball {
+              width: 100%;
+              height: 100%;
+              background: #fff;
+              border-radius: 50%;
+              transform-origin: 50% 100%;
+              animation: deform $speed $ease-in infinite;
+
+              @keyframes deform {
+                0%, 19%, 25%, 49%, 55%, 79%, 85%, 100% {
+                  transform: scale(1);
+                }
+
+                20%, 50%, 80% {
+                  transform: scale(1.1, 0.9);
+                }
+              }
+            }
+          } 
+        }
+      }
+    }
+  }
+}
