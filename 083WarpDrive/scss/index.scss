@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #1E3242;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      $numberOfRings: 30;
+      $numberOfBeams: 24;
+      $ease-in: cubic-bezier(1,0,0.97,0.4);
+      $cycle: 4s;
+
+      .ring {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        transform-origin: 50% 50%;
+      
+        .beam {
+          width: 80px;
+          height: 8px;
+          background: #C3DCEC;
+          border-radius: 4px;
+          transform-origin: 50% 50%;
+          position: absolute;
+          top: 196px;
+          left: 160px;
+        }
+      }
+
+      @for $i from 1 through $numberOfRings {
+        .ring-#{$i} {
+          $timeOffset: -($cycle * ($i - 1) / $numberOfRings + (random() * 0.1s));
+          $rotateOffset: random() * 180deg;
+          animation: expand-#{$i} $cycle $ease-in $timeOffset infinite; 
+
+          @keyframes expand-#{$i} {
+            0% { 
+              transform: rotateZ($rotateOffset) scale(0.01); 
+              opacity: 0.1;
+            }
+            90% { opacity: 1; }
+            100% { 
+              transform: rotateZ($rotateOffset) scale(1); 
+              opacity: 1;
+            }
+          }
+        }
+      
+        @for $j from 1 through $numberOfBeams {
+          .beam-#{$j} {
+            $angle: (360 * ($j - 1) / $numberOfBeams + (random() * 10))+deg;
+            transform: rotateZ($angle) translateX(-20rem) scaleX(0.8 + random() * 0.4);
+          }
+        }
+      }
+    }
+  }
+}
