@@ -1,0 +1,2693 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #1E3242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .ring {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+* .frame .center .ring .beam {
+  width: 80px;
+  height: 8px;
+  background: #C3DCEC;
+  border-radius: 4px;
+  transform-origin: 50% 50%;
+  position: absolute;
+  top: 196px;
+  left: 160px;
+}
+* .frame .center .ring-1 {
+  animation: expand-1 4s cubic-bezier(1, 0, 0.97, 0.4) -0.0262474342s infinite;
+}
+@keyframes expand-1 {
+  0% {
+    transform: rotateZ(10.9954102714deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(10.9954102714deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(5.1504316019deg) translateX(-20rem) scaleX(1.1431864437);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(22.3545937592deg) translateX(-20rem) scaleX(0.8383169351);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(36.735386593deg) translateX(-20rem) scaleX(0.8873643022);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(52.3642940204deg) translateX(-20rem) scaleX(1.1075928461);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(64.0120634316deg) translateX(-20rem) scaleX(0.8752032103);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(82.9133988611deg) translateX(-20rem) scaleX(1.1639568313);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(90.1950992672deg) translateX(-20rem) scaleX(0.9175340396);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(109.602093452deg) translateX(-20rem) scaleX(0.997882376);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(126.1808347833deg) translateX(-20rem) scaleX(1.1864117924);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(137.9664986258deg) translateX(-20rem) scaleX(1.0071048671);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(158.5900177826deg) translateX(-20rem) scaleX(0.9231249889);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(172.4176724796deg) translateX(-20rem) scaleX(0.9093936663);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(182.6390142298deg) translateX(-20rem) scaleX(0.9861095034);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(196.6247356188deg) translateX(-20rem) scaleX(0.8623629684);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(214.3604564793deg) translateX(-20rem) scaleX(1.1239316379);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(228.6477307831deg) translateX(-20rem) scaleX(1.1953078425);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(241.1532733077deg) translateX(-20rem) scaleX(0.9535038693);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(258.112603972deg) translateX(-20rem) scaleX(1.1652353569);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(277.8826211538deg) translateX(-20rem) scaleX(0.8296801732);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(287.5763082016deg) translateX(-20rem) scaleX(0.9484174287);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(307.2682961112deg) translateX(-20rem) scaleX(0.9824597427);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.2627617688deg) translateX(-20rem) scaleX(1.1972452258);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.0242292072deg) translateX(-20rem) scaleX(1.0799257447);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(348.7872434029deg) translateX(-20rem) scaleX(1.0439641595);
+}
+* .frame .center .ring-2 {
+  animation: expand-2 4s cubic-bezier(1, 0, 0.97, 0.4) -0.2140854351s infinite;
+}
+@keyframes expand-2 {
+  0% {
+    transform: rotateZ(129.6551471896deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(129.6551471896deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(2.3475847916deg) translateX(-20rem) scaleX(1.0201438983);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(17.8057054658deg) translateX(-20rem) scaleX(0.813733633);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(33.2445644918deg) translateX(-20rem) scaleX(0.9968266589);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(52.1321023379deg) translateX(-20rem) scaleX(1.0842784272);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(60.3427463429deg) translateX(-20rem) scaleX(0.9276818637);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(76.3461880018deg) translateX(-20rem) scaleX(1.1223973303);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(94.9065246148deg) translateX(-20rem) scaleX(0.8007919874);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(108.8998815457deg) translateX(-20rem) scaleX(1.05774298);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(124.2225295333deg) translateX(-20rem) scaleX(0.9653197124);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(143.1911922144deg) translateX(-20rem) scaleX(0.859151562);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.6357351305deg) translateX(-20rem) scaleX(0.9805036234);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(168.2870326359deg) translateX(-20rem) scaleX(0.8248843893);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(188.4808484828deg) translateX(-20rem) scaleX(0.8707555372);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(200.4371818277deg) translateX(-20rem) scaleX(1.0055084711);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(212.0632175733deg) translateX(-20rem) scaleX(0.9425335194);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(228.5459798405deg) translateX(-20rem) scaleX(1.1854993775);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(243.839229628deg) translateX(-20rem) scaleX(1.0342126284);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(263.938175027deg) translateX(-20rem) scaleX(0.8970954267);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(274.2272643144deg) translateX(-20rem) scaleX(0.9207367212);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(289.3719422405deg) translateX(-20rem) scaleX(0.8872225404);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(303.8772373889deg) translateX(-20rem) scaleX(0.8554029833);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.8839656847deg) translateX(-20rem) scaleX(0.9864939104);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(332.4490162592deg) translateX(-20rem) scaleX(1.1032269475);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(354.9512870099deg) translateX(-20rem) scaleX(1.1141422448);
+}
+* .frame .center .ring-3 {
+  animation: expand-3 4s cubic-bezier(1, 0, 0.97, 0.4) -0.3088024277s infinite;
+}
+@keyframes expand-3 {
+  0% {
+    transform: rotateZ(48.7208385934deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(48.7208385934deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(7.5228311487deg) translateX(-20rem) scaleX(1.0256482596);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(21.6957440822deg) translateX(-20rem) scaleX(1.1740818327);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(36.1136570659deg) translateX(-20rem) scaleX(0.9687464795);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(46.8929106304deg) translateX(-20rem) scaleX(0.881499197);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(62.1408964704deg) translateX(-20rem) scaleX(0.9695909928);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(80.4055021097deg) translateX(-20rem) scaleX(0.9486541258);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(95.4389579424deg) translateX(-20rem) scaleX(0.829943129);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(112.6265020132deg) translateX(-20rem) scaleX(1.0139542404);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(127.9980203305deg) translateX(-20rem) scaleX(1.0200936489);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(138.6912879901deg) translateX(-20rem) scaleX(1.1431877769);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(154.7606587584deg) translateX(-20rem) scaleX(1.0266853625);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(166.2657037419deg) translateX(-20rem) scaleX(1.0234891621);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(188.2158408436deg) translateX(-20rem) scaleX(0.8288691183);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(196.627439164deg) translateX(-20rem) scaleX(0.9368488802);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(211.3632661495deg) translateX(-20rem) scaleX(1.1396635954);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(230.4865748197deg) translateX(-20rem) scaleX(0.9201854746);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(248.368943634deg) translateX(-20rem) scaleX(1.0686311703);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(256.3611844042deg) translateX(-20rem) scaleX(0.9329131143);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(277.1528569971deg) translateX(-20rem) scaleX(1.1055452228);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(285.5454834908deg) translateX(-20rem) scaleX(1.1907770914);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(301.7126579463deg) translateX(-20rem) scaleX(1.0041858373);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(319.5800457701deg) translateX(-20rem) scaleX(1.1553162481);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.4070867463deg) translateX(-20rem) scaleX(1.0759151438);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(351.7370442071deg) translateX(-20rem) scaleX(1.1242301207);
+}
+* .frame .center .ring-4 {
+  animation: expand-4 4s cubic-bezier(1, 0, 0.97, 0.4) -0.4807823938s infinite;
+}
+@keyframes expand-4 {
+  0% {
+    transform: rotateZ(22.5535917955deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(22.5535917955deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(2.8914017435deg) translateX(-20rem) scaleX(0.844769107);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(20.1401469103deg) translateX(-20rem) scaleX(0.8369934376);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(36.1077680453deg) translateX(-20rem) scaleX(1.0396867963);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(53.258122677deg) translateX(-20rem) scaleX(0.9300950586);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(60.9870882673deg) translateX(-20rem) scaleX(0.9775070139);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(75.2607472714deg) translateX(-20rem) scaleX(0.8959152238);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(97.9362916974deg) translateX(-20rem) scaleX(0.8572082112);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(111.4161506547deg) translateX(-20rem) scaleX(1.0619201212);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(120.6879960979deg) translateX(-20rem) scaleX(0.9036912591);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(141.2472536921deg) translateX(-20rem) scaleX(1.1640262514);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(155.5926893491deg) translateX(-20rem) scaleX(0.8989233126);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(170.3253226742deg) translateX(-20rem) scaleX(0.8249875133);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(181.5187444617deg) translateX(-20rem) scaleX(0.9445313628);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(204.9628814824deg) translateX(-20rem) scaleX(1.0099699101);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(214.4901420062deg) translateX(-20rem) scaleX(0.9647774507);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(232.4038592186deg) translateX(-20rem) scaleX(0.8980029788);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(240.6713853749deg) translateX(-20rem) scaleX(1.021456825);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.348471156deg) translateX(-20rem) scaleX(0.8264552104);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(276.9203649041deg) translateX(-20rem) scaleX(0.9338947826);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(291.885027426deg) translateX(-20rem) scaleX(0.9523631772);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(300.2642621101deg) translateX(-20rem) scaleX(1.1374553617);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(323.1999457864deg) translateX(-20rem) scaleX(1.1414252825);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(334.0511634951deg) translateX(-20rem) scaleX(0.8649836717);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(348.527338387deg) translateX(-20rem) scaleX(0.9261274471);
+}
+* .frame .center .ring-5 {
+  animation: expand-5 4s cubic-bezier(1, 0, 0.97, 0.4) -0.6250305577s infinite;
+}
+@keyframes expand-5 {
+  0% {
+    transform: rotateZ(106.996394043deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(106.996394043deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(1.5995705deg) translateX(-20rem) scaleX(1.0160734781);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(18.7306145408deg) translateX(-20rem) scaleX(0.8929429833);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(35.460159552deg) translateX(-20rem) scaleX(0.8632341096);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(46.386394673deg) translateX(-20rem) scaleX(0.9813583845);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(68.8176520516deg) translateX(-20rem) scaleX(0.9339729784);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(84.6031776969deg) translateX(-20rem) scaleX(0.9396992081);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(90.6606410238deg) translateX(-20rem) scaleX(0.8976048048);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(107.8729264003deg) translateX(-20rem) scaleX(1.0590001936);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(128.7050297463deg) translateX(-20rem) scaleX(1.1465170639);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(138.5336551373deg) translateX(-20rem) scaleX(1.151797566);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(157.004074815deg) translateX(-20rem) scaleX(1.0578714645);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(166.1638219241deg) translateX(-20rem) scaleX(1.1217642592);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(189.1308710401deg) translateX(-20rem) scaleX(0.9304397347);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(198.0259925652deg) translateX(-20rem) scaleX(1.1177421989);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(217.7644066978deg) translateX(-20rem) scaleX(1.0162033549);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(234.3957449561deg) translateX(-20rem) scaleX(1.1383968622);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(244.461780263deg) translateX(-20rem) scaleX(0.8698802973);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.3193214506deg) translateX(-20rem) scaleX(0.9561467677);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(270.5815389955deg) translateX(-20rem) scaleX(1.1885362504);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(289.1933135393deg) translateX(-20rem) scaleX(0.9136508674);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(302.4146000723deg) translateX(-20rem) scaleX(0.8443720078);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.6974797327deg) translateX(-20rem) scaleX(1.035057467);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(330.7021329027deg) translateX(-20rem) scaleX(0.8218997689);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(350.4883700624deg) translateX(-20rem) scaleX(1.0804550516);
+}
+* .frame .center .ring-6 {
+  animation: expand-6 4s cubic-bezier(1, 0, 0.97, 0.4) -0.7613789415s infinite;
+}
+@keyframes expand-6 {
+  0% {
+    transform: rotateZ(25.0366945941deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(25.0366945941deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(7.3502221283deg) translateX(-20rem) scaleX(1.0238370041);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(20.9612790273deg) translateX(-20rem) scaleX(0.950660886);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(35.7110811878deg) translateX(-20rem) scaleX(0.9395302867);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(48.4894332513deg) translateX(-20rem) scaleX(0.8793625078);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(62.6680459597deg) translateX(-20rem) scaleX(1.1831942435);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(79.941460376deg) translateX(-20rem) scaleX(1.0108887334);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(99.2923875093deg) translateX(-20rem) scaleX(0.8147326754);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(105.8467239842deg) translateX(-20rem) scaleX(1.1191980687);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(126.9739733314deg) translateX(-20rem) scaleX(1.0124585808);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(137.200644284deg) translateX(-20rem) scaleX(0.8247462529);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(156.9764071245deg) translateX(-20rem) scaleX(0.8075509666);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(172.60256542deg) translateX(-20rem) scaleX(0.8863636522);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(186.4253980395deg) translateX(-20rem) scaleX(1.0306424048);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(195.822345435deg) translateX(-20rem) scaleX(1.1414711066);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(216.1667032904deg) translateX(-20rem) scaleX(0.8964571099);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(234.583379328deg) translateX(-20rem) scaleX(0.9193971657);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(247.2538454537deg) translateX(-20rem) scaleX(1.1528163626);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(258.1582355443deg) translateX(-20rem) scaleX(1.0209797502);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(274.4003195921deg) translateX(-20rem) scaleX(1.1376003371);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(290.4322515807deg) translateX(-20rem) scaleX(0.8804004856);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(302.8106262788deg) translateX(-20rem) scaleX(0.9520033136);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.1689951296deg) translateX(-20rem) scaleX(0.9910272575);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(336.7878348833deg) translateX(-20rem) scaleX(0.9111282887);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(349.0039943792deg) translateX(-20rem) scaleX(1.0209741914);
+}
+* .frame .center .ring-7 {
+  animation: expand-7 4s cubic-bezier(1, 0, 0.97, 0.4) -0.8363829608s infinite;
+}
+@keyframes expand-7 {
+  0% {
+    transform: rotateZ(76.4162422919deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(76.4162422919deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(9.7787796158deg) translateX(-20rem) scaleX(0.8287794814);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(15.1955784684deg) translateX(-20rem) scaleX(1.1613822751);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(36.0826202055deg) translateX(-20rem) scaleX(0.9457559392);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(47.2774699933deg) translateX(-20rem) scaleX(0.9128799148);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(67.4445556311deg) translateX(-20rem) scaleX(0.937614181);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(78.9300113549deg) translateX(-20rem) scaleX(0.8764762216);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(94.2899257303deg) translateX(-20rem) scaleX(0.9133653262);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(108.7396363462deg) translateX(-20rem) scaleX(0.9683436827);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(127.600892692deg) translateX(-20rem) scaleX(1.1800161736);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(143.2379728309deg) translateX(-20rem) scaleX(0.8104454934);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(154.1827498503deg) translateX(-20rem) scaleX(1.0731782295);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(168.4975688766deg) translateX(-20rem) scaleX(1.1981461255);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(187.3197011014deg) translateX(-20rem) scaleX(0.9656106326);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(200.8110022311deg) translateX(-20rem) scaleX(0.9879949097);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(212.5697925655deg) translateX(-20rem) scaleX(0.9930335561);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(229.531473471deg) translateX(-20rem) scaleX(1.1266720953);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(245.618225378deg) translateX(-20rem) scaleX(1.0793530815);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.4050591681deg) translateX(-20rem) scaleX(0.9608163106);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(279.6903178236deg) translateX(-20rem) scaleX(1.1129138821);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(293.993030924deg) translateX(-20rem) scaleX(1.1926636826);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(302.7114212967deg) translateX(-20rem) scaleX(0.9897777222);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(320.400825384deg) translateX(-20rem) scaleX(1.0613436594);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.7020325414deg) translateX(-20rem) scaleX(1.0624066677);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(348.5455213124deg) translateX(-20rem) scaleX(0.9124463317);
+}
+* .frame .center .ring-8 {
+  animation: expand-8 4s cubic-bezier(1, 0, 0.97, 0.4) -1.0285016793s infinite;
+}
+@keyframes expand-8 {
+  0% {
+    transform: rotateZ(165.8583917185deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(165.8583917185deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(9.1207186548deg) translateX(-20rem) scaleX(0.8953762573);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(16.2884782742deg) translateX(-20rem) scaleX(1.0628892565);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(38.133785419deg) translateX(-20rem) scaleX(1.1784718814);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(46.6873598182deg) translateX(-20rem) scaleX(0.8412892968);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(63.0467980821deg) translateX(-20rem) scaleX(0.9414806956);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(81.2960168154deg) translateX(-20rem) scaleX(1.1968373698);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(94.1789253195deg) translateX(-20rem) scaleX(0.8640233734);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(110.8575032842deg) translateX(-20rem) scaleX(1.010195838);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(127.5856748345deg) translateX(-20rem) scaleX(0.8085484794);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(136.6841504322deg) translateX(-20rem) scaleX(0.9510982621);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.3046038918deg) translateX(-20rem) scaleX(1.0804670305);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(167.4849501162deg) translateX(-20rem) scaleX(0.8879768069);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(187.9506816425deg) translateX(-20rem) scaleX(1.0894193766);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(198.099289043deg) translateX(-20rem) scaleX(1.1855202015);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(212.3383741207deg) translateX(-20rem) scaleX(0.9588364626);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(226.2205530546deg) translateX(-20rem) scaleX(1.1048495109);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(243.0371225287deg) translateX(-20rem) scaleX(1.1647555557);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.0493175494deg) translateX(-20rem) scaleX(1.0967704079);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(279.5642227326deg) translateX(-20rem) scaleX(1.0359152052);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(290.2728170635deg) translateX(-20rem) scaleX(0.9549462371);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(304.3250748155deg) translateX(-20rem) scaleX(1.1485215858);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(324.273913795deg) translateX(-20rem) scaleX(0.8353612738);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(332.387116214deg) translateX(-20rem) scaleX(0.9417975324);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(353.5262121538deg) translateX(-20rem) scaleX(1.0024785042);
+}
+* .frame .center .ring-9 {
+  animation: expand-9 4s cubic-bezier(1, 0, 0.97, 0.4) -1.1377681673s infinite;
+}
+@keyframes expand-9 {
+  0% {
+    transform: rotateZ(63.9245284096deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(63.9245284096deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(6.694585413deg) translateX(-20rem) scaleX(0.9836349349);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(24.8898076898deg) translateX(-20rem) scaleX(0.9284678394);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(30.386359308deg) translateX(-20rem) scaleX(1.0243953732);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(45.259164456deg) translateX(-20rem) scaleX(0.8872062257);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(61.9988137104deg) translateX(-20rem) scaleX(1.0627024443);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(79.5313104457deg) translateX(-20rem) scaleX(1.098706649);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(93.6732615474deg) translateX(-20rem) scaleX(1.1345013055);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(109.5939443213deg) translateX(-20rem) scaleX(1.0988628516);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(121.3007690582deg) translateX(-20rem) scaleX(0.8065736654);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(137.2771462641deg) translateX(-20rem) scaleX(1.1739678419);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(155.4090558751deg) translateX(-20rem) scaleX(1.1949303371);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(165.3355396963deg) translateX(-20rem) scaleX(1.1205093243);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(183.2950171654deg) translateX(-20rem) scaleX(1.0995110584);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(203.8867919667deg) translateX(-20rem) scaleX(1.1616468831);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(210.9331333878deg) translateX(-20rem) scaleX(0.8164206719);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(225.3026458957deg) translateX(-20rem) scaleX(1.1352588373);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(245.3882203518deg) translateX(-20rem) scaleX(0.9906608886);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(255.1458067237deg) translateX(-20rem) scaleX(0.9069802366);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(277.5779594491deg) translateX(-20rem) scaleX(0.8576595555);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(289.7817226022deg) translateX(-20rem) scaleX(0.8097414658);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(306.3544953111deg) translateX(-20rem) scaleX(1.0875206346);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(317.093394745deg) translateX(-20rem) scaleX(0.8705214237);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.7919976526deg) translateX(-20rem) scaleX(0.9778218106);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(352.0995426606deg) translateX(-20rem) scaleX(0.9874992273);
+}
+* .frame .center .ring-10 {
+  animation: expand-10 4s cubic-bezier(1, 0, 0.97, 0.4) -1.2735583383s infinite;
+}
+@keyframes expand-10 {
+  0% {
+    transform: rotateZ(135.2173724994deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(135.2173724994deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(7.6880103997deg) translateX(-20rem) scaleX(0.9554020524);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(23.3358692972deg) translateX(-20rem) scaleX(1.1193675798);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(35.039316719deg) translateX(-20rem) scaleX(1.0202925235);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(47.4868566121deg) translateX(-20rem) scaleX(0.9468561337);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(67.7910714661deg) translateX(-20rem) scaleX(0.8537367822);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(80.1671132709deg) translateX(-20rem) scaleX(1.0358853115);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(90.4315143818deg) translateX(-20rem) scaleX(0.8305262777);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(106.6430141619deg) translateX(-20rem) scaleX(0.856169777);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(129.8598673259deg) translateX(-20rem) scaleX(0.9960383122);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(140.2174090148deg) translateX(-20rem) scaleX(0.8207154537);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(158.9536470649deg) translateX(-20rem) scaleX(0.9192354384);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(170.107129418deg) translateX(-20rem) scaleX(0.9673107941);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(189.7499086523deg) translateX(-20rem) scaleX(1.0768410003);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(202.0044830773deg) translateX(-20rem) scaleX(1.0335546833);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(218.7967749542deg) translateX(-20rem) scaleX(1.0035512043);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(234.5978283763deg) translateX(-20rem) scaleX(1.0624672936);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(246.8063263243deg) translateX(-20rem) scaleX(0.8392667647);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(257.4291507115deg) translateX(-20rem) scaleX(0.9338852749);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(272.7205101605deg) translateX(-20rem) scaleX(1.0146684043);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(285.7125021168deg) translateX(-20rem) scaleX(0.9182166833);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(300.8454591035deg) translateX(-20rem) scaleX(0.8062978709);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(318.6597983798deg) translateX(-20rem) scaleX(1.1799989948);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(335.6061202235deg) translateX(-20rem) scaleX(0.9088984126);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(352.3301226069deg) translateX(-20rem) scaleX(1.0669693921);
+}
+* .frame .center .ring-11 {
+  animation: expand-11 4s cubic-bezier(1, 0, 0.97, 0.4) -1.3734990598s infinite;
+}
+@keyframes expand-11 {
+  0% {
+    transform: rotateZ(44.4003364915deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(44.4003364915deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(6.0728110243deg) translateX(-20rem) scaleX(1.1361439847);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(21.8537452038deg) translateX(-20rem) scaleX(0.8228534446);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(35.8826617913deg) translateX(-20rem) scaleX(1.1542141622);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(48.5171508251deg) translateX(-20rem) scaleX(1.0192649977);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(67.0926379518deg) translateX(-20rem) scaleX(0.9390131737);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(77.7255115004deg) translateX(-20rem) scaleX(1.0683293725);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(99.4394786617deg) translateX(-20rem) scaleX(0.902385787);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(106.1483684829deg) translateX(-20rem) scaleX(0.9628015603);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(124.7781571235deg) translateX(-20rem) scaleX(0.9290762739);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(140.8885222162deg) translateX(-20rem) scaleX(1.1232925841);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(156.04411925deg) translateX(-20rem) scaleX(1.0084136854);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(170.4842384942deg) translateX(-20rem) scaleX(1.0655192644);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(185.5617028095deg) translateX(-20rem) scaleX(0.8314481638);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(197.3710756292deg) translateX(-20rem) scaleX(1.0603704062);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(217.9186426662deg) translateX(-20rem) scaleX(0.8592540417);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(225.8321432072deg) translateX(-20rem) scaleX(1.0947906754);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(242.2961710696deg) translateX(-20rem) scaleX(0.9541113039);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.3156812808deg) translateX(-20rem) scaleX(0.8246797678);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(270.5309299876deg) translateX(-20rem) scaleX(0.8347820206);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(288.0607228529deg) translateX(-20rem) scaleX(1.0647655772);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(308.870820595deg) translateX(-20rem) scaleX(1.1958355423);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(315.4205446951deg) translateX(-20rem) scaleX(0.9994323698);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(336.6338251383deg) translateX(-20rem) scaleX(1.1365266205);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(345.220552281deg) translateX(-20rem) scaleX(0.9533648317);
+}
+* .frame .center .ring-12 {
+  animation: expand-12 4s cubic-bezier(1, 0, 0.97, 0.4) -1.5301414316s infinite;
+}
+@keyframes expand-12 {
+  0% {
+    transform: rotateZ(140.7918465758deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(140.7918465758deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(0.5851725448deg) translateX(-20rem) scaleX(1.1508124614);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(18.3161253405deg) translateX(-20rem) scaleX(0.9807719074);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(32.5710969463deg) translateX(-20rem) scaleX(0.8599289495);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(52.9041859811deg) translateX(-20rem) scaleX(1.1221497863);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(66.7623526422deg) translateX(-20rem) scaleX(0.9444655593);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(81.1075877825deg) translateX(-20rem) scaleX(0.8267114996);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(96.5969707653deg) translateX(-20rem) scaleX(0.9846181556);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(114.0652880003deg) translateX(-20rem) scaleX(0.960350163);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(127.5543935719deg) translateX(-20rem) scaleX(1.0700847757);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(137.2263223759deg) translateX(-20rem) scaleX(0.9083012522);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(151.732016962deg) translateX(-20rem) scaleX(1.1758458541);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(172.6621963713deg) translateX(-20rem) scaleX(1.1033353879);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(181.9841561356deg) translateX(-20rem) scaleX(0.8458155303);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(201.8206776054deg) translateX(-20rem) scaleX(1.0324352404);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(219.4583971646deg) translateX(-20rem) scaleX(0.9003701166);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(225.7703485523deg) translateX(-20rem) scaleX(0.9212778464);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(240.7423080205deg) translateX(-20rem) scaleX(1.128118806);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(259.1667045345deg) translateX(-20rem) scaleX(0.8542732654);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(271.5627149684deg) translateX(-20rem) scaleX(1.1708660343);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(287.146424113deg) translateX(-20rem) scaleX(0.90153029);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(302.0497191988deg) translateX(-20rem) scaleX(0.85455601);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(322.9439757284deg) translateX(-20rem) scaleX(1.0124363861);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(334.7023144017deg) translateX(-20rem) scaleX(1.1496812546);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(349.384192255deg) translateX(-20rem) scaleX(1.0841201059);
+}
+* .frame .center .ring-13 {
+  animation: expand-13 4s cubic-bezier(1, 0, 0.97, 0.4) -1.6425336724s infinite;
+}
+@keyframes expand-13 {
+  0% {
+    transform: rotateZ(113.6749860689deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(113.6749860689deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(1.090464433deg) translateX(-20rem) scaleX(0.9159134533);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(24.32458185deg) translateX(-20rem) scaleX(1.105782791);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(39.9290907115deg) translateX(-20rem) scaleX(1.07550823);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(52.0107108382deg) translateX(-20rem) scaleX(0.8992692295);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(61.2430406356deg) translateX(-20rem) scaleX(0.8740063872);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(82.8039352567deg) translateX(-20rem) scaleX(1.0147559873);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(90.1009328516deg) translateX(-20rem) scaleX(1.0224203604);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(109.6901999139deg) translateX(-20rem) scaleX(0.9913233468);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(121.4524456731deg) translateX(-20rem) scaleX(0.835387521);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(143.1868450711deg) translateX(-20rem) scaleX(0.9185096847);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(158.6198829556deg) translateX(-20rem) scaleX(0.9966560357);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(169.7044970182deg) translateX(-20rem) scaleX(1.0651777939);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(188.652098899deg) translateX(-20rem) scaleX(1.0608054292);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(202.1691995192deg) translateX(-20rem) scaleX(1.131123819);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(211.2535244954deg) translateX(-20rem) scaleX(1.0994766072);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(227.36761256deg) translateX(-20rem) scaleX(0.8648103394);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(247.4788816933deg) translateX(-20rem) scaleX(1.1804933449);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(258.1255154949deg) translateX(-20rem) scaleX(1.1784289002);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(271.7306389077deg) translateX(-20rem) scaleX(1.1863372567);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(286.0255079242deg) translateX(-20rem) scaleX(1.0319823379);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(309.7739831993deg) translateX(-20rem) scaleX(0.8814741654);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(320.2813280071deg) translateX(-20rem) scaleX(1.0929751322);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(339.8903115611deg) translateX(-20rem) scaleX(1.1309049021);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(347.5432939883deg) translateX(-20rem) scaleX(1.0242756621);
+}
+* .frame .center .ring-14 {
+  animation: expand-14 4s cubic-bezier(1, 0, 0.97, 0.4) -1.81285177s infinite;
+}
+@keyframes expand-14 {
+  0% {
+    transform: rotateZ(68.6104772653deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(68.6104772653deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(8.4783648763deg) translateX(-20rem) scaleX(1.1277418627);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(16.1588545755deg) translateX(-20rem) scaleX(0.9699989924);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(39.4524351766deg) translateX(-20rem) scaleX(0.977132975);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(52.569697963deg) translateX(-20rem) scaleX(0.8834332954);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(69.0638133624deg) translateX(-20rem) scaleX(0.9194699494);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(79.4204846219deg) translateX(-20rem) scaleX(1.1851970843);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(92.2763872305deg) translateX(-20rem) scaleX(1.0973439642);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(111.8593435672deg) translateX(-20rem) scaleX(0.9929259296);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(121.4446427665deg) translateX(-20rem) scaleX(0.9038493343);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(143.9208777908deg) translateX(-20rem) scaleX(0.8112694599);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(151.1232465161deg) translateX(-20rem) scaleX(1.1779120868);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(174.9334159609deg) translateX(-20rem) scaleX(0.8349397898);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(184.9207586887deg) translateX(-20rem) scaleX(1.0557312864);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(203.4527198271deg) translateX(-20rem) scaleX(0.8405717084);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(218.2426157723deg) translateX(-20rem) scaleX(0.8971454043);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(227.2497007024deg) translateX(-20rem) scaleX(1.0133977302);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(241.0797828718deg) translateX(-20rem) scaleX(0.9482623882);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(259.038032852deg) translateX(-20rem) scaleX(0.9495089751);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(279.3733540457deg) translateX(-20rem) scaleX(1.0699930474);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(287.7278651509deg) translateX(-20rem) scaleX(1.130141467);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(301.2953778915deg) translateX(-20rem) scaleX(1.005830831);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(318.7669839576deg) translateX(-20rem) scaleX(0.8430677358);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(337.8591485972deg) translateX(-20rem) scaleX(1.0226450608);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(351.3855500112deg) translateX(-20rem) scaleX(1.1134856608);
+}
+* .frame .center .ring-15 {
+  animation: expand-15 4s cubic-bezier(1, 0, 0.97, 0.4) -1.9140793962s infinite;
+}
+@keyframes expand-15 {
+  0% {
+    transform: rotateZ(35.7577657238deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(35.7577657238deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(8.8966533009deg) translateX(-20rem) scaleX(1.0660829373);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(24.7490127638deg) translateX(-20rem) scaleX(0.9876714824);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(38.7439116745deg) translateX(-20rem) scaleX(0.9517828654);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(48.9696256699deg) translateX(-20rem) scaleX(0.8785709223);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(65.4677502957deg) translateX(-20rem) scaleX(1.0867490294);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(76.6889374004deg) translateX(-20rem) scaleX(0.8524140199);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(98.7037841018deg) translateX(-20rem) scaleX(0.9379992589);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(108.6443972332deg) translateX(-20rem) scaleX(0.9166015451);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(129.0510222875deg) translateX(-20rem) scaleX(1.1294834459);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(136.1362519711deg) translateX(-20rem) scaleX(1.0241924983);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.426217186deg) translateX(-20rem) scaleX(0.9580525385);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(174.7381185564deg) translateX(-20rem) scaleX(0.9898846063);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(186.4484676498deg) translateX(-20rem) scaleX(0.8827599048);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(197.2559388863deg) translateX(-20rem) scaleX(1.1119995199);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(219.2061975476deg) translateX(-20rem) scaleX(0.8154733316);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(226.36320854deg) translateX(-20rem) scaleX(0.9682609053);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(243.2470089097deg) translateX(-20rem) scaleX(1.1183201328);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(261.9214526922deg) translateX(-20rem) scaleX(1.0959329484);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(276.6011630326deg) translateX(-20rem) scaleX(0.9352803121);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(291.1452392961deg) translateX(-20rem) scaleX(1.1459969315);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(301.0936389049deg) translateX(-20rem) scaleX(0.9705264952);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(316.3292614947deg) translateX(-20rem) scaleX(1.150338755);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(337.5748425253deg) translateX(-20rem) scaleX(0.9259660116);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(351.7506777539deg) translateX(-20rem) scaleX(1.1568235141);
+}
+* .frame .center .ring-16 {
+  animation: expand-16 4s cubic-bezier(1, 0, 0.97, 0.4) -2.079466489s infinite;
+}
+@keyframes expand-16 {
+  0% {
+    transform: rotateZ(129.6838321975deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(129.6838321975deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(2.9994844833deg) translateX(-20rem) scaleX(0.8249963777);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(21.1034888096deg) translateX(-20rem) scaleX(1.0889137102);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(35.4161701517deg) translateX(-20rem) scaleX(1.0565583668);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(50.4162507499deg) translateX(-20rem) scaleX(0.8975882719);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(62.1795549847deg) translateX(-20rem) scaleX(0.8093285416);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(76.800551185deg) translateX(-20rem) scaleX(0.8957029388);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(97.7967686382deg) translateX(-20rem) scaleX(0.8169927312);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(112.9219067462deg) translateX(-20rem) scaleX(0.8939098432);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(128.5430481585deg) translateX(-20rem) scaleX(1.1097802025);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(136.4770447936deg) translateX(-20rem) scaleX(0.8470502773);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.3803105504deg) translateX(-20rem) scaleX(0.8923084417);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(171.3126706621deg) translateX(-20rem) scaleX(0.8476124336);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(185.5664521005deg) translateX(-20rem) scaleX(0.8854878878);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(203.1540032534deg) translateX(-20rem) scaleX(0.9355224813);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(212.9179277396deg) translateX(-20rem) scaleX(1.1023969924);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(232.3011084802deg) translateX(-20rem) scaleX(1.1188736364);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(241.134115674deg) translateX(-20rem) scaleX(0.8074974362);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(263.948608537deg) translateX(-20rem) scaleX(1.1090188393);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(271.5324549219deg) translateX(-20rem) scaleX(1.0212625838);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(289.1574087081deg) translateX(-20rem) scaleX(1.1573395074);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(304.9084715714deg) translateX(-20rem) scaleX(1.1410978457);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.9073092603deg) translateX(-20rem) scaleX(0.8270382459);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(339.7097048082deg) translateX(-20rem) scaleX(1.0547894072);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(347.2629171324deg) translateX(-20rem) scaleX(1.1440647351);
+}
+* .frame .center .ring-17 {
+  animation: expand-17 4s cubic-bezier(1, 0, 0.97, 0.4) -2.1564297043s infinite;
+}
+@keyframes expand-17 {
+  0% {
+    transform: rotateZ(2.2591500955deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(2.2591500955deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(0.8387115361deg) translateX(-20rem) scaleX(0.8704723716);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(22.5812910909deg) translateX(-20rem) scaleX(1.1182473208);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(30.7390309496deg) translateX(-20rem) scaleX(0.8181934452);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(54.8760629733deg) translateX(-20rem) scaleX(0.909772116);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(66.9742189109deg) translateX(-20rem) scaleX(1.0913455738);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(78.8316458728deg) translateX(-20rem) scaleX(1.0502943493);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(95.7040511527deg) translateX(-20rem) scaleX(0.9104776694);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(111.5180441659deg) translateX(-20rem) scaleX(1.0022700605);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(123.267134913deg) translateX(-20rem) scaleX(1.0517875924);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(141.9098679291deg) translateX(-20rem) scaleX(0.9337638398);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(156.6069662607deg) translateX(-20rem) scaleX(1.1933887294);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(169.1797997129deg) translateX(-20rem) scaleX(1.0775295636);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(185.0807538375deg) translateX(-20rem) scaleX(1.066497096);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(198.5293706641deg) translateX(-20rem) scaleX(1.1308412942);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(213.3933289775deg) translateX(-20rem) scaleX(1.1203220977);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(229.7544660963deg) translateX(-20rem) scaleX(1.1697505518);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(248.947166324deg) translateX(-20rem) scaleX(0.8280167522);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(258.5946427983deg) translateX(-20rem) scaleX(1.1134725622);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(273.5130004583deg) translateX(-20rem) scaleX(0.9907439852);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(291.7651774178deg) translateX(-20rem) scaleX(0.9872701612);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(305.3557109045deg) translateX(-20rem) scaleX(1.0190340759);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(315.6565126049deg) translateX(-20rem) scaleX(0.9297088981);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(332.5777498042deg) translateX(-20rem) scaleX(0.8887782069);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(347.0777557344deg) translateX(-20rem) scaleX(1.1149206657);
+}
+* .frame .center .ring-18 {
+  animation: expand-18 4s cubic-bezier(1, 0, 0.97, 0.4) -2.3050779057s infinite;
+}
+@keyframes expand-18 {
+  0% {
+    transform: rotateZ(53.6236831971deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(53.6236831971deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(8.2459851467deg) translateX(-20rem) scaleX(0.8010611733);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(24.0092629835deg) translateX(-20rem) scaleX(1.1660408689);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(36.6358566233deg) translateX(-20rem) scaleX(0.9676908712);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(49.2130332628deg) translateX(-20rem) scaleX(0.9632036225);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(63.8353112315deg) translateX(-20rem) scaleX(1.1700389545);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(80.2312219889deg) translateX(-20rem) scaleX(0.8733073102);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(98.6676409486deg) translateX(-20rem) scaleX(1.160775978);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(110.8777664735deg) translateX(-20rem) scaleX(0.8730057357);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(125.7825209219deg) translateX(-20rem) scaleX(1.0689990527);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(141.6697712191deg) translateX(-20rem) scaleX(1.1295585741);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(150.6550167942deg) translateX(-20rem) scaleX(0.8716791967);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(169.4595589312deg) translateX(-20rem) scaleX(1.1941176192);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(188.6313356797deg) translateX(-20rem) scaleX(0.8524220968);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(200.4736099836deg) translateX(-20rem) scaleX(1.1116271736);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(211.5715569114deg) translateX(-20rem) scaleX(0.8376131284);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(230.142907108deg) translateX(-20rem) scaleX(0.8568218164);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(243.4900609593deg) translateX(-20rem) scaleX(1.057828962);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(262.066026848deg) translateX(-20rem) scaleX(1.138417092);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(278.8102214399deg) translateX(-20rem) scaleX(0.9896957856);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(289.1528358492deg) translateX(-20rem) scaleX(1.1209149717);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(302.0272085554deg) translateX(-20rem) scaleX(1.0801924192);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(315.6403168611deg) translateX(-20rem) scaleX(1.1963156741);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(333.8750403753deg) translateX(-20rem) scaleX(0.9105528832);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(352.1488475152deg) translateX(-20rem) scaleX(0.9862716717);
+}
+* .frame .center .ring-19 {
+  animation: expand-19 4s cubic-bezier(1, 0, 0.97, 0.4) -2.4879797317s infinite;
+}
+@keyframes expand-19 {
+  0% {
+    transform: rotateZ(119.1184170515deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(119.1184170515deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(5.8975132167deg) translateX(-20rem) scaleX(0.8381188917);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(15.5254111528deg) translateX(-20rem) scaleX(1.0647126513);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(34.1678702879deg) translateX(-20rem) scaleX(0.8869873488);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(54.0637477874deg) translateX(-20rem) scaleX(1.1433989225);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(68.023523836deg) translateX(-20rem) scaleX(0.9249260684);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(84.6467083321deg) translateX(-20rem) scaleX(1.1131772478);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(95.0627003388deg) translateX(-20rem) scaleX(1.0624161091);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(106.8709713814deg) translateX(-20rem) scaleX(0.9304016934);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(127.3222754307deg) translateX(-20rem) scaleX(0.828591957);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(136.2284406995deg) translateX(-20rem) scaleX(1.1758831991);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(155.9814585173deg) translateX(-20rem) scaleX(0.9102615848);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(171.77694015deg) translateX(-20rem) scaleX(1.196282541);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(183.5115786819deg) translateX(-20rem) scaleX(0.8240996627);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(198.5745650836deg) translateX(-20rem) scaleX(1.1266840042);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(217.0128565228deg) translateX(-20rem) scaleX(0.8737448029);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(232.7365931627deg) translateX(-20rem) scaleX(0.8612089392);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(249.3942496375deg) translateX(-20rem) scaleX(0.9246352312);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(263.431677368deg) translateX(-20rem) scaleX(1.1016675244);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(279.6910675702deg) translateX(-20rem) scaleX(1.0856984931);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(290.8900006166deg) translateX(-20rem) scaleX(1.0870144017);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(306.7467938718deg) translateX(-20rem) scaleX(0.8982150362);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(316.4802834321deg) translateX(-20rem) scaleX(1.034351046);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(333.8447802539deg) translateX(-20rem) scaleX(1.0994767187);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(348.8268590916deg) translateX(-20rem) scaleX(1.1178690299);
+}
+* .frame .center .ring-20 {
+  animation: expand-20 4s cubic-bezier(1, 0, 0.97, 0.4) -2.5799071791s infinite;
+}
+@keyframes expand-20 {
+  0% {
+    transform: rotateZ(116.9548423289deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(116.9548423289deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(1.7753713202deg) translateX(-20rem) scaleX(0.9398425694);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(18.9832649809deg) translateX(-20rem) scaleX(0.9283905246);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(31.2081968735deg) translateX(-20rem) scaleX(1.1691506725);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(51.0348809744deg) translateX(-20rem) scaleX(0.9657077723);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(63.8649656475deg) translateX(-20rem) scaleX(1.1665128769);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(78.9077209391deg) translateX(-20rem) scaleX(1.1392419541);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(99.6468396256deg) translateX(-20rem) scaleX(1.1267789708);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(109.8118864698deg) translateX(-20rem) scaleX(1.0279426542);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(122.0921985729deg) translateX(-20rem) scaleX(1.0719599614);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(137.8376458922deg) translateX(-20rem) scaleX(1.0427392399);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.186499009deg) translateX(-20rem) scaleX(1.1392923661);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(167.68583101deg) translateX(-20rem) scaleX(0.87700597);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(181.2532228595deg) translateX(-20rem) scaleX(0.8198483111);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(195.9586625118deg) translateX(-20rem) scaleX(0.9650246205);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(212.4694040495deg) translateX(-20rem) scaleX(0.8304538467);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(233.096521041deg) translateX(-20rem) scaleX(0.9612109583);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(249.4270402535deg) translateX(-20rem) scaleX(1.0227676251);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(262.5983814784deg) translateX(-20rem) scaleX(1.0839941403);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(275.5255042945deg) translateX(-20rem) scaleX(1.0506098688);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(290.6671110124deg) translateX(-20rem) scaleX(1.141035326);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(304.7499792724deg) translateX(-20rem) scaleX(1.0586955336);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(322.8072924769deg) translateX(-20rem) scaleX(1.0355734479);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(339.6905887789deg) translateX(-20rem) scaleX(1.1195107529);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(348.316602304deg) translateX(-20rem) scaleX(1.0522289371);
+}
+* .frame .center .ring-21 {
+  animation: expand-21 4s cubic-bezier(1, 0, 0.97, 0.4) -2.7230460753s infinite;
+}
+@keyframes expand-21 {
+  0% {
+    transform: rotateZ(69.5886249264deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(69.5886249264deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(4.4162224524deg) translateX(-20rem) scaleX(0.9316310032);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(23.0510782441deg) translateX(-20rem) scaleX(1.1884515888);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(37.9278212591deg) translateX(-20rem) scaleX(0.8413157506);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(53.4793683189deg) translateX(-20rem) scaleX(1.1840686383);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(65.8328904287deg) translateX(-20rem) scaleX(1.1548526383);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(78.6438854885deg) translateX(-20rem) scaleX(1.0782798762);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(97.5815132716deg) translateX(-20rem) scaleX(0.8462248664);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(105.4700773766deg) translateX(-20rem) scaleX(1.1566993387);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(122.763588565deg) translateX(-20rem) scaleX(0.9353715284);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(136.8393818962deg) translateX(-20rem) scaleX(1.1098646058);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(153.3101908702deg) translateX(-20rem) scaleX(1.0359708363);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(173.2340063539deg) translateX(-20rem) scaleX(0.8355943674);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(183.1683831523deg) translateX(-20rem) scaleX(0.8793020517);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(196.0209433429deg) translateX(-20rem) scaleX(1.0546309857);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(219.1014671802deg) translateX(-20rem) scaleX(1.1601852419);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(229.3235533752deg) translateX(-20rem) scaleX(1.0015741477);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(246.7386678705deg) translateX(-20rem) scaleX(0.9096724297);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(264.2459927537deg) translateX(-20rem) scaleX(1.0810502836);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(275.489421988deg) translateX(-20rem) scaleX(1.0513811761);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(291.5913621711deg) translateX(-20rem) scaleX(1.0476448501);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(305.4180539965deg) translateX(-20rem) scaleX(1.1760514512);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.1433751313deg) translateX(-20rem) scaleX(0.8098315655);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(331.9119960745deg) translateX(-20rem) scaleX(0.942246713);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(347.1879608908deg) translateX(-20rem) scaleX(1.1758354175);
+}
+* .frame .center .ring-22 {
+  animation: expand-22 4s cubic-bezier(1, 0, 0.97, 0.4) -2.8727253318s infinite;
+}
+@keyframes expand-22 {
+  0% {
+    transform: rotateZ(56.1998684847deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(56.1998684847deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(6.888764389deg) translateX(-20rem) scaleX(1.0197088343);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(21.9654707628deg) translateX(-20rem) scaleX(1.09862739);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(33.0747337496deg) translateX(-20rem) scaleX(0.8772501986);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(45.1906715504deg) translateX(-20rem) scaleX(1.084364065);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(61.7601081151deg) translateX(-20rem) scaleX(0.944204254);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(79.5907052551deg) translateX(-20rem) scaleX(0.9340125751);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(92.7302487001deg) translateX(-20rem) scaleX(1.1637843885);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(105.8417830027deg) translateX(-20rem) scaleX(0.9038269489);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(121.1709256131deg) translateX(-20rem) scaleX(1.1882231211);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(144.6663655304deg) translateX(-20rem) scaleX(1.0347176591);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.083064127deg) translateX(-20rem) scaleX(1.1949955743);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(167.9577736138deg) translateX(-20rem) scaleX(1.0169512708);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(188.325557823deg) translateX(-20rem) scaleX(0.9583032386);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(201.4396484901deg) translateX(-20rem) scaleX(0.9863713029);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(219.7503442046deg) translateX(-20rem) scaleX(1.1476577947);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(232.6491228048deg) translateX(-20rem) scaleX(1.0072566603);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(248.3370296963deg) translateX(-20rem) scaleX(0.8912258401);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(259.5951590997deg) translateX(-20rem) scaleX(0.8056195345);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(276.4527161646deg) translateX(-20rem) scaleX(0.9081527199);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(290.7076431853deg) translateX(-20rem) scaleX(1.1551882494);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(301.303553812deg) translateX(-20rem) scaleX(1.1774102671);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(320.7111121335deg) translateX(-20rem) scaleX(1.1673751628);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(336.9548487253deg) translateX(-20rem) scaleX(1.0286264549);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(352.4637305905deg) translateX(-20rem) scaleX(1.17997796);
+}
+* .frame .center .ring-23 {
+  animation: expand-23 4s cubic-bezier(1, 0, 0.97, 0.4) -3.0157308431s infinite;
+}
+@keyframes expand-23 {
+  0% {
+    transform: rotateZ(178.2815905141deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(178.2815905141deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(4.031828136deg) translateX(-20rem) scaleX(1.0713500141);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(18.8282856825deg) translateX(-20rem) scaleX(0.9699396843);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(37.4516032182deg) translateX(-20rem) scaleX(1.138433278);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(46.5786585553deg) translateX(-20rem) scaleX(0.9181340115);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(68.4722910433deg) translateX(-20rem) scaleX(0.8026676442);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(77.7932040688deg) translateX(-20rem) scaleX(0.8543274409);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(92.9345158374deg) translateX(-20rem) scaleX(0.9862844181);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(107.9922557737deg) translateX(-20rem) scaleX(0.8805092533);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(129.4546315026deg) translateX(-20rem) scaleX(1.1033080845);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(138.3256167806deg) translateX(-20rem) scaleX(1.1457227903);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(150.6387143272deg) translateX(-20rem) scaleX(0.9367261237);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(166.6055997693deg) translateX(-20rem) scaleX(1.1389812786);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(182.0264035887deg) translateX(-20rem) scaleX(1.1306974979);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(199.9648760296deg) translateX(-20rem) scaleX(1.0872213231);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(211.4075349239deg) translateX(-20rem) scaleX(1.0108258286);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(226.2527086301deg) translateX(-20rem) scaleX(1.1837218513);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(247.8096958545deg) translateX(-20rem) scaleX(0.8313012011);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(257.2676148488deg) translateX(-20rem) scaleX(1.1019878685);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(271.226651353deg) translateX(-20rem) scaleX(0.9511955483);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(293.5925980195deg) translateX(-20rem) scaleX(0.9252991085);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(307.1947662285deg) translateX(-20rem) scaleX(1.1339510502);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(318.3952331982deg) translateX(-20rem) scaleX(0.8407449491);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.3949243073deg) translateX(-20rem) scaleX(0.9553621962);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(353.5223756972deg) translateX(-20rem) scaleX(1.0254983892);
+}
+* .frame .center .ring-24 {
+  animation: expand-24 4s cubic-bezier(1, 0, 0.97, 0.4) -3.1547189982s infinite;
+}
+@keyframes expand-24 {
+  0% {
+    transform: rotateZ(43.10502598deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(43.10502598deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(4.8497808675deg) translateX(-20rem) scaleX(1.0204643678);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(16.7545304625deg) translateX(-20rem) scaleX(1.1915503233);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(37.8155831279deg) translateX(-20rem) scaleX(0.9655748418);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(49.6649316858deg) translateX(-20rem) scaleX(1.0098753168);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(63.0200616023deg) translateX(-20rem) scaleX(1.1217689187);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(82.4047691741deg) translateX(-20rem) scaleX(1.0803567209);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(91.7309682276deg) translateX(-20rem) scaleX(1.1504329298);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(105.7967145159deg) translateX(-20rem) scaleX(1.0622799641);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(129.8202147947deg) translateX(-20rem) scaleX(0.9438276364);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(138.8605456817deg) translateX(-20rem) scaleX(1.0017779338);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(156.3665444246deg) translateX(-20rem) scaleX(1.0053457067);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(171.7179696553deg) translateX(-20rem) scaleX(1.1392748928);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(185.3551064848deg) translateX(-20rem) scaleX(0.9712887114);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(197.8814296191deg) translateX(-20rem) scaleX(1.1014164928);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(219.0030482525deg) translateX(-20rem) scaleX(1.1771464058);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(228.3213415888deg) translateX(-20rem) scaleX(1.0999862917);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(240.9663263454deg) translateX(-20rem) scaleX(1.1658433851);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(259.2436484533deg) translateX(-20rem) scaleX(0.814748758);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(279.8200898513deg) translateX(-20rem) scaleX(0.9693648877);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(286.1697311397deg) translateX(-20rem) scaleX(0.9951034885);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(305.2818129277deg) translateX(-20rem) scaleX(0.9481000848);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.2396240826deg) translateX(-20rem) scaleX(1.0194443576);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.0708768459deg) translateX(-20rem) scaleX(1.0316075216);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(347.4445073793deg) translateX(-20rem) scaleX(1.0412957855);
+}
+* .frame .center .ring-25 {
+  animation: expand-25 4s cubic-bezier(1, 0, 0.97, 0.4) -3.2327179116s infinite;
+}
+@keyframes expand-25 {
+  0% {
+    transform: rotateZ(129.7180196364deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(129.7180196364deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(2.9013278635deg) translateX(-20rem) scaleX(0.9246637949);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(18.3370416889deg) translateX(-20rem) scaleX(1.078792502);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(31.3358058791deg) translateX(-20rem) scaleX(1.0659675615);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(45.1692116385deg) translateX(-20rem) scaleX(1.1495960082);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(61.6494571331deg) translateX(-20rem) scaleX(1.0644058061);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(81.236971263deg) translateX(-20rem) scaleX(1.1869520941);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(96.2475491544deg) translateX(-20rem) scaleX(1.0004240636);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(105.9074217949deg) translateX(-20rem) scaleX(1.0173093913);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(129.2825648689deg) translateX(-20rem) scaleX(0.8218883794);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(140.2595283836deg) translateX(-20rem) scaleX(0.9692437009);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.4312094057deg) translateX(-20rem) scaleX(0.8872087878);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(172.130864431deg) translateX(-20rem) scaleX(0.9418946332);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(185.7837501529deg) translateX(-20rem) scaleX(0.9916923284);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(201.2018922982deg) translateX(-20rem) scaleX(0.9703813324);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(218.5676591788deg) translateX(-20rem) scaleX(1.0845694648);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(228.0055723552deg) translateX(-20rem) scaleX(1.0798421512);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(243.5982624513deg) translateX(-20rem) scaleX(0.9574323007);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.460916724deg) translateX(-20rem) scaleX(1.175700144);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(272.1322937547deg) translateX(-20rem) scaleX(0.9400799926);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(288.0840905589deg) translateX(-20rem) scaleX(1.0165275755);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(306.5540354385deg) translateX(-20rem) scaleX(0.8769488538);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(315.9315943033deg) translateX(-20rem) scaleX(1.0016988836);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(334.097664539deg) translateX(-20rem) scaleX(1.1751192546);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(353.5303317664deg) translateX(-20rem) scaleX(0.9915640066);
+}
+* .frame .center .ring-26 {
+  animation: expand-26 4s cubic-bezier(1, 0, 0.97, 0.4) -3.425859024s infinite;
+}
+@keyframes expand-26 {
+  0% {
+    transform: rotateZ(25.562498629deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(25.562498629deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(2.307886818deg) translateX(-20rem) scaleX(0.9486865984);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(23.4750042016deg) translateX(-20rem) scaleX(0.9653115394);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(39.8275665721deg) translateX(-20rem) scaleX(1.0464083893);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(54.4165614212deg) translateX(-20rem) scaleX(0.8219845116);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(61.1046541917deg) translateX(-20rem) scaleX(0.8399064698);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(77.0375538429deg) translateX(-20rem) scaleX(1.0052369926);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(94.7188630631deg) translateX(-20rem) scaleX(1.1726635514);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(106.990552157deg) translateX(-20rem) scaleX(1.1674376052);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(125.691606288deg) translateX(-20rem) scaleX(0.8191781646);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(135.4211477615deg) translateX(-20rem) scaleX(1.0670567436);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(153.6642610693deg) translateX(-20rem) scaleX(0.8743973879);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(167.1254952502deg) translateX(-20rem) scaleX(1.151220689);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(186.3625923085deg) translateX(-20rem) scaleX(1.0565357105);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(201.8491708392deg) translateX(-20rem) scaleX(0.8839676859);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(218.5236494699deg) translateX(-20rem) scaleX(1.1249139829);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(229.4205725164deg) translateX(-20rem) scaleX(0.833483397);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(248.6344126929deg) translateX(-20rem) scaleX(1.0974689001);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(262.0677144004deg) translateX(-20rem) scaleX(1.0254716382);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(276.9259089643deg) translateX(-20rem) scaleX(0.9467424119);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(288.1732068444deg) translateX(-20rem) scaleX(0.8280820489);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(307.8172950269deg) translateX(-20rem) scaleX(1.1100536926);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(319.375238868deg) translateX(-20rem) scaleX(1.1885742638);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(330.0167882564deg) translateX(-20rem) scaleX(0.802076043);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(350.3433170448deg) translateX(-20rem) scaleX(1.0410592198);
+}
+* .frame .center .ring-27 {
+  animation: expand-27 4s cubic-bezier(1, 0, 0.97, 0.4) -3.5664625716s infinite;
+}
+@keyframes expand-27 {
+  0% {
+    transform: rotateZ(64.1712607558deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(64.1712607558deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(4.5519916594deg) translateX(-20rem) scaleX(1.1149902819);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(20.0763890407deg) translateX(-20rem) scaleX(1.077456899);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(39.6467540066deg) translateX(-20rem) scaleX(1.0281420453);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(53.6487807053deg) translateX(-20rem) scaleX(1.0964271036);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(65.9867790614deg) translateX(-20rem) scaleX(1.1587742316);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(80.9595285719deg) translateX(-20rem) scaleX(0.9296742938);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(95.0953138018deg) translateX(-20rem) scaleX(1.1554221112);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(114.2049120773deg) translateX(-20rem) scaleX(1.0580917007);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(123.0419333613deg) translateX(-20rem) scaleX(0.9289519678);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(140.9938250821deg) translateX(-20rem) scaleX(0.8912677815);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(152.4040385238deg) translateX(-20rem) scaleX(1.1483356929);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(173.0059721287deg) translateX(-20rem) scaleX(1.1390394315);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(185.1443351367deg) translateX(-20rem) scaleX(1.1949538689);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(200.4147297178deg) translateX(-20rem) scaleX(1.140336154);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(218.024119019deg) translateX(-20rem) scaleX(0.862864591);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(225.4604305043deg) translateX(-20rem) scaleX(1.1480114996);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(241.9907139502deg) translateX(-20rem) scaleX(1.0813977798);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(255.9219435128deg) translateX(-20rem) scaleX(0.9477176484);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(274.7758572071deg) translateX(-20rem) scaleX(0.8618539575);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(289.6826485663deg) translateX(-20rem) scaleX(0.9546338508);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(307.3430329685deg) translateX(-20rem) scaleX(0.8929731398);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.3335148483deg) translateX(-20rem) scaleX(0.8518537669);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(334.8662546505deg) translateX(-20rem) scaleX(0.8782184603);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(350.8242529449deg) translateX(-20rem) scaleX(0.8830228819);
+}
+* .frame .center .ring-28 {
+  animation: expand-28 4s cubic-bezier(1, 0, 0.97, 0.4) -3.6408811897s infinite;
+}
+@keyframes expand-28 {
+  0% {
+    transform: rotateZ(11.109320628deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(11.109320628deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(4.7079347879deg) translateX(-20rem) scaleX(0.8221880482);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(21.5176218174deg) translateX(-20rem) scaleX(1.1707881642);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(39.5993891007deg) translateX(-20rem) scaleX(1.1155687997);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(49.1857960139deg) translateX(-20rem) scaleX(0.8123505961);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(69.3947100966deg) translateX(-20rem) scaleX(0.9914178417);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(81.0493744989deg) translateX(-20rem) scaleX(0.9025767645);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(98.7423026628deg) translateX(-20rem) scaleX(1.1597321387);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(111.4213356474deg) translateX(-20rem) scaleX(0.9282380506);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(121.7433916426deg) translateX(-20rem) scaleX(1.0128801827);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(138.6296683014deg) translateX(-20rem) scaleX(1.0852249159);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(153.7083431963deg) translateX(-20rem) scaleX(1.1599069595);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(167.7222465778deg) translateX(-20rem) scaleX(1.01689749);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(184.5751261176deg) translateX(-20rem) scaleX(0.8088682315);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(199.115075311deg) translateX(-20rem) scaleX(0.8446636803);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(216.2770438358deg) translateX(-20rem) scaleX(0.9480488859);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(234.7348884699deg) translateX(-20rem) scaleX(1.1112402208);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(249.7710858709deg) translateX(-20rem) scaleX(1.0231896591);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(261.1777360871deg) translateX(-20rem) scaleX(0.9350151103);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(273.016024697deg) translateX(-20rem) scaleX(0.9135034789);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(293.7163039036deg) translateX(-20rem) scaleX(1.1667283879);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(301.3823248595deg) translateX(-20rem) scaleX(1.0581118529);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.7148867275deg) translateX(-20rem) scaleX(0.9088824113);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(336.7331706452deg) translateX(-20rem) scaleX(0.9876634673);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(349.6971608567deg) translateX(-20rem) scaleX(1.159172194);
+}
+* .frame .center .ring-29 {
+  animation: expand-29 4s cubic-bezier(1, 0, 0.97, 0.4) -3.7450980605s infinite;
+}
+@keyframes expand-29 {
+  0% {
+    transform: rotateZ(143.6905067792deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(143.6905067792deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(0.8615432141deg) translateX(-20rem) scaleX(1.0869971162);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(15.4157390151deg) translateX(-20rem) scaleX(0.810217528);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(35.2765127327deg) translateX(-20rem) scaleX(1.1301565037);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(50.3129141006deg) translateX(-20rem) scaleX(1.1969666595);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(62.5740951021deg) translateX(-20rem) scaleX(1.1819753282);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(75.5918387728deg) translateX(-20rem) scaleX(1.0891710675);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(90.6028991517deg) translateX(-20rem) scaleX(0.9957099968);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(108.519853821deg) translateX(-20rem) scaleX(1.0660870429);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(120.7763802182deg) translateX(-20rem) scaleX(0.8940472181);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(136.37386478deg) translateX(-20rem) scaleX(1.084664274);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(159.2126789677deg) translateX(-20rem) scaleX(0.928029134);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(167.562461473deg) translateX(-20rem) scaleX(1.071960912);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(188.8861666349deg) translateX(-20rem) scaleX(0.9489516325);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(203.7672195748deg) translateX(-20rem) scaleX(1.1146680356);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(217.0807682912deg) translateX(-20rem) scaleX(0.9672568328);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(230.4367574006deg) translateX(-20rem) scaleX(1.1257754477);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(242.716065926deg) translateX(-20rem) scaleX(0.9140460189);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(255.9446925012deg) translateX(-20rem) scaleX(1.125113699);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(273.9211641907deg) translateX(-20rem) scaleX(0.8387446196);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(287.4104117223deg) translateX(-20rem) scaleX(0.9369867312);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(304.4324255108deg) translateX(-20rem) scaleX(0.8296512127);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(317.4114754087deg) translateX(-20rem) scaleX(0.8228056293);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(338.3191792109deg) translateX(-20rem) scaleX(0.8517720877);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(349.6047455117deg) translateX(-20rem) scaleX(0.8105525706);
+}
+* .frame .center .ring-30 {
+  animation: expand-30 4s cubic-bezier(1, 0, 0.97, 0.4) -3.9088505371s infinite;
+}
+@keyframes expand-30 {
+  0% {
+    transform: rotateZ(26.561856973deg) scale(0.01);
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(26.561856973deg) scale(1);
+    opacity: 1;
+  }
+}
+* .frame .center .beam-1 {
+  transform: rotateZ(8.2726115497deg) translateX(-20rem) scaleX(0.8115818255);
+}
+* .frame .center .beam-2 {
+  transform: rotateZ(19.5264858622deg) translateX(-20rem) scaleX(0.924144429);
+}
+* .frame .center .beam-3 {
+  transform: rotateZ(36.0620184647deg) translateX(-20rem) scaleX(0.9225047066);
+}
+* .frame .center .beam-4 {
+  transform: rotateZ(51.527671152deg) translateX(-20rem) scaleX(1.0772614683);
+}
+* .frame .center .beam-5 {
+  transform: rotateZ(67.0670716294deg) translateX(-20rem) scaleX(0.9306217986);
+}
+* .frame .center .beam-6 {
+  transform: rotateZ(79.1598198192deg) translateX(-20rem) scaleX(1.1587451444);
+}
+* .frame .center .beam-7 {
+  transform: rotateZ(99.4568854384deg) translateX(-20rem) scaleX(1.1631488159);
+}
+* .frame .center .beam-8 {
+  transform: rotateZ(109.6326020247deg) translateX(-20rem) scaleX(0.9488356949);
+}
+* .frame .center .beam-9 {
+  transform: rotateZ(123.1080392904deg) translateX(-20rem) scaleX(1.1358523816);
+}
+* .frame .center .beam-10 {
+  transform: rotateZ(140.8512080497deg) translateX(-20rem) scaleX(0.8260549872);
+}
+* .frame .center .beam-11 {
+  transform: rotateZ(155.9258563283deg) translateX(-20rem) scaleX(0.8622326189);
+}
+* .frame .center .beam-12 {
+  transform: rotateZ(169.8369841402deg) translateX(-20rem) scaleX(0.8832022213);
+}
+* .frame .center .beam-13 {
+  transform: rotateZ(184.6941517481deg) translateX(-20rem) scaleX(1.1536590928);
+}
+* .frame .center .beam-14 {
+  transform: rotateZ(197.0743078002deg) translateX(-20rem) scaleX(1.0165563423);
+}
+* .frame .center .beam-15 {
+  transform: rotateZ(214.9395603686deg) translateX(-20rem) scaleX(1.0470613145);
+}
+* .frame .center .beam-16 {
+  transform: rotateZ(232.5711506014deg) translateX(-20rem) scaleX(1.120339636);
+}
+* .frame .center .beam-17 {
+  transform: rotateZ(245.288119433deg) translateX(-20rem) scaleX(0.9528379268);
+}
+* .frame .center .beam-18 {
+  transform: rotateZ(260.3652863282deg) translateX(-20rem) scaleX(0.8026877363);
+}
+* .frame .center .beam-19 {
+  transform: rotateZ(277.7486193108deg) translateX(-20rem) scaleX(0.970180481);
+}
+* .frame .center .beam-20 {
+  transform: rotateZ(294.6458250111deg) translateX(-20rem) scaleX(0.862508851);
+}
+* .frame .center .beam-21 {
+  transform: rotateZ(301.2477788467deg) translateX(-20rem) scaleX(0.9509469684);
+}
+* .frame .center .beam-22 {
+  transform: rotateZ(321.9686446798deg) translateX(-20rem) scaleX(0.8339169263);
+}
+* .frame .center .beam-23 {
+  transform: rotateZ(333.1492691706deg) translateX(-20rem) scaleX(1.1803269834);
+}
+* .frame .center .beam-24 {
+  transform: rotateZ(346.97032031deg) translateX(-20rem) scaleX(0.9154030185);
+}
+
+/*# sourceMappingURL=index.css.map */
