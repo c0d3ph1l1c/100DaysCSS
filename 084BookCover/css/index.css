@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #E3E7EA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .book {
+  width: 45%;
+  height: 65%;
+  color: #fff;
+  border-radius: 2px 5px 5px 2px;
+  position: relative;
+  box-shadow: 0px 4px 3px 1px rgba(0, 0, 0, 0.2);
+}
+* .frame .center .book .cover {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(to top right, #3B3B3B, #393939 8%);
+  border-radius: 2px 5px 5px 2px;
+}
+* .frame .center .book .cover:before, * .frame .center .book .cover:after {
+  content: "";
+  width: 4%;
+  height: 100%;
+  position: absolute;
+}
+* .frame .center .book .cover:before {
+  background: rgba(110, 110, 110, 0.4);
+  left: 1%;
+}
+* .frame .center .book .cover:after {
+  background: rgba(49, 49, 49, 0.7);
+  left: 5%;
+}
+* .frame .center .book .bookmark {
+  width: 5%;
+  height: 101%;
+  background: repeating-linear-gradient(to right, #9F0229, #6d011c 20%);
+  border-radius: 1px;
+  position: absolute;
+  top: -0.5%;
+  right: 12%;
+}
+* .frame .center .book .title {
+  text-transform: uppercase;
+  position: absolute;
+  top: 18%;
+  left: 20%;
+  line-height: 2.2rem;
+  letter-spacing: -1px;
+}
+* .frame .center .book .italic {
+  font-size: 0.8rem;
+  font-style: italic;
+  position: absolute;
+  top: 58%;
+  left: 20%;
+}
+
+/*# sourceMappingURL=index.css.map */
