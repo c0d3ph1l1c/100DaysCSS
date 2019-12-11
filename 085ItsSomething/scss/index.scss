@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: #9C5AB7;
+
+      $numOfDots: 200;
+
+      .dot {
+        width: 2px;
+        height: 2px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      @function offset($index) {
+        @if $index < 50 {
+          @return 35 * ($index / 50) * ($index / 50);
+        } @else {
+          @return 35 * ((100 - $index) / 50) * ((100 - $index) / 50);
+        }
+      }
+
+      @for $i from 1 through $numOfDots {
+        .dot-#{$i} {
+          $left: ($i - 1) * 100 / $numOfDots;
+          top: (50 + offset($left)) * 1%;
+          left: $left * 1%;
+          animation: oscillate-#{$i} 1.5s ease-in-out alternate infinite;
+
+          @keyframes oscillate-#{$i} {
+            0% { transform: translateY(0); }
+            100% {
+              transform: translateY(-400px * 2 * offset($left) / 100);
+            }
+          }
+        }
+      }
+    }
+  }
+}
