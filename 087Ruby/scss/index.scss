@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #FFC902;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ruby {
+        width: 45%;
+        height: 31.5%;
+        position: relative;
+
+        .face { position: absolute; }
+
+        .face-1 {
+          width: 25%;
+          height: 30%;
+          background:#890505;
+          clip-path: polygon(60% 0%, 100% 100%, 0% 100%);
+        }
+
+        .face-2 {
+          width: 35%;
+          height: 30%;
+          background:#DC2323;
+          clip-path: polygon(0% 0%, 100% 0%, 28.57% 100%);
+          left: 15%;
+        }
+
+        .face-3 {
+          width: 50%;
+          height: 30%;
+          background: #BC0E0E;
+          clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+          left: 25%;
+        }
+
+        .face-4 {
+          width: 35%;
+          height: 30%;
+          background:#F58181;
+          clip-path: polygon(0% 0%, 100% 0%, 71.43% 100%);
+          left: 50%;
+          overflow: hidden;
+
+          &:before {
+            content: '';
+            width: 12%;
+            height: 200%;
+            background: #fff;
+            opacity: 0.6;
+            filter: blur(2px);
+            position: absolute;
+            top: -50%;
+            left: 0%;
+            transform-origin: 50% 50%;
+            transform: rotateZ(-50deg);
+            animation: shine 4s linear infinite;
+
+            @keyframes shine {
+              0%, 90% {
+                transform: rotateZ(-50deg) translateX(0%);
+              }
+              100% {
+                transform: rotateZ(-50deg) translateX(1000%);
+              }
+            }
+          }
+        }
+
+        .face-5 {
+          width: 25%;
+          height: 30%;
+          background:#B90B0C;
+          clip-path: polygon(40% 0%, 100% 100%, 0% 100%);
+          left: 75%;
+        }
+
+        .face-6 {
+          width: 50%;
+          height: 70%;
+          background:#890505;
+          clip-path: polygon(0% 0%, 50% 0%, 100% 100%);
+          top: 30%;
+        }
+
+        .face-7 {
+          width: 50%;
+          height: 70%;
+          background:#A51012;
+          clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+          top: 30%;
+          left: 25%;
+        }
+
+        .face-8 {
+          width: 50%;
+          height: 70%;
+          background:#C81718;
+          clip-path: polygon(50% 0%, 100% 0%, 0% 100%);
+          top: 30%;
+          left: 50%;
+        }
+      }
+    }
+  }
+}
