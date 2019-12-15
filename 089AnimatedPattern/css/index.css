@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #3DB099;
+  position: relative;
+}
+* .frame .center .box-1, * .frame .center .box-2 {
+  width: 10%;
+  height: 2%;
+  background: #fff;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+* .frame .center .box-1 {
+  animation: box-1 4s linear infinite;
+}
+@keyframes box-1 {
+  0%, 10% {
+    transform: rotateZ(0);
+  }
+  20%, 30% {
+    transform: rotateZ(45deg);
+  }
+  45%, 55% {
+    transform: rotateZ(45deg) translateX(-0.9rem);
+  }
+  70%, 80% {
+    transform: rotateZ(0) translateX(0) scale(0.5, 2.5);
+  }
+  100% {
+    transform: rotateZ(90deg);
+  }
+}
+* .frame .center .box-2 {
+  animation: box-2 4s linear infinite;
+}
+@keyframes box-2 {
+  0%, 10% {
+    transform: rotateZ(90deg);
+  }
+  20%, 30% {
+    transform: rotateZ(135deg);
+  }
+  45%, 55% {
+    transform: rotate(135deg) translateY(-0.9rem);
+  }
+  70%, 80% {
+    transform: rotateZ(135deg) translateY(0) scale(0.5, 2.5);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+* .frame .center .row-1 {
+  top: 4%;
+}
+* .frame .center .row-2 {
+  top: 14%;
+}
+* .frame .center .row-3 {
+  top: 24%;
+}
+* .frame .center .row-4 {
+  top: 34%;
+}
+* .frame .center .row-5 {
+  top: 44%;
+}
+* .frame .center .row-6 {
+  top: 54%;
+}
+* .frame .center .row-7 {
+  top: 64%;
+}
+* .frame .center .row-8 {
+  top: 74%;
+}
+* .frame .center .row-9 {
+  top: 84%;
+}
+* .frame .center .row-10 {
+  top: 94%;
+}
+* .frame .center .col-1 {
+  left: 0%;
+}
+* .frame .center .col-2 {
+  left: 10%;
+}
+* .frame .center .col-3 {
+  left: 20%;
+}
+* .frame .center .col-4 {
+  left: 30%;
+}
+* .frame .center .col-5 {
+  left: 40%;
+}
+* .frame .center .col-6 {
+  left: 50%;
+}
+* .frame .center .col-7 {
+  left: 60%;
+}
+* .frame .center .col-8 {
+  left: 70%;
+}
+* .frame .center .col-9 {
+  left: 80%;
+}
+* .frame .center .col-10 {
+  left: 90%;
+}
+
+/*# sourceMappingURL=index.css.map */
