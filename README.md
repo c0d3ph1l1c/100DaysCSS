@@ -92,3 +92,5 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [086 - Newton's Cradle](https://c0d3ph1l1c.github.io/100DaysCSS/086NewtonsCradle/)
 * [087 - Ruby](https://c0d3ph1l1c.github.io/100DaysCSS/087Ruby/)
 * [088 - Candle](https://c0d3ph1l1c.github.io/100DaysCSS/088Candle/)
+* [089 - Animated Pattern](https://c0d3ph1l1c.github.io/100DaysCSS/089AnimatedPattern/)
+
