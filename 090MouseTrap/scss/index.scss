@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: #2980B9;
+
+      $grid-rows: 21;
+      $line-rows: 19;
+      $trans-prop: 0.25s linear;
+
+      .box {
+        width: (100 / $grid-rows) * 1%;
+        height: (100 / $grid-rows) * 1%;
+        float: left;
+      }
+
+      .line {
+        width: 100%;
+        height: 0.4%;
+        background: #ddd;
+      }
+
+      .line-left { left: -100%; }
+      .line-right { right: -100%; }
+
+      @for $i from 1 through $line-rows {
+        .row-#{$i} {
+          position: absolute;
+          top: (100 / ($line-rows + 1)) * 1% * $i - 0.2%;
+          transition: transform $trans-prop;
+        }
+      }
+
+      @for $i from 1 through $grid-rows * $grid-rows {
+        $x: ($i - 1) % $grid-rows+1;
+        $y: ceil($i / $grid-rows);
+        $unit: (100 / $grid-rows) * 1%;
+
+        @if (1 < $y and $y < $grid-rows) {
+          .box-#{$i}:hover {
+            @for $row from $y - 3 through $y + 1 {
+              @if (1 <= $row and $row <= $line-rows) {
+                $d: ($row - $y) + 3;
+                @if $d > 2 {
+                  $d: 4 - $d;
+                } 
+
+                $offset: $d * $unit;
+                $left-translate: ($x - 1) * $unit - $offset;
+                $right-translate: -(100% - $x * $unit) + $offset;
+
+                &~.line-left.row-#{$row} {
+                  transform: translateX($left-translate);
+                  transition: transform $trans-prop;
+                }
+                
+                &~.line-right.row-#{$row} {
+                  transform: translateX($right-translate);
+                  transition: transform $trans-prop;
+                }  
+              }
+            } 
+          }
+        }
+      }
+    }
+  }
+}
