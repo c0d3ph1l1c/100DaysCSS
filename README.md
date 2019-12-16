@@ -94,3 +94,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [088 - Candle](https://c0d3ph1l1c.github.io/100DaysCSS/088Candle/)
 * [089 - Animated Pattern](https://c0d3ph1l1c.github.io/100DaysCSS/089AnimatedPattern/)
 * [090 - Mouse Trap](https://c0d3ph1l1c.github.io/100DaysCSS/090MouseTrap/)
+* [091 - Cube Loader](https://c0d3ph1l1c.github.io/100DaysCSS/091CubeLoader/)
