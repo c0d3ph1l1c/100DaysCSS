@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #34495E;
+  perspective: 1000px;
+  perspective-origin: 50% -50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: appear 0.7s linear forwards;
+}
+@keyframes appear {
+  0%, 90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* .frame .center .cube {
+  width: 30%;
+  height: 30%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateY(45deg);
+  transition: transform 0.5s linear;
+}
+* .frame .center .cube:hover {
+  transform: rotateY(45deg) translateY(-0.6rem);
+  transition: transform 0.5s linear;
+}
+* .frame .center .cube .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+}
+* .frame .center .cube .front {
+  background: rgba(10, 38, 55, 0.2);
+}
+* .frame .center .cube .front:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #2CC36E;
+  position: absolute;
+  transform: translateY(120px);
+  z-index: 1;
+  animation: front 4s ease-in-out 0.5s alternate infinite;
+}
+@keyframes front {
+  0%, 33.33% {
+    transform: translateY(120px);
+  }
+  66.68%, 100% {
+    transform: translateY(0);
+  }
+}
+* .frame .center .cube .back {
+  background: rgba(6, 23, 33, 0.2);
+}
+* .frame .center .cube .front-1 {
+  transform: translateZ(60px);
+}
+* .frame .center .cube .front-2 {
+  transform: rotateY(-90deg) translateZ(60px);
+}
+* .frame .center .cube .back-1 {
+  transform: translateZ(-60px);
+}
+* .frame .center .cube .back-2 {
+  transform: rotateY(-90deg) translateZ(-60px);
+}
+* .frame .center .cube .top {
+  background: #2abb69;
+  transform: rotateX(90deg) translateZ(-60px);
+  z-index: 2;
+  animation: top 4s ease-in-out 0.5s alternate infinite;
+}
+@keyframes top {
+  0%, 33.33% {
+    transform: rotateX(90deg) translateZ(-60px);
+  }
+  66.68%, 100% {
+    transform: rotateX(90deg) translateZ(59px);
+  }
+}
+* .frame .center .shadow {
+  width: 30%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(4px);
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateY(45deg) rotateX(90deg) translateZ(-66px);
+  z-index: -1;
+  transition: filter 0.5s linear, opacity 0.5s linear, transform 0.5s linear;
+}
+* .frame .center .cube:hover ~ .shadow {
+  filter: blur(8px);
+  opacity: 0.5;
+  transform: rotateY(45deg) rotateX(90deg) translateZ(-66px) scale(1.25, 1.25);
+  transition: filter 0.5s linear, opacity 0.5s linear, transform 0.5s linear;
+}
+* .frame .center .base-big {
+  width: 30%;
+  height: 30%;
+  background: #2CC36E;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateY(45deg) rotateX(90deg) translateZ(-66px) scale(1.8);
+  opacity: 0;
+  z-index: -2;
+}
+* .frame .center .cube:hover ~ .base-big {
+  animation: base-big 0.7s linear;
+}
+@keyframes base-big {
+  0%, 90% {
+    opacity: 0;
+  }
+  90.1%, 94% {
+    opacity: 0.6;
+  }
+  94.1%, 100% {
+    opacity: 0;
+  }
+}
+* .frame .center .cube ~ .base-small {
+  width: 30%;
+  height: 30%;
+  background: #2CC36E;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateY(45deg) rotateX(90deg) translateZ(-66px) scale(1.25);
+  opacity: 0;
+  z-index: -3;
+  animation: base 0.7s linear;
+  transition: background 0.05s linear 0.5s, opacity 0.05s linear 0.55s;
+}
+* .frame .center .cube:hover ~ .base-small {
+  background: #34495E;
+  opacity: 0.6;
+  transition: background 0.1s linear 0.5s, opacity 0.05s linear 0.6s;
+}
+
+/*# sourceMappingURL=index.css.map */
