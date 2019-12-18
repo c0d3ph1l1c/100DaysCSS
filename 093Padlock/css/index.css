@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #F57E15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .padlock {
+  width: 160px;
+  height: 240px;
+  position: relative;
+}
+* .frame .center .padlock .shackle {
+  width: 128px;
+  height: 168px;
+  background: #fff;
+  border-radius: 64px;
+  position: absolute;
+  left: 16px;
+  box-shadow: inset -3px -3px 3px 0 #999;
+}
+* .frame .center .padlock .shackle:before {
+  content: "";
+  width: 108px;
+  height: 148px;
+  background: #F57E15;
+  border-radius: 54px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: inset 3px 3px 6px 2px rgba(59, 1, 1, 0.24), -3px -2px 2px 0 #888, 4px 2px 2px 0 #fff, 8px -5px 2px 0 #ddd;
+}
+* .frame .center .padlock .body {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(to bottom right, #fff 0%, #fff 25%, #ccc 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+* .frame .center .padlock .body .dial {
+  width: 94%;
+  height: 94%;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s ease-in-out;
+}
+* .frame .center .padlock .body .dial:hover {
+  transform: rotateZ(360deg);
+  transition: transform 1.5s ease-in-out;
+}
+* .frame .center .padlock .body .dial .knob {
+  width: 35%;
+  height: 35%;
+  background: linear-gradient(to bottom right, #fff 0%, #fff 15%, #ccc 100%);
+  border-radius: 50%;
+  position: absolute;
+}
+* .frame .center .padlock .body .dial .large-tick {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+}
+* .frame .center .padlock .body .dial .large-tick-1 {
+  transform: rotateZ(0deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-2 {
+  transform: rotateZ(45deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-3 {
+  transform: rotateZ(90deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-4 {
+  transform: rotateZ(135deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-5 {
+  transform: rotateZ(180deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-6 {
+  transform: rotateZ(225deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-7 {
+  transform: rotateZ(270deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .large-tick-8 {
+  transform: rotateZ(315deg) translateX(62px);
+}
+* .frame .center .padlock .body .dial .small-tick {
+  width: 10px;
+  height: 2px;
+  background: #ccc;
+  position: absolute;
+}
+* .frame .center .padlock .body .dial .small-tick-1 {
+  transform: rotateZ(9deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-2 {
+  transform: rotateZ(18deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-3 {
+  transform: rotateZ(27deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-4 {
+  transform: rotateZ(36deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-5 {
+  transform: rotateZ(54deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-6 {
+  transform: rotateZ(63deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-7 {
+  transform: rotateZ(72deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-8 {
+  transform: rotateZ(81deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-9 {
+  transform: rotateZ(99deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-10 {
+  transform: rotateZ(108deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-11 {
+  transform: rotateZ(117deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-12 {
+  transform: rotateZ(126deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-13 {
+  transform: rotateZ(144deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-14 {
+  transform: rotateZ(153deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-15 {
+  transform: rotateZ(162deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-16 {
+  transform: rotateZ(171deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-17 {
+  transform: rotateZ(189deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-18 {
+  transform: rotateZ(198deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-19 {
+  transform: rotateZ(207deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-20 {
+  transform: rotateZ(216deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-21 {
+  transform: rotateZ(234deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-22 {
+  transform: rotateZ(243deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-23 {
+  transform: rotateZ(252deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-24 {
+  transform: rotateZ(261deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-25 {
+  transform: rotateZ(279deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-26 {
+  transform: rotateZ(288deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-27 {
+  transform: rotateZ(297deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-28 {
+  transform: rotateZ(306deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-29 {
+  transform: rotateZ(324deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-30 {
+  transform: rotateZ(333deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-31 {
+  transform: rotateZ(342deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .small-tick-32 {
+  transform: rotateZ(351deg) translateX(66px);
+}
+* .frame .center .padlock .body .dial .number {
+  color: #eee;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+}
+* .frame .center .padlock .body .dial .number-1 {
+  transform: rotateZ(0deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-2 {
+  transform: rotateZ(45deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-3 {
+  transform: rotateZ(90deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-4 {
+  transform: rotateZ(135deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-5 {
+  transform: rotateZ(180deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-6 {
+  transform: rotateZ(225deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-7 {
+  transform: rotateZ(270deg) translateY(-42px);
+}
+* .frame .center .padlock .body .dial .number-8 {
+  transform: rotateZ(315deg) translateY(-42px);
+}
+
+/*# sourceMappingURL=index.css.map */

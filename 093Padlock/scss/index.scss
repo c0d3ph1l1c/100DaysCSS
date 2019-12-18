@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #F57E15;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .padlock {
+        width: 160px;
+        height: 240px;
+        position: relative;
+        
+        .shackle {
+          width: 128px;
+          height: 168px;
+          background: #fff;
+          border-radius: 64px;
+          position: absolute;
+          left: 16px;
+          box-shadow: inset -3px -3px 3px 0 #999;
+
+          &:before {
+            content: '';
+            width: 108px;
+            height: 148px;
+            background: #F57E15;
+            border-radius: 54px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            box-shadow: inset 3px 3px 6px 2px rgba(59, 1, 1, 0.24),
+                        -3px -2px 2px 0 #888,
+                        4px 2px 2px 0 #fff,
+                        8px -5px 2px 0 #ddd;
+          }
+        }
+
+        .body {
+          width: 160px;
+          height: 160px;
+          background: linear-gradient(to bottom right, #fff 0%, #fff 25%, #ccc 100%);
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.3);
+
+          .dial {
+            width: 94%;
+            height: 94%;
+            background: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 2s ease-in-out;
+
+            &:hover {
+              transform: rotateZ(360deg);
+              transition: transform 1.5s ease-in-out;
+            }
+
+            .knob {
+              width: 35%;
+              height: 35%;
+              background: linear-gradient(to bottom right, #fff 0%, #fff 15%, #ccc 100%);
+              border-radius: 50%;  
+              position: absolute;   
+            }
+
+            .large-tick {
+              width: 20px;
+              height: 2px;
+              background: #fff;
+              position: absolute;
+            }
+
+            @for $i from 1 through 8 {
+              .large-tick-#{$i} {
+                transform: rotateZ(($i - 1) * 360deg / 8) translateX(62px);
+              }
+            }
+
+            .small-tick {
+              width: 10px;
+              height: 2px;
+              background: #ccc;
+              position: absolute;
+            }
+
+            @for $i from 1 through 32 {
+              .small-tick-#{$i} {
+                transform: rotateZ(($i + floor(($i - 1) / 4))* 360deg / 40) translateX(66px);
+              }
+            }
+
+            .number {
+              color: #eee;
+              font-size: 0.8rem;
+              font-weight: bold;
+              position: absolute;
+            }
+
+            @for $i from 1 through 8 {
+              .number-#{$i} {
+                transform: rotateZ(($i - 1) * 45deg) translateY(-42px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
