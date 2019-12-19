@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #E4F2E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .tree {
+  width: 40%;
+  height: 70%;
+  position: relative;
+}
+* .frame .center .tree .leaves {
+  width: 160px;
+  height: 200px;
+  transform-origin: 50% 0%;
+  transform: scaleX(0);
+  animation: leaves 0.6s cubic-bezier(0.6, 2, 0.8, 0.7) 0.7s forwards;
+}
+@keyframes leaves {
+  100% {
+    transform: scaleX(1);
+  }
+}
+* .frame .center .tree .leaves svg .left {
+  fill: #BA381D;
+}
+* .frame .center .tree .leaves svg .right {
+  fill: #E84624;
+}
+* .frame .center .tree .trunk {
+  width: 4px;
+  height: 70%;
+  background: #E8C87E;
+  border-radius: 2px;
+  position: absolute;
+  top: 23%;
+  left: 48.5%;
+  transform-origin: 50% 100%;
+  transform: scaleY(0);
+  animation: trunk 0.5s cubic-bezier(0.6, 2, 0.8, 0.7) forwards;
+}
+@keyframes trunk {
+  100% {
+    transform: scaleY(1);
+  }
+}
+* .frame .center .tree .trunk .branch {
+  height: 4px;
+  background: inherit;
+  border-radius: 2px;
+  transform-origin: 0% 0%;
+}
+* .frame .center .tree .trunk .branch-1 {
+  width: 21px;
+  transform: translateX(1px) translateY(25px) rotateZ(-130deg);
+}
+* .frame .center .tree .trunk .branch-2 {
+  width: 31px;
+  width: 35px;
+  transform: translateX(0) translateY(48px) rotateZ(-55deg);
+}
+* .frame .center .tree .trunk .branch-3 {
+  width: 41px;
+  transform: translateX(1px) translateY(71px) rotateZ(-130deg);
+}
+* .frame .center .tree .trunk .branch-4 {
+  width: 51px;
+  width: 53px;
+  transform: translateX(0) translateY(94px) rotateZ(-55deg);
+}
+* .frame .center .tree .trunk .branch-5 {
+  width: 61px;
+  transform: translateX(1px) translateY(117px) rotateZ(-130deg);
+}
+* .frame .center .tree .base {
+  width: 45%;
+  height: 4px;
+  background: #B9D6C2;
+  border-radius: 2px;
+  position: absolute;
+  top: 92%;
+  left: 27.5%;
+  transform-origin: 50% 50%;
+  transform: scaleX(0);
+  animation: base 0.5s cubic-bezier(0.6, 2, 0.6, 0.7) forwards;
+}
+@keyframes base {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
