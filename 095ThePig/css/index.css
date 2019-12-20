@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #FFDCB5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* .frame .center .pig {
+  width: 45%;
+  height: 45%;
+  position: relative;
+}
+* .frame .center .pig .ear {
+  width: 35%;
+  height: 35%;
+  position: absolute;
+}
+* .frame .center .pig .ear .outer {
+  fill: #F7949A;
+}
+* .frame .center .pig .ear .inner {
+  fill: #FFB7BC;
+}
+* .frame .center .ear-left {
+  left: 0;
+  transform: translate(-0.6rem, -0.8rem) rotateZ(135deg);
+}
+* .frame .center .ear-right {
+  right: 0;
+  transform: translate(0.6rem, -0.8rem) rotateZ(225deg);
+}
+* .frame .center .head {
+  width: 90%;
+  height: 90%;
+  background: #F7949A;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  position: relative;
+}
+* .frame .center .head .eye {
+  width: 14%;
+  height: 14%;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  transform-origin: 50% 50%;
+  animation: blink 5s linear infinite;
+}
+@keyframes blink {
+  0%, 95% {
+    transform: scaleY(1);
+  }
+  97%, 98% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+* .frame .center .head .eye:before {
+  content: "";
+  width: 15%;
+  height: 15%;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 42.5%;
+  left: 42.5%;
+}
+* .frame .center .head .eye-left {
+  left: 23%;
+}
+* .frame .center .head .eye-right {
+  left: 63%;
+}
+* .frame .center .head .nose {
+  width: 36%;
+  height: 30%;
+  background: #FFB7BC;
+  border-radius: 50%;
+  position: absolute;
+  top: 58%;
+  left: 32%;
+}
+* .frame .center .head .nose .nostril {
+  width: 12px;
+  height: 12px;
+  background: #CE666D;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+* .frame .center .head .nose .nostril-left {
+  left: 23%;
+}
+* .frame .center .head .nose .nostril-right {
+  left: 57%;
+}
+
+/*# sourceMappingURL=index.css.map */
