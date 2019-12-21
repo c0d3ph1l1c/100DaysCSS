@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: #3498DB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: appear 0.5s linear forwards;
+
+      @keyframes appear {
+        0%, 85% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      $anim-prop: 1.6s linear -0.23s infinite;
+
+      .box-container {
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 42.8%;
+        z-index: 1;
+        transform-origin: 50% 100%;
+        animation: box-container $anim-prop;
+
+        @keyframes box-container {
+          0%, 3.5%, 96.5%, 100% { transform: scale(1.8,0.34);}
+          30%, 70% { transform: scale(1,1);}
+        }
+
+        .box {
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          transform-origin: 50% 50%;
+          animation: box $anim-prop;
+
+          @keyframes box {
+            0% { transform: translateY(0) rotateZ(0deg); }
+            30% { transform: translateY(0) rotateZ(0deg); }
+            50% { transform: translateY(-7rem) rotateZ(135deg); }
+            70% { transform: translateY(0rem) rotateZ(270deg); }
+            100% { transform: translateY(0rem) rotateZ(270deg); }
+          }
+        }
+      }
+
+      .shadow {
+        width: 35%;
+        height: 5%;
+        background: darken(#3498DB, 10%);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 0;
+        top: 65%;
+        animation: shadow $anim-prop;
+
+        @keyframes shadow {
+          0%, 3.5%, 96.5%, 100% { transform: scaleX(1.6); }
+          50% { transform: scaleX(0.35); }
+        }
+      }
+    }
+  }
+}
