@@ -100,3 +100,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [094 - Tree](https://c0d3ph1l1c.github.io/100DaysCSS/094Tree/)
 * [095 - The Pig](https://c0d3ph1l1c.github.io/100DaysCSS/095ThePig/)
 * [096 - Jumping Square](https://c0d3ph1l1c.github.io/100DaysCSS/096JumpingSquare/)
+* [097 - Puppet](https://c0d3ph1l1c.github.io/100DaysCSS/097Puppet/)
