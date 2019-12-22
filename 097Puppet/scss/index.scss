@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: #8E44AD;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .puppet {
+        width: 30%;
+        height: 60%;
+        position: relative;
+
+        .head {
+          width: 35%;
+          height: 17.5%;
+          background: #fff;
+          border-radius: 50%;
+          position: absolute;
+          left: 32.5%;
+        }
+
+        .body {
+          width: 42%;
+          height: 43%;
+          background: #fff;
+          position: absolute;
+          top: 21%;
+          left: 29%;
+        }
+
+        .upper-arm {
+          width: 43%;
+          height: 6%;
+          background: #fff;
+          border-radius: 10px;
+          position: absolute;
+
+          .lower-arm {
+            width: 95%;
+            height: 100%;
+            background: #fff;
+            border-radius: 10px;
+            position: absolute;
+          }
+        }
+
+        .left-upper-arm {
+          top: 18%;
+          left: -14%;
+          transform-origin: 100% 50%;
+          transform: rotateZ(-80deg);
+
+          .left-lower-arm {
+            top: -3.5%;
+            left: -72%;
+            transform-origin: 100% 50%;
+            transform: rotateZ(-5deg);
+          }
+        }
+
+        .right-upper-arm {
+          top: 19.78%;
+          left: 65%;
+          transform-origin: 0% 50%;
+          transform: rotateZ(25deg);
+          animation: right-upper-arm 1s ease-in-out alternate infinite;
+
+          @keyframes right-upper-arm {
+            0% { transform: rotateZ(25deg); }
+            100% { transform: translateY(0.12rem) rotateZ(8deg); }
+          }
+
+          .right-lower-arm {
+            top: 30%;
+            left: 84.5%;
+            transform-origin: 0% 50%;
+            transform: rotateZ(-70deg);
+            animation: right-lower-arm 1s ease-in-out alternate infinite;
+
+            @keyframes right-lower-arm {
+              0% { transform: rotateZ(-70deg); }
+              100% { transform: translate(0.1rem) rotateZ(-105deg); }
+            }
+          }
+        }
+
+        .leg {
+          width: 20%;
+          height: 48%;
+          background: #fff;
+          border-radius: 10px;;
+          position: absolute;
+        }
+
+        .left-leg {
+          top: 55%;
+          left: 29%;
+        }
+
+        .right-leg {
+          top: 55%;
+          left: 51%;
+        }
+      }
+    }
+  }
+}
