@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: #2C3E50;
+
+      $anim-prop: 1.45s cubic-bezier(0, 0.96, 0.58, 1) alternate infinite;
+
+      .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-origin: 50% 50%;
+        animation: expand $anim-prop;
+
+        @keyframes expand {
+          0%, 15% { transform: scale(0); }
+          100% { transform: scale(1); }
+        }
+
+        .bg { width: 35px; height: 35px; position: absolute; }
+        .md { width: 22px; height: 22px; position: absolute; }
+        .sm { width: 10px; height: 10px; position: absolute; }
+        .color-1 { background: rgb(230,126,34); }
+        .color-2 { background: rgb(243,156,18); }
+        .color-3 { background: rgb(26,188,156); }
+        .ring {  
+          border-radius: 50%;
+
+          &:before {
+            content: '';
+            width: 50%;
+            height: 50%;
+            background: #2C3E50;
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+          }
+        }
+
+        $angles: (
+          "1": -15,
+          "2": 30,
+          "3": 30,
+          "4": 30,
+          "5": 20,
+          "6": 30,
+          "7": 45,
+          "8": 20
+        );
+
+        $s-dx: (
+          "1": 46,
+          "2": 131,
+          "3": 89,
+          "4": -82,
+          "5": 131,
+          "6": -43,
+          "7": -93,
+          "8": 65
+        );
+
+        $s-dy: (
+          "1": -134,
+          "2": -109,
+          "3": -83,
+          "4": -54,
+          "5": -5,
+          "6": 25,
+          "7": 59,
+          "8": 93
+        );
+
+        .square-1 { top: 182px; left: 182px; }
+        .square-2 { top: 189px; left: 189px; }
+        .square-3 { top: 195px; left: 195px; }
+        .square-4 { top: 182px; left: 182px; }
+        .square-5 { top: 189px; left: 189px; }
+        .square-6 { top: 195px; left: 195px; }
+        .square-7 { top: 189px; left: 189px; }
+        .square-8 { top: 195px; left: 195px; }
+
+        @for $i from 1 through 8 {
+          .square-#{$i} {
+            transform: rotateZ(map-get($angles, "#{$i}")+deg);
+            animation: square-#{$i} $anim-prop;
+            
+            @keyframes square-#{$i} {
+              0%, 15% { transform: translate(0,0) 
+                rotateZ((map-get($angles, "#{$i}")-90)+deg); }
+              100% { transform: translate(map-get($s-dx, "#{$i}")+px, map-get($s-dy, "#{$i}")+px)
+                rotateZ(map-get($angles, "#{$i}")+deg); }
+            }
+          }
+        }
+
+        $r-dx: (
+          "1": 9,
+          "2": -3,
+          "3": 27,
+          "4": 93,
+          "5": 75,
+          "6": 61,
+          "7": 19,
+          "8": -50 
+        );
+
+        $r-dy: (
+          "1": -103,
+          "2": -63,
+          "3": -63,
+          "4": -43,
+          "5": -15,
+          "6": 25,
+          "7": 99,
+          "8": 138 
+        );
+
+        .ring-1 { top: 195px; left: 195px; }
+        .ring-2 { top: 195px; left: 195px; }
+        .ring-3 { top: 189px; left: 189px; }
+        .ring-4 { top: 195px; left: 195px; }
+        .ring-5 { top: 189px; left: 189px; }
+        .ring-6 { top: 195px; left: 195px; }
+        .ring-7 { top: 189px; left: 189px; }
+        .ring-8 { top: 182px; left: 182px; }
+
+        @for $i from 1 through 8 {
+          .ring-#{$i} {
+            animation: ring-#{$i} $anim-prop;
+
+            @keyframes ring-#{$i} {
+              0%, 15% { transform: translate(0,0); }
+              100% { transform: translate(map-get($r-dx, "#{$i}")+px, map-get($r-dy, "#{$i}")+px); }
+            }
+          }
+        }
+      }
+
+      .cover {
+        width: 0;
+        height: 0;
+        border: 80px solid transparent;
+        position: absolute;
+        top: 120px;
+        left: 120px;
+      }
+
+      .cover-top { 
+        border-top-color: rgb(63,145,199); 
+        animation: cover-top $anim-prop;
+
+        @keyframes cover-top {
+          0%, 15% { transform: translate(0,0); }
+          100% { transform: translate(0,-180px); }
+        }
+      }
+      .cover-left { 
+        border-left-color: rgb(43,130,187); 
+        animation: cover-left $anim-prop;
+
+        @keyframes cover-left {
+          0%, 15% { transform: translate(0,0); }
+          100% { transform: translate(-180px,0); }
+        }
+      }
+      .cover-right { 
+        border-right-color: rgb(43,130,187); 
+        animation: cover-right $anim-prop;
+
+        @keyframes cover-right {
+          0%, 15% { transform: translate(0,0); }
+          100% { transform: translate(180px,0); }
+        }
+      }
+      .cover-bottom { 
+        border-bottom-color: rgb(37,120,174); 
+        animation: cover-bottom $anim-prop;
+
+        @keyframes cover-bottom {
+          0%, 15% { transform: translate(0,0); }
+          100% { transform: translate(0,180px); }
+        }
+      }
+    }
+  }
+}
