@@ -102,3 +102,4 @@ My attempt at  100 Days CSS Challenge. Inspired by [Matthias Martin](https://100
 * [096 - Jumping Square](https://c0d3ph1l1c.github.io/100DaysCSS/096JumpingSquare/)
 * [097 - Puppet](https://c0d3ph1l1c.github.io/100DaysCSS/097Puppet/)
 * [098 - Plopp](https://c0d3ph1l1c.github.io/100DaysCSS/098Plopp/)
+* [099 - Icon Animation](https://c0d3ph1l1c.github.io/100DaysCSS/099IconAnimation/)
