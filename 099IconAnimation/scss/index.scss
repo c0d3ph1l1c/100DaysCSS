@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+      background: rgba(39,174,96);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: appear 0.6s linear forwards;
+
+      @keyframes appear {
+        0%, 80% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+
+      $anim-prop: 0.6s cubic-bezier(0.15, 0.47, 0.51, 0.96);
+      $anim-prop-2: 0.6s ease-in;
+
+      #icon { display: none; }    
+
+      .icon {
+        width: 8%;
+        height: 8%;
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+        border-radius: 50%;
+        box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.2);
+        transition: border-radius $anim-prop-2, transform $anim-prop-2, box-shadow $anim-prop-2;
+      }
+
+      #icon:checked ~ .icon {
+        border-radius: 0;
+        transform: rotateZ(180deg);
+        box-shadow: -4px -4px 4px 0 rgba(0,0,0,0.2);
+        transition: border-radius $anim-prop, transform $anim-prop, box-shadow $anim-prop;
+      }
+
+      .halo {
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        position: absolute;
+        z-index: 1;
+        transform: scale(0);
+        opacity: 1;
+        transition: transform $anim-prop-2, opacity 0.1s ease-in;
+      }
+
+      #icon:checked ~ .halo {
+        transform: scale(1);
+        opacity: 0;
+        transition: transform $anim-prop, opacity 0.1s cubic-bezier(0.15, 0.47, 0.51, 0.96) 0.3s;
+      }
+
+      .sparkles {
+        width: 45%;
+        height: 45%;
+        position: absolute;
+        z-index: 1;
+        transform: scale(0);
+        opacity: 1;
+        transition: transform $anim-prop-2, opacity 0.1s ease-in;
+      
+        .sparkle {
+          width: 18%;
+          height: 2%;
+          background: #fff;
+          position: absolute;
+          top: 49%;
+          left: 41%;
+        }
+
+        @for $i from 1 through 18 {
+          .sparkle-#{$i} {
+            transform: rotateZ(-90deg + ($i - 1) * 20deg) translateX(7rem);
+          }
+        }
+      }
+
+      #icon:checked ~ .sparkles {
+        transform: scale(1);
+        opacity: 0;
+        transition: transform $anim-prop, opacity 0.2s cubic-bezier(0.15, 0.47, 0.51, 0.96) 0.3s;
+      }
+
+      .background {
+        width: 142%;
+        height: 142%;
+        border-radius: 50%;
+        background: rgb(46,204,113);
+        position: absolute;
+        transform: scale(0);
+        transition: transform 0.55s ease-in-out;
+      }
+
+      #icon:checked ~ .background {
+        transform: scale(1);
+      }
+    }
+  }  
+}
