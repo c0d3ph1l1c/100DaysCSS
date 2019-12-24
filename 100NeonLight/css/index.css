@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* .frame .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #272C34;
+}
+* .frame .center .neon {
+  position: absolute;
+  border-radius: 4px;
+}
+* .frame .center .left {
+  left: 3%;
+  top: 2.5%;
+}
+* .frame .center .top {
+  left: 15%;
+  top: 2.5%;
+}
+* .frame .center .middle {
+  left: 15%;
+  top: 46%;
+}
+* .frame .center .mid {
+  left: 17%;
+  top: 2%;
+}
+* .frame .center .bottom {
+  left: 15%;
+  top: 92%;
+}
+* .frame .center .right {
+  left: 90%;
+  top: 2.5%;
+}
+* .frame .center .vertical {
+  width: 7px;
+  height: 95%;
+}
+* .frame .center .long-h {
+  width: 75%;
+  height: 7px;
+}
+* .frame .center .short-h {
+  width: 65%;
+  height: 7px;
+}
+* .frame .center .slant {
+  width: 150%;
+  height: 7px;
+  transform-origin: 0% 0%;
+  transform: rotateZ(61.3deg);
+}
+* .frame .center .letter {
+  height: 35%;
+  position: absolute;
+  top: 32.5%;
+}
+* .frame .center .letter-e {
+  width: 20%;
+  left: 15%;
+}
+* .frame .center .letter-e .left {
+  animation: e-left 10s linear 3s backwards infinite;
+}
+@keyframes e-left {
+  0%, 14.375%, 15.625%, 16.875%, 18.125%, 70%, 71.25%, 72.5%, 73.75%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  15%, 16.25%, 17.5%, 18.75%, 68.75%, 69.375%, 70.625%, 71.875%, 73.125% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-e .top {
+  animation: e-top 10s linear 3s backwards infinite;
+}
+@keyframes e-top {
+  0%, 29.375%, 30.625%, 31.875%, 33.125%, 85%, 86.25%, 87.5%, 88.75%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  30%, 31.25%, 32.5%, 33.75%, 83.75%, 84.375%, 85.625%, 86.875%, 88.125% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-e .middle, * .frame .center .letter-e .bottom {
+  animation: e-md-btm 10s linear 3s backwards infinite;
+}
+@keyframes e-md-btm {
+  0%, 19.375%, 20.625%, 21.875%, 23.125%, 75%, 76.25%, 77.5%, 78.75%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  20%, 21.25%, 22.5%, 23.75%, 73.75%, 74.375%, 75.625%, 76.875%, 78.125% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-n {
+  width: 25%;
+  left: 37.5%;
+}
+* .frame .center .letter-n .left {
+  animation: n-left 10s linear 3s backwards infinite;
+}
+@keyframes n-left {
+  0%, 26.875%, 28.125%, 29.375%, 30.625%, 82.5%, 83.75%, 85%, 86.25%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  27.5%, 28.75%, 30%, 31.25%, 81.25%, 81.875%, 83.125%, 84.375%, 85.625% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-n .mid {
+  animation: n-mid 10s linear 3s backwards infinite;
+}
+@keyframes n-mid {
+  0%, 40.625%, 41.875%, 43.125%, 44.375%, 96.25%, 97.5%, 98.75%, 100%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  41.25%, 42.5%, 43.75%, 45%, 95%, 95.625%, 96.875%, 98.125%, 99.375% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-n .right {
+  animation: n-right 10s linear 3s backwards infinite;
+}
+@keyframes n-right {
+  0%, 13.125%, 14.375%, 15.625%, 16.875%, 68.75%, 70%, 71.25%, 72.5%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  13.75%, 15%, 16.25%, 17.5%, 67.5%, 68.125%, 69.375%, 70.625%, 71.875% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-d {
+  width: 20%;
+  left: 65%;
+}
+* .frame .center .letter-d .left {
+  animation: d-left 10s linear 3s backwards infinite;
+}
+@keyframes d-left {
+  0%, 34.375%, 35.625%, 36.875%, 38.125%, 90%, 91.25%, 92.5%, 93.75%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  }
+  35%, 36.25%, 37.5%, 38.75%, 88.75%, 89.375%, 90.625%, 91.875%, 93.125% {
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-d .curve-container {
+  width: 90%;
+  height: 95%;
+  position: absolute;
+  top: 2.5%;
+}
+* .frame .center .letter-d .curve-container .curve {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -10%;
+  left: 2.8%;
+  overflow: hidden;
+}
+* .frame .center .letter-d .curve-container .curve .inner-curve {
+  width: 165%;
+  height: 83.33%;
+  border-radius: 50%;
+  position: absolute;
+  top: 8%;
+  left: -93%;
+  animation: inner-curve 10s linear 3s backwards infinite;
+}
+@keyframes inner-curve {
+  0%, 10.625%, 11.875%, 13.125%, 14.375%, 66.25%, 67.5%, 68.75%, 70%, 100% {
+    border: 6px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2), inset 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  }
+  11.25%, 12.5%, 13.75%, 15%, 65%, 65.625%, 66.875%, 68.125%, 69.375% {
+    border: 6px solid #fff;
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.6), inset 0 0 10px 4px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-d .curve-container .rounded {
+  width: 20px;
+  height: 47px;
+  position: absolute;
+  overflow: hidden;
+}
+* .frame .center .letter-d .curve-container .rounded .inner-rounded {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  animation: inner-rounded 10s linear 3s backwards infinite;
+}
+@keyframes inner-rounded {
+  0%, 10.625%, 11.875%, 13.125%, 14.375%, 66.25%, 67.5%, 68.75%, 70%, 100% {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
+  }
+  11.25%, 12.5%, 13.75%, 15%, 65%, 65.625%, 66.875%, 68.125%, 69.375% {
+    background: #fff;
+    box-shadow: 0 0 9px 5px rgba(255, 255, 255, 0.6);
+  }
+}
+* .frame .center .letter-d .curve-container .rounded-top {
+  top: -20px;
+  left: -18px;
+}
+* .frame .center .letter-d .curve-container .rounded-bottom {
+  top: 106px;
+  left: -18px;
+}
+
+/*# sourceMappingURL=index.css.map */
